@@ -1,0 +1,216 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+.main-inner-wrapper{
+    max-width:1000px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.main-inner-wrapper h1{
+    margin-left:auto;
+    margin-right:auto;
+    line-height:77px;
+    font-size:71px;
+    text-align:center;
+}
+
+.grey-clear-bar{
+    display:block;
+    position:relative;
+    border: 1px solid #8e98a5;
+    margin: 25 0 25 0;
+    clear:both;
+}
+
+
+.text-box-content{
+    float:left;  
+    /*border: 1px solid #000;*/
+    height:300px; 
+    width:300px; 
+    clear:both;
+    padding: 10px 10px 10px 10px;
+}
+
+
+
+/*Data Maps Override*/
+#map-container{
+    position: relative; 
+    padding-top:15px;
+}    
+
+#map-container h5{
+   padding-bottom:15px;
+}   
+
+#map-container svg{
+    float:right;
+}   
+
+#map-container-two{
+    position: relative; 
+    padding-top:15px;
+}    
+
+
+#map-container-two svg{
+    float:left;
+}  
+
+#map-container-top-right{
+     position: relative; 
+}
+
+.map-legend-left{
+    float:left;
+}
+
+.map-legend-right{
+    float:right;
+    width:500px;
+}
+
+#map-container-three{
+    position: relative; 
+    padding-top:15px;
+    
+}    
+
+#map-container-three h5{
+    padding-bottom:15px;
+}
+
+dl{
+    width: 340px;
+    background: #fff;
+    padding: 5px 15px;
+    margin-bottom:25px;
+ }
+
+dt{
+    display:inline;
+    border: 1px solid #000;
+     
+ }
+    
+dt.leg-horiz{
+    display:inline;
+    border: 1px solid #000;
+ }
+    
+dt.legend-green{
+      background:green; 
+      padding:5px 15px;
+ }
+      
+dt.legend-yellow{
+      background:yellow; 
+      padding:5px 15px;
+  
+      
+      }
+      
+dt.legend-red{
+      background:red; 
+      padding:5px 15px;
+      }
+      
+/******************/
+
+dt.legend-mp2-first{
+      background:#38B3BC; 
+      padding:5px 15px;
+ }
+      
+dt.legend-mp2-second{
+      background:#2D9097; 
+      padding:5px 15px;
+  
+      
+      }
+      
+dt.legend-mp2-third{
+      background:#226E73; 
+      padding:5px 15px;
+      }
+      
+dt.legend-mp2-fourth{
+      background:#174B4F; 
+      padding:5px 15px;
+      }
+      
+dt.legend-mp2-fifth{
+      background:#0D292B; 
+      padding:5px 15px;
+      }      
+/******************/
+    
+      
+dt.legend-mp3-first{
+      background:#e3f6f8 ; 
+      padding:5px 15px;
+ }
+      
+dt.legend-mp3-second{
+      background:#cbe0e2; 
+      padding:5px 15px;  
+      }
+      
+dt.legend-mp3-third{
+      background:#b3cacc; 
+      padding:5px 15px;
+      }
+      
+dt.legend-mp3-fourth{
+      background:#9bb4b7; 
+      padding:5px 15px;
+      }
+      
+dt.legend-mp3-fifth{
+      background:#839ea1; 
+      padding:5px 15px;
+      }            
+             
+dt.legend-mp3-sixth{
+      background: #6c898b ; 
+      padding:5px 15px;
+ }
+      
+dt.legend-mp3-seventh{
+      background:#547376; 
+      padding:5px 15px;  
+      }
+      
+dt.legend-mp3-eigth{
+      background:#3c5d60 ; 
+      padding:5px 15px;
+      }
+      
+dt.legend-mp3-ninth{
+      background: #24474A; 
+      padding:5px 15px;
+      }
+      
+dt.legend-mp3-tenth{
+      background:#0d3235  ; 
+      padding:5px 15px;
+      }                     
+dd
+      {
+         display: inline;
+         padding: 0px 0px 0px 3px;
+      }   
+      
+#text-box-content_one dd{
+    padding:5px 0px 0px 0px;
+    display:inline;
+}
