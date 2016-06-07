@@ -1,0 +1,193 @@
+/***MAIN STYLE GUIDE***/
+
+/*Fonts*/
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/sourcesanspro-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sourcesanspro-light-webfont.woff2") format("woff2"), url("../fonts/sourcesanspro-light-webfont.woff") format("woff"), url("../fonts/sourcesanspro-light-webfont.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/sourcesanspro-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sourcesanspro-regular-webfont.woff2") format("woff2"), url("../fonts/sourcesanspro-regular-webfont.woff") format("woff"), url("../fonts/sourcesanspro-regular-webfont.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/sourcesanspro-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sourcesanspro-italic-webfont.woff2") format("woff2"), url("../fonts/sourcesanspro-italic-webfont.woff") format("woff"), url("../fonts/sourcesanspro-italic-webfont.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/sourcesanspro-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sourcesanspro-bold-webfont.woff2") format("woff2"), url("../fonts/sourcesanspro-bold-webfont.woff") format("woff"), url("../fonts/sourcesanspro-bold-webfont.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/merriweather-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/merriweather-light-webfont.woff2") format("woff2"), url("../fonts/merriweather-light-webfont.woff") format("woff"), url("../fonts/merriweather-light-webfont.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/merriweather-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/merriweather-regular-webfont.woff2") format("woff2"), url("../fonts/merriweather-regular-webfont.woff") format("woff"), url("../fonts/merriweather-regular-webfont.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Merriweather";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/merriweather-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/merriweather-italic-webfont.woff2") format("woff2"), url("../fonts/merriweather-italic-webfont.woff") format("woff"), url("../fonts/merriweather-italic-webfont.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/merriweather-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/merriweather-bold-webfont.woff2") format("woff2"), url("../fonts/merriweather-bold-webfont.woff") format("woff"), url("../fonts/merriweather-bold-webfont.ttf") format("truetype");
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #aeb0b5;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height:40px;
+  background-color: #0071bc;
+  color:white;
+  
+}
+
+#header-login-container a{
+  color:white;
+}
+
+#header-menu-inner-right{
+  float:right;
+  padding-top: 10px;
+  padding-right: 50px;
+}
+
+.clear-div{
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    line-height: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+
+.center-div{
+  max-width: 982px;
+  min-width: 320px;
+  margin:0 auto;
+}
+
+.main-inner-wrapper{
+  width:982px;
+  min-height:800px;
+  background-color: #ffffff;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+#logo-wrapper{
+    position: relative;
+    background-color: #aeb0b5;
+}
+
+#logo-wrapper p{
+    background-color: #112e51;
+    height:100px;
+    width:200px;
+}
+
+.main-inner-section{
+ color:black; 
+ height:800px;
+ 
+}
+
+.inner-sec-content{
+margin:15px 15px 15px 15px;
+}
+
+#slider{
+  height:300px;
+  width:100%;
+  background-color:#d6d7d9;
+}
+
+table#rms-cohort-table td:nth-child(odd){
+  width:715px;
+}
+
+#rms-grantees-year{
+  margin:40px 0px 0px 0px;
+  height:100px;
+}
+
+#rms-grantees-year select{
+    font-size: 13px;
+    font-weight: bold;
+    padding:15px 5px 15px 10px;
+    background-position:right .5rem center;
+    background-size:12px;
+    max-width:10rem;
+    display:inline;
+}
+
+#rms-grantees-year select:nth-child(even){
+  float:right;
+}
+
+table#rms-grantee-table {
+  border: 1px solid black;  
+  width:810px;
+}
+
+table#rms-grantee-table th{
+  padding: 2px;
+  border:none;
+}
+
+
+
+table#rms-grantee-table select{
+    font-size: 13px;
+    font-weight: bold;
+    padding:15px 5px 15px 10px;
+    background-position:right .5rem center;
+    background-size:12px;
+}
+
+
+footer{
+  height:300px;
+  width:100%;
+  background-color: #5b616b;
+}
