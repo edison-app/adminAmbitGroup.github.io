@@ -1,0 +1,180 @@
+﻿<!DOCTYPE html>
+
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+
+<head runat="server">
+<meta name="WebPartPageExpansion" content="full" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>PRMMT | The Fish Bowl</title>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.poptrox.min.js"></script>
+<script>
+	$(function() {
+		$('#staff').poptrox({
+			popupPadding: 2,
+			usePopupCloser: true,
+			usePopupDefaultStyling: true,
+			windowMargin: 0,
+		});
+	});
+</script>
+</head>
+
+<body>
+
+<div id="header">
+	<div id="logo">
+		<a href="Fishbowl.html"><span class="bolder">PRMMT</span> | (THE FISHBOWL)</a>
+	</div>
+	<nav>
+		<ul>
+			<li><a id="nav-home" href="Fishbowl.html">HOME</a></li>
+			<li><a id="nav-menu" href=#>MENU</a>
+				<ul>
+					<li><a href="Introduction.html">STAFF</a>
+					</li>
+					<li><a href="Services.html">SERVICES</a>
+						<ul>
+							<li><a href="Services.html#svc">SERVICES</a></li>
+							<li><a href="Services.html#pcm">PROCESS CYCLE MEMOS</a></li>
+							<li><a href="Services.html#fund">FUNCTIONAL DECOMPOSITION</a></li>
+						</ul>
+					</li>
+					<li><a href="Tools.html">TOOLS</a>
+						<ul>
+							<li><a href="Tools.html#dmart">DATA MART</a></li>
+							<li><a href="Tools.html#err">ENTITY RISK REVIEW</a></li>
+						</ul>
+					</li>
+					<li><a href="Methodologies.html">METHODOLOGIES</a>
+						<ul>
+							<li><a href="Methodologies.html#pstory">PROCESS STORY</a></li>
+							<li><a href="Methodologies.html#quality">QUALITY STANDARDS</a></li>
+							<li><a href="Methodologies.html#cstudy">CASE STUDIES</a></li>
+						</ul>
+					</li>
+				</ul>
+			<li><a id="nav-contact" href="Contact.html">CONTACT US</a></li>
+		</ul>
+	</nav>
+</div>
+     <!-- header -->
+
+<div id="main-wrapper">
+
+	<div id="video-wrapper">
+		<video width="100%" height="100%" autoplay>
+  			<source src="video/FishbowlAnimation.mp4" type="video/mp4">
+		</video> 		
+	</div>
+	
+	<div class="section">
+		<div class="center" style="margin:0 100px 120px 100px;">
+			<p class="textcenter textgrey bold" style="font-size:36px;">WELCOME TO THE FISHBOWL</p>
+			<img class="left" style="padding:0 25px 0 100px;" src="img/shutterstock_93455617.jpg" alt="fish made of water" height="400px" width="400px" />
+			<br><br>
+			<p class="textgrey">Black box analytics are out.  The Fishbowl is where you’ll find data-driven answers to your most pressing 
+				questions and all that went into producing them:  Who developed it?  Why is your developer qualified to answer?  
+			   	What assumptions were made and model applied?  What data was used?  What other related business problems might 
+			   	better inform you?  You need to move fast and you need reliable information to do that.</p>
+			<p class="textgrey">We don’t say “trust us” -  we demonstrate why you can...it’s our total commitment to <span class="italic">
+				Fishbowl Transparency</span>.</p>	
+		</div>
+	</div>
+	
+    
+	<div class="section" id="sky">
+		<div class="center" style="margin:50px 130px 110px 130px;">
+			<p class="textcenter textwhite bold" style="font-size:42px;">PRMMT</p>
+            <img class="center" style="padding:0px 25px 0px 25px;" src="img/VMV.png" alt="Vision; Mission; Value" height="458px" width="1017px" />
+		</div>
+	</div>
+	
+
+	<div class="section" style="background-color:#2980B9;">
+		<div class="center" style="margin:50px 130px 110px 130px;">
+			<img class="right" style="padding:50px 0 0 25px;" src="img/FBLogoOrange.png" alt="The Fishbowl logo" height="350px" width="350px" />
+			<br><br><br>
+			<p class="fonta bold" style="font-size:28px;">WE HERE IN PRMMT ARE CONSTANTLY WORKING ON EXPANDING HOW WE SERVE OUR CUSTOMERS.</p>
+			<p class="fonta">Take a look at what we offer...</p>
+			<br>
+			<span id="button"><a href="Services.html">SERVICES</a></span>
+			<span id="button"><a href="Tools.html">TOOLS</a></span>
+            <span id="button"><a href="Methodologies.html">METHODOLOGIES</a></span>	
+		</div>
+	</div>
+
+    <!--
+	<div id="staff" class="section" style="background-color:#FBA026;">
+		<div class="center" style="margin:0 100px 50px 100px;">
+			<p class="textcenter bolder" style="font-size:36px;">MEET OUR STAFF</p>
+			<div class="staffrow textcenter">
+				<a href="../img/SreelathaBio.jpg" data-poptrox="iframe,816x616"><img src="../img/Sreelatha.gif" alt="Sreelatha Bompalli bubble" height="250" width="250" /></a>
+				<a href="../img/WinstonBio.jpg" data-poptrox="iframe,816x616"><img src="../img/Winston.gif" alt="Winston Chang bubble" height="250" width="250" /></a>
+				<a href="../img/HilaryBio.jpg" data-poptrox="iframe,816x616"><img src="../img/Hilary.gif" alt="Hilary Cronin bubble" height="250" width="250" /></a>
+				<a href="../img/MikeGBio.jpg" data-poptrox="iframe,816x616"><img src="../img/MikeG.gif" alt="Mike Grierson bubble" height="250" width="250" /></a>
+			</div>
+			<div class="staffrow textcenter">
+				<a href="../img/KimBio.jpg" data-poptrox="iframe,816x616"><img src="../img/Kim.gif" alt="Kim Hicks bubble" height="250" width="250" /></a>
+				<a href="../img/ChuckBio.jpg" data-poptrox="iframe,816x616"><img src="../img/Chuck.gif" alt="Chuck Higgins bubble" height="250" width="250" /></a>
+				<a href="../img/AhmedBio.jpg" data-poptrox="iframe,816x616"><img src="../img/Ahmed.gif" alt="Ahmed Khago bubble" height="250" width="250" /></a>
+			</div>
+			<div class="staffrow textcenter">
+				<a href="../img/IrinaBio.jpg" data-poptrox="iframe,816x616"><img src="../img/Irina.gif" alt="Irina Natsvlishvili bubble" height="250" width="250" /></a>
+				<a href="../img/JenBio.jpg" data-poptrox="iframe,816x616"><img src="../img/Jen.gif" alt="Jen Rodriguez bubble" height="250" width="250" /></a>
+				<a href="../img/MarelisBio.jpg" data-poptrox="iframe,816x616"><img src="../img/Marelis.gif" alt="Marelis Sanchez bubble" height="250" width="250" /></a>
+				<a href="../img/MikeSBio.jpg" data-poptrox="iframe,816x616"><img src="../img/MikeS.gif" alt="Mike Scott bubble" height="250" width="250" /></a>
+			</div>
+			<div class="staffrow textcenter">
+				<a href="../img/CairoBio.jpg" data-poptrox="iframe,816x616"><img src="../img/Cairo.gif" alt="Cairo Srey bubble" height="250" width="250" /></a>
+				<a href="../img/GregBio.jpg" data-poptrox="iframe,816x616"><img src="../img/Greg.gif" alt="Greg Su bubble" height="250" width="250" /></a>
+				<a href="../img/NavyBio.jpg" data-poptrox="iframe,816x616"><img src="../img/Navy.gif" alt="Navy Sushon bubble" height="250" width="250" /></a>
+			</div>
+		</div>
+	</div>
+    -->
+	
+	
+	<!--
+	<div class="section" style="background-color:#FFF;">
+		<div class="center" style="margin:80px 265px 50px 265px;">
+			<div>
+				<a href="#"><img class="bubblerow1" src="../img/BubbleData.png" alt="Data bubble" /></a>
+				<a href="#"><img class="bubblerow1" src="../img/BubbleFunding.png" alt="Funding bubble" /></a>
+				<a href="#"><img class="bubblerow1" src="../img/BubbleServices.png" alt="Services bubble" /></a>
+				<a href="#"><img class="bubblerow1" src="../img/BubbleCapabilities.png" alt="Capabilities bubble" /></a>
+			</div>
+			<div style="margin-top:-75px;">
+				<a href="#"><img class="bubblerow2" src="../img/BubbleCustomers.png" alt="Customers bubble" /></a>
+				<a href="#"><img class="bubblerow2" src="../img/BubbleProducts.png" alt="Products bubble" /></a>
+				<a href="#"><img class="bubblerow2" src="../img/BubbleFedGuidance.png" alt="Federal Guidance bubble" /></a>
+				<a href="#"><img class="bubblerow2" src="../img/BubbleProjects.png" alt="Projects bubble" /></a>
+			</div>
+		</div>
+	</div>
+	-->
+
+	<!--
+    <div class="section" id="sky">
+		<div class="center" style="margin:0 100px;height:400px">
+		
+		</div>
+	</div>
+	-->
+
+</div>	<!-- main-wrapper -->
+
+<div id="footer">
+	<div class="center textcenter">
+		<img style="margin:30px 0 20px 0;" src="img/FBLogoOrange.png" alt="The Fishbowl logo" height="200px" width="200px" /><br>
+		<a href="http://www.ed.gov/"><img class="icon" alt="Department of Education logo" src="img/EdLogo110.png" height="100" width="100" /></a>
+		<a href="https://connected.ed.gov/SitePages/default.html"><img class="icon" alt="ConnectEd.gov logo" src="img/ced_logocir110.png" height="100" width="100" /></a>
+		<a href="https://share.ed.gov/teams/RMS/SitePages/Home.html"><img class="icon" alt="Microsoft SharePoint logo" src="img/SPLogoshadow110_2.png" height="100" width="100" /></a>
+		<a href="Contact.html"><img class="icon" alt="Contact" src="img/emailsquare110.png" height="100" width="100" /></a>
+	</div>
+</div>
+
+</body>
+
+</html>
