@@ -13,7 +13,7 @@
               height:500,
               width:700,
                 
-            dataUrl: '../data/Total_Risk_Per_State_1.csv',
+            dataUrl: 'data/Total_Risk_Per_State_1.csv',
             dataType: 'csv',
             data: {},
                 
@@ -46,7 +46,7 @@
               height:500,
               width:700,
                 
-            dataUrl: '../data/Total_Obligated_Amt_3.csv',
+            dataUrl: 'data/Total_Obligated_Amt_3.csv',
             dataType: 'csv',
             data: {},
                 
@@ -85,7 +85,7 @@
               height:500,
               width:700,
                 
-            dataUrl: '../data/Avg_Obligated_Amt_4.csv',
+            dataUrl: 'data/Avg_Obligated_Amt_4.csv',
             dataType: 'csv',
             data: {},
                 
