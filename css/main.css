@@ -1,174 +1,193 @@
-/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+/***MAIN STYLE GUIDE***/
 
-/* ==========================================================================
-   Custom styles
-   ========================================================================== */
-a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+/*Fonts*/
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/sourcesanspro-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sourcesanspro-light-webfont.woff2") format("woff2"), url("../fonts/sourcesanspro-light-webfont.woff") format("woff"), url("../fonts/sourcesanspro-light-webfont.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/sourcesanspro-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sourcesanspro-regular-webfont.woff2") format("woff2"), url("../fonts/sourcesanspro-regular-webfont.woff") format("woff"), url("../fonts/sourcesanspro-regular-webfont.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/sourcesanspro-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sourcesanspro-italic-webfont.woff2") format("woff2"), url("../fonts/sourcesanspro-italic-webfont.woff") format("woff"), url("../fonts/sourcesanspro-italic-webfont.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/sourcesanspro-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sourcesanspro-bold-webfont.woff2") format("woff2"), url("../fonts/sourcesanspro-bold-webfont.woff") format("woff"), url("../fonts/sourcesanspro-bold-webfont.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/merriweather-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/merriweather-light-webfont.woff2") format("woff2"), url("../fonts/merriweather-light-webfont.woff") format("woff"), url("../fonts/merriweather-light-webfont.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/merriweather-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/merriweather-regular-webfont.woff2") format("woff2"), url("../fonts/merriweather-regular-webfont.woff") format("woff"), url("../fonts/merriweather-regular-webfont.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Merriweather";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/merriweather-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/merriweather-italic-webfont.woff2") format("woff2"), url("../fonts/merriweather-italic-webfont.woff") format("woff"), url("../fonts/merriweather-italic-webfont.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/merriweather-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/merriweather-bold-webfont.woff2") format("woff2"), url("../fonts/merriweather-bold-webfont.woff") format("woff"), url("../fonts/merriweather-bold-webfont.ttf") format("truetype");
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #aeb0b5;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height:40px;
+  background-color: #0071bc;
+  color:white;
+  
+}
+
+#header-login-container a{
+  color:white;
+}
+
+#header-menu-inner-right{
+  float:right;
+  padding-top: 10px;
+  padding-right: 50px;
+}
+
+.clear-div{
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    line-height: 0;
     margin: 0;
     padding: 0;
-    border: 0;
-    /*font: inherit;*/
-    vertical-align: baseline;
+    font-size: 0;
 }
 
-ul {
-     padding:10px;
-     text-align:center;
-     list-style: none;
+.center-div{
+  max-width: 982px;
+  min-width: 320px;
+  margin:0 auto;
 }
 
-ul li{
-    line-height: 100%;
-    font-size: 20px;
+.main-inner-wrapper{
+  width:982px;
+  min-height:800px;
+  background-color: #ffffff;
+  margin-left:auto;
+  margin-right:auto;
 }
 
-ul li:hover:before, ul li:hover:after, ul li.active:before, ul li.active:after, ul li:focus:before, ul li:focus:after {
-    width: 10em;
-    background: #ee6e23;
-}
-
-ul li:before, ul li:after {
-    background: transparent;
-    content: "";
-    display: block;
-    margin: 5px auto;
-    width: 20px;
-    height: 1px;
-    -webkit-transition: all .3s ease-out;
-    -moz-transition: all .3s ease-out;
-    -ms-transition: all .3s ease-out;
-    -o-transition: all .3s ease-out;
-    transition: all .3s ease-out;
-}
-
-#menu-nav{    
-    display: table;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 99999;
-    font-family: 'dual600',Arial,sans-serif;
-    width: 100px;
-    height: 100%;
-    background-color: #425262; 
-}
-
-#menu-nav-inner{ 
-    display: table-cell;
-    vertical-align: middle;
-}
-
-.entry{
-    margin: auto;
-    width: 30px;
-    font-size: 18px;
-    line-height: 18px;
-    text-transform: uppercase;
-    margin-top: 15px; 
-}
-
-a, a:visited, a:active {
-    color: white;
-    text-decoration: none;
-}   
-
-.menu-link-hover:hover:before, .menu-link-hover:hover:after, .menu-link-hover.active:before, .menu-link-hover.active:after, .menu-link-hover:focus:before, .menu-link-hover:focus:after {
-    width: 1em;
-    background: #ee6e23;
-}
-
-.menu-link-hover:before, .menu-link-hover:after {
-    background: transparent;
-    content: "";
-    display: block;
-    margin: 10px auto;
-    width: 0px;
-    height: 1px;
-    -webkit-transition: all .3s ease-out;
-    -moz-transition: all .3s ease-out;
-    -ms-transition: all .3s ease-out;
-    -o-transition: all .3s ease-out;
-    transition: all .3s ease-out;
-}
-
-.menu-link {
-    display: block;
-}    
-
-.label {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-
-.grey-clear-bar {
-    display: block;
+#logo-wrapper{
     position: relative;
-    border: 1px solid #8e98a5;
-    margin: 25 0 25 0;
-    clear: both;}
+    background-color: #aeb0b5;
+}
 
-#main-wrapper{
-    padding-left:100px;
-    height:100%;
-    width:100%;
-    background-image: url("../img/skyscraper_window.jpg");
-    background-size: cover;
-    background-position: center;
-    opacity:0.5;
-    position:fixed;
-    top:0px;
-    left:0px;
+#logo-wrapper p{
+    background-color: #112e51;
+    height:100px;
+    width:200px;
+}
+
+.main-inner-section{
+ color:black; 
+ height:800px;
+ 
+}
+
+.inner-sec-content{
+margin:15px 15px 15px 15px;
+}
+
+#slider{
+  height:300px;
+  width:100%;
+  background-color:#d6d7d9;
+}
+
+table#rms-cohort-table td:nth-child(odd){
+  width:715px;
+}
+
+#rms-grantees-year{
+  margin:40px 0px 0px 0px;
+  height:100px;
+}
+
+#rms-grantees-year select{
+    font-size: 13px;
+    font-weight: bold;
+    padding:15px 5px 15px 10px;
+    background-position:right .5rem center;
+    background-size:12px;
+    max-width:10rem;
+    display:inline;
+}
+
+#rms-grantees-year select:nth-child(even){
+  float:right;
+}
+
+table#rms-grantee-table {
+  border: 1px solid black;  
+  width:810px;
+}
+
+table#rms-grantee-table th{
+  padding: 2px;
+  border:none;
 }
 
 
-#main-inner-wrapper{
-  width: 400px;
-  height: 100px;
-  padding: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: -70px 0 0 -170px;
-  z-index:5;
+
+table#rms-grantee-table select{
+    font-size: 13px;
+    font-weight: bold;
+    padding:15px 5px 15px 10px;
+    background-position:right .5rem center;
+    background-size:12px;
 }
 
-#main-inner-wrapper h1{
-    color: white;
-     border: 5px solid white;
-     padding:10px;
-     text-align:center;
-}
 
-/* ==========================================================================
-   Media Queries
-   ========================================================================== */
-
-@media only screen and (min-width: 480px) {
-
-/* ====================
-    INTERMEDIATE: Menu
-   ==================== */
-
-/* ========================
-    INTERMEDIATE: IE Fixes
-   ======================== */
-}
-@media only screen and (min-width: 768px) {
-
-}
-
-@media only screen and (min-width: 1140px) {
-
-/* ===============
-    Maximal Width
-   =============== */
-
-}
-/* ==========================================================================
-   Print styles
-   ========================================================================== */
-
-@media print {
+footer{
+  height:300px;
+  width:100%;
+  background-color: #5b616b;
 }
