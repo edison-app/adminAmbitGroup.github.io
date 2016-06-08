@@ -66,7 +66,7 @@ function visualizeUSMap(){
               height:500,
               //width:600,
                 
-            dataUrl: '../data/'+ csvFileName + '.csv',
+            dataUrl: 'data/'+ csvFileName + '.csv',
             dataType: 'csv',
             data: {},
                 
@@ -127,7 +127,7 @@ function visualizeUSMap(){
             },
             height:50,
             width:150,
-            dataUrl: '../data/'+ csvFileName + '.csv',
+            dataUrl: 'data/'+ csvFileName + '.csv',
             dataType: 'csv',
             data: {},
             geographyConfig: {
