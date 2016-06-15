@@ -62,7 +62,7 @@ function visualizeUSMap(newTest){
               height:500,
               //width:600,
                 
-            dataUrl: '/data/'+ newTest + '.csv',
+            dataUrl: '../../data/'+ newTest + '.csv',
             dataType: 'csv',
             data: {},
                 
