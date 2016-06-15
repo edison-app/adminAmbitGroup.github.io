@@ -122,7 +122,7 @@ function visualizeUSMap(newTest){
             },
             height:50,
             width:150,
-            dataUrl: '../data/'+ csvFileName + '.csv',
+            dataUrl: 'data/'+ csvFileName + '.csv',
             dataType: 'csv',
             data: {},
             geographyConfig: {
