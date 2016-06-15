@@ -8,7 +8,7 @@ $( document ).ready(function() {
 function asynCallMaps() {
       $.ajax({
         type: "GET",
-        url: "js/vendor/datamaps.usa.min.js",
+        url: "../js/vendor/datamaps.usa.min.js",
         dataType: "script",
         success: updateCsvFileVar 
       });
