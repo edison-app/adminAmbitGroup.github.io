@@ -2540,6 +2540,7 @@
 		#highlight-bkg-img{
 			background: url('../../images/UnderwaterBubbles.jpg') no-repeat;
 			background-size:cover;
+			background-attachment:fixed;
 			color:white;
 			padding-top:120px;
 			padding-bottom:120px;
