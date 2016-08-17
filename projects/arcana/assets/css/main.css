@@ -2353,7 +2353,7 @@
 
 			#header h1 a {
 				font-size: 1.5em;
-				letter-spacing: -0.025em;
+				letter-spacing: .095em;
 				border: 0;
 			}
 
@@ -2392,6 +2392,7 @@
 					border: 0;
 					display: block;
 					padding: 1.5em 0.5em 1.35em 0.5em;
+					font-size: 1.5em;
 				}
 
 				#nav > ul > li:first-child {
@@ -2537,6 +2538,12 @@
 			background: #fff;
 		}
 
+		.wrapper.style1-orange {
+			/*background: #fff;*/
+			background: #ee3b16;
+    		color: white;
+		}
+
 		#highlight-bkg-img{
 			background: url('../../images/UnderwaterBubbles.jpg') no-repeat;
 			background-size:cover;
@@ -2593,7 +2600,7 @@
 /* Footer */
 
 	#footer {
-		padding: 4em 0 8em 0;
+		padding: 2em 0 8em 0;
 	}
 
 		#footer a {
@@ -2706,7 +2713,7 @@
 		/* Footer */
 
 			#footer {
-				padding: 3em 0 3em 0;
+				padding: 2em 0 3em 0;
 			}
 
 				#footer .container {
@@ -3168,3 +3175,37 @@
 			}
 
 	}
+
+	/*Custom Styles*/
+
+	/*Staff Page*/
+	.pg-title-1{
+		border-bottom: solid 1px #e0e0e0;
+    	padding: 1em 0 0 0;
+		margin: 0 0 0 0 !important; 
+	}
+
+	.bio-container a{
+		border-bottom: none !important;
+	}
+
+	.footer-icon a{
+		border-radius: 3px;
+		color: #00a6cb !important;
+		border: 0px #ffffff solid !important;
+		font-size: 30px;
+	}
+
+	 .fa-stack:hover .fa-twitter{
+		 color:#f4971f !important;
+	 }
+
+	 .fa-stack:hover .fa-facebook{
+		 color:#f4971f !important;
+	 }
+
+	 .fa-stack:hover .fa-github{
+		 color:#f4971f !important;
+	 }
+
+	
