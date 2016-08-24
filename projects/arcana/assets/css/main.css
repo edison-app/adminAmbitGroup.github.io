@@ -84,7 +84,7 @@
 	.container {
 		width: 1400px;
 	}
-
+	
 	@media screen and (max-width: 1680px) {
 
 		.container.\31 25\25 {
@@ -3207,4 +3207,11 @@
 		 color:#f4971f !important;
 	 }
 
-	
+	/*playbook page*/
+	#playbook-container h3{
+		margin-top:1em !important;
+	}
+
+	.playbook-a{
+		border-bottom: 0px;
+	}
