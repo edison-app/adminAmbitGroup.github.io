@@ -34,6 +34,7 @@
             <div class="main wrapper clearfix">
                 <!--Question 1-->
                     <section>
+
                         <!-- Large button groups (default and split) -->
                         <p>A contractor metric is a performance or behavior measurement of an objective. Contractor metrics may identify performance levels and compare them against a target metric. When using contractor metrics as a method of surveillance, Team Ambit is responsible for reporting on its own performance based on the measurements provided by the government with contractor input.</p>
                              <div class="dropdown">
@@ -81,8 +82,17 @@
                          <h2>Quality of Product or Service</h2>
                          <p>Performance of standard Sprint quality if based on achieving identified backlog items and number of fixes needed on the sprint product.</p>
                         <!-- Large button groups (default and split) -->
+                        <div>
+                                <ol>
+                                    <li> <span class="red-text">Unsatisfactory</span> - Some backlog items not achieved; Major fixes.</li>
+                                    <li> <span class="red-text">Marginal</span> - Few backlog items not achieved; Some major fixes.</li>
+                                    <li> <span class="red-text">Satisfactory</span> - Backlog items achieved; Some minor fixes. </li>
+                                    <li> <span class="red-text">Good</span> - Backlog items achieved; Few minor fixes. </li>
+                                    <li> <span class="red-text">Excellent</span> - Product exceeds backlog items achieved; Few minor fixes.</li>
+                                </ol>    
+                        </div>
                              <div class="dropdown">
-                                <label>Name of Assessor</label>
+                                <label>Quality Score</label>
                                 <button class="btn btn-default dropdown-toggle button-lg" type="button" data-toggle="dropdown">-- None --
                                 <span class="caret"></span></button>
                                 <ul class="dropdown-menu dropdown-menu-left">
@@ -109,6 +119,17 @@
                     <section>
                          <h2>Problem Resolution</h2>
                          <p>Performance of standard The contractor is proactive and resolves problems in a timely and sound manner.</p>
+                         <div>
+                                <ol>
+                                    <li> <span class="red-text">Unsatisfactory</span> - Inadequately resolves problems.</li>
+                                    <li> <span class="red-text">Marginal</span> - Significant agency help to resolve problems jeopardizing contract goals.</li>
+                                    <li> <span class="red-text">Satisfactory</span> - Good communications about problems and with agency help resolves contract goals. </li>
+                                    <li> <span class="red-text">Good</span> - Successfully overcome or resolve problems with minimal agency intervention. </li>
+                                    <li> <span class="red-text">Excellent</span> - Anticipates and avoids most problems and overcomes unforeseen problems.</li>
+                                </ol>   
+                        </div>
+
+
                         <!-- Large button groups (default and split) -->
                              <div class="dropdown">
                                 <label>Quality Score</label>
@@ -123,6 +144,7 @@
                                 <li><a href="#">1 - Unsatisfactory</a></li>
                                 </ul>
                             </div>
+
                             <div class="form-group">
                                 <label for="comment">Feedback:</label>
                                 <textarea class="form-control" rows="5" id="comment"></textarea>
@@ -132,6 +154,15 @@
                     <section class="gray-sec-bkg">
                          <h2>Cost</h2>
                          <p>Performance of standard Provide sound ROI and easy administration of costs.</p>
+                         <div>
+                                <ol>
+                                    <li> <span class="red-text">Unsatisfactory</span> - Cost performance jeopardizes contract goals.</li>
+                                    <li> <span class="red-text">Marginal</span> - Returned below TO performance; billing issues.</li>
+                                    <li> <span class="red-text">Satisfactory</span> - Performed within costs; billing mostly on time and accurate.  </li>
+                                    <li> <span class="red-text">Good</span> - Performed well within costs; billing on time and accurate. </li>
+                                    <li> <span class="red-text">Exceeds</span> - Cost return higher ROI than states in the TO; billing accurate and timely.</li>
+                                </ol>  
+                        </div>
                         <!-- Large button groups (default and split) -->
                               <div class="dropdown">
                                 <label>Customer Service Score</label>
@@ -156,6 +187,15 @@
                     <section>
                          <h2>Timeliness of Performance</h2>
                          <p>Performance of standard Timeliness of delivery of products and deliverables in aggregate.</p>
+                         <div>
+                                 <ol>
+                                    <li> <span class="red-text">Unsatisfactory</span> - Product delivery is at high tempo with a variety of small to complex products in development; Acceptance is high.</li>
+                                    <li> <span class="red-text">Marginal</span> - Product delivery is behind on TO deliverables with product acceptance.</li>
+                                    <li> <span class="red-text">Satisfactory</span> - Product delivery meets TO deliverables with product acceptance; Minor delays. </li>
+                                    <li> <span class="red-text">Good</span> - Product delivery is at a steady tempo; Product acceptance is good; On time deliveries.  </li>
+                                    <li> <span class="red-text">Excellent</span> - Product delivery is at high tempo with a variety of small to complex products in development; Acceptance is high.</li>
+                                </ol>  
+                        </div>
                         <!-- Large button groups (default and split) -->
                               <div class="dropdown">
                                 <label>Timeliness</label>
@@ -179,6 +219,16 @@
                     <section class="gray-sec-bkg">
                          <h2>Business Relations</h2>
                          <p>Performance of standard Contractor management performs the contract work effectively and efficiently.</p>
+                         <div>
+                                <ol>
+                                    <li> <span class="red-text">Unsatisfactory</span> - Unethical or illegal business practices.</li>
+                                    <li> <span class="red-text">Marginal</span> - The contractor does not perform or interact with the client in a professional manner.</li>
+                                    <li> <span class="red-text">Satisfactory</span> - The contractor management performs the contract work and interacts with the client. </li>
+                                    <li> <span class="red-text">Good</span> - The contractor management performs contract work and interacts with the client in a professional manner.   </li>
+                                    <li> <span class="red-text">Excellent</span> - Highly effective, proactive business practices.</li>
+                                </ol>  
+                        </div>
+
                         <!-- Large button groups (default and split) -->
                               <div class="dropdown">
                                 <label>Business Relations Score</label>
@@ -202,6 +252,15 @@
                     <section>
                          <h2>Customer Service</h2>
                          <p>Performance of standard Customer is satisfied by the overall service provided by the contractor.</p>
+                         <div>
+                                <ol>
+                                    <li> <span class="red-text">Unsatisfactory</span> - Routinely late, ineffective, or rude. Customer expresses frustration or anger about interactions. Complains are unresolved. Contractor seems unaware of service issues.</li>
+                                    <li> <span class="red-text">Marginal</span> - Response is often late, ineffective, or rude. Some complaints are resolved.</li>
+                                    <li> <span class="red-text">Satisfactory</span> - Response is uneven in timing and effectiveness; customer interactions are tenuous. Contractor is trying hard.</li>
+                                    <li> <span class="red-text">Good</span> - Timely, effective, and courteous. Delivery of services is smooth and organized. Customer problems are resolved.    </li>
+                                    <li> <span class="red-text">Excellent</span> - Contractor is timely, has good communications, and acts professional. Provides new ideas, strategy, and analysis to assist the customer.</li>
+                            </ol>   
+                        </div>
                         <!-- Large button groups (default and split) -->
                               <div class="dropdown">
                                 <label>Customer Service Score</label>
@@ -216,6 +275,7 @@
                                     <li><a href="#">1 - Unsatisfactory</a></li>
                                 </ul>
                             </div>
+
                             <div class="form-group">
                                 <label for="comment">Feedback:</label>
                                 <textarea class="form-control" rows="5" id="comment"></textarea>
@@ -227,7 +287,7 @@
 
         <div class="footer-container">
             <footer class="wrapper">
-                <h3>footer</h3>
+                <p style="text-align:center;">This site is licensed to the public under a<a style="color:#337ab7; padding-left:5px; padding-right:5px;" href="https://creativecommons.org/publicdomain/zero/1.0/"> Creative Commons Zero Public Domain Dedication (CC0)</a> license.</p>
             </footer>
         </div>
 
