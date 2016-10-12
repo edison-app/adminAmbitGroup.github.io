@@ -1,0 +1,34 @@
+
+
+/* ==========================================================================
+   Custom styles
+   ========================================================================== */
+
+/*General styles*/
+
+#top-section h3 {
+    text-align:center;
+   
+}
+
+#top-section h1 {
+    text-align:center;
+     border-bottom: 1px solid #333;
+}
+
+#top-section p{
+font-family: "Merriweather", "Georgia", "Cambria", "Times New Roman", "Times", serif;
+    font-size: 2rem;
+    line-height: 1.7;
+}
+
+
+
+
+
+
+
+
+
+
+
