@@ -62,19 +62,51 @@
           <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
           <div class="list-group">
               <a href="#" class="list-group-item">Overview</a>
-              <a href="#" class="list-group-item">PRMMT API</a>
               <a href="#" class="list-group-item">Libraries and Stack</a>
               <a href="#" class="list-group-item">Coding practices</a>
               <a href="#" class="list-group-item">PRMMT API</a>
           </div>  
         </div>
-        <div class="col-md-9">
+        <div class="col-md-9" id="main-section" >
           <h2>Overview</h2>
           <p>This documentation specifies the  organizational structure, naming conventions and API for best coding practices within the Prmmt department when working in ServiceNow. This ensures consistent and accurate references to any apps that are developed.  As a general rule please try to follow the conventions below. </p>
 
           <h2>Coding practices</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          
+          <p>Servicenow uses both global as well as local application scopes to share and separate concerns from one app to the other. Because of this, you should use the naming conventions described below. </p>
+          <h3>File Naming</h3>
+          <p>When adding files(including <a href="http://wiki.servicenow.com/index.php?title=Using_Content_Blocks#gsc.tab=0" target="_blank">content blocks</a>) to apps, you are expected to follow these guidelines</p>
+           <ul>
+              <li><span style="font-weight: bold;">Global</span>
+                <ul>
+                <li>Keyword Prefix:  Prmmt</li>
+                  <ul>
+                    <li>***Global Script UI do not need Prefix***</li>
+                  </ul>
+                <li>PascalCase – Start with uppercase</li>
+                <li>Use underscores and no spaces in between words</li>
+                <li>Used for all global blocks, script names,  macro,etc.</li>
+                <li>Examples:Prmmt_Tbl_Script_Inc, Prmmt_Static_Block, Prmmt_Dyn_Block </li>
+                </ul>
+               </li> 
+              <li><span style="font-weight: bold;">Local</span>
+                <ul>
+                <li>Keyword Prefix:
+                    <ul>
+                      <li>Grants Bi: Gbi</li>
+                      <li>QASP: Qasp</li>
+                      <li>CCMS: Ccms</li>
+                      <li>Tagr: Tagr</li>
+                      <li>***Local Script UI will add prefix app scope name before file.***</li>
+                    </ul>
+                </li>
+                <li>PascalCase – Start with uppercase</li>
+                <li>Use underscores and no spaces in between words</li>
+                <li>Used for all local blocks, script names,  macro,etc.</li>
+                <li>Examples:Gbi_Tbl_Script_Inc, Qasp_Static_Block, Ccms_Dyn_Block </li>
+                </ul>
+               </li>
+           </ul>  
+
           <h2>Libraries and Stack</h2>
           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
 
