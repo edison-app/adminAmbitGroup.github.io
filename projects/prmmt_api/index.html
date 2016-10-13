@@ -62,7 +62,7 @@
           <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
           <div class="list-group">
               <a href="#" class="list-group-item">Overview</a>
-              <a href="#" class="list-group-item">Libraries and Stack</a>
+              <a href="#" class="list-group-item">Structural Design</a>
               <a href="#" class="list-group-item">Coding practices</a>
               <a href="#" class="list-group-item">PRMMT API</a>
           </div>  
@@ -71,8 +71,14 @@
           <h2>Overview</h2>
           <p>This documentation specifies the  organizational structure, naming conventions and API for best coding practices within the Prmmt department when working in ServiceNow. This ensures consistent and accurate references to any apps that are developed.  As a general rule please try to follow the conventions below. </p>
 
+          <h2>Structural Design</h2>
+          <p>Servicenow provides tools to create a modular pattern with apps. Therefore, we have incorporated modularity in our architecture to keep the units of code both cleanly seperated and organized. However, since some files can be accessed globally, you may need to adhere to the naming conventions in the “Coding Practices” below to ensure the pattern is uniform.</p>
+
+          <p>For instance, if you create dynamic block called “Chart_Visualization”for the TAGR app, it can be added in a portal from the Grants-Bi app since it is a Global feature. However, by naming it “Gbi_Chart_Visualization”, we can distinguish one from the other.</p>
+
           <h2>Coding practices</h2>
           <p>Servicenow uses both global as well as local application scopes to share and separate concerns from one app to the other. Because of this, you should use the naming conventions described below. </p>
+          
           <h3>File Naming</h3>
           <p>When adding files(including <a href="http://wiki.servicenow.com/index.php?title=Using_Content_Blocks#gsc.tab=0" target="_blank">content blocks</a>) to apps, you are expected to follow these guidelines</p>
            <ul>
@@ -80,7 +86,7 @@
                 <ul>
                 <li>Keyword Prefix:  Prmmt</li>
                   <ul>
-                    <li>***Global Script UI do not need Prefix***</li>
+                    <li class="text-emphasis">***Global Script UI do not need Prefix***</li>
                   </ul>
                 <li>PascalCase – Start with uppercase</li>
                 <li>Use underscores and no spaces in between words</li>
@@ -96,7 +102,7 @@
                       <li>QASP: Qasp</li>
                       <li>CCMS: Ccms</li>
                       <li>Tagr: Tagr</li>
-                      <li>***Local Script UI will add prefix app scope name before file.***</li>
+                      <li class="text-emphasis">***Local Script UI will add prefix app scope name before file.***</li>
                     </ul>
                 </li>
                 <li>PascalCase – Start with uppercase</li>
@@ -107,8 +113,24 @@
                </li>
            </ul>  
 
-          <h2>Libraries and Stack</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <h3>API Script Syntax and Semantics:</h3>
+          <p> When working within scripts in Servicenow, please use common and <a href="http://wiki.servicenow.com/index.php?title=Coding_Best_Practices#gsc.tab=0" target="_blank">recommended</a> programming syntax.  Be mindful when using spaces, hyphens and underscores. Please remember to…</p>
+          <p class="text-emphasis">//////////////////////////////////////////////<br>
+            //COMMENT YOUR CODE//<br>
+            /////////////////////////////////////////////
+          </p>
+          <p>When working with semantics in Servicenow, feel free to use the prefixes below to reference the local app.</p>
+          <li>Keyword Prefix:
+                    <ul>
+                      <li>Grants Bi: gbi</li>
+                      <li>QASP: qasp</li>
+                      <li>CCMS: ccms</li>
+                      <li>Tagr: tagr</li>
+                      <li class="text-emphasis">***Please note prefix begins with lowercase instead of uppercase like the filenames.***</li>
+                    </ul>
+                </li>
+          <p>Although this is not necessary in every use case, it is appropriate when distinguishing between applications that may use similar functions such as “gbiCreateBarChart()” and “qaspCreateBarChart()”.  If an application requires the use of scopes from two or more applications then a custom prefix should be created. For instance, referencing a table from the Qasp app as well as a Grants Bi app. 
+          </p>
 
           <h2>PRMMT API</h2>
           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
