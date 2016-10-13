@@ -1,198 +1,144 @@
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
 
-html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
-}
-
-::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-::selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
+/* ==========================================================================
+   Custom styles
+   ========================================================================== */
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+    margin: 0;
     padding: 0;
+    border: 0;
+    /*font: inherit;*/
+    vertical-align: baseline;
 }
 
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
+ul {
+     padding:10px;
+     text-align:center;
+     list-style: none;
+}
+
+ul li{
+    line-height: 100%;
+    font-size: 20px;
+}
+
+ul li:hover:before, ul li:hover:after, ul li.active:before, ul li.active:after, ul li:focus:before, ul li:focus:after {
+    width: 10em;
+    background: #ee6e23;
+}
+
+ul li:before, ul li:after {
+    background: transparent;
+    content: "";
+    display: block;
+    margin: 5px auto;
+    width: 20px;
+    height: 1px;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+
+#menu-nav{    
+    display: table;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    font-family: 'dual600',Arial,sans-serif;
+    width: 100px;
+    height: 100%;
+    background-color: #425262; 
+}
+
+#menu-nav-inner{ 
+    display: table-cell;
     vertical-align: middle;
 }
 
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
+.entry{
+    margin: auto;
+    width: 30px;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: uppercase;
+    margin-top: 15px; 
 }
 
-textarea {
-    resize: vertical;
-}
-
-.browserupgrade {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
-}
-
-
-/* ===== Initializr Styles ==================================================
-   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
-   ========================================================================== */
-
-body {
-    font: 14px/24px Helvetica, Helvetica Neue, Arial;
-}
-
-.wrapper {
-    width: 90%;
-    margin: 0 5%;
-}
-
-/* ===================
-    ALL: Orange Theme
-   =================== */
-
-.header-container {
-    border-bottom: 2px solid #e4e2e0;
-    height:100px;
-}
-
-.footer-container,
-.main aside {
-    border-top: 2px solid #e4e2e0;
-}
-
-.header-container,
-.footer-container,
-.main aside {
-    background: #112e51;
-}
-
-.title {
+a, a:visited, a:active {
     color: white;
-}
-
-/* ==============
-    MOBILE: Menu
-   ============== */
-
-nav ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-
-/*nav a {
-    display: block;
-    margin-bottom: 10px;
-    padding: 15px 0;
-
-    text-align: center;
     text-decoration: none;
-    font-weight: bold;
+}   
 
-    color: white;
-    background: #e44d26;
-}*/
-
-nav a:hover,
-nav a:visited {
-    color: white;
+.menu-link-hover:hover:before, .menu-link-hover:hover:after, .menu-link-hover.active:before, .menu-link-hover.active:after, .menu-link-hover:focus:before, .menu-link-hover:focus:after {
+    width: 1em;
+    background: #ee6e23;
 }
 
-nav a:hover {
-    text-decoration: underline;
+.menu-link-hover:before, .menu-link-hover:after {
+    background: transparent;
+    content: "";
+    display: block;
+    margin: 10px auto;
+    width: 0px;
+    height: 1px;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
 }
 
-/* ==============
-    MOBILE: Main
-   ============== */
+.menu-link {
+    display: block;
+}    
 
-.main {
-    padding: 30px 0;
-}
-
-.main article h1 {
-    font-size: 2em;
-}
-
-.main aside {
-    color: white;
-    padding: 0px 5% 10px;
-}
-
-.footer-container footer {
-    color: white;
-    padding: 20px 0;
-}
-
-/* ===============
-    ALL: IE Fixes
-   =============== */
-
-.ie7 .title {
-    padding-top:30px;
-}
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-header .title{
-    margin-top: 30px !important; 
-}
-
-section{
-    padding: 20px 0px 20px 0px;
-}
-
-section h2{
+.label {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
-    text-decoration: underline;
 }
 
-section label{
-    padding: .75rem 1.5rem !important;
-    font-size: 2.0rem !important;
+.grey-clear-bar {
+    display: block;
+    position: relative;
+    border: 1px solid #8e98a5;
+    margin: 25 0 25 0;
+    clear: both;}
+
+#main-wrapper{
+    padding-left:100px;
+    height:100%;
+    width:100%;
+    background-image: url("../img/skyscraper_window.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity:0.5;
+    position:fixed;
+    top:0px;
+    left:0px;
 }
 
-section p{
-    padding: 5px 28px 5px 28px;
-    font-size: 20px;
-}
-.button-lg{
-    padding: .75rem 1.5rem !important;
-    font-size: 2.0rem !important;
-    border-radius: .3rem !important;
-}
 
-.gray-sec-bkg{
-background-color: #f1f1f1;
-
+#main-inner-wrapper{
+  width: 400px;
+  height: 100px;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -70px 0 0 -170px;
+  z-index:5;
 }
 
-.form-control{
-    width: 80% !important;
-}
-
-.red-text{
-    color:red;
+#main-inner-wrapper h1{
+    color: white;
+     border: 5px solid white;
+     padding:10px;
+     text-align:center;
 }
 
 /* ==========================================================================
@@ -205,77 +151,12 @@ background-color: #f1f1f1;
     INTERMEDIATE: Menu
    ==================== */
 
-    nav a {
-        float: left;
-        width: 27%;
-        margin: 0 1.7%;
-        padding: 25px 2%;
-        margin-bottom: 0;
-    }
-
-    nav li:first-child a {
-        margin-left: 0;
-    }
-
-    nav li:last-child a {
-        margin-right: 0;
-    }
-
 /* ========================
     INTERMEDIATE: IE Fixes
    ======================== */
-
-    nav ul li {
-        display: inline;
-    }
-
-    .oldie nav a {
-        margin: 0 0.7%;
-    }
 }
-
 @media only screen and (min-width: 768px) {
 
-/* ====================
-    WIDE: CSS3 Effects
-   ==================== */
-
-    .header-container,
-    .main aside {
-        -webkit-box-shadow: 0 5px 10px #aaa;
-           -moz-box-shadow: 0 5px 10px #aaa;
-                box-shadow: 0 5px 10px #aaa;
-    }
-
-/* ============
-    WIDE: Menu
-   ============ */
-
-    .title {
-        /*float: left;*/
-        margin-left:auto;
-        margin-right:auto;
-        text-align:center;
-    }
-
-    nav {
-        float: right;
-        width: 38%;
-    }
-
-/* ============
-    WIDE: Main
-   ============ */
-
-    .main article {
-        float: left;
-        width: 57%;
-    }
-
-    .main aside {
-        float: right;
-        width: 28%;
-    }
 }
 
 @media only screen and (min-width: 1140px) {
@@ -284,120 +165,10 @@ background-color: #f1f1f1;
     Maximal Width
    =============== */
 
-    .wrapper {
-        width: 1026px; /* 1140px - 10% for margins */
-        margin: 0 auto;
-    }
 }
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-.hidden {
-    display: none !important;
-    visibility: hidden;
-}
-
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-}
-
-.invisible {
-    visibility: hidden;
-}
-
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-.clearfix {
-    *zoom: 1;
-}
-
 /* ==========================================================================
    Print styles
    ========================================================================== */
 
 @media print {
-    *,
-    *:before,
-    *:after {
-        background: transparent !important;
-        color: #000 !important;
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
-
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
-
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
-
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
-
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
-    }
-
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-
-    thead {
-        display: table-header-group;
-    }
-
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-
-    img {
-        max-width: 100% !important;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
 }
