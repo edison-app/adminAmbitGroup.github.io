@@ -8,7 +8,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="css/main.css">
         <style>
             body {
                 padding-top: 50px;
@@ -61,22 +60,24 @@
         <div class="col-md-3">
           <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
           <div class="list-group">
-              <a id="overview-menu" href="#" class="list-group-item menu-scroll">Overview</a>
-              <a id="struc-des-menu" href="#" class="list-group-item menu-scroll">Structural Design</a>
-              <a id="cod-prac-menu" href="#" class="list-group-item menu-scroll">Coding practices</a>
-              <a id="prm-api-menu" href="#" class="list-group-item menu-scroll">PRMMT API</a>
+              <a href="#overview-menu" class="list-group-item menu-scroll">Overview</a>
+              <a href="#struc-des-menu" class="list-group-item menu-scroll">Structural Design</a>
+              <a href="#cod-prac-menu" class="list-group-item menu-scroll">Coding practices</a>
+              <a href="#prm-api-menu" class="list-group-item menu-scroll">PRMMT API</a>
           </div>  
         </div>
         <div class="col-md-9" id="main-section" >
-          <h2>Overview</h2>
+        <section>  
+          <h2 id="overview-menu">Overview</h2>
           <p>This documentation specifies the  organizational structure, naming conventions and API for best coding practices within the Prmmt department when working in ServiceNow. This ensures consistent and accurate references to any apps that are developed.  As a general rule please try to follow the conventions below. </p>
-
+        </section>
+        <section id="struc-des-menu">  
           <h2>Structural Design</h2>
           <p>Servicenow provides tools to create a modular pattern with apps. Therefore, we have incorporated modularity in our architecture to keep the units of code both cleanly seperated and organized. However, since some files can be accessed globally, you may need to adhere to the naming conventions in the “Coding Practices” below to ensure the pattern is uniform.</p>
-
+        </section>
           <p>For instance, if you create dynamic block called “Chart_Visualization”for the TAGR app, it can be added in a portal from the Grants-Bi app since it is a Global feature. However, by naming it “Tagr_Chart_Visualization”, we can distinguish one from the other.</p>
-
-          <h2>Coding practices</h2>
+        <section id="cod-prac-menu">
+          <h2 id="cod-prac-menu">Coding practices</h2>
           <p>Servicenow uses both global as well as local application scopes to share and separate concerns from one app to the other. Because of this, you should use the naming conventions described below. </p>
           
           <h3>File Naming</h3>
@@ -131,10 +132,12 @@
                 </li>
           <p>Although this is not necessary in every use case, it is appropriate when distinguishing between applications that may use similar functions such as “gbiCreateBarChart()” and “qaspCreateBarChart()”.  If an application requires the use of scopes from two or more applications then a custom prefix should be created. For instance, when referencing a table from the Qasp app as well as a Grants Bi app. 
           </p>
-
-          <h2>PRMMT API</h2>
+        </section>
+        <section id="prm-api-menu">
+          <h2> PRMMT API</h2>
           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
           <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
+        </section>  
        </div>
       </div>
       <hr>
