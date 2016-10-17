@@ -1,0 +1,29 @@
+
+      <h2>API Reference</h2>  
+      <h3>Glide Ajax Function</h3>
+      <table class="table display compact" id="apiTable" cellspacing="5" width="100%" ng-app="apiRefApp" ng-controller="ApiController" data-ng-init="getTblGranteeInfo()>
+         <thead>
+            <tr>
+               <th>Method Summary</th>
+               <th>Description</th>
+            </tr>
+         </thead>
+        <tfoot>
+            <tr>
+               <th>Method Summary</th>
+               <th>Description</th>
+            </tr>
+         </tfoot>
+         
+         <tr id="apiReference" ng-repeat="apiReference in apiReferences" on-last-repeat="">   
+            <td>{{apiReference.method}}</td>
+            <td>{{apiReference.decription}}</td>
+         </tr>
+      </table>
+  
+
+
+
+     
+   
+
