@@ -151,28 +151,28 @@
           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
           <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
         </section>  
-          <div class="container" id="api-container" ng-app="apiRefApp" ng-controller="ApiController"> 
+       <div class="container" id="api-container" ng-app="apiRefApp" ng-controller="ApiController"> 
                     <h2>API Reference</h2>  
-      <h3>Glide Ajax Function</h3>
-      <table class="table display compact" id="apiTable" cellspacing="5" width="100%">
-         <thead>
-            <tr>
-               <th>Method Summary</th>
-               <th>Description</th>
-            </tr>
-         </thead>
-        <tfoot>
-            <tr>
-               <th>Method Summary</th>
-               <th>Description</th>
-            </tr>
-         </tfoot>
-         
-         <tr id="apiReference" ng-repeat="apiReference in apiReferences" on-last-repeat="">   
-            <td>{{apiReference.Methods}}</td>
-            <td>{{apiReference.Descriptions}}</td>
-         </tr>
-      </table>
+              <h3>Glide Ajax Function</h3>
+              <table class="table display compact" id="apiTable" cellspacing="5" width="100%">
+                <thead>
+                    <tr>
+                      <th>Method Summary</th>
+                      <th>Description</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                      <th>Method Summary</th>
+                      <th>Description</th>
+                    </tr>
+                </tfoot>
+                
+                <tr id="apiReference" ng-repeat="apiReference in apiReferences" on-last-repeat="">   
+                    <td>{{apiReference.Methods}}</td>
+                    <td>{{apiReference.Descriptions}}</td>
+                </tr>
+              </table>
           </div>
           </div>
       </div>
@@ -190,7 +190,7 @@
      apiApp.controller("ApiController", ['$scope','$http', function($scope,$http) {   
         $http.get("js/json_files/api_list.json")
         .then(function(response){
-            $scope.apiReferences = response.apiReferences;
+            $scope.apiReferences = response.data.apiReferences;
         });
         }
     ] );
