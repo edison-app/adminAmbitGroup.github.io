@@ -1,6 +1,6 @@
 {"apiReferences":[
-   {"Methods":"test1","Description":"Test Description1"},
-   {"Methods":"test2","Description":"Test Description2"},
-   {"Methods":"test3","Description":"Test Description3"},
-   {"Methods":"test4","Description":"Test Description4"}
+   {"Method":"test1","Description":"Test Description1"},
+   {"Method":"test2","Description":"Test Description2"},
+   {"Method":"test3","Description":"Test Description3"},
+   {"Method":"test4","Description":"Test Description4"}
 ]}
