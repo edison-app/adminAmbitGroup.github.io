@@ -26,7 +26,7 @@
         <script type="text/javascript" src="https://cdn.datatables.net/r/bs/pdfmake-0.1.18,dt-1.10.9,b-1.0.3,b-html5-1.0.3,b-print-1.0.3,r-1.0.7,sc-1.3.0/datatables.min.js" />
 
 
-        <script src="js/vendor/datatables.min.js"></script>
+        <!--<script src="js/vendor/datatables.min.js"></script>-->
         <script src="js/vendor/bootstrap.min.js"></script>
 
         <script src="js/main.js"></script>
@@ -200,13 +200,13 @@
          return function(scope, element, attrs) {
              if (scope.$last) setTimeout(function() {
 
-                  $jQuery('#apiTable tfoot th').each( function () {
-                    var title = $jQuery(this).text();
-                    $jQuery(this).html( '<input type="text" placeholder="Search '+title+'" />' );
+                  $j('#apiTable tfoot th').each( function () {
+                    var title = $j(this).text();
+                    $j(this).html( '<input type="text" placeholder="Search '+title+'" />' );
                 } );   
 
 
-                 var list = $jQuery('#apiTable').DataTable({
+                 var list = $j('#apiTable').DataTable({
                      "processing": true,
                      "responsive": true,
                 
@@ -221,7 +221,7 @@
                   list.columns().every( function () {
                   var that = this;
                 
-                        $jQuery( 'input', this.footer() ).on( 'keyup change', function () {
+                        $j( 'input', this.footer() ).on( 'keyup change', function () {
                             if ( that.search() !== this.value ) {
                                 that
                                     .search( this.value )
