@@ -200,7 +200,7 @@
          return function(scope, element, attrs) {
              if (scope.$last) setTimeout(function() {
 
-                  $j('#apiTable tfoot th').each( function () {
+                  $('#apiTable tfoot th').each( function () {
                     var title = $j(this).text();
                     $j(this).html( '<input type="text" placeholder="Search '+title+'" />' );
                 } );   
