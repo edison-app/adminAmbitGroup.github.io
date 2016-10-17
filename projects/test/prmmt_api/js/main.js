@@ -1,5 +1,6 @@
  
  //DOC Ready Function
+ jQuery.noConflict();
 $(document).ready(function (){
     mainMenuScroll();
 });
