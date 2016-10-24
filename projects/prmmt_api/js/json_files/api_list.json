@@ -1,7 +1,7 @@
 {
 	"apiReferences": [{
 		"methods": "getFilterChartData(String,String)",
-		"descriptions": "This method retrieves table data via GlideAjax, filters the data and populates it in HighChart.",
+		"descriptions": "This method retrieves table data via GlideAjax, filters the data and populates it in HighChart visualization tool.",
 		"params": [{
 			"filter": "offName",
 			"gbiCallback": "gbiOffNameSemiDoughnut",
