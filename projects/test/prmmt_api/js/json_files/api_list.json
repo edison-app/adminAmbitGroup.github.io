@@ -1,6 +1,6 @@
 {
 	"apiReferences": [{
-		"methods": "getFilterChartData",
+		"methods": "getFilterChartData(String,String)",
 		"descriptions": "TestTestTest",
 		"params": [{
 			"filter": "offName",
