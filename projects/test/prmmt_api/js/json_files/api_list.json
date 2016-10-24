@@ -1,51 +1,51 @@
 {
 	"apiReferences": [{
-            "methods":"getFilterChartData",
-            "descriptions":"TestTestTest",
-			"params":[{
-					"filter": "offName",
-					"gbiCallback": "gbiOffNameSemiDoughnut",
-					"Description": "Test Description1"
-				}, {
-					"filter": "offName",
-					"gbiCallback": "gbiOffNameHistogram",
-					"Description": "Test Description2"
-				}, {
-					"filter": "offName",
-					"gbiCallback": "gbiOffNameBarChart",
-					"Description": "Test Description3"
-				}, {
-					"filter": "offName",
-					"gbiCallback": "gbiOffNameBoxPlot",
-					"Description": "Test Description4"
-				}, {
-					"filter": "faad",
-					"gbiCallback": "gbiFaadIdPortGauge",
-					"Description": "Test Description6"
-				}, {
-					"filter": "faad",
-					"gbiCallback": "gbiFaadIdMissAuditBar",
-					"Description": "Test Description7"
-				}, {
-					"filter": "duns",
-					"gbiCallback": "gbiDunsGranteeSemiDoughnut",
-					"Description": "Test Description8"
-				}, {
-					"filter": "duns",
-					"gbiCallback": "gbiDunsGranteeGauge",
-					"Description": "Test Description9"
-				}, {
-					"filter": "duns",
-					"gbiCallback": "gbiDunsGranteePie",
-					"Description": "Test Description10"
-				}, {
-					"filter": "duns",
-					"gbiCallback": "gbiDunsMiscGranteeInfo",
-					"Description": "Test Description11"
-				}, {
-					"filter": "duns",
-					"gbiCallback": "gbiDunsMiscGrantInfo",
-					"Description": "Test Description12"
-				}]
-			}]
+		"methods": "getFilterChartData",
+		"descriptions": "TestTestTest",
+		"params": [{
+			"filter": "offName",
+			"gbiCallback": "gbiOffNameSemiDoughnut",
+			"description": "Test description1"
+		}, {
+			"filter": "offName",
+			"gbiCallback": "gbiOffNameHistogram",
+			"description": "Test description2"
+		}, {
+			"filter": "offName",
+			"gbiCallback": "gbiOffNameBarChart",
+			"description": "Test description3"
+		}, {
+			"filter": "offName",
+			"gbiCallback": "gbiOffNameBoxPlot",
+			"description": "Test description4"
+		}, {
+			"filter": "faad",
+			"gbiCallback": "gbiFaadIdPortGauge",
+			"description": "Test description6"
+		}, {
+			"filter": "faad",
+			"gbiCallback": "gbiFaadIdMissAuditBar",
+			"description": "Test description7"
+		}, {
+			"filter": "duns",
+			"gbiCallback": "gbiDunsGranteeSemiDoughnut",
+			"description": "Test description8"
+		}, {
+			"filter": "duns",
+			"gbiCallback": "gbiDunsGranteeGauge",
+			"description": "Test description9"
+		}, {
+			"filter": "duns",
+			"gbiCallback": "gbiDunsGranteePie",
+			"description": "Test description10"
+		}, {
+			"filter": "duns",
+			"gbiCallback": "gbiDunsMiscGranteeInfo",
+			"description": "Test description11"
+		}, {
+			"filter": "duns",
+			"gbiCallback": "gbiDunsMiscGrantInfo",
+			"description": "Test description12"
+		}]
+	}]
 }
