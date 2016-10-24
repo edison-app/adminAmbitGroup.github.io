@@ -1,6 +1,5 @@
 {
-	"apiReferences": {
-		"gbi": {
+	"apiReferences": [{
 			"methods": [{
 				"getFilterChartData": [{
 					"filter": "offName",
@@ -48,6 +47,5 @@
 					"Description": "Test Description12"
 				}]
 			}]
-		}
-	}
+    }]
 }
