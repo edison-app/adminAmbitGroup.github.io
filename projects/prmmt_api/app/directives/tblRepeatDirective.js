@@ -34,7 +34,7 @@ angular.module('app.features.controllers')
                     } );
 
                  list.buttons().container()
-                     .appendTo(jQuery('.col-sm-6:eq(0)', list.table().container()));
+                     .appendTo(jQuery('.col-sm-5:eq(0)', list.table().container()));
              }, 1);
                  
          };
