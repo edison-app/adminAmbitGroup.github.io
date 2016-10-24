@@ -16,8 +16,27 @@
         </style>
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
-
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/r/bs/pdfmake-0.1.18,dt-1.10.9,b-1.0.3,b-html5-1.0.3,b-print-1.0.3,r-1.0.7,sc-1.3.0/datatables.min.css" />      
+    
+       <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.27/angular.min.js" />
+
+
+        <script src="js/vendor/datatables.min.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/r/bs/pdfmake-0.1.18,dt-1.10.9,b-1.0.3,b-html5-1.0.3,b-print-1.0.3,r-1.0.7,sc-1.3.0/datatables.min.js" />
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/main.js"></script>
+        <script src="app/app.js"></script>
+        <script src="app/app.features.mod.js"></script>
+        <script src="app/controllers/apiRefController.js"></script>
+        <script src="app/directives/tblRepeatDirective.js"></script> 
+        
+
+       <!-- <script src="views/api_view_controller.js"></script> -->
     </head>
     <body>
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -67,10 +86,12 @@
           </div>  
         </div>
         <div class="col-md-9" id="main-section" >
+     
         <section>  
           <h2 id="overview-menu">Overview</h2>
           <p>This documentation specifies the  organizational structure, naming conventions and API for best coding practices within the Prmmt department when working in ServiceNow. This ensures consistent and accurate references to any apps that are developed.  As a general rule please try to follow the conventions below. </p>
         </section>
+   
         <section id="struc-des-menu">  
           <h2>Structural Design</h2>
           <p>Servicenow provides tools to create a modular pattern with apps. Therefore, we have incorporated modularity in our architecture to keep the units of code both cleanly seperated and organized. However, since some files can be accessed globally, you may need to adhere to the naming conventions in the “Coding Practices” below to ensure the pattern is uniform.</p>
@@ -134,22 +155,48 @@
           </p>
         </section>
         <section id="prm-api-menu">
-          <h2> PRMMT API</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <h2> PRMMT API</h2>0
+          <p>The PRMMT Servicenow API is a custom API built on top of Servicenow’s platform. It provides developers with the ability to get data in and out of Servicenow for PRMMT custom applications. This is a general overview of the functions we use on our applications. Please note that most of these functions are customized between the developer and analyst.</p>
           <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
+          <p class="text-emphasis">Reminder: When necessary, please use the prefixes below for</p>
+          <ul>
+            <li>Grants Bi: gbi</li>
+            <li>QASP: qasp</li>
+            <li>CCMS: ccms</li>
+            <li>Tagr: tagr</li>
+          </ul>
+
         </section>  
-       </div>
+       <div id="api-container" ng-app="app" ng-controller="ApiController"> 
+            <h2>API Reference</h2>  
+              <h3>Glide Ajax Function</h3>
+              <table class="table display compact" id="apiTable" cellspacing="5" width="100%">
+                <thead>
+                    <tr>
+                      <th>Method Summary</th>
+                      <th>Description</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                      <th>Method Summary</th>
+                      <th>Description</th>
+                    </tr>
+                </tfoot>
+                
+                <tr id="apiReference" ng-repeat="apiReference in apiReferences" on-last-repeat="">   
+                    <td>{{apiReference.methods}}</td>
+                    <td>{{apiReference.descriptions}}</td>
+                </tr>
+              </table>
+          </div>
+          </div>
       </div>
       <hr>
 
       <footer>
-        <p>&copy; Company 2015</p>
+        <p>&copy; Ambit 2016</p>
       </footer>
-    </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-
-        <script src="js/vendor/bootstrap.min.js"></script>
-
-        <script src="js/main.js"></script>
+    </div> <!-- /container -->  
     </body>
 </html>
