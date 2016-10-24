@@ -1,21 +1,22 @@
  
  //DOC Ready Function
-$(document).ready(function (){
+jQuery.noConflict();
+jQuery(document).ready(function (){
     mainMenuScroll();
 });
     
 function mainMenuScroll(){
-         $(".menu-scroll").click(function(event){
+         jQuery(".menu-scroll").click(function(event){
          event.preventDefault();
          //calculate destination place
          var dest=0;
-         if($(this.hash).offset().top > $(document).height()-$(window).height()){
-              dest=$(document).height()-$(window).height();
+         if(jQuery(this.hash).offset().top > jQuery(document).height()-jQuery(window).height()){
+              dest=jQuery(document).height()-jQuery(window).height();
          }else{
-              dest=$(this.hash).offset().top-50;
+              dest=jQuery(this.hash).offset().top-50;
          }
          //go to destination
-         $('html,body').animate({scrollTop:dest}, 1000,'swing');
+         jQuery('html,body').animate({scrollTop:dest}, 1000,'swing');
  });   
  }
 
