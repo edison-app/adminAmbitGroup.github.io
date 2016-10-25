@@ -1,5 +1,6 @@
 {
 	"apiReferences": [{
+		"link":"getFilterChartData",
 		"methods": "getFilterChartData(String,String)",
 		"descriptions": "This method retrieves table data via GlideAjax, filters the data and populates it in a HighChart visualization tool.",
 		"params": [{
