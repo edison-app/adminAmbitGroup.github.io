@@ -1,5 +1,8 @@
 //bootstrap
-angular.module('app', ['app.features.controllers','ngRoute'])
+
+angular.module('app', ['app.features.controllers'])
+
+/*angular.module('app', ['app.features.controllers','ngRoute'])
 .config(['$routeProvider',
   function(
     $routeProvider
@@ -10,5 +13,5 @@ angular.module('app', ['app.features.controllers','ngRoute'])
             controller:'/routerController'
         })
 
- }])
+ }])*/
 
