@@ -1,7 +1,5 @@
 //bootstrap
 
-angular.module('app', ['app.features.controllers'])
-
 /*angular.module('app', ['app.features.controllers','ngRoute'])
 .config(['$routeProvider',
   function(
@@ -15,3 +13,11 @@ angular.module('app', ['app.features.controllers'])
 
  }])*/
 
+angular.module('app', [
+  'app.features.controllers','ngRoute'])
+.config(function($routeProvider) {
+    $routeProvider
+    .when("/getChartFilterData", {
+        templateUrl : "views/getChartFilterData.html"
+    })
+});
