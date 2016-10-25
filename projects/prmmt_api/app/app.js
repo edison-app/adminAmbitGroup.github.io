@@ -13,7 +13,7 @@
 
  }])*/
 
-angular.module('app', ['app.features.controller'])
+angular.module('app', ['app.features.controller']);
 
 /*angular.module('app', [
   'app.features.controllers','ngRoute'])
