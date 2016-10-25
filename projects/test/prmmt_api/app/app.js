@@ -5,9 +5,9 @@ angular.module('app', ['app.features.controllers','ngRoute'])
     $routeProvider
 ) {
       $routeProvider.
-        when('/getChartFilterData',{
-            templateUrl: '/views/getChartFilterData.html'
-
+        when('/{{apiReference.methods}}',{
+            templateUrl: '/views/{{apiReference.methods}}.html',
+            controller:'/routerController'
         })
 
  }])
