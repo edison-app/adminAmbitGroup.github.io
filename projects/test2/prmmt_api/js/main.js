@@ -2,9 +2,13 @@
  //DOC Ready Function
 jQuery.noConflict();
 jQuery(document).ready(function (){
+    //Menu Scroll
     mainMenuScroll();
+    //Table highlight
+    highlightTblRows();
 });
     
+//Menu Scroller    
 function mainMenuScroll(){
          jQuery(".menu-scroll").click(function(event){
          event.preventDefault();
@@ -20,4 +24,12 @@ function mainMenuScroll(){
  });   
  }
 
-
+//Datatables Functionality
+function highlightTblRows(){
+        $j('#apiTable tbody')
+                .on( 'mouseenter', 'td', function () {
+                    var colIdx = table.cell(this).index().column;
+                    $j( table.cells().nodes() ).removeClass( 'highlight' );
+                    $j( table.column( colIdx ).nodes() ).addClass( 'highlight' );
+                } );
+}
