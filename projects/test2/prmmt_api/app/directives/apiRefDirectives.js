@@ -55,7 +55,7 @@ angular.module('app.features.controllers')
                     var appendURIvars = $location.search({duns : '{{program.duns}}' });
 
                     var host = $location.host();
-                    var landingUrl = "http://" + host + "/Grants_Bi_Beta/grantee_details.do?" + attr.apiHref;
+                    var landingUrl = "http://" + host + "/projects/test2/prmmt_api/views/api_references.html?" + attr.apiHref;
                     $window.location.href = landingUrl;
                     // $window.location.search = attr.programHref;
 
@@ -63,4 +63,4 @@ angular.module('app.features.controllers')
                 });
                 }
         }
-        }]);       
+        }]); 
