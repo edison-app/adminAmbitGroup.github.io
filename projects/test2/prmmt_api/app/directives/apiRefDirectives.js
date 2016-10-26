@@ -35,13 +35,7 @@ angular.module('app.features.controllers')
 
                  list.buttons().container()
                      .appendTo(jQuery('.col-sm-5:eq(0)', list.table().container()));
-             }, 1);
-
-                jQuery('#example tbody').on( 'mouseenter', 'td', function () {
-                            var colIdx = list.cell(this).index().column;
-                            jQuery( list.cells().nodes() ).removeClass( 'highlight' );
-                            jQuery( list.column( colIdx ).nodes() ).addClass( 'highlight' );
-                 } );         
+             }, 1);       
                  
          };
      });
@@ -58,7 +52,7 @@ angular.module('app.features.controllers')
                     // $location.replace();
                     // scope.$apply();
 
-                    var appendURIvars = $location.search({duns : '{{program.duns}}' });
+                    //var appendURIvars = $location.search({duns : '{{program.duns}}' });
 
                     var host = $location.host();
                     var landingUrl = "http://" + host + "/projects/test2/prmmt_api/views/api_references.html?" + attr.apiHref;
