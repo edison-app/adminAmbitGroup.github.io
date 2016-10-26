@@ -1,8 +1,8 @@
 {
 	"apiReferences": [{
-		"links":"getFilterChartData",
-		"methods": "getFilterChartData(String,String)",
-		"descriptions": "This method retrieves table data via GlideAjax, filters the data and populates it in a HighChart visualization tool.",
+		"links":"getGbiOffNameFilterChartData",
+		"methods": " getGbiOffNameFilterChartData(String,String)",
+		"descriptions": "This method retrieves Grants BI table data via GlideAjax, filters the data and populates it in a HighChart visualization tool.",
 		"params": [{
 			"filter": "offName",
 			"gbiCallback": "gbiOffNameSemiDoughnut",
