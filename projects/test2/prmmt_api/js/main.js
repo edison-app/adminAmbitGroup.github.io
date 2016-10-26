@@ -24,12 +24,4 @@ function mainMenuScroll(){
  });   
  }
 
-//Datatables Functionality
-function highlightTblRows(){
-        jQuery('#apiTable tbody')
-                .on( 'mouseenter', 'td', function () {
-                    var colIdx = table.cell(this).index().column;
-                    jQuery( table.cells().nodes() ).removeClass( 'highlight' );
-                    jQuery( table.column( colIdx ).nodes() ).addClass( 'highlight' );
-                } );
-}
+
