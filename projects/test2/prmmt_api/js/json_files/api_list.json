@@ -1,0 +1,52 @@
+{
+	"apiReferences": [{
+		"links":"getFilterChartData",
+		"methods": "getFilterChartData(String,String)",
+		"descriptions": "This method retrieves table data via GlideAjax, filters the data and populates it in a HighChart visualization tool.",
+		"params": [{
+			"filter": "offName",
+			"gbiCallback": "gbiOffNameSemiDoughnut",
+			"description": "Test description1"
+		}, {
+			"filter": "offName",
+			"gbiCallback": "gbiOffNameHistogram",
+			"description": "Test description2"
+		}, {
+			"filter": "offName",
+			"gbiCallback": "gbiOffNameBarChart",
+			"description": "Test description3"
+		}, {
+			"filter": "offName",
+			"gbiCallback": "gbiOffNameBoxPlot",
+			"description": "Test description4"
+		}, {
+			"filter": "faad",
+			"gbiCallback": "gbiFaadIdPortGauge",
+			"description": "Test description6"
+		}, {
+			"filter": "faad",
+			"gbiCallback": "gbiFaadIdMissAuditBar",
+			"description": "Test description7"
+		}, {
+			"filter": "duns",
+			"gbiCallback": "gbiDunsGranteeSemiDoughnut",
+			"description": "Test description8"
+		}, {
+			"filter": "duns",
+			"gbiCallback": "gbiDunsGranteeGauge",
+			"description": "Test description9"
+		}, {
+			"filter": "duns",
+			"gbiCallback": "gbiDunsGranteePie",
+			"description": "Test description10"
+		}, {
+			"filter": "duns",
+			"gbiCallback": "gbiDunsMiscGranteeInfo",
+			"description": "Test description11"
+		}, {
+			"filter": "duns",
+			"gbiCallback": "gbiDunsMiscGrantInfo",
+			"description": "Test description12"
+		}]
+	}]
+}
