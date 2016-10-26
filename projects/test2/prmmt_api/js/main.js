@@ -26,10 +26,10 @@ function mainMenuScroll(){
 
 //Datatables Functionality
 function highlightTblRows(){
-        $j('#apiTable tbody')
+        jQuery('#apiTable tbody')
                 .on( 'mouseenter', 'td', function () {
                     var colIdx = table.cell(this).index().column;
-                    $j( table.cells().nodes() ).removeClass( 'highlight' );
-                    $j( table.column( colIdx ).nodes() ).addClass( 'highlight' );
+                    jQuery( table.cells().nodes() ).removeClass( 'highlight' );
+                    jQuery( table.column( colIdx ).nodes() ).addClass( 'highlight' );
                 } );
 }
