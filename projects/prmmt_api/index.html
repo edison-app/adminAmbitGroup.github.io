@@ -22,7 +22,8 @@
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.27/angular.min.js" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.27/angular.js"></script>
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>-->
 
 
         <script src="js/vendor/datatables.min.js"></script>
@@ -33,9 +34,8 @@
         <script src="app/app.js"></script>
         <script src="app/app.features.mod.js"></script>
         <script src="app/controllers/apiRefController.js"></script>
-        <script src="app/directives/tblRepeatDirective.js"></script> 
+        <script src="app/directives/apiRefDirectives.js"></script> 
         
-
        <!-- <script src="views/api_view_controller.js"></script> -->
     </head>
     <body>
@@ -155,7 +155,7 @@
           </p>
         </section>
         <section id="prm-api-menu">
-          <h2> PRMMT API</h2>
+         <h2> PRMMT API</h2>
           <p>The PRMMT Servicenow API is a custom API built on top of Servicenow’s platform. It provides developers with the ability to get data in and out of Servicenow for PRMMT custom applications. This is a general overview of the functions we use on our applications. Please note that most of these functions are customized between the developer and analyst.</p>
           <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
           <p class="text-emphasis">Reminder: When necessary, please use the prefixes below for</p>
@@ -182,13 +182,14 @@
                       <th>Description</th>
                     </tr>
                 </tfoot>
-                
-                <tr id="apiReference" ng-repeat="apiReference in apiReferences" on-last-repeat="">   
-                    <td>{{apiReference.methods}}</td>
+                <tbody>
+                <tr id="apiReference" ng-repeat="apiReference in apiReferences" on-last-repeat="" api-href="reference={{apiReference.links}}" >   
+                    <td>{{apiReference.methods}}</a></td>
                     <td>{{apiReference.descriptions}}</td>
                 </tr>
+                </tbody>
               </table>
-          </div>
+          </div>    
           </div>
       </div>
       <hr>
