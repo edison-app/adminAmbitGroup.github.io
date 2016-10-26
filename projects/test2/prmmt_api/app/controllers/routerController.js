@@ -13,7 +13,7 @@ angular.module('app.features.controllers',['ngRoute'])
       $routeProvider.
         when('/{{apiReference.methods}}',{
             templateUrl: '/views/{{apiReference.methods}}.html',
-            controller:'/app/routerController'
+            controller:'RefRouteController'
         })
 
  }])
