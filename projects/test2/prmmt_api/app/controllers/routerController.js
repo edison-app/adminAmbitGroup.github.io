@@ -5,3 +5,15 @@ angular.module('app.features.controllers')
     };
 }]);
 
+angular.module('app.features.controllers',['ngRoute'])
+.config(['$routeProvider',
+  function(
+    $routeProvider
+) {
+      $routeProvider.
+        when('/{{apiReference.methods}}',{
+            templateUrl: '/views/{{apiReference.methods}}.html',
+            controller:'/app/routerController'
+        })
+
+ }])
