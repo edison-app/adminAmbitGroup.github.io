@@ -5,12 +5,16 @@ angular.module('app.features.controllers')
             $scope.apiReferences = response.data.apiReferences;
         });
         }
-    ] )
- .controller("RefRouteController", ['$scope','$location', function($scope,$location) {   
+    ] );
+
+angular.module('app.features.controllers')    
+  .controller("RefRouteController", ['$scope','$location', function($scope,$location) {   
    $scope.showApiDetails = function(apiReference) {
         $location.path('/view/' + apiReference.link);
     };
-}])   
+}]);
+
+angular.module('app.features.controllers')    
 .config(['$routeProvider',
   function(
     $routeProvider
@@ -22,4 +26,3 @@ angular.module('app.features.controllers')
         })
 
  }]);
-    
