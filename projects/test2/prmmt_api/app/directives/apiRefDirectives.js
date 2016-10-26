@@ -9,6 +9,13 @@ angular.module('app.features.controllers')
                 } );   
 
 
+                  jQuery('#apiTable tbody')
+                        .on( 'mouseenter', 'td', function () {
+                            var colIdx = table.cell(this).index().column;
+                            jQuery( table.cells().nodes() ).removeClass( 'highlight' );
+                            jQuery( table.column( colIdx ).nodes() ).addClass( 'highlight' );
+                 } );
+
                  var list = jQuery('#apiTable').DataTable({
                      "processing": true,
                      "responsive": true,
@@ -58,9 +65,10 @@ angular.module('app.features.controllers')
                     var landingUrl = "http://" + host + "/projects/test2/prmmt_api/views/api_references.html?" + attr.apiHref;
                     $window.location.href = landingUrl;
                     // $window.location.search = attr.programHref;
-
-
                 });
                 }
         }
         }]); 
+
+
+        
