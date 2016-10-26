@@ -9,13 +9,6 @@ angular.module('app.features.controllers')
                 } );   
 
 
-                  jQuery('#apiTable tbody')
-                        .on( 'mouseenter', 'td', function () {
-                            var colIdx = table.cell(this).index().column;
-                            jQuery( table.cells().nodes() ).removeClass( 'highlight' );
-                            jQuery( table.column( colIdx ).nodes() ).addClass( 'highlight' );
-                 } );
-
                  var list = jQuery('#apiTable').DataTable({
                      "processing": true,
                      "responsive": true,
@@ -39,6 +32,13 @@ angular.module('app.features.controllers')
                             }
                         } );
                     } );
+
+
+                list.on( 'mouseenter', 'td', function () {
+                            var colIdx = table.cell(this).index().column;
+                            jQuery( table.cells().nodes() ).removeClass( 'highlight' );
+                            jQuery( table.column( colIdx ).nodes() ).addClass( 'highlight' );
+                 } ); 
 
                  list.buttons().container()
                      .appendTo(jQuery('.col-sm-5:eq(0)', list.table().container()));
