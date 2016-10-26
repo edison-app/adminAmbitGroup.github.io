@@ -6,23 +6,3 @@ angular.module('app.features.controllers')
         });
         }
     ] );
-
-angular.module('app.features.controllers')    
-  .controller("RefRouteController", ['$scope','$location', function($scope,$location) {   
-   $scope.showApiDetails = function(apiReference) {
-        $location.path('/view/' + apiReference.link);
-    };
-}]);
-
-angular.module('app.features.controllers')    
-.config(['$routeProvider',
-  function(
-    $routeProvider
-) {
-      $routeProvider.
-        when('/{{apiReference.methods}}',{
-            templateUrl: '/views/{{apiReference.links}}.html',
-            controller:'RefRouteController'
-        })
-
- }]);
