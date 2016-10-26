@@ -5,7 +5,6 @@ jQuery(document).ready(function (){
     //Menu Scroll
     mainMenuScroll();
     //Table highlight
-    highlightTblRows();
 });
     
 //Menu Scroller    
