@@ -55,7 +55,7 @@ angular.module('app.features.controllers')
                     //var appendURIvars = $location.search({duns : '{{program.duns}}' });
 
                     var host = $location.host();
-                    var landingUrl = "http://" + host + "/projects/test2/prmmt_api/api_references.html?" + attr.apiHref;
+                    var landingUrl = "http://" + host + "/projects/prmmt_api/api_references.html?" + attr.apiHref;
                     $window.location.href = landingUrl;
                     // $window.location.search = attr.programHref;
                 });
