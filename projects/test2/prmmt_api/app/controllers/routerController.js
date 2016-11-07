@@ -20,7 +20,7 @@ angular.module('app.features.controllers')
         .then(function(response){
             $scope.apiReferences = response.data.apiReferences;
         })
-        .then(function(response){
+     /*   .then(function(response){
          $locationProvider.html5Mode(true);
              //call the parameter json - reference:""''
             var getRefParam = $location.search().reference;
@@ -28,5 +28,5 @@ angular.module('app.features.controllers')
              //do your logic
              $location.path('#views/' + {{apiReferences.links}});
             };
-        });
+        }); */
 }]);
