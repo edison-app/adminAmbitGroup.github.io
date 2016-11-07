@@ -2,12 +2,9 @@
  //DOC Ready Function
 jQuery.noConflict();
 jQuery(document).ready(function (){
-    //Menu Scroll
     mainMenuScroll();
-    //Table highlight
 });
     
-//Menu Scroller    
 function mainMenuScroll(){
          jQuery(".menu-scroll").click(function(event){
          event.preventDefault();

@@ -34,7 +34,7 @@
         <script src="app/app.js"></script>
         <script src="app/app.features.mod.js"></script>
         <script src="app/controllers/apiRefController.js"></script>
-        <script src="app/directives/tblRepeatDirective.js"></script> 
+        <script src="app/directives/apiRefDirectives.js"></script> 
         
        <!-- <script src="views/api_view_controller.js"></script> -->
     </head>
@@ -82,6 +82,7 @@
               <a href="#overview-menu" class="list-group-item menu-scroll">Overview</a>
               <a href="#struc-des-menu" class="list-group-item menu-scroll">Structural Design</a>
               <a href="#cod-prac-menu" class="list-group-item menu-scroll">Coding practices</a>
+              <a href="#cod-sn-admin-menu" class="list-group-item menu-scroll">Servicenow Administration</a>
               <a href="#prm-api-menu" class="list-group-item menu-scroll">PRMMT API</a>
           </div>  
         </div>
@@ -153,6 +154,19 @@
                 </li>
           <p>Although this is not necessary in every use case, it is appropriate when distinguishing between applications that may use similar functions such as “gbiCreateBarChart()” and “qaspCreateBarChart()”.  If an application requires the use of scopes from two or more applications then a custom prefix should be created. For instance, when referencing a table from the Qasp app as well as a Grants Bi app. 
           </p>
+        </section>  
+        <section id="cod-sn-admin-menu">  
+        <h3>ServiceNow Administration</h3>
+        <p class="text-emphasis">SETS</p>
+        <p>For every application, each developer needs their own update set. It is critical every change you make for an application is done in the update set created for that purpose. <b>If not, the application will not push to production correctly and it will require a rebuild or major fix.</b></p>  
+
+        <p>For example: We are creating a new TAGR application and Navy and I are working it. There will be 3 update sets for TAGR.</p>
+            <ol>
+                <li>TAGR Default</li>
+                <li>TAGR Winston</li>
+                <li>TAGR Navy</li>
+            </ol>
+        <p>Every change I make working on TAGR needs to be done while I am in the “TAGR Winston” update set. This requires constant vigilance and is made easier by adding the update set picker to the top navigation bar (settings >developer>show update set picker). Only my TAGR works goes in that update set. If I need to work on GBI, I have to switch update sets before I do any work.</p>
         </section>
         <section id="prm-api-menu">
          <h2> PRMMT API</h2>
@@ -182,16 +196,14 @@
                       <th>Description</th>
                     </tr>
                 </tfoot>
-                
-                <tr id="apiReference" ng-repeat="apiReference in apiReferences" on-last-repeat="">   
-                    <td><a href="#{{apiReference.links}}">{{apiReference.methods}}</a></td>
+                <tbody>
+                <tr id="apiReference" ng-repeat="apiReference in apiReferences" on-last-repeat="" api-href="reference={{apiReference.links}}" >   
+                    <td>{{apiReference.methods}}</a></td>
                     <td>{{apiReference.descriptions}}</td>
                 </tr>
+                </tbody>
               </table>
-          </div>
-          
-          <div ng-view></div>
-          
+          </div>    
           </div>
       </div>
       <hr>

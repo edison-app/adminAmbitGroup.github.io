@@ -21,9 +21,10 @@ The "filter" parameter returns the column name in which the data will be filtere
             </tr>
          </tfoot>
          
-         <tr id="apiReference" ng-repeat="param in apiReferences.params" on-last-repeat="">   
+         <tr id="apiReference" ng-repeat="param in apiReferences.params" on-last-repeat="" ng-controller="RefRouteController">   
             <td>{{param.filter}}</td>
             <td>{{param.gbiCallback}}</td>
             <td>{{param.description}}</td>
          </tr>
  </table>
+

@@ -34,6 +34,7 @@
         <script src="app/app.js"></script>
         <script src="app/app.features.mod.js"></script>
         <script src="app/controllers/apiRefController.js"></script>
+        <script src="app/controllers/routerController.js"></script>
         <script src="app/directives/apiRefDirectives.js"></script> 
         
        <!-- <script src="views/api_view_controller.js"></script> -->
@@ -73,26 +74,25 @@
       </div>
     </div>
 
-    <div class="container" ng-app="app" ng-controller="ApiController">
+    <div class="container" ng-app="app" ng-controller="RefRouteController">
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-md-3">
           <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
           <div class="list-group">
-              <a href="#overview-menu" class="list-group-item menu-scroll">Overview</a>
-              <a href="#struc-des-menu" class="list-group-item menu-scroll">Structural Design</a>
-              <a href="#cod-prac-menu" class="list-group-item menu-scroll">Coding practices</a>
-              <a href="#prm-api-menu" class="list-group-item menu-scroll">PRMMT API</a>
+              <a href="#overview-menu" class="list-group-item">Overview</a>
+              <a href="#struc-des-menu" class="list-group-item">Structural Design</a>
+              <a href="#cod-prac-menu" class="list-group-item">Coding practices</a>
+              <a href="#prm-api-menu" class="list-group-item">PRMMT API</a>
           </div>  
         </div>
         <div class="col-md-9" id="main-section" >
-     
+<!--     
              <h3>{{apiReferences[0].methods}}</h3>
 
 <p>This method retrieves table data via GlideAjax, filters the data and populates it in a HighCharts visualization tool such as a bar or pie chart. 
 The "filter" parameter returns the column name in which the data will be filtered by and the "callback" parameter returns the HighCHarts visualization tool.  
  </p>
-
 
  <table class="table display compact" id="apiTable" cellspacing="5" width="100%">
          <thead>
@@ -110,13 +110,15 @@ The "filter" parameter returns the column name in which the data will be filtere
             </tr>
          </tfoot>
          <tbody>
-              <tr id="apiReference" ng-repeat="param in apiReferences.params" on-last-repeat="">   
+              <tr id="apiReference" ng-repeat="param in apiReferences.params" on-last-repeat="" ng-controller="RefRouteController">   
                   <td>{{param.filter}}</td>
                   <td>{{param.gbiCallback}}</td>
                   <td>{{param.description}}</td>
               </tr>
          </tbody>
- </table>
+ </table>        
+-->
+  <div ng-view></div>
           
           </div>
       </div>
