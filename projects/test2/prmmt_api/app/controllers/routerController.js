@@ -8,8 +8,8 @@
 angular.module('app.features.controllers', ["ngRoute"])
 .config(function($routeProvider){
   $routeProvider
-    .when("/views' + {{apiReferences.links}}", {
-        templateUrl : "/views/{{apiReferences.links}}.html",
+    .when("#views/getGbiOffNameFilterChartData", {
+        templateUrl : "/views/getGbiOffNameFilterChartData.html",
         controller : "RefRouteController"
     });
 });
@@ -24,9 +24,10 @@ angular.module('app.features.controllers')
          $locationProvider.html5Mode(true);
              //call the parameter json - reference:""''
             var getRefParam = $location.search().reference;
-            if(getRefParam === {{apiReferences[0].links}}){
+            //if(getRefParam === {{apiReferences[0].links}}){
+            if(getRefParam === "getGbiOffNameFilterChartData"){    
              //do your logic
-             $location.path('#views/' + {{apiReferences[0].links}});
+             $location.path("#views/getGbiOffNameFilterChartData");
             };
         }); 
 }]);
