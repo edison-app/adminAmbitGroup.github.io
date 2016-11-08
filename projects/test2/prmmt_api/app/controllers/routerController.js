@@ -8,7 +8,7 @@
 angular.module('app.features.controllers', ["ngRoute"])
 .config(function($routeProvider){
   $routeProvider
-    .when("#views/getGbiOffNameFilterChartData", {
+    .when("/views/getGbiOffNameFilterChartData", {
         templateUrl : "/views/getGbiOffNameFilterChartData.html",
         controller : "RefRouteController"
     });
