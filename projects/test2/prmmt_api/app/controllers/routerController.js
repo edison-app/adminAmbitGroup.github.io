@@ -24,9 +24,9 @@ angular.module('app.features.controllers')
          $locationProvider.html5Mode(true);
              //call the parameter json - reference:""''
             var getRefParam = $location.search().reference;
-            if(getRefParam === {{apiReferences.links}}){
+            if(getRefParam === {{apiReferences[0].links}}){
              //do your logic
-             $location.path('#views/' + {{apiReferences.links}});
+             $location.path('#views/' + {{apiReferences[0].links}});
             };
         }); 
 }]);
