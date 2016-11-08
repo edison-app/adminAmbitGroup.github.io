@@ -5,7 +5,7 @@
     };
 }]);*/
 
-angular.module('app.features.controllers')
+angular.module('app.features.controllers', ["ngRoute"])
 .config(function($routeProvider){
   $routeProvider
     .when("/views' + {{apiReferences.links}}", {
