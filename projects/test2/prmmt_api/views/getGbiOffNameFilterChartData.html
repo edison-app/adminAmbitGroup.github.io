@@ -1,4 +1,4 @@
- <h3>getChartFilterData(filter,callback)</h3>
+       <h3>{{apiReferences[0].methods}}</h3>
 
 <p>This method retrieves table data via GlideAjax, filters the data and populates it in a HighCharts visualization tool such as a bar or pie chart. 
 The "filter" parameter returns the column name in which the data will be filtered by and the "callback" parameter returns the HighCHarts visualization tool.  
@@ -20,11 +20,11 @@ The "filter" parameter returns the column name in which the data will be filtere
                <th>Description</th>
             </tr>
          </tfoot>
-         
-         <tr id="apiReference" ng-repeat="param in apiReferences.params" on-last-repeat="" ng-controller="RefRouteController">   
-            <td>{{param.filter}}</td>
-            <td>{{param.gbiCallback}}</td>
-            <td>{{param.description}}</td>
-         </tr>
+         <tbody>
+              <tr id="apiReference" ng-repeat="param in apiReferences.params" on-last-repeat="">   
+                  <td>{{param.filter}}</td>
+                  <td>{{param.gbiCallback}}</td>
+                  <td>{{param.description}}</td>
+              </tr>
+         </tbody>
  </table>
-
