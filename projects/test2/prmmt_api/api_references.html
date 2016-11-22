@@ -35,6 +35,7 @@
         <script src="app/app.features.mod.js"></script>
         <script src="app/controllers/apiRefController.js"></script>
         <script src="app/directives/apiRefDirectives.js"></script>
+        <script src="app/directives/apiRefDirectives.js"></script>
 
        <!-- <script src="views/api_view_controller.js"></script> -->
     </head>
@@ -88,39 +89,9 @@
         </div>  
         
         <div class="col-md-9" id="main-section" >
+          <ng-view></ng-view>
+        </div>
 
-             <h3>{{apiReferences[0].methods}}</h3>
-
-<p>This method retrieves table data via GlideAjax, filters the data and populates it in a HighCharts visualization tool such as a bar or pie chart.
-The "filter" parameter returns the column name in which the data will be filtered by and the "callback" parameter returns the HighCHarts visualization tool.
- </p>
-
-
- <table class="table display compact" id="apiTable" cellspacing="5" width="100%">
-         <thead>
-            <tr>
-               <th>Filter</th>
-               <th>Callback Function</th>
-               <th>Description</th>
-            </tr>
-         </thead>
-        <tfoot>
-            <tr>
-               <th>Filter</th>
-               <th>Callback Function</th>
-               <th>Description</th>
-            </tr>
-         </tfoot>
-         <tbody>
-              <tr id="apiReference" ng-repeat="param in apiReferences.params" on-last-repeat="">
-                  <td>{{param.filter}}</td>
-                  <td>{{param.gbiCallback}}</td>
-                  <td>{{param.description}}</td>
-              </tr>
-         </tbody>
- </table>
-
-          </div>
       </div>
       <hr>
 
