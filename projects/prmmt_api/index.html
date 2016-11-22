@@ -16,11 +16,11 @@
         </style>
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/r/bs/pdfmake-0.1.18,dt-1.10.9,b-1.0.3,b-html5-1.0.3,b-print-1.0.3,r-1.0.7,sc-1.3.0/datatables.min.css" />      
-    
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/r/bs/pdfmake-0.1.18,dt-1.10.9,b-1.0.3,b-html5-1.0.3,b-print-1.0.3,r-1.0.7,sc-1.3.0/datatables.min.css" />
+
        <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        
+
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.27/angular.js"></script>
         <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>-->
@@ -34,8 +34,8 @@
         <script src="app/app.js"></script>
         <script src="app/app.features.mod.js"></script>
         <script src="app/controllers/apiRefController.js"></script>
-        <script src="app/directives/apiRefDirectives.js"></script> 
-        
+        <script src="app/directives/apiRefDirectives.js"></script>
+
        <!-- <script src="views/api_view_controller.js"></script> -->
     </head>
     <body>
@@ -82,17 +82,18 @@
               <a href="#overview-menu" class="list-group-item menu-scroll">Overview</a>
               <a href="#struc-des-menu" class="list-group-item menu-scroll">Structural Design</a>
               <a href="#cod-prac-menu" class="list-group-item menu-scroll">Coding practices</a>
+              <a href="#cod-sn-admin-menu" class="list-group-item menu-scroll">Servicenow Administration</a>
               <a href="#prm-api-menu" class="list-group-item menu-scroll">PRMMT API</a>
-          </div>  
+          </div>
         </div>
         <div class="col-md-9" id="main-section" >
-     
-        <section>  
+
+        <section>
           <h2 id="overview-menu">Overview</h2>
           <p>This documentation specifies the  organizational structure, naming conventions and API for best coding practices within the Prmmt department when working in ServiceNow. This ensures consistent and accurate references to any apps that are developed.  As a general rule please try to follow the conventions below. </p>
         </section>
-   
-        <section id="struc-des-menu">  
+
+        <section id="struc-des-menu">
           <h2>Structural Design</h2>
           <p>Servicenow provides tools to create a modular pattern with apps. Therefore, we have incorporated modularity in our architecture to keep the units of code both cleanly seperated and organized. However, since some files can be accessed globally, you may need to adhere to the naming conventions in the “Coding Practices” below to ensure the pattern is uniform.</p>
         </section>
@@ -100,7 +101,7 @@
         <section id="cod-prac-menu">
           <h2 id="cod-prac-menu">Coding practices</h2>
           <p>Servicenow uses both global as well as local application scopes to share and separate concerns from one app to the other. Because of this, you should use the naming conventions described below. </p>
-          
+
           <h3>File Naming</h3>
           <p>When adding files(including <a href="http://wiki.servicenow.com/index.php?title=Using_Content_Blocks#gsc.tab=0" target="_blank">content blocks</a>) to apps, you are expected to follow these guidelines</p>
            <ul>
@@ -115,7 +116,7 @@
                 <li>Used for all global blocks, script names,  macro,etc.</li>
                 <li>Examples:Prmmt_Tbl_Script_Inc, Prmmt_Static_Block, Prmmt_Dyn_Block </li>
                 </ul>
-               </li> 
+               </li>
               <li><span style="font-weight: bold;">Local</span>
                 <ul>
                 <li>Keyword Prefix:
@@ -133,7 +134,7 @@
                 <li>Examples:Gbi_Tbl_Script_Inc, Qasp_Static_Block, Ccms_Dyn_Block </li>
                 </ul>
                </li>
-           </ul>  
+           </ul>
 
           <h3>API Script Syntax and Semantics:</h3>
           <p> When working within scripts in Servicenow, please use common and <a href="http://wiki.servicenow.com/index.php?title=Coding_Best_Practices#gsc.tab=0" target="_blank">recommended</a> programming syntax.  Be mindful when using spaces, hyphens and underscores. Please remember to…</p>
@@ -151,8 +152,21 @@
                       <li class="text-emphasis">***Please note prefix begins with lowercase instead of uppercase like the filenames.***</li>
                     </ul>
                 </li>
-          <p>Although this is not necessary in every use case, it is appropriate when distinguishing between applications that may use similar functions such as “gbiCreateBarChart()” and “qaspCreateBarChart()”.  If an application requires the use of scopes from two or more applications then a custom prefix should be created. For instance, when referencing a table from the Qasp app as well as a Grants Bi app. 
+          <p>Although this is not necessary in every use case, it is appropriate when distinguishing between applications that may use similar functions such as “gbiCreateBarChart()” and “qaspCreateBarChart()”.  If an application requires the use of scopes from two or more applications then a custom prefix should be created. For instance, when referencing a table from the Qasp app as well as a Grants Bi app.
           </p>
+        </section>
+        <section id="cod-sn-admin-menu">
+        <h2>ServiceNow Administration</h2>
+        <h3>SETS</h3>
+        <p>For every application, each developer needs their own update set. It is critical every change you make for an application is done in the update set created for that purpose. <b>If not, the application will not push to production correctly and it will require a rebuild or major fix.</b></p>
+
+        <p>For example: We are creating a new TAGR application and Navy and I are working it. There will be 3 update sets for TAGR.</p>
+            <ol>
+                <li>TAGR Default</li>
+                <li>TAGR Winston</li>
+                <li>TAGR Navy</li>
+            </ol>
+        <p>Every change I make working on TAGR needs to be done while I am in the “TAGR Winston” update set. This requires constant vigilance and is made easier by adding the update set picker to the top navigation bar (settings >developer>show update set picker). Only my TAGR works goes in that update set. If I need to work on GBI, I have to switch update sets before I do any work.</p>
         </section>
         <section id="prm-api-menu">
          <h2> PRMMT API</h2>
@@ -166,9 +180,9 @@
             <li>Tagr: tagr</li>
           </ul>
 
-        </section>  
-       <div id="api-container" ng-app="app" ng-controller="ApiController"> 
-            <h2>API Reference</h2>  
+        </section>
+       <div id="api-container" ng-app="app" ng-controller="ApiController">
+            <h2>API Reference</h2>
               <table class="table display compact" id="apiTable" cellspacing="5" width="100%">
                 <thead>
                     <tr>
@@ -183,13 +197,13 @@
                     </tr>
                 </tfoot>
                 <tbody>
-                <tr id="apiReference" ng-repeat="apiReference in apiReferences" on-last-repeat="" api-href="reference={{apiReference.links}}" >   
+                <tr id="apiReference" ng-repeat="apiReference in apiReferences" on-last-repeat="" api-href="reference={{apiReference.links}}" >
                     <td>{{apiReference.methods}}</a></td>
                     <td>{{apiReference.descriptions}}</td>
                 </tr>
                 </tbody>
               </table>
-          </div>    
+          </div>
           </div>
       </div>
       <hr>
@@ -197,6 +211,6 @@
       <footer>
         <p>&copy; Ambit 2016</p>
       </footer>
-    </div> <!-- /container -->  
+    </div> <!-- /container -->
     </body>
 </html>
