@@ -1,67 +1,131 @@
-angular.module('app.features.controllers')
-.directive('onLastRepeat', function() {
-         return function(scope, element, attrs) {
-             if (scope.$last) setTimeout(function() {
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-                  jQuery('#apiTable tfoot th').each( function () {
-                    var title = jQuery(this).text();
-                    jQuery(this).html( '<input type="text" placeholder="Search '+title+'" />' );
-                } );   
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <style>
+            body {
+                padding-top: 50px;
+                padding-bottom: 20px;
+            }
+        </style>
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/r/bs/pdfmake-0.1.18,dt-1.10.9,b-1.0.3,b-html5-1.0.3,b-print-1.0.3,r-1.0.7,sc-1.3.0/datatables.min.css" />
 
+       <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
-                 var list = jQuery('#apiTable').DataTable({
-                     "processing": true,
-                     "responsive": true,
-                
-                     buttons: [
-                         'pdf'
-                     ],
-                     "order": [
-                         [0, "asc"]
-                     ]
-                 });
-
-                  list.columns().every( function () {
-                  var that = this;
-                
-                        jQuery( 'input', this.footer() ).on( 'keyup change', function () {
-                            if ( that.search() !== this.value ) {
-                                that
-                                    .search( this.value )
-                                    .draw();
-                            }
-                        } );
-                    } );
-
-                 list.buttons().container()
-                     .appendTo(jQuery('.col-sm-5:eq(0)', list.table().container()));
-             }, 1);       
-                 
-         };
-     });
-
-angular.module('app.features.controllers')
-.directive('apiHref', ['$location', '$window', function ($location, $window) {
-        return{
-            restrict: 'A',
-            link: function (scope, element, attr) {
-                element.attr('style', 'cursor:pointer');
-                element.on('click', function(){
-                    // $location.search(attr.programHref);
-                    // $location.path('Final-Bi-Grantee-Details.do');
-                    // $location.replace();
-                    // scope.$apply();
-
-                    //var appendURIvars = $location.search({duns : '{{program.duns}}' });
-
-                    var host = $location.host();
-                    var landingUrl = "http://" + host + "/projects/test2/prmmt_api/api_references.html?" + attr.apiHref;
-                    $window.location.href = landingUrl;
-                    // $window.location.search = attr.programHref;
-                });
-                }
-        }
-        }]); 
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.27/angular.js"></script>
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>-->
 
 
+        <script src="js/vendor/datatables.min.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/r/bs/pdfmake-0.1.18,dt-1.10.9,b-1.0.3,b-html5-1.0.3,b-print-1.0.3,r-1.0.7,sc-1.3.0/datatables.min.js" />
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/main.js"></script>
+        <script src="app/app.js"></script>
+        <script src="app/app.features.mod.js"></script>
+        <script src="app/controllers/apiRefController.js"></script>
+        <script src="app/directives/apiRefDirectives.js"></script>
+
+       <!-- <script src="views/api_view_controller.js"></script> -->
+    </head>
+    <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">PRMMT Developers</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+         <!-- <form class="navbar-form navbar-right" role="form">
+            <div class="form-group">
+              <input type="text" placeholder="Email" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-success">Sign in</button>
+          </form> -->
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container" id="top-section">
+        <h1 class="center-header">PRMMT Servicenow API</h1>
+        <h3>Welcome to the PRMMT Servicenow API!</h3>
+       <!-- <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p> -->
+      </div>
+    </div>
+
+    <div class="container" ng-app="app" ng-controller="ApiController">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-3">
+          <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
+          <div class="list-group">
+              <a href="#{{apiReference.links}}" class="list-group-item menu-scroll" ng-repeat="param in apiReferences.params">{{apiReference.methods}}</a>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <p>This is a full list of the PRMMT Servicenow API. Please click on function name for more details.</p>
+        </div>  
         
+        <div class="col-md-9" id="main-section" >
+
+             <h3>{{apiReferences[0].methods}}</h3>
+
+<p>This method retrieves table data via GlideAjax, filters the data and populates it in a HighCharts visualization tool such as a bar or pie chart.
+The "filter" parameter returns the column name in which the data will be filtered by and the "callback" parameter returns the HighCHarts visualization tool.
+ </p>
+
+
+ <table class="table display compact" id="apiTable" cellspacing="5" width="100%">
+         <thead>
+            <tr>
+               <th>Filter</th>
+               <th>Callback Function</th>
+               <th>Description</th>
+            </tr>
+         </thead>
+        <tfoot>
+            <tr>
+               <th>Filter</th>
+               <th>Callback Function</th>
+               <th>Description</th>
+            </tr>
+         </tfoot>
+         <tbody>
+              <tr id="apiReference" ng-repeat="param in apiReferences.params" on-last-repeat="">
+                  <td>{{param.filter}}</td>
+                  <td>{{param.gbiCallback}}</td>
+                  <td>{{param.description}}</td>
+              </tr>
+         </tbody>
+ </table>
+
+          </div>
+      </div>
+      <hr>
+
+      <footer>
+        <p>&copy; Ambit 2016</p>
+      </footer>
+    </div> <!-- /container -->
+    </body>
+</html>
