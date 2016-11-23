@@ -21,7 +21,7 @@ The "filter" parameter returns the column name in which the data will be filtere
             </tr>
          </tfoot>
          <tbody>
-              <tr id="apiReference" ng-repeat="param in apiReferences.params" on-last-repeat="">   
+              <tr id="apiReference" ng-repeat="param in apiReferences[0].params" on-last-repeat="">   
                   <td>{{param.filter}}</td>
                   <td>{{param.gbiCallback}}</td>
                   <td>{{param.description}}</td>
