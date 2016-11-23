@@ -197,8 +197,8 @@
                     </tr>
                 </tfoot>
                 <tbody>
-                <tr id="apiReference" ng-repeat="apiReference in apiReferences" on-last-repeat="" api-href="reference={{apiReference.links}}" >
-                    <td>{{apiReference.methods}}</a></td>
+                <tr id="apiReference" ng-repeat="apiReference in apiReferences" on-last-repeat="" api-href="reference={{}}" ><!--api-href="reference={{apiReference.links}}"-->
+                    <td>{{apiReference.methods}}</td>
                     <td>{{apiReference.descriptions}}</td>
                 </tr>
                 </tbody>
