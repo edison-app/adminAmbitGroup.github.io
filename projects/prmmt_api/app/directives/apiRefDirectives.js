@@ -6,13 +6,13 @@ angular.module('app.features.controllers')
                   jQuery('#apiTable tfoot th').each( function () {
                     var title = jQuery(this).text();
                     jQuery(this).html( '<input type="text" placeholder="Search '+title+'" />' );
-                } );   
+                } );
 
 
                  var list = jQuery('#apiTable').DataTable({
                      "processing": true,
                      "responsive": true,
-                
+
                      buttons: [
                          'pdf'
                      ],
@@ -23,7 +23,7 @@ angular.module('app.features.controllers')
 
                   list.columns().every( function () {
                   var that = this;
-                
+
                         jQuery( 'input', this.footer() ).on( 'keyup change', function () {
                             if ( that.search() !== this.value ) {
                                 that
@@ -35,8 +35,8 @@ angular.module('app.features.controllers')
 
                  list.buttons().container()
                      .appendTo(jQuery('.col-sm-5:eq(0)', list.table().container()));
-             }, 1);       
-                 
+             }, 1);
+
          };
      });
 
@@ -55,13 +55,11 @@ angular.module('app.features.controllers')
                     //var appendURIvars = $location.search({duns : '{{program.duns}}' });
 
                     var host = $location.host();
-                    var landingUrl = "http://" + host + "/projects/prmmt_api/api_references.html?" + attr.apiHref;
+                    /*var landingUrl = "http://" + host + "/projects/prmmt_api/api_references.html?" + attr.apiHref;*/
+                    var landingUrl = "http://" + host + "/projects/prmmt_api/api_references.html";
                     $window.location.href = landingUrl;
                     // $window.location.search = attr.programHref;
                 });
                 }
         }
-        }]); 
-
-
-        
+        }]);
