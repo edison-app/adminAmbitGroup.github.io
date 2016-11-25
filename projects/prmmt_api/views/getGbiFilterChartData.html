@@ -1,9 +1,22 @@
        <h3>{{apiReferences[0].methods}}</h3>
 
-<p>This method retrieves table data via GlideAjax, filters the data and populates it in a HighCharts visualization tool such as a bar or pie chart. 
-The "filter" parameter returns the column name in which the data will be filtered by and the "callback" parameter returns the HighCHarts visualization tool.  
+<p>This method retrieves table data via GlideAjax, filters the data via query parameters and populates it in a HighCharts visualization tool such as a bar or pie chart. This function come with two parameters. The "filter" parameter returns the column name in which the data will be filtered and the "callback" parameter returns the HighCharts visualization tool.  
  </p>
 
+<p>There are two components you must have to ensure the tool will render on your page. A third is optional depending on the filter type.</p>
+
+<ol>
+	<li>Visualization Component - html container where the tool displays</li>	
+    <li>Script Component- ensures the rendering of the tool</li>
+    <li>Filter Component(Optional) - html filter container with query param update function
+    	<ul>
+        	<li>OffName</li>
+        </ul>
+    </li>
+</ol>
+
+<h4>Example</h4>
+<img src="img/filter_func.gif" alt="code_example">
 
  <table class="table display compact" id="apiTable" cellspacing="5" width="100%">
          <thead>
@@ -11,6 +24,7 @@ The "filter" parameter returns the column name in which the data will be filtere
                <th>Filter</th>
                <th>Callback Function</th>
                <th>Description</th>
+               <th>Notes:</th>
             </tr>
          </thead>
         <tfoot>
@@ -18,6 +32,7 @@ The "filter" parameter returns the column name in which the data will be filtere
                <th>Filter</th>
                <th>Callback Function</th>
                <th>Description</th>
+               <th>Notes:</th>
             </tr>
          </tfoot>
          <tbody>
@@ -25,6 +40,7 @@ The "filter" parameter returns the column name in which the data will be filtere
                   <td>{{param.filter}}</td>
                   <td>{{param.gbiCallback}}</td>
                   <td>{{param.description}}</td>
+                  <td>{{param.notes}}</td>
               </tr>
          </tbody>
  </table>
