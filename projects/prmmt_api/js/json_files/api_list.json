@@ -1,23 +1,23 @@
 {
 	"apiReferences": [{
-		"links":"getGbiOffNameFilterChartData",
-		"methods": "getGbiOffNameFilterChartData(filter,callback function)",
+		"links":"getGbiFilterChartData",
+		"methods": "getgbiFilterChartData(filter,callback function)",
 		"descriptions": "This method retrieves Grants BI table data via GlideAjax, filters the data and populates it in a HighChart visualization tool.",
 		"params": [{
 			"filter": "offName",
-			"gbiCallback": "gbiOffNameSemiDoughnut",
+			"gbiCallback": "gbiSemiDoughnut",
 			"description": "Test description1"
 		}, {
 			"filter": "offName",
-			"gbiCallback": "gbiOffNameHistogram",
+			"gbiCallback": "gbiHistogram",
 			"description": "Test description2"
 		}, {
 			"filter": "offName",
-			"gbiCallback": "gbiOffNameBarChart",
+			"gbiCallback": "gbiBarChart",
 			"description": "Test description3"
 		}, {
 			"filter": "offName",
-			"gbiCallback": "gbiOffNameBoxPlot",
+			"gbiCallback": "gbiBoxPlot",
 			"description": "Test description4"
 		}, {
 			"filter": "faad",
