@@ -8,8 +8,8 @@
     "Grant start date": "2/4/2010",
     "start_month": 2,
     "start_day": 4,
-    "start_year": 2010
-  },
+    "start_year": 2010,
+  "grant_type": "Formulary" },
   {
     "grant_title": "LA NSC Match",
     "id": 2,
@@ -19,8 +19,8 @@
     "Grant start date": "8/3/2009",
     "start_month": 8,
     "start_day": 3,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Formulary" },
   {
     "grant_title": "Mathematics Assessment for Learning Phase One RFP",
     "id": 3,
@@ -30,8 +30,8 @@
     "Grant start date": "11/12/2009",
     "start_month": 11,
     "start_day": 12,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Formulary" },
   {
     "grant_title": "Convening of Stakeholder Planning Committee for the Institute for Local Innovation in Teaching and Learning",
     "id": 4,
@@ -41,8 +41,8 @@
     "Grant start date": "3/11/2010",
     "start_month": 3,
     "start_day": 11,
-    "start_year": 2010
-  },
+    "start_year": 2010,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Conference Support",
     "id": 5,
@@ -52,8 +52,8 @@
     "Grant start date": "10/12/2009",
     "start_month": 10,
     "start_day": 12,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Conference Support Grant on differentiated compensation symposium",
     "id": 6,
@@ -63,8 +63,8 @@
     "Grant start date": "6/30/2009",
     "start_month": 6,
     "start_day": 30,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Conference Support On School Turnaround Issues",
     "id": 7,
@@ -74,8 +74,8 @@
     "Grant start date": "9/24/2009",
     "start_month": 9,
     "start_day": 24,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "City Based Proposal for What Works Fund - Aspire Public Schools",
     "id": 8,
@@ -85,8 +85,8 @@
     "Grant start date": "10/29/2009",
     "start_month": 10,
     "start_day": 29,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Formative Assessment Task Development and Validation (Supplemental to OPP53449)",
     "id": 9,
@@ -96,8 +96,8 @@
     "Grant start date": "11/16/2009",
     "start_month": 11,
     "start_day": 16,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Formulary" },
   {
     "grant_title": "City Based Proposal for What Works Fund - E3 Alliance",
     "id": 10,
@@ -107,8 +107,8 @@
     "Grant start date": "10/28/2009",
     "start_month": 10,
     "start_day": 28,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Light touch communications grant for EET district partner (Hillsborough)",
     "id": 11,
@@ -118,8 +118,8 @@
     "Grant start date": "11/2/2009",
     "start_month": 11,
     "start_day": 2,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Light touch communications grant for EET district partner (LA CMOs)",
     "id": 12,
@@ -129,8 +129,8 @@
     "Grant start date": "11/2/2009",
     "start_month": 11,
     "start_day": 2,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Formulary" },
   {
     "grant_title": "Light touch communications grant for EET district partner (Memphis)",
     "id": 13,
@@ -140,8 +140,8 @@
     "Grant start date": "11/2/2009",
     "start_month": 11,
     "start_day": 2,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Light touch communications grant for EET district partners (Pittsburgh)",
     "id": 14,
@@ -151,8 +151,8 @@
     "Grant start date": "11/2/2009",
     "start_month": 11,
     "start_day": 2,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "City Based Proposal for What Works Fund - GHCF",
     "id": 15,
@@ -162,8 +162,8 @@
     "Grant start date": "10/28/2009",
     "start_month": 10,
     "start_day": 28,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "City Based Proposal for What Works Fund - New Visions for Public Schools",
     "id": 16,
@@ -173,8 +173,8 @@
     "Grant start date": "11/10/2009",
     "start_month": 11,
     "start_day": 10,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Formulary" },
   {
     "grant_title": "City Based Proposal for What Works Fund - Philadelphia Public Schools",
     "id": 17,
@@ -184,8 +184,8 @@
     "Grant start date": "11/13/2009",
     "start_month": 11,
     "start_day": 13,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Mathematics Assessment for Learning Phase One RFP",
     "id": 18,
@@ -195,8 +195,8 @@
     "Grant start date": "11/1/2009",
     "start_month": 11,
     "start_day": 1,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Formulary" },
   {
     "grant_title": "City Based Proposal for What Works Fund ‚Äì Internationals Network (with NCLR)",
     "id": 19,
@@ -206,8 +206,8 @@
     "Grant start date": "3/24/2010",
     "start_month": 3,
     "start_day": 24,
-    "start_year": 2010
-  },
+    "start_year": 2010,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "City Based Proposal for What Works Fund - Minneapolis Public Schools",
     "id": 20,
@@ -217,8 +217,8 @@
     "Grant start date": "10/29/2009",
     "start_month": 10,
     "start_day": 29,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "City Based Proposal for What Works Fund - PTE",
     "id": 21,
@@ -228,8 +228,8 @@
     "Grant start date": "11/4/2009",
     "start_month": 11,
     "start_day": 4,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Formulary" },
   {
     "grant_title": "TPERF Statewide Education Summit and Legislative Briefing",
     "id": 22,
@@ -239,8 +239,8 @@
     "Grant start date": "10/1/2008",
     "start_month": 10,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "City Based Proposal for What Works Fund - NYC Charter Center",
     "id": 23,
@@ -250,8 +250,8 @@
     "Grant start date": "10/30/2009",
     "start_month": 10,
     "start_day": 30,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Supporting the development of a cross-sector plan that represent new levels of collaboration between one or more districts and the SEED School, a leading CMO in Washington, DC and Baltimore",
     "id": 24,
@@ -261,8 +261,8 @@
     "Grant start date": "1/28/2010",
     "start_month": 1,
     "start_day": 28,
-    "start_year": 2010
-  },
+    "start_year": 2010,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "City based proposal for What Works Fund - City of New Haven",
     "id": 25,
@@ -272,8 +272,8 @@
     "Grant start date": "11/17/2009",
     "start_month": 11,
     "start_day": 17,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Formulary" },
   {
     "grant_title": "Achievement Gap Institute: Annual Research-to-Practice Conference, How Teachers Improve",
     "id": 26,
@@ -283,8 +283,8 @@
     "Grant start date": "5/13/2009",
     "start_month": 5,
     "start_day": 13,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "National Education Forum",
     "id": 27,
@@ -294,8 +294,8 @@
     "Grant start date": "3/1/2008",
     "start_month": 3,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Community Engagement Supporting College and Career Readiness",
     "id": 28,
@@ -305,8 +305,8 @@
     "Grant start date": "10/1/2009",
     "start_month": 10,
     "start_day": 1,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Formulary" },
   {
     "grant_title": "Building & Sustaining Support for Good Schools: A Public Information Campaign",
     "id": 29,
@@ -316,8 +316,8 @@
     "Grant start date": "4/30/2010",
     "start_month": 4,
     "start_day": 30,
-    "start_year": 2010
-  },
+    "start_year": 2010,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "City Based Proposal for What Works Fund ‚Äì Council of Great City Schools",
     "id": 30,
@@ -327,8 +327,8 @@
     "Grant start date": "3/18/2010",
     "start_month": 3,
     "start_day": 18,
-    "start_year": 2010
-  },
+    "start_year": 2010,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "City based proposal for What Works Fund - New Schools for New Orleans",
     "id": 31,
@@ -338,8 +338,8 @@
     "Grant start date": "11/4/2009",
     "start_month": 11,
     "start_day": 4,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Formulary" },
   {
     "grant_title": "EEP Equality Day Rally Support",
     "id": 32,
@@ -349,8 +349,8 @@
     "Grant start date": "6/19/2009",
     "start_month": 6,
     "start_day": 19,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Stimulus Tracker",
     "id": 33,
@@ -360,8 +360,8 @@
     "Grant start date": "7/22/2009",
     "start_month": 7,
     "start_day": 22,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Formulary" },
   {
     "grant_title": "Repurpose of Alliance for Education Funds to a Variety of Essential Organizational Functions and Programs",
     "id": 34,
@@ -371,8 +371,8 @@
     "Grant start date": "2/26/2010",
     "start_month": 2,
     "start_day": 26,
-    "start_year": 2010
-  },
+    "start_year": 2010,
+  "grant_type": "Formulary" },
   {
     "grant_title": "Secondary STEM Data and Standards Analysis",
     "id": 35,
@@ -382,8 +382,8 @@
     "Grant start date": "7/28/2009",
     "start_month": 7,
     "start_day": 28,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Mathematics Assessment for Learning Phase One RFP",
     "id": 36,
@@ -393,8 +393,8 @@
     "Grant start date": "11/9/2009",
     "start_month": 11,
     "start_day": 9,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Ethnic Commission Education Reform Project",
     "id": 37,
@@ -404,8 +404,8 @@
     "Grant start date": "11/20/2009",
     "start_month": 11,
     "start_day": 20,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Mathematics Assessment for Learning Phase One RFP",
     "id": 38,
@@ -415,8 +415,8 @@
     "Grant start date": "11/6/2009",
     "start_month": 11,
     "start_day": 6,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Formulary" },
   {
     "grant_title": "California Collaborative on District Reform Phase 2",
     "id": 39,
@@ -426,8 +426,8 @@
     "Grant start date": "3/1/2008",
     "start_month": 3,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Professional Educator Standards Board",
     "id": 40,
@@ -437,8 +437,8 @@
     "Grant start date": "10/9/2009",
     "start_month": 10,
     "start_day": 9,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Formulary" },
   {
     "grant_title": "Evaluate the Leaky College Pipeline in New York City",
     "id": 41,
@@ -448,8 +448,8 @@
     "Grant start date": "10/27/2009",
     "start_month": 10,
     "start_day": 27,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Advocacy for Sustained School Reform in the Nation's Capital",
     "id": 42,
@@ -459,8 +459,8 @@
     "Grant start date": "7/1/2008",
     "start_month": 7,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "DC Expansion and CA STEM partnership",
     "id": 43,
@@ -470,8 +470,8 @@
     "Grant start date": "8/29/2009",
     "start_month": 8,
     "start_day": 29,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Retaining Teacher Talent: What Matters for Gen-Y Teachers",
     "id": 44,
@@ -481,8 +481,8 @@
     "Grant start date": "3/2/2009",
     "start_month": 3,
     "start_day": 2,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Supplemental Support for the New York STEM Progressive Dialogues (original grant on OPP52284)",
     "id": 45,
@@ -492,8 +492,8 @@
     "Grant start date": "9/29/2009",
     "start_month": 9,
     "start_day": 29,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Teacher Demographics and Pension Policies",
     "id": 46,
@@ -503,8 +503,8 @@
     "Grant start date": "1/1/2009",
     "start_month": 1,
     "start_day": 1,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Charter School Initiative",
     "id": 47,
@@ -514,8 +514,8 @@
     "Grant start date": "2/25/2010",
     "start_month": 2,
     "start_day": 25,
-    "start_year": 2010
-  },
+    "start_year": 2010,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "High School Standards Review project",
     "id": 48,
@@ -525,8 +525,8 @@
     "Grant start date": "10/1/2008",
     "start_month": 10,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Progressive Dialogues (Supplemental grant on OPP1008819)",
     "id": 49,
@@ -536,8 +536,8 @@
     "Grant start date": "12/1/2008",
     "start_month": 12,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Support access to ARRA funds for strong CMOs",
     "id": 50,
@@ -547,8 +547,8 @@
     "Grant start date": "9/10/2009",
     "start_month": 9,
     "start_day": 10,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Aspen-NewSchools Fellows",
     "id": 51,
@@ -558,8 +558,8 @@
     "Grant start date": "3/26/2009",
     "start_month": 3,
     "start_day": 26,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Texas Charter Schools Association",
     "id": 52,
@@ -569,8 +569,8 @@
     "Grant start date": "5/18/2009",
     "start_month": 5,
     "start_day": 18,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "to support the work of a teacher evaluation task force",
     "id": 53,
@@ -580,8 +580,8 @@
     "Grant start date": "6/23/2009",
     "start_month": 6,
     "start_day": 23,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Ensuring a Valid and Useable Teacher Student Link",
     "id": 54,
@@ -591,8 +591,8 @@
     "Grant start date": "11/21/2009",
     "start_month": 11,
     "start_day": 21,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Consistent College-Ready Standards",
     "id": 55,
@@ -602,8 +602,8 @@
     "Grant start date": "10/1/2008",
     "start_month": 10,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "DCPS Measures of Teacher Effectiveness Study",
     "id": 56,
@@ -613,8 +613,8 @@
     "Grant start date": "11/10/2009",
     "start_month": 11,
     "start_day": 10,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Creating a Stronger Philanthropic Sector in Education",
     "id": 57,
@@ -624,8 +624,8 @@
     "Grant start date": "11/6/2009",
     "start_month": 11,
     "start_day": 6,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Envision Schools Post-Secondary Tracking",
     "id": 58,
@@ -635,8 +635,8 @@
     "Grant start date": "6/1/2008",
     "start_month": 6,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Global Education Leaders' Program (GELP)",
     "id": 59,
@@ -646,8 +646,8 @@
     "Grant start date": "11/10/2009",
     "start_month": 11,
     "start_day": 10,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Investigation of the Relationship between Teacher Quality and Student Learning Outcomes",
     "id": 60,
@@ -657,8 +657,8 @@
     "Grant start date": "10/1/2008",
     "start_month": 10,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Teacher-Student Data Link Project - Arkansas",
     "id": 61,
@@ -668,8 +668,8 @@
     "Grant start date": "11/19/2009",
     "start_month": 11,
     "start_day": 19,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Teacher-Student Data Link Project - Florida",
     "id": 62,
@@ -679,8 +679,8 @@
     "Grant start date": "11/19/2009",
     "start_month": 11,
     "start_day": 19,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Teacher-Student Data Link Project - Georgia",
     "id": 63,
@@ -690,8 +690,8 @@
     "Grant start date": "11/19/2009",
     "start_month": 11,
     "start_day": 19,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Teacher-Student Data Link Project - Louisiana",
     "id": 64,
@@ -701,8 +701,8 @@
     "Grant start date": "11/19/2009",
     "start_month": 11,
     "start_day": 19,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Teacher-Student Data Link Project - Ohio",
     "id": 65,
@@ -712,8 +712,8 @@
     "Grant start date": "11/19/2009",
     "start_month": 11,
     "start_day": 19,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "The California STEM Innovation Network",
     "id": 66,
@@ -723,8 +723,8 @@
     "Grant start date": "1/8/2009",
     "start_month": 1,
     "start_day": 8,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "TN SCORE state advocacy coalition",
     "id": 67,
@@ -734,8 +734,8 @@
     "Grant start date": "2/19/2010",
     "start_month": 2,
     "start_day": 19,
-    "start_year": 2010
-  },
+    "start_year": 2010,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Bring Your 'A' Game",
     "id": 68,
@@ -745,8 +745,8 @@
     "Grant start date": "5/1/2008",
     "start_month": 5,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Instructional Support at Cleveland and Rainier Beach",
     "id": 69,
@@ -756,8 +756,8 @@
     "Grant start date": "9/17/2008",
     "start_month": 9,
     "start_day": 17,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Mathematics Assessment for Learning Phase One RFP",
     "id": 70,
@@ -767,8 +767,8 @@
     "Grant start date": "11/10/2009",
     "start_month": 11,
     "start_day": 10,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "NYC Public Schools: A Retrospective 2002-2009",
     "id": 71,
@@ -778,8 +778,8 @@
     "Grant start date": "12/1/2008",
     "start_month": 12,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "NSC Student Data for High Schools Pilot: Georgia",
     "id": 72,
@@ -789,8 +789,8 @@
     "Grant start date": "11/11/2009",
     "start_month": 11,
     "start_day": 11,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Common Core Companion Curriculum Project",
     "id": 73,
@@ -800,8 +800,8 @@
     "Grant start date": "12/17/2009",
     "start_month": 12,
     "start_day": 17,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Civic Mission of Schools",
     "id": 74,
@@ -811,8 +811,8 @@
     "Grant start date": "6/1/2008",
     "start_month": 6,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Intensive Partnership Site - Participation in MET Research Study",
     "id": 75,
@@ -822,8 +822,8 @@
     "Grant start date": "11/13/2009",
     "start_month": 11,
     "start_day": 13,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Institute for Local Innovation in Teaching and Learning",
     "id": 76,
@@ -833,8 +833,8 @@
     "Grant start date": "10/22/2009",
     "start_month": 10,
     "start_day": 22,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Campaign for High School Equity",
     "id": 77,
@@ -844,8 +844,8 @@
     "Grant start date": "3/1/2008",
     "start_month": 3,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Preparing Secondary English Learners for Graduation and College",
     "id": 78,
@@ -855,8 +855,8 @@
     "Grant start date": "3/1/2008",
     "start_month": 3,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Education Equity Agenda: Federal and Regional Advocacy Policy Support for College Ready Work, Transparent Education Data System Alignment, Effective & Empowered Teachers and Innovation.",
     "id": 79,
@@ -866,8 +866,8 @@
     "Grant start date": "10/26/2009",
     "start_month": 10,
     "start_day": 26,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "NSC Student Data for High Schools Pilot: Florida",
     "id": 80,
@@ -877,8 +877,8 @@
     "Grant start date": "10/30/2009",
     "start_month": 10,
     "start_day": 30,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "The Policy Innovation in Education Network",
     "id": 81,
@@ -888,8 +888,8 @@
     "Grant start date": "6/15/2009",
     "start_month": 6,
     "start_day": 15,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Common Core Strategies for State Policymakers",
     "id": 82,
@@ -899,8 +899,8 @@
     "Grant start date": "3/18/2010",
     "start_month": 3,
     "start_day": 18,
-    "start_year": 2010
-  },
+    "start_year": 2010,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Education Equity Agenda: Federal and Regional Advocacy Policy Support for College Ready Work, Transparent Education Data System Alignment, Effective & Empowered Teachers and Innovation.",
     "id": 83,
@@ -910,8 +910,8 @@
     "Grant start date": "8/28/2009",
     "start_month": 8,
     "start_day": 28,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Education Equity Agenda: LULAC Parent Involvement Initiative for Campaign for High School Equity",
     "id": 84,
@@ -921,8 +921,8 @@
     "Grant start date": "9/21/2009",
     "start_month": 9,
     "start_day": 21,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "8th to 9th Grade Transition and Acceleration Project",
     "id": 85,
@@ -932,8 +932,8 @@
     "Grant start date": "11/1/2009",
     "start_month": 11,
     "start_day": 1,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Support of professional development and an education workshop for education beat reporters",
     "id": 86,
@@ -943,8 +943,8 @@
     "Grant start date": "9/29/2009",
     "start_month": 9,
     "start_day": 29,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "NSC Student Data for High Schools Pilot: Texas",
     "id": 87,
@@ -954,8 +954,8 @@
     "Grant start date": "10/15/2009",
     "start_month": 10,
     "start_day": 15,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Supplemental Support Review and Build-out of the Raytheon STEM Model",
     "id": 88,
@@ -965,8 +965,8 @@
     "Grant start date": "11/4/2009",
     "start_month": 11,
     "start_day": 4,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "The State of Professional Learning: A National Study",
     "id": 89,
@@ -976,8 +976,8 @@
     "Grant start date": "11/1/2008",
     "start_month": 11,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Education Equity Agenda: Southeast Asian American Action and Visibility in Education (SAVE) Project",
     "id": 90,
@@ -987,8 +987,8 @@
     "Grant start date": "8/28/2009",
     "start_month": 8,
     "start_day": 28,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Roads to Success Curriculum Completion and Distribution",
     "id": 91,
@@ -998,8 +998,8 @@
     "Grant start date": "10/26/2009",
     "start_month": 10,
     "start_day": 26,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "STEM Community Collaborative Phase 2",
     "id": 92,
@@ -1009,8 +1009,8 @@
     "Grant start date": "3/6/2009",
     "start_month": 3,
     "start_day": 6,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "California ADP Support",
     "id": 93,
@@ -1020,8 +1020,8 @@
     "Grant start date": "10/22/2008",
     "start_month": 10,
     "start_day": 22,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Regional convenings for policymakers and leaders to develop commitment to standards and assessments",
     "id": 94,
@@ -1031,8 +1031,8 @@
     "Grant start date": "10/26/2009",
     "start_month": 10,
     "start_day": 26,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Business Planning to Create Hybrid Learning Environments in Existing and New Schools",
     "id": 95,
@@ -1042,8 +1042,8 @@
     "Grant start date": "11/8/2009",
     "start_month": 11,
     "start_day": 8,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Mathematics Assessment for Learning Phase One RFP",
     "id": 96,
@@ -1053,8 +1053,8 @@
     "Grant start date": "11/13/2009",
     "start_month": 11,
     "start_day": 13,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "KIPPShare National Data Platform",
     "id": 97,
@@ -1064,8 +1064,8 @@
     "Grant start date": "11/5/2009",
     "start_month": 11,
     "start_day": 5,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "The Equity Project (TEP) Charter School Evaluation",
     "id": 98,
@@ -1075,8 +1075,8 @@
     "Grant start date": "7/16/2009",
     "start_month": 7,
     "start_day": 16,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "North Carolina STEM Development",
     "id": 99,
@@ -1086,8 +1086,8 @@
     "Grant start date": "5/1/2008",
     "start_month": 5,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Using web-based videos to teach math to high school students",
     "id": 100,
@@ -1097,8 +1097,8 @@
     "Grant start date": "3/18/2010",
     "start_month": 3,
     "start_day": 18,
-    "start_year": 2010
-  },
+    "start_year": 2010,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "CPS Community Ownership Proposal",
     "id": 101,
@@ -1108,8 +1108,8 @@
     "Grant start date": "7/1/2008",
     "start_month": 7,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Teacher Working Conditions Survey",
     "id": 102,
@@ -1119,8 +1119,8 @@
     "Grant start date": "10/13/2009",
     "start_month": 10,
     "start_day": 13,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "North Carolina New Technology High School Network Sustainability",
     "id": 103,
@@ -1130,8 +1130,8 @@
     "Grant start date": "9/1/2008",
     "start_month": 9,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Planning Grant for Evaluation of Green Dot's Locke Transformation Project",
     "id": 104,
@@ -1141,8 +1141,8 @@
     "Grant start date": "12/1/2008",
     "start_month": 12,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Preparing All Students for College, Work and Citizenship",
     "id": 105,
@@ -1152,8 +1152,8 @@
     "Grant start date": "5/1/2008",
     "start_month": 5,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Gateway to College Capacity-Building",
     "id": 106,
@@ -1163,8 +1163,8 @@
     "Grant start date": "9/1/2008",
     "start_month": 9,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Doubling the Numbers in STEM",
     "id": 107,
@@ -1174,8 +1174,8 @@
     "Grant start date": "11/1/2008",
     "start_month": 11,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "IMPLEMENTATION: StartL: A Digital Media and Learning Accelerator",
     "id": 108,
@@ -1185,8 +1185,8 @@
     "Grant start date": "11/5/2009",
     "start_month": 11,
     "start_day": 5,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "NAPCS General Operating Support",
     "id": 109,
@@ -1196,8 +1196,8 @@
     "Grant start date": "10/30/2009",
     "start_month": 10,
     "start_day": 30,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "New England Consortium",
     "id": 110,
@@ -1207,8 +1207,8 @@
     "Grant start date": "1/1/2009",
     "start_month": 1,
     "start_day": 1,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "WGHA Ambassadors",
     "id": 111,
@@ -1218,8 +1218,8 @@
     "Grant start date": "9/1/2008",
     "start_month": 9,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Stay for America (retaining effective Teach for America teachers beyond year 2)",
     "id": 112,
@@ -1229,8 +1229,8 @@
     "Grant start date": "10/1/2009",
     "start_month": 10,
     "start_day": 1,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Grassroots Media Project",
     "id": 113,
@@ -1240,8 +1240,8 @@
     "Grant start date": "5/1/2008",
     "start_month": 5,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Education Equity Agenda: Improving Native Student Graduation Rates: Policy Recommendations on High School Reform",
     "id": 114,
@@ -1251,8 +1251,8 @@
     "Grant start date": "8/31/2009",
     "start_month": 8,
     "start_day": 31,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "The State Role In Improving Low-performing Schools",
     "id": 115,
@@ -1262,8 +1262,8 @@
     "Grant start date": "7/1/2008",
     "start_month": 7,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Engaging Communities for College Readiness (ENCORE)",
     "id": 116,
@@ -1273,8 +1273,8 @@
     "Grant start date": "5/1/2008",
     "start_month": 5,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "New Degree Program for Education Leaders",
     "id": 117,
@@ -1284,8 +1284,8 @@
     "Grant start date": "8/1/2008",
     "start_month": 8,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "National Advocacy Support for the Common Core Initiative",
     "id": 118,
@@ -1295,8 +1295,8 @@
     "Grant start date": "11/4/2009",
     "start_month": 11,
     "start_day": 4,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Conceptual and Organizing Platform for Secondary Mathematics Formative Assessments",
     "id": 119,
@@ -1306,8 +1306,8 @@
     "Grant start date": "5/11/2009",
     "start_month": 5,
     "start_day": 11,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Education Practice Launch",
     "id": 120,
@@ -1317,8 +1317,8 @@
     "Grant start date": "7/1/2008",
     "start_month": 7,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Building Business Leadership for New Approaches to Teacher Compensation",
     "id": 121,
@@ -1328,8 +1328,8 @@
     "Grant start date": "5/5/2009",
     "start_month": 5,
     "start_day": 5,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Mathematics Assessment for Learning Phase One RFP",
     "id": 122,
@@ -1339,8 +1339,8 @@
     "Grant start date": "11/16/2009",
     "start_month": 11,
     "start_day": 16,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "THE HIGH SCHOOL REDESIGN INITIATIVE -- PHASE TWO",
     "id": 123,
@@ -1350,8 +1350,8 @@
     "Grant start date": "5/1/2008",
     "start_month": 5,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Aligning P-12 and Postsecondary Data Systems",
     "id": 124,
@@ -1361,8 +1361,8 @@
     "Grant start date": "9/1/2008",
     "start_month": 9,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "The Next Generation of NCLR Schools",
     "id": 125,
@@ -1372,8 +1372,8 @@
     "Grant start date": "3/1/2008",
     "start_month": 3,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Washington STEM Innovation Initiative",
     "id": 126,
@@ -1383,8 +1383,8 @@
     "Grant start date": "3/11/2009",
     "start_month": 3,
     "start_day": 11,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Teacher Effectiveness work",
     "id": 127,
@@ -1394,8 +1394,8 @@
     "Grant start date": "11/7/2009",
     "start_month": 11,
     "start_day": 7,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Stimulus related work and CSA support",
     "id": 128,
@@ -1405,8 +1405,8 @@
     "Grant start date": "11/11/2009",
     "start_month": 11,
     "start_day": 11,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Validating a Common Core of Fewer, Clearer, Higher Standards",
     "id": 129,
@@ -1416,8 +1416,8 @@
     "Grant start date": "5/5/2009",
     "start_month": 5,
     "start_day": 5,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Preparing parents and students to be advocates for quality school reform in Illinois",
     "id": 130,
@@ -1427,8 +1427,8 @@
     "Grant start date": "7/1/2008",
     "start_month": 7,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Building Capacity for College Success: Implementing Data Collection Systems and Best Practices",
     "id": 131,
@@ -1438,8 +1438,8 @@
     "Grant start date": "5/1/2008",
     "start_month": 5,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Support for National Lab Day",
     "id": 132,
@@ -1449,8 +1449,8 @@
     "Grant start date": "11/10/2009",
     "start_month": 11,
     "start_day": 10,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Winning Strategies Black Male Donor Collaborative",
     "id": 133,
@@ -1460,8 +1460,8 @@
     "Grant start date": "7/1/2008",
     "start_month": 7,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "The Role of School Board Governance in Preaparing Students for College and Workplace Readiness",
     "id": 134,
@@ -1471,8 +1471,8 @@
     "Grant start date": "4/25/2009",
     "start_month": 4,
     "start_day": 25,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Tracking Students from Secondary to Post Secondary Institutions",
     "id": 135,
@@ -1482,8 +1482,8 @@
     "Grant start date": "11/1/2008",
     "start_month": 11,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Education Equity Agenda: Federal and Regional Advocacy Policy Support for College Ready Work, Transparent Education Data System Alignment, Effective & Empowered Teachers and Innovation.",
     "id": 136,
@@ -1493,8 +1493,8 @@
     "Grant start date": "10/26/2009",
     "start_month": 10,
     "start_day": 26,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "WA State Board of Education Phase II: A Meaningful High School Diploma and A State Accountability Education System",
     "id": 137,
@@ -1504,8 +1504,8 @@
     "Grant start date": "3/1/2008",
     "start_month": 3,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Measures of Effective Teaching Research Site",
     "id": 138,
@@ -1515,8 +1515,8 @@
     "Grant start date": "11/13/2009",
     "start_month": 11,
     "start_day": 13,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "STEM Capacity Building",
     "id": 139,
@@ -1526,8 +1526,8 @@
     "Grant start date": "7/1/2008",
     "start_month": 7,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Education Equity Agenda: Federal and Regional Advocacy Policy Support for College Ready Work, Transparent Education Data System Alignment, Effective & Empowered Teachers and Innovation.",
     "id": 140,
@@ -1537,8 +1537,8 @@
     "Grant start date": "11/10/2009",
     "start_month": 11,
     "start_day": 10,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "DC Achiever Restructuring Partner",
     "id": 141,
@@ -1548,8 +1548,8 @@
     "Grant start date": "11/3/2009",
     "start_month": 11,
     "start_day": 3,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "PRI Guaranty To Unlock Facilities Financing for High Quality Charter Schools",
     "id": 142,
@@ -1559,8 +1559,8 @@
     "Grant start date": "8/27/2009",
     "start_month": 8,
     "start_day": 27,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Common Standards Review and Task Development",
     "id": 143,
@@ -1570,8 +1570,8 @@
     "Grant start date": "10/10/2009",
     "start_month": 10,
     "start_day": 10,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Intermediary management of PRI/Credit Enhancement Program - Los Angeles (Aspire)",
     "id": 144,
@@ -1581,8 +1581,8 @@
     "Grant start date": "4/8/2010",
     "start_month": 4,
     "start_day": 8,
-    "start_year": 2010
-  },
+    "start_year": 2010,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Sustainability for Recovery School District",
     "id": 145,
@@ -1592,8 +1592,8 @@
     "Grant start date": "11/3/2009",
     "start_month": 11,
     "start_day": 3,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Research Design for Project-Based Advanced Placement Courses",
     "id": 146,
@@ -1603,8 +1603,8 @@
     "Grant start date": "11/18/2009",
     "start_month": 11,
     "start_day": 18,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Accelerate and Enhance Teacher Effectiveness Methods In Districts/Networks",
     "id": 147,
@@ -1614,8 +1614,8 @@
     "Grant start date": "10/9/2009",
     "start_month": 10,
     "start_day": 9,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "AFT Innovation Fund",
     "id": 148,
@@ -1625,8 +1625,8 @@
     "Grant start date": "1/1/2009",
     "start_month": 1,
     "start_day": 1,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Applying an R&D model to education to unearth root causes of performance gaps, to effectively vet options for reform.",
     "id": 149,
@@ -1636,8 +1636,8 @@
     "Grant start date": "11/12/2009",
     "start_month": 11,
     "start_day": 12,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "For the Future",
     "id": 150,
@@ -1647,8 +1647,8 @@
     "Grant start date": "11/1/2008",
     "start_month": 11,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "General Support Supplemental",
     "id": 151,
@@ -1658,8 +1658,8 @@
     "Grant start date": "1/21/2010",
     "start_month": 1,
     "start_day": 21,
-    "start_year": 2010
-  },
+    "start_year": 2010,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Ohio College and Career Ready Consortium",
     "id": 152,
@@ -1669,8 +1669,8 @@
     "Grant start date": "7/18/2009",
     "start_month": 7,
     "start_day": 18,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Strategic Management of Human Capital in Public Ed",
     "id": 153,
@@ -1680,8 +1680,8 @@
     "Grant start date": "3/1/2008",
     "start_month": 3,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "to support Teach for America (TFA) with the goal of bringing low income and minority students in TFA classrooms to proficiency",
     "id": 154,
@@ -1691,8 +1691,8 @@
     "Grant start date": "6/26/2009",
     "start_month": 6,
     "start_day": 26,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Los Angeles Collaborative to Improve College and Career Readiness in LAUSD Schools",
     "id": 155,
@@ -1702,8 +1702,8 @@
     "Grant start date": "1/15/2009",
     "start_month": 1,
     "start_day": 15,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "PEN business planning",
     "id": 156,
@@ -1713,8 +1713,8 @@
     "Grant start date": "7/10/2009",
     "start_month": 7,
     "start_day": 10,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Accelerate and Enhance Teacher Effectiveness Methods In Districts/Networks",
     "id": 157,
@@ -1724,8 +1724,8 @@
     "Grant start date": "10/22/2009",
     "start_month": 10,
     "start_day": 22,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "CEP standards and assessment work",
     "id": 158,
@@ -1735,8 +1735,8 @@
     "Grant start date": "9/8/2009",
     "start_month": 9,
     "start_day": 8,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "College Bound",
     "id": 159,
@@ -1746,8 +1746,8 @@
     "Grant start date": "11/1/2008",
     "start_month": 11,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Accelerator Enhance Teacher Effectiveness Methods - RE: ASPIRE Model in HISD",
     "id": 160,
@@ -1757,8 +1757,8 @@
     "Grant start date": "11/5/2009",
     "start_month": 11,
     "start_day": 5,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Ohio Follow-Through on Achieve Policy Study Recommendations",
     "id": 161,
@@ -1768,8 +1768,8 @@
     "Grant start date": "1/1/2008",
     "start_month": 1,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Philanthropic Partnership for Public Education",
     "id": 162,
@@ -1779,8 +1779,8 @@
     "Grant start date": "3/1/2008",
     "start_month": 3,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "A Progressive Agenda for Human Capital Policy Reform",
     "id": 163,
@@ -1790,8 +1790,8 @@
     "Grant start date": "7/1/2008",
     "start_month": 7,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Gates-EdVisions Moving Forward",
     "id": 164,
@@ -1801,8 +1801,8 @@
     "Grant start date": "12/1/2008",
     "start_month": 12,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Texas Education Research Support",
     "id": 165,
@@ -1812,8 +1812,8 @@
     "Grant start date": "11/1/2008",
     "start_month": 11,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Portable Word Play - Discovering What Handheld Games Can Do for Adolescent Reading Comprehension",
     "id": 166,
@@ -1823,8 +1823,8 @@
     "Grant start date": "11/18/2009",
     "start_month": 11,
     "start_day": 18,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Baltimore Sustainability Plan",
     "id": 167,
@@ -1834,8 +1834,8 @@
     "Grant start date": "5/1/2008",
     "start_month": 5,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Academic Youth Development",
     "id": 168,
@@ -1845,8 +1845,8 @@
     "Grant start date": "11/18/2009",
     "start_month": 11,
     "start_day": 18,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Campaign for High School Equity",
     "id": 169,
@@ -1856,8 +1856,8 @@
     "Grant start date": "9/1/2008",
     "start_month": 9,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "support the K-12 backmapping of the standards",
     "id": 170,
@@ -1867,8 +1867,8 @@
     "Grant start date": "10/12/2009",
     "start_month": 10,
     "start_day": 12,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Building College-Ready Culture in Our High Schools",
     "id": 171,
@@ -1878,8 +1878,8 @@
     "Grant start date": "5/1/2008",
     "start_month": 5,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Measures of Effective Teaching Research Site",
     "id": 172,
@@ -1889,8 +1889,8 @@
     "Grant start date": "1/4/2010",
     "start_month": 1,
     "start_day": 4,
-    "start_year": 2010
-  },
+    "start_year": 2010,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Technical Assistance for Standards/Assessment Partners",
     "id": 173,
@@ -1900,8 +1900,8 @@
     "Grant start date": "11/19/2009",
     "start_month": 11,
     "start_day": 19,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Making NSC Data Actionable for School Leaders",
     "id": 174,
@@ -1911,8 +1911,8 @@
     "Grant start date": "5/22/2009",
     "start_month": 5,
     "start_day": 22,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Charlotte-Mecklenburg Measures of Teacher Effectiveness Research",
     "id": 175,
@@ -1922,8 +1922,8 @@
     "Grant start date": "9/3/2009",
     "start_month": 9,
     "start_day": 3,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "College Ready Course Sequence Implementation",
     "id": 176,
@@ -1933,8 +1933,8 @@
     "Grant start date": "9/14/2009",
     "start_month": 9,
     "start_day": 14,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Partnership for Learning Statewide Advocacy + Stimulus RTT TA",
     "id": 177,
@@ -1944,8 +1944,8 @@
     "Grant start date": "11/1/2009",
     "start_month": 11,
     "start_day": 1,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Accelerated Partnership to Empower Effective Teachers",
     "id": 178,
@@ -1955,8 +1955,8 @@
     "Grant start date": "2/4/2010",
     "start_month": 2,
     "start_day": 4,
-    "start_year": 2010
-  },
+    "start_year": 2010,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "LEV Statewide Advocacy Expansion",
     "id": 179,
@@ -1966,8 +1966,8 @@
     "Grant start date": "10/29/2009",
     "start_month": 10,
     "start_day": 29,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "NCEE state partnerships",
     "id": 180,
@@ -1977,8 +1977,8 @@
     "Grant start date": "10/19/2009",
     "start_month": 10,
     "start_day": 19,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Development of frameworks for the assessment of teacher knowledge",
     "id": 181,
@@ -1988,8 +1988,8 @@
     "Grant start date": "11/14/2009",
     "start_month": 11,
     "start_day": 14,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Organizing for High School Reform",
     "id": 182,
@@ -1999,8 +1999,8 @@
     "Grant start date": "9/1/2008",
     "start_month": 9,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Expansion of Urban Teacher Residency (UTRU)",
     "id": 183,
@@ -2010,8 +2010,8 @@
     "Grant start date": "9/1/2009",
     "start_month": 9,
     "start_day": 1,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Advance Illinois organization build",
     "id": 184,
@@ -2021,8 +2021,8 @@
     "Grant start date": "5/15/2008",
     "start_month": 5,
     "start_day": 15,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Validation of the Teaching as Leadership Rubric",
     "id": 185,
@@ -2032,8 +2032,8 @@
     "Grant start date": "10/5/2009",
     "start_month": 10,
     "start_day": 5,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "CMO Research Study Project Management",
     "id": 186,
@@ -2043,8 +2043,8 @@
     "Grant start date": "5/1/2008",
     "start_month": 5,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "6to16",
     "id": 187,
@@ -2054,8 +2054,8 @@
     "Grant start date": "3/1/2008",
     "start_month": 3,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Education Equity Agenda: Support for Campaign for High School Equity coordination of national civil rights organization national policy advocacy of College Ready and Postsecondary Strategies",
     "id": 188,
@@ -2065,8 +2065,8 @@
     "Grant start date": "10/19/2009",
     "start_month": 10,
     "start_day": 19,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Strengthening State College Readiness Initiatives",
     "id": 189,
@@ -2076,8 +2076,8 @@
     "Grant start date": "3/1/2008",
     "start_month": 3,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Intensive Partnership Site - Participation in MET Research Study",
     "id": 190,
@@ -2087,8 +2087,8 @@
     "Grant start date": "11/3/2009",
     "start_month": 11,
     "start_day": 3,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Formulary" },
   {
     "grant_title": "New-Media Capacity Building at EPE",
     "id": 191,
@@ -2098,8 +2098,8 @@
     "Grant start date": "5/1/2009",
     "start_month": 5,
     "start_day": 1,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Implementation: National PTA support for college-readiness",
     "id": 192,
@@ -2109,8 +2109,8 @@
     "Grant start date": "11/3/2009",
     "start_month": 11,
     "start_day": 3,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "The Public Education Reform and Community Development Link: A Sustainable Solution",
     "id": 193,
@@ -2120,8 +2120,8 @@
     "Grant start date": "11/1/2008",
     "start_month": 11,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Project GRAD USA's National College Readiness Initiative",
     "id": 194,
@@ -2131,8 +2131,8 @@
     "Grant start date": "9/1/2008",
     "start_month": 9,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Literacy by Design",
     "id": 195,
@@ -2142,8 +2142,8 @@
     "Grant start date": "9/17/2009",
     "start_month": 9,
     "start_day": 17,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "THSP Alliance Business Planning",
     "id": 196,
@@ -2153,8 +2153,8 @@
     "Grant start date": "9/1/2008",
     "start_month": 9,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Teacher-Student Data Link Project",
     "id": 197,
@@ -2164,8 +2164,8 @@
     "Grant start date": "11/19/2009",
     "start_month": 11,
     "start_day": 19,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Dropout Prevention",
     "id": 198,
@@ -2175,8 +2175,8 @@
     "Grant start date": "3/19/2008",
     "start_month": 3,
     "start_day": 19,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Hunt Institute Common State Education Standards Project",
     "id": 199,
@@ -2186,8 +2186,8 @@
     "Grant start date": "5/1/2008",
     "start_month": 5,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Business Planning for Education grantees",
     "id": 200,
@@ -2197,8 +2197,8 @@
     "Grant start date": "4/20/2009",
     "start_month": 4,
     "start_day": 20,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Develop Tools for Teachers/Districts to Monitor Student Progress",
     "id": 201,
@@ -2208,8 +2208,8 @@
     "Grant start date": "11/20/2009",
     "start_month": 11,
     "start_day": 20,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "IB Middle Years Summative Assessment",
     "id": 202,
@@ -2219,8 +2219,8 @@
     "Grant start date": "8/22/2009",
     "start_month": 8,
     "start_day": 22,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "To Help Governors Improve College and Career Ready Rates",
     "id": 203,
@@ -2230,8 +2230,8 @@
     "Grant start date": "5/1/2008",
     "start_month": 5,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Next Generation PD System",
     "id": 204,
@@ -2241,8 +2241,8 @@
     "Grant start date": "11/12/2009",
     "start_month": 11,
     "start_day": 12,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Accelerated Partnership to Empower Effective Teachers",
     "id": 205,
@@ -2252,8 +2252,8 @@
     "Grant start date": "1/4/2010",
     "start_month": 1,
     "start_day": 4,
-    "start_year": 2010
-  },
+    "start_year": 2010,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Intensive Partnership Site - Participation in MET Research Study",
     "id": 206,
@@ -2263,8 +2263,8 @@
     "Grant start date": "10/20/2009",
     "start_month": 10,
     "start_day": 20,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Scaling NCTQ state and district work",
     "id": 207,
@@ -2274,8 +2274,8 @@
     "Grant start date": "10/21/2009",
     "start_month": 10,
     "start_day": 21,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "NAPCS Industry Development",
     "id": 208,
@@ -2285,8 +2285,8 @@
     "Grant start date": "9/1/2008",
     "start_month": 9,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Increasing Business Engagement",
     "id": 209,
@@ -2296,8 +2296,8 @@
     "Grant start date": "10/8/2008",
     "start_month": 10,
     "start_day": 8,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Building Support for Federal High School Policy Reform",
     "id": 210,
@@ -2307,8 +2307,8 @@
     "Grant start date": "9/1/2008",
     "start_month": 9,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "NYC DOE Measures of Teacher Effectiveness Research",
     "id": 211,
@@ -2318,8 +2318,8 @@
     "Grant start date": "8/28/2009",
     "start_month": 8,
     "start_day": 28,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Aspire Public Schools' Early College High School Capacity Project",
     "id": 212,
@@ -2329,8 +2329,8 @@
     "Grant start date": "9/1/2008",
     "start_month": 9,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Big 8 Superintendents Data Assessment",
     "id": 213,
@@ -2340,8 +2340,8 @@
     "Grant start date": "11/1/2008",
     "start_month": 11,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "National Impact Initiative",
     "id": 214,
@@ -2351,8 +2351,8 @@
     "Grant start date": "10/1/2008",
     "start_month": 10,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Development and Adaptation of Science and Literacy Formative Assessment Tasks",
     "id": 215,
@@ -2362,8 +2362,8 @@
     "Grant start date": "11/20/2009",
     "start_month": 11,
     "start_day": 20,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Research Alliance for New York City Schools",
     "id": 216,
@@ -2373,8 +2373,8 @@
     "Grant start date": "10/1/2008",
     "start_month": 10,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "CCSR General Operating Support",
     "id": 217,
@@ -2384,8 +2384,8 @@
     "Grant start date": "5/1/2008",
     "start_month": 5,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Deepening and Expanding the Impact of Diploma Plus",
     "id": 218,
@@ -2395,8 +2395,8 @@
     "Grant start date": "9/1/2008",
     "start_month": 9,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "To provide support to states on RTTT applications",
     "id": 219,
@@ -2406,8 +2406,8 @@
     "Grant start date": "11/4/2009",
     "start_month": 11,
     "start_day": 4,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Alternative High School Initiative",
     "id": 220,
@@ -2417,8 +2417,8 @@
     "Grant start date": "7/15/2009",
     "start_month": 7,
     "start_day": 15,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Support for Teaching First to ensure that there is public support for district efforts to improve teacher effectiveness",
     "id": 221,
@@ -2428,8 +2428,8 @@
     "Grant start date": "9/25/2009",
     "start_month": 9,
     "start_day": 25,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "IDEA Public Schools Expansion",
     "id": 222,
@@ -2439,8 +2439,8 @@
     "Grant start date": "11/1/2008",
     "start_month": 11,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Title",
     "id": 223,
@@ -2450,8 +2450,8 @@
     "Grant start date": "5/1/2008",
     "start_month": 5,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "College Ready Mathematics Formative Assessments",
     "id": 224,
@@ -2461,8 +2461,8 @@
     "Grant start date": "9/25/2009",
     "start_month": 9,
     "start_day": 25,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Using Standards and Data to Improve Urban School Systems",
     "id": 225,
@@ -2472,8 +2472,8 @@
     "Grant start date": "10/1/2008",
     "start_month": 10,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "College Readiness Data Initiative",
     "id": 226,
@@ -2483,8 +2483,8 @@
     "Grant start date": "12/1/2008",
     "start_month": 12,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Project support for expanding Aspen network",
     "id": 227,
@@ -2494,8 +2494,8 @@
     "Grant start date": "11/18/2009",
     "start_month": 11,
     "start_day": 18,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Aligned Instructional Systems",
     "id": 228,
@@ -2505,8 +2505,8 @@
     "Grant start date": "5/1/2008",
     "start_month": 5,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "DC Schools Fund",
     "id": 229,
@@ -2516,8 +2516,8 @@
     "Grant start date": "7/1/2008",
     "start_month": 7,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Newark School Fund",
     "id": 230,
@@ -2527,8 +2527,8 @@
     "Grant start date": "2/15/2008",
     "start_month": 2,
     "start_day": 15,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "SeaChange Capacity and Catalyst Funding",
     "id": 231,
@@ -2538,8 +2538,8 @@
     "Grant start date": "12/1/2008",
     "start_month": 12,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "College and Career Ready Graduation Initiative",
     "id": 232,
@@ -2549,8 +2549,8 @@
     "Grant start date": "1/1/2009",
     "start_month": 1,
     "start_day": 1,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Elevating An Alternative Teacher Voice",
     "id": 233,
@@ -2560,8 +2560,8 @@
     "Grant start date": "9/30/2009",
     "start_month": 9,
     "start_day": 30,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Big Picture School Initiative",
     "id": 234,
@@ -2571,8 +2571,8 @@
     "Grant start date": "7/1/2008",
     "start_month": 7,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Matching Grant for Classroom Projects in Public High Schools",
     "id": 235,
@@ -2582,8 +2582,8 @@
     "Grant start date": "11/1/2008",
     "start_month": 11,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Formative Assessment Data Collection, Task Analysis and Implementation (UCLA/CRESST)",
     "id": 236,
@@ -2593,8 +2593,8 @@
     "Grant start date": "11/12/2009",
     "start_month": 11,
     "start_day": 12,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "State and National Common Core Standards Adoption/Implementation Advocacy Support",
     "id": 237,
@@ -2604,8 +2604,8 @@
     "Grant start date": "11/5/2009",
     "start_month": 11,
     "start_day": 5,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Ohio High School Value-Added Project",
     "id": 238,
@@ -2615,8 +2615,8 @@
     "Grant start date": "10/1/2008",
     "start_month": 10,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Creating a National Movement for Improved K-12 Education",
     "id": 239,
@@ -2626,8 +2626,8 @@
     "Grant start date": "7/1/2008",
     "start_month": 7,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Smart Scholars: Early College High Schools in New York State",
     "id": 240,
@@ -2637,8 +2637,8 @@
     "Grant start date": "7/29/2009",
     "start_month": 7,
     "start_day": 29,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Phase II - to support the expansion of second generation student tracker for high schools",
     "id": 241,
@@ -2648,8 +2648,8 @@
     "Grant start date": "11/20/2009",
     "start_month": 11,
     "start_day": 20,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Support for Seattle Public Schools' Strategic Plan",
     "id": 242,
@@ -2659,8 +2659,8 @@
     "Grant start date": "11/10/2008",
     "start_month": 11,
     "start_day": 10,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Reforming the Widget Effect: Increasing teacher effectiveness in America's schools",
     "id": 243,
@@ -2670,8 +2670,8 @@
     "Grant start date": "7/10/2009",
     "start_month": 7,
     "start_day": 10,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Understanding Teacher Quality",
     "id": 244,
@@ -2681,8 +2681,8 @@
     "Grant start date": "11/1/2008",
     "start_month": 11,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Equity and Excellence in a Global Era: Expanding the International Studies Schools Network",
     "id": 245,
@@ -2692,8 +2692,8 @@
     "Grant start date": "11/1/2008",
     "start_month": 11,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Increase the leadership capacity of chiefs",
     "id": 246,
@@ -2703,8 +2703,8 @@
     "Grant start date": "7/1/2009",
     "start_month": 7,
     "start_day": 1,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Strong American Schools",
     "id": 247,
@@ -2714,8 +2714,8 @@
     "Grant start date": "3/1/2008",
     "start_month": 3,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Accelerated Partnership to Empower Effective Teachers",
     "id": 248,
@@ -2725,8 +2725,8 @@
     "Grant start date": "1/4/2010",
     "start_month": 1,
     "start_day": 4,
-    "start_year": 2010
-  },
+    "start_year": 2010,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Accelerated Partnership to Empower Effective Teachers",
     "id": 249,
@@ -2736,8 +2736,8 @@
     "Grant start date": "1/13/2010",
     "start_month": 1,
     "start_day": 13,
-    "start_year": 2010
-  },
+    "start_year": 2010,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "American Diploma Project Network",
     "id": 250,
@@ -2747,8 +2747,8 @@
     "Grant start date": "2/1/2008",
     "start_month": 2,
     "start_day": 1,
-    "start_year": 2008
-  },
+    "start_year": 2008,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Strategic Data Project",
     "id": 251,
@@ -2758,8 +2758,8 @@
     "Grant start date": "6/17/2009",
     "start_month": 6,
     "start_day": 17,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Intensive Partnerships to Empower Effective Teachers",
     "id": 252,
@@ -2769,8 +2769,8 @@
     "Grant start date": "11/18/2009",
     "start_month": 11,
     "start_day": 18,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Formulary" },
   {
     "grant_title": "Intensive Partnerships to Empower Effective Teachers (LA-CMO's)",
     "id": 253,
@@ -2780,8 +2780,8 @@
     "Grant start date": "11/19/2009",
     "start_month": 11,
     "start_day": 19,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Intensive Partnerships to Empower Effective Teachers",
     "id": 254,
@@ -2791,8 +2791,8 @@
     "Grant start date": "11/19/2009",
     "start_month": 11,
     "start_day": 19,
-    "start_year": 2009
-  },
+    "start_year": 2009,
+  "grant_type": "Discretionary" },
   {
     "grant_title": "Intensive Partnerships to Empower Effective Teachers",
     "id": 255,
@@ -2802,6 +2802,6 @@
     "Grant start date": "11/19/2009",
     "start_month": 11,
     "start_day": 19,
-    "start_year": 2009
-  }
+    "start_year": 2009,
+  "grant_type": "Discretionary" }
 ]
