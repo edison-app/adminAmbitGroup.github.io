@@ -24,11 +24,23 @@ function bubbleChart() {
     2010: { x: 2 * width / 3, y: height / 2 }
   };
 
+  var yearFormDiscCenters = {
+    Formulary: { x: width / 3, y: height / 2 },
+    //Discretionary: { x: width / 2, y: height / 2 },
+    Discretionary: { x: 2 * width / 3, y: height / 2 }
+  };
+
   // X locations of the year titles.
   var yearsTitleX = {
     2008: 160,
     2009: width / 2,
     2010: width - 160
+  };
+
+  var formDiscsTitleX = {
+    Formulary: width / 3,
+    Discretionary: 626,
+    //2010: width - 160
   };
 
   // @v4 strength to apply to the position forces
@@ -75,7 +87,7 @@ function bubbleChart() {
   // @v4 scales now have a flattened naming scheme
   var fillColor = d3.scaleOrdinal()
     .domain(['low', 'medium', 'high'])
-    .range(['#d84b2a', '#beccae', '#7aa25c']);
+    .range(['#ff0000', '#0033cc', '#7aa25c']);
 
 
   /*
@@ -94,7 +106,6 @@ function bubbleChart() {
     // Use the max total_amount in the data as the max in the scale's domain
     // note we have to ensure the total_amount is a number.
     var maxAmount = d3.max(rawData, function (d) { return +d.total_amount; });
-
     // Sizes bubbles based on area.
     // @v4: new flattened scale names.
     var radiusScale = d3.scalePow()
@@ -114,6 +125,7 @@ function bubbleChart() {
         org: d.organization,
         group: d.group,
         year: d.start_year,
+        grantType: d.grant_type,
         x: Math.random() * 900,
         y: Math.random() * 800
       };
@@ -205,7 +217,9 @@ function bubbleChart() {
     return yearCenters[d.year].x;
   }
 
-
+function nodeFormDiscPos(d) {
+    return yearFormDiscCenters[d.grantType].x;
+  }
   /*
    * Sets visualization in "single group mode".
    * The year labels are hidden and the force layout
@@ -213,6 +227,7 @@ function bubbleChart() {
    * center of the visualization.
    */
   function groupBubbles() {
+    hideTypeTitles()
     hideYearTitles();
 
     // @v4 Reset the 'x' force to draw the bubbles to the center.
@@ -230,6 +245,7 @@ function bubbleChart() {
    * yearCenter of their data's year.
    */
   function splitBubbles() {
+    hideTypeTitles();
     showYearTitles();
 
     // @v4 Reset the 'x' force to draw the bubbles to their year centers
@@ -239,11 +255,25 @@ function bubbleChart() {
     simulation.alpha(1).restart();
   }
 
+  function splitBubblesFormDisc(){
+      hideYearTitles(); 
+      showFormDiscTitles();
+      // @v4 Reset the 'x' force to draw the bubbles to their year centers
+    simulation.force('x', d3.forceX().strength(forceStrength).x(nodeFormDiscPos));
+
+    // @v4 We can reset the alpha value and restart the simulation  
+    simulation.alpha(1).restart();
+  }
+
   /*
    * Hides Year title displays.
    */
   function hideYearTitles() {
     svg.selectAll('.year').remove();
+  }
+
+  function hideTypeTitles() {
+    svg.selectAll('.formdisc').remove();
   }
 
   /*
@@ -264,6 +294,20 @@ function bubbleChart() {
       .text(function (d) { return d; });
   }
 
+    function showFormDiscTitles() {
+    // Another way to do this would be to create
+    // the year texts once and then just hide them.
+    var discsData = d3.keys(formDiscsTitleX);
+    var discs = svg.selectAll('.formdisc')
+      .data(discsData);
+
+    discs.enter().append('text')
+      .attr('class', 'formdisc')
+      .attr('x', function (d) { return formDiscsTitleX[d]; })
+      .attr('y', 40)
+      .attr('text-anchor', 'middle')
+      .text(function (d) { return d; });
+  }
 
   /*
    * Function called on mouseover to display the
@@ -307,6 +351,8 @@ function bubbleChart() {
   chart.toggleDisplay = function (displayName) {
     if (displayName === 'year') {
       splitBubbles();
+    } else if(displayName === 'formdisc') {
+      splitBubblesFormDisc();
     } else {
       groupBubbles();
     }
