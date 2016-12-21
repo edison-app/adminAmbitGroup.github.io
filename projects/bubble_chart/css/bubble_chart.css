@@ -34,17 +34,12 @@ a, a:visited, a:active {
   margin-top: 10px;
 }
 
-.year {
+.year, .formdisc, .prinoff {
   font-size: 21px;
   fill: #aaa;
   cursor: default;
 }
 
-.formdisc {
-  font-size: 21px;
-  fill: #aaa;
-  cursor: default;
-}
 
 .tooltip {
 	position: absolute;
