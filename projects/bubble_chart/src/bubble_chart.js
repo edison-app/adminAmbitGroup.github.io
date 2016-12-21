@@ -1,3 +1,42 @@
+/******************************/
+//******COPYRIGHT**************/
+/******************************/
+/*D3.js:
+
+Copyright (c) 2010-2016, Michael Bostock
+All rights reserved.
+
+Bubble Chart:
+
+Copyright (c) 2016, Jim Vallandingham
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+* Redistributions of source code must retain the above copyright notice, this
+  list of conditions and the following disclaimer.
+
+* Redistributions in binary form must reproduce the above copyright notice,
+  this list of conditions and the following disclaimer in the documentation
+  and/or other materials provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+/******************************/
+//******END COPYRIGHT**********/
+/******************************/
+
+
+
 /* bubbleChart creation function. Returns a function that will
  * instantiate a new bubble chart given a DOM element to display
  * it in and a dataset to visualize.
@@ -6,30 +45,43 @@
  * https://bost.ocks.org/mike/chart/
  *
  */
+
+
 function bubbleChart() {
   // Constants for sizing
-  var width = 940;
-  var height = 600;
+  var width = 940; //940
+  var height = 1200; //900
 
   // tooltip for mouseover functionality
   var tooltip = floatingTooltip('gates_tooltip', 240);
 
   // Locations to move bubbles towards, depending
   // on which view mode is selected.
-  var center = { x: width / 2, y: height / 2 };
+  var center = { x: width / 2, y: height / 4 };
 
   var yearCenters = {
-    2008: { x: width / 3, y: height / 2 },
-    2009: { x: width / 2, y: height / 2 },
-    2010: { x: 2 * width / 3, y: height / 2 }
+    2008: { x: width / 3, y: height / 3 },
+    2009: { x: width / 2, y: height / 3 },
+    2010: { x: 2 * width / 3, y: height / 3 }
   };
 
-  var yearFormDiscCenters = {
-    Formulary: { x: width / 3, y: height / 2 },
+  var formDiscCenters = {
+    Formulary: { x: width / 3, y: height / 3 },
     //Discretionary: { x: width / 2, y: height / 2 },
-    Discretionary: { x: 2 * width / 3, y: height / 2 }
+    Discretionary: { x: 2 * width / 3, y: height / 3 }
   };
 
+  var prinOffCenters = {
+    IES: { x: width / 4, y: height / 4 },
+    OCTAE: { x: width / 2, y: height / 6 },
+    ODS: { x: 2 * width / 3 + 100, y: height / 6 },
+    OELA: { x: width / 4 - 25, y: height / 2 + 100 },
+    OESE: { x: width / 2 - 20, y: height / 2 + 100 },
+    OII: { x: 2 * width / 3 + 100, y: height / 2 + 165},
+    OPE: { x: width / 4, y: height / 2 + 300},
+    OSERS: { x: width / 2, y: height / 2 + 300 }
+  };
+  
   // X locations of the year titles.
   var yearsTitleX = {
     2008: 160,
@@ -38,10 +90,33 @@ function bubbleChart() {
   };
 
   var formDiscsTitleX = {
-    Formulary: width / 3,
+    Formulary: 170,
     Discretionary: 626,
     //2010: width - 160
   };
+
+  var prinOffTitleX = {
+    IES: 200,
+    OCTAE: width / 2,
+    ODS: width - 200,
+    OELA: 200,
+    OESE: width / 2,
+    OII: width - 200,
+    OPE: 200,
+    OSERS: width / 2
+  };
+ // Y locations of the year titles
+
+  var prinOffTitleY = {
+    IES: 40,
+    OCTAE: 40,
+    ODS: 40,
+    OELA: 480,
+    OESE: 480,
+    OII: 480,
+    OPE: 800,
+    OSERS: 800
+}
 
   // @v4 strength to apply to the position forces
   var forceStrength = 0.03;
@@ -118,20 +193,23 @@ function bubbleChart() {
     // working with data.
     var myNodes = rawData.map(function (d) {
       return {
-        id: d.id,
+        //id: d.id,
         radius: radiusScale(+d.total_amount),
         value: +d.total_amount,
+        grantDate: d.grant_start_date,
         name: d.grant_title,
         org: d.organization,
         group: d.group,
         year: d.start_year,
         grantType: d.grant_type,
+        grantOff:d.grant_off,
         x: Math.random() * 900,
         y: Math.random() * 800
       };
     });
 
     // sort them to prevent occlusion of smaller nodes.
+    //circle  algorithm
     myNodes.sort(function (a, b) { return b.value - a.value; });
 
     return myNodes;
@@ -163,8 +241,8 @@ function bubbleChart() {
 
     // Bind nodes data to what will become DOM elements to represent them.
     bubbles = svg.selectAll('.bubble')
-      .data(nodes, function (d) { return d.id; });
-
+      //.data(nodes, function (d) { return d.id; });
+      .data(nodes);
     // Create new circle elements each with class `bubble`.
     // There will be one circle.bubble for each object in the nodes array.
     // Initially, their radius (r attribute) will be 0.
@@ -218,21 +296,30 @@ function bubbleChart() {
   }
 
 function nodeFormDiscPos(d) {
-    return yearFormDiscCenters[d.grantType].x;
+    return formDiscCenters[d.grantType].x;
   }
+
+ function nodePrinOffPosX(d) {
+    return prinOffCenters[d.grantOff].x;
+  } 
+  function nodePrinOffPosY(d) {
+    return prinOffCenters[d.grantOff].y;
+  }  
   /*
    * Sets visualization in "single group mode".
    * The year labels are hidden and the force layout
    * tick function is set to move all nodes to the
    * center of the visualization.
    */
+
   function groupBubbles() {
     hideTypeTitles()
     hideYearTitles();
+    hideTypePrinOff()
 
     // @v4 Reset the 'x' force to draw the bubbles to the center.
     simulation.force('x', d3.forceX().strength(forceStrength).x(center.x));
-
+    simulation.force('y', d3.forceY().strength(forceStrength).y(300));
     // @v4 We can reset the alpha value and restart the simulation
     simulation.alpha(1).restart();
   }
@@ -246,10 +333,12 @@ function nodeFormDiscPos(d) {
    */
   function splitBubbles() {
     hideTypeTitles();
+    hideTypePrinOff()
     showYearTitles();
 
     // @v4 Reset the 'x' force to draw the bubbles to their year centers
     simulation.force('x', d3.forceX().strength(forceStrength).x(nodeYearPos));
+    simulation.force('y', d3.forceY().strength(forceStrength).y(300));
 
     // @v4 We can reset the alpha value and restart the simulation
     simulation.alpha(1).restart();
@@ -257,14 +346,26 @@ function nodeFormDiscPos(d) {
 
   function splitBubblesFormDisc(){
       hideYearTitles(); 
+      hideTypePrinOff()
       showFormDiscTitles();
       // @v4 Reset the 'x' force to draw the bubbles to their year centers
     simulation.force('x', d3.forceX().strength(forceStrength).x(nodeFormDiscPos));
+    simulation.force('y', d3.forceY().strength(forceStrength).y(300));
 
     // @v4 We can reset the alpha value and restart the simulation  
     simulation.alpha(1).restart();
   }
 
+function splitBubblesPrinOff(){
+      hideTypeTitles()
+      hideYearTitles();
+      showPrinOffTitles()
+      // @v4 Reset the 'x' force to draw the bubbles to their year centers
+      simulation.force('x', d3.forceX().strength(forceStrength).x(nodePrinOffPosX));
+      simulation.force('y', d3.forceY().strength(forceStrength).y(nodePrinOffPosY));
+      // @v4 We can reset the alpha value and restart the simulation  
+      simulation.alpha(1).restart();
+}
   /*
    * Hides Year title displays.
    */
@@ -274,6 +375,10 @@ function nodeFormDiscPos(d) {
 
   function hideTypeTitles() {
     svg.selectAll('.formdisc').remove();
+  }
+
+  function hideTypePrinOff() {
+    svg.selectAll('.prinoff').remove();
   }
 
   /*
@@ -309,6 +414,19 @@ function nodeFormDiscPos(d) {
       .text(function (d) { return d; });
   }
 
+  function showPrinOffTitles() {
+    // Another way to do this would be to create
+    // the year texts once and then just hide them.
+    var discsData = d3.keys(prinOffTitleX);
+    var discs = svg.selectAll('.prinoff')
+      .data(discsData);
+    discs.enter().append('text')
+      .attr('class', 'prinoff')
+      .attr('x', function (d) { return prinOffTitleX[d]; })
+      .attr('y', function (d) { return prinOffTitleY[d]; })
+      .attr('text-anchor', 'middle')
+      .text(function (d) { return d; });
+  }
   /*
    * Function called on mouseover to display the
    * details of a bubble in the tooltip.
@@ -324,8 +442,12 @@ function nodeFormDiscPos(d) {
                   addCommas(d.value) +
                   '</span><br/>' +
                   '<span class="name">Year: </span><span class="value">' +
-                  d.year +
+                  d.year + 
+                  '</span><br/>' +
+                  '<span class="name">Date: </span><span class="value">' +
+                  d.grantDate + 
                   '</span>';
+                  ;
 
     tooltip.showTooltip(content, d3.event);
   }
@@ -353,7 +475,10 @@ function nodeFormDiscPos(d) {
       splitBubbles();
     } else if(displayName === 'formdisc') {
       splitBubblesFormDisc();
-    } else {
+    } else if(displayName === 'prinoff') {
+      splitBubblesPrinOff();
+    } 
+    else {
       groupBubbles();
     }
   };
