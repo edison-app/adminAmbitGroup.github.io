@@ -59,15 +59,18 @@ function bubbleChart() {
   // on which view mode is selected.
   var center = { x: width / 2, y: height / 4 };
 
-  var yearCenters = {
-    2008: { x: width / 3, y: height / 3 },
-    2009: { x: width / 2, y: height / 3 },
-    2010: { x: 2 * width / 3, y: height / 3 }
-  };
+  /*var yearCenters = {
+    2010: { x: width / 4, y: height / 4 },
+    2011: { x: width / 2, y: height / 6 },
+    2012: { x: 2 * width / 3 + 100, y: height / 6 },
+    2013: { x: width / 4 - 25, y: height / 2 + 100 },
+    2014: { x: width / 2 - 20, y: height / 2 + 100 },
+    2015: { x: 2 * width / 3 + 100, y: height / 2 + 165},
+    2016: { x: width / 4, y: height / 2 + 300},
+};*/
 
   var formDiscCenters = {
-    Formulary: { x: width / 3, y: height / 3 },
-    //Discretionary: { x: width / 2, y: height / 2 },
+    Formula: { x: width / 3, y: height / 3 },
     Discretionary: { x: 2 * width / 3, y: height / 3 }
   };
 
@@ -83,14 +86,28 @@ function bubbleChart() {
   };
   
   // X locations of the year titles.
-  var yearsTitleX = {
-    2008: 160,
-    2009: width / 2,
-    2010: width - 160
+ /* var yearsTitleX = {
+    2010: 200,
+    2011: width / 2,
+    2012: width - 200,
+    2013: 200,
+    2014: width / 2,
+    2015: width - 200,
+    2016: 200,
   };
 
+  var yearsTitleY = {
+    2010: 40,
+    2011: 40,
+    2012: 40,
+    2013: 480,
+    2014: 480,
+    2015: 480,
+    2016: 800,
+  }; */
+
   var formDiscsTitleX = {
-    Formulary: 170,
+    Formula: 170,
     Discretionary: 626,
     //2010: width - 160
   };
@@ -116,7 +133,7 @@ function bubbleChart() {
     OII: 480,
     OPE: 800,
     OSERS: 800
-}
+};
 
   // @v4 strength to apply to the position forces
   var forceStrength = 0.03;
@@ -161,8 +178,8 @@ function bubbleChart() {
   // Nice looking colors - no reason to buck the trend
   // @v4 scales now have a flattened naming scheme
   var fillColor = d3.scaleOrdinal()
-    .domain(['low', 'medium', 'high'])
-    .range(['#ff0000', '#0033cc', '#7aa25c']);
+    .domain(["under10","under50","under100","under250","over250"])
+    .range(['#ff0000', '#0033cc', '#7aa25c','orange','brown']);
 
 
   /*
@@ -178,9 +195,9 @@ function bubbleChart() {
    * array for each element in the rawData input.
    */
   function createNodes(rawData) {
-    // Use the max total_amount in the data as the max in the scale's domain
+    // Use the max  in the data as the max in the scale's domain
     // note we have to ensure the total_amount is a number.
-    var maxAmount = d3.max(rawData, function (d) { return +d.total_amount; });
+    var maxAmount = d3.max(rawData, function (d) { return +d.amount; });
     // Sizes bubbles based on area.
     // @v4: new flattened scale names.
     var radiusScale = d3.scalePow()
@@ -193,16 +210,14 @@ function bubbleChart() {
     // working with data.
     var myNodes = rawData.map(function (d) {
       return {
-        //id: d.id,
-        radius: radiusScale(+d.total_amount),
-        value: +d.total_amount,
-        grantDate: d.grant_start_date,
-        name: d.grant_title,
-        org: d.organization,
-        group: d.group,
-        year: d.start_year,
-        grantType: d.grant_type,
-        grantOff:d.grant_off,
+        radius: radiusScale(+d.amount),
+        value: +d.amount,
+        //grantDate: d.start_date,
+        name: d.name,
+        color: d.color,
+        year: d.year,
+        grantType: d.type,
+        grantOff:d.office,
         x: Math.random() * 900,
         y: Math.random() * 800
       };
@@ -251,8 +266,8 @@ function bubbleChart() {
     var bubblesE = bubbles.enter().append('circle')
       .classed('bubble', true)
       .attr('r', 0)
-      .attr('fill', function (d) { return fillColor(d.group); })
-      .attr('stroke', function (d) { return d3.rgb(fillColor(d.group)).darker(); })
+      .attr('fill', function (d) { return fillColor(d.color); })
+      .attr('stroke', function (d) { return d3.rgb(fillColor(d.color)).darker(); })
       .attr('stroke-width', 2)
       .on('mouseover', showDetail)
       .on('mouseout', hideDetail);
@@ -291,9 +306,15 @@ function bubbleChart() {
    * Provides a x value for each node to be used with the split by year
    * x force.
    */
-  function nodeYearPos(d) {
-    return yearCenters[d.year].x;
-  }
+  /*function nodeYearPosX(d) {
+    //var stringXYear = d.colorprop.toString();
+    return yearCenters[d.colorprop].x;
+  } */
+
+ /* function nodeYearPosY(d) {
+    //var stringYYear = d.colorprop.toString();
+  return yearCenters[d.colorprop].y;
+  } */
 
 function nodeFormDiscPos(d) {
     return formDiscCenters[d.grantType].x;
@@ -313,9 +334,9 @@ function nodeFormDiscPos(d) {
    */
 
   function groupBubbles() {
-    hideTypeTitles()
-    hideYearTitles();
-    hideTypePrinOff()
+    //hideYearTitles();
+    hideTypeTitles();
+    hideTypePrinOff();
 
     // @v4 Reset the 'x' force to draw the bubbles to the center.
     simulation.force('x', d3.forceX().strength(forceStrength).x(center.x));
@@ -331,22 +352,22 @@ function nodeFormDiscPos(d) {
    * tick function is set to move nodes to the
    * yearCenter of their data's year.
    */
-  function splitBubbles() {
+  /*function splitBubblesYear() {
     hideTypeTitles();
-    hideTypePrinOff()
+    hideTypePrinOff();
     showYearTitles();
 
     // @v4 Reset the 'x' force to draw the bubbles to their year centers
-    simulation.force('x', d3.forceX().strength(forceStrength).x(nodeYearPos));
-    simulation.force('y', d3.forceY().strength(forceStrength).y(300));
+    simulation.force('x', d3.forceX().strength(forceStrength).x(nodeYearPosX));
+    simulation.force('y', d3.forceY().strength(forceStrength).y(nodeYearPosY));
 
     // @v4 We can reset the alpha value and restart the simulation
     simulation.alpha(1).restart();
-  }
+  } */
 
   function splitBubblesFormDisc(){
-      hideYearTitles(); 
-      hideTypePrinOff()
+      //hideYearTitles(); 
+      hideTypePrinOff();
       showFormDiscTitles();
       // @v4 Reset the 'x' force to draw the bubbles to their year centers
     simulation.force('x', d3.forceX().strength(forceStrength).x(nodeFormDiscPos));
@@ -357,9 +378,9 @@ function nodeFormDiscPos(d) {
   }
 
 function splitBubblesPrinOff(){
-      hideTypeTitles()
-      hideYearTitles();
-      showPrinOffTitles()
+      hideTypeTitles();
+      //hideYearTitles();
+      showPrinOffTitles();
       // @v4 Reset the 'x' force to draw the bubbles to their year centers
       simulation.force('x', d3.forceX().strength(forceStrength).x(nodePrinOffPosX));
       simulation.force('y', d3.forceY().strength(forceStrength).y(nodePrinOffPosY));
@@ -369,9 +390,9 @@ function splitBubblesPrinOff(){
   /*
    * Hides Year title displays.
    */
-  function hideYearTitles() {
+  /*function hideYearTitles() {
     svg.selectAll('.year').remove();
-  }
+  }*/
 
   function hideTypeTitles() {
     svg.selectAll('.formdisc').remove();
@@ -384,7 +405,7 @@ function splitBubblesPrinOff(){
   /*
    * Shows Year title displays.
    */
-  function showYearTitles() {
+  /*function showYearTitles() {
     // Another way to do this would be to create
     // the year texts once and then just hide them.
     var yearsData = d3.keys(yearsTitleX);
@@ -394,11 +415,10 @@ function splitBubblesPrinOff(){
     years.enter().append('text')
       .attr('class', 'year')
       .attr('x', function (d) { return yearsTitleX[d]; })
-      .attr('y', 40)
+      .attr('y', function (d) { return yearsTitleY[d]; })
       .attr('text-anchor', 'middle')
       .text(function (d) { return d; });
-  }
-
+  }*/
     function showFormDiscTitles() {
     // Another way to do this would be to create
     // the year texts once and then just hide them.
@@ -447,7 +467,6 @@ function splitBubblesPrinOff(){
                   '<span class="name">Date: </span><span class="value">' +
                   d.grantDate + 
                   '</span>';
-                  ;
 
     tooltip.showTooltip(content, d3.event);
   }
@@ -458,8 +477,7 @@ function splitBubblesPrinOff(){
   function hideDetail(d) {
     // reset outline
     d3.select(this)
-      .attr('stroke', d3.rgb(fillColor(d.group)).darker());
-
+      .attr('stroke', d3.rgb(fillColor(d.color)).darker());
     tooltip.hideTooltip();
   }
 
@@ -471,9 +489,7 @@ function splitBubblesPrinOff(){
    * displayName is expected to be a string and either 'year' or 'all'.
    */
   chart.toggleDisplay = function (displayName) {
-    if (displayName === 'year') {
-      splitBubbles();
-    } else if(displayName === 'formdisc') {
+    if(displayName === 'formdisc') {
       splitBubblesFormDisc();
     } else if(displayName === 'prinoff') {
       splitBubblesPrinOff();
@@ -482,7 +498,9 @@ function splitBubblesPrinOff(){
       groupBubbles();
     }
   };
-
+/*(displayName === 'year') {
+      splitBubblesYear();
+    } else if*/
 
   // return the chart function from closure.
   return chart;
