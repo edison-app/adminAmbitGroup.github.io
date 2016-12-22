@@ -5,6 +5,8 @@ a, a:visited, a:active {
 .container {
   max-width: 900px;
   margin: auto;
+  border: 1px solid #999;
+  padding: 15px;
 }
 
 .button {
@@ -32,6 +34,14 @@ a, a:visited, a:active {
 
 #toolbar {
   margin-top: 10px;
+
+}
+
+#toolbarcenter{
+  margin-left: auto;
+  margin-right: auto;
+  width: 260px;
+  height: 60px;
 }
 
 .year, .formdisc, .prinoff {
