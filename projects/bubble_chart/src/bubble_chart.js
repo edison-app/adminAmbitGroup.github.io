@@ -70,19 +70,19 @@ function bubbleChart() {
 };*/
 
   var formDiscCenters = {
-    Formula: { x: width / 3, y: height / 3 },
-    Discretionary: { x: 2 * width / 3, y: height / 3 }
+    Formula: { x: width / 4, y: height / 3 },
+    Discretionary: { x: width / 2 + 120, y: height / 3 }
   };
 
   var prinOffCenters = {
-    IES: { x: width / 4, y: height / 4 },
+    IES: { x: width / 4, y: height / 6},
     OCTAE: { x: width / 2, y: height / 6 },
     ODS: { x: 2 * width / 3 + 100, y: height / 6 },
-    OELA: { x: width / 4 - 25, y: height / 2 + 100 },
-    OESE: { x: width / 2 - 20, y: height / 2 + 100 },
-    OII: { x: 2 * width / 3 + 100, y: height / 2 + 165},
-    OPE: { x: width / 4, y: height / 2 + 300},
-    OSERS: { x: width / 2, y: height / 2 + 300 }
+    OELA: { x: width / 4 + 40, y: height / 3},
+    OESE: { x: width / 2 - 10, y: height / 3 + 78},
+    OII: { x: 2 * width / 3 + 90, y: height / 3 + 30},
+    OPE: { x: width / 4, y: height / 2 + 160},
+    OSERS: { x: width / 2, y: height / 2 + 160 }
   };
   
   // X locations of the year titles.
@@ -107,7 +107,7 @@ function bubbleChart() {
   }; */
 
   var formDiscsTitleX = {
-    Formula: 170,
+    Formula: 200,
     Discretionary: 626,
     //2010: width - 160
   };
@@ -128,11 +128,11 @@ function bubbleChart() {
     IES: 40,
     OCTAE: 40,
     ODS: 40,
-    OELA: 480,
-    OESE: 480,
-    OII: 480,
-    OPE: 800,
-    OSERS: 800
+    OELA: 280,
+    OESE: 280,
+    OII: 280,
+    OPE: 650,
+    OSERS: 650
 };
 
   // @v4 strength to apply to the position forces
@@ -178,8 +178,8 @@ function bubbleChart() {
   // Nice looking colors - no reason to buck the trend
   // @v4 scales now have a flattened naming scheme
   var fillColor = d3.scaleOrdinal()
-    .domain(["under10","under50","under100","under250","over250"])
-    .range(['#ff0000', '#0033cc', '#7aa25c','orange','brown']);
+    .domain(['under10','under50','under100','under250','over250'])
+    .range(['#3E442B', '#361D2E', '#0E4749','#242331','#CD5334']);
 
 
   /*
@@ -212,7 +212,6 @@ function bubbleChart() {
       return {
         radius: radiusScale(+d.amount),
         value: +d.amount,
-        //grantDate: d.start_date,
         name: d.name,
         color: d.color,
         year: d.year,
@@ -371,7 +370,7 @@ function nodeFormDiscPos(d) {
       showFormDiscTitles();
       // @v4 Reset the 'x' force to draw the bubbles to their year centers
     simulation.force('x', d3.forceX().strength(forceStrength).x(nodeFormDiscPos));
-    simulation.force('y', d3.forceY().strength(forceStrength).y(300));
+    simulation.force('y', d3.forceY().strength(forceStrength).y(260));
 
     // @v4 We can reset the alpha value and restart the simulation  
     simulation.alpha(1).restart();
@@ -463,9 +462,6 @@ function splitBubblesPrinOff(){
                   '</span><br/>' +
                   '<span class="name">Year: </span><span class="value">' +
                   d.year + 
-                  '</span><br/>' +
-                  '<span class="name">Date: </span><span class="value">' +
-                  d.grantDate + 
                   '</span>';
 
     tooltip.showTooltip(content, d3.event);
