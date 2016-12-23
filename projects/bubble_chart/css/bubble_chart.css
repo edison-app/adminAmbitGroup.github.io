@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One');
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One|Marcellus+SC');
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Julius+Sans+One|Marcellus+SC');
 a, a:visited, a:active {
   color: #444;
 }
@@ -7,6 +11,15 @@ a, a:visited, a:active {
   margin: auto;
   border: 1px solid #999;
   padding: 15px;
+}
+
+.topheader{
+font-family: 'Julius Sans One', sans-serif;
+font-family: 'Marcellus SC', serif;
+text-align: center;
+padding-bottom: 20px;
+border-bottom: 1px solid #999;
+
 }
 
 .button {
@@ -20,8 +33,9 @@ a, a:visited, a:active {
 }
 
 .button.active {
-  background: #000;
-  color: #fff;
+  /*background: #000;*/
+  background: #999;
+  color: #fff !important;
 }
 
 
@@ -32,22 +46,29 @@ a, a:visited, a:active {
   margin-bottom: 10px;
 }
 
-#toolbar {
-  margin-top: 10px;
-
+#toolbar a{
+    /*color: #999;*/
+    padding: 10px 18px;
+    border: solid 1px #CCC;
+    margin: 0 0;
+    /*font-family: 'Lato', sans-serif;*/
+    font-family: 'Julius Sans One', sans-serif;
+    color:#444;
 }
 
 #toolbarcenter{
   margin-left: auto;
   margin-right: auto;
-  width: 260px;
+  width: 460px;
   height: 60px;
+  padding: 10px 18px;
 }
 
 .year, .formdisc, .prinoff {
   font-size: 21px;
   fill: #aaa;
   cursor: default;
+ font-family: 'Julius Sans One', sans-serif;
 }
 
 
