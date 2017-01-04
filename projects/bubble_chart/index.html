@@ -1,7 +1,8 @@
 <!doctype html>
 <html>
 <head>
-  <meta charset="utf-8">
+  <!--<meta charset="utf-8">-->
+  <meta charset="UTF8">
   <title>DOed Bubble Map</title>
   <meta name="description" content="Using D3v4 to create a Bubble chart. Based on NYT visualization">
   <meta name="author" content="David Thor">
@@ -21,21 +22,38 @@
       <a href="#" id="formdisc" class="button">Form/Disc</a>
     <!--<a href="#" id="year" class="button">Grants By Year</a> -->
       <a href="#" id="prinoff" class="button">Principal Offices</a>
+     <!-- <a href="#" id="changes" class="button">Changes</a>-->
       </div>
+    </div>
+    <div class="textcontainer">
+      <div class="alltext">
+          <p>The Department of Education’s mission is to promote student achievement and preparation for global competitiveness by fostering educational excellence and ensuring equal access. ED awards approximately $60 million in grants annually to aid education programs at the state and local level. These grants are awarded typically to State Education Agencies (SEA) and Local Education Agencies (LEA – i.e. school district). These grants differ from Pell Grants and Student Loans which help individuals.</p> 
+          <p>Every bubble represents a sub-program, displayed by size (in $), composed of current open grants. There are approximately over 500 sub-programs which each support a different cause. Colors of the bubbles correspond to how many grants exist in the sub-program. Using the buttons above, you can see how these sub-programs exist in Ed.</p>
+          <p>To learn more about ED’s grants please visit: <a href="http://www.grants.gov/web/grants/learn-grants/grant-making-agencies/department-of-education.html">http://www.grants.gov</a></p>
+        <!-- <p>To learn more about programs in the Catalog of Federal Domestic Assistance please visit: https://www.cfda.gov/ </p> -->
+      </div>  
+      <div class="formdisctext">
+          <p>Grants come in two major categories, Discretionary and Formula. Formula grants are mandatory based on congressionally designed formula. If an SEA or LEA qualifies, they can request the appropriate funding based on their statistical composition. Discretionary grants are awarded based on merit and eligibility. There is a competitive review process and a final funding decision made by Education based on the application and other information.</p> 
+          <p>As of 1 January 2017, there was <b>7.1 billion</b> in discretionary commitments and <br /><b>32 billion</b> in formula.</p>
+          <!--<h5>Lifespan</h5>-->
+          <p>Each sub-program can be viewed as a portfolio of similar grants. These grants are awarded for different time periods, anywhere from 1 year to 10+. Grants are funded annually so any grants that is awarded for over one year receives their funding broken up annually. Each bubble represents the average grant lifespan in years for the sub-program.</p>
+          <p>Most discretionary grants exist for 5 years and most formula grants are available in one year increments. You might have noticed this when viewing the Discretionary and Formula split.</p> 
+          <!--<h5>Offices</h5>-->
+          <p>Programs, and their sub-programs, are administered by different Principal Offices in ED. Each Principal Office focuses on different supporting national education for different cohorts of citizens. Here you can see the different sub-programs broken up into their respective 
+          Principal Offices. </p>
+          <h4 id="lifespantext">Lifespan</h4>
+          <h4 id="officestext">Offices</h4>
+      </div>  
     </div>
     <div id="vis"></div>
 
-  <!--  <div class="footer">
-      <p>A demonstration of animated bubble charts in JavaScript and D3.js</p>
-      <strong>This version of the code uses D3v4!</strong>
-      <p><a href="http://vallandingham.me/bubble_charts_with_d3v4.html">Blog Post</a> | <a href="https://github.com/vlandham/bubble_chart_v4">Code</a></p>
-    </div>-->
-  </div> -->
+  </div> 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="//d3js.org/d3.v4.min.js"></script>
   <script src="src/tooltip.js"></script>
   <script src="src/bubble_chart.js"></script> 
+  <script src="src/main.js"></script> 
 
 </body>
 </html>
