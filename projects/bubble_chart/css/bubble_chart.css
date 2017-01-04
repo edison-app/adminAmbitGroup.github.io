@@ -168,7 +168,7 @@ border-bottom: 1px solid #999;
 .formdisctext p:nth-child(3){
     width: 220px;
     top: 395px;
-    margin-left: 300px;
+    margin-left: 330px;
     position: absolute;
     text-align: center;
 }
@@ -198,7 +198,7 @@ border-bottom: 1px solid #999;
  top: 356px;
  position: absolute;
  /*left: 540px;*/
- margin-left: 329px;
+ margin-left: 314px;
  text-align:center;
  font-family: 'Roboto', sans-serif;
 }
@@ -208,7 +208,7 @@ border-bottom: 1px solid #999;
  top: 712px;
  position: absolute;
  /*left: 540px;*/
- margin-left: 329px;
+ margin-left: 314px;
  text-align:center;
  font-family: 'Roboto', sans-serif;
 }
