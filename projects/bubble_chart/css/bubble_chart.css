@@ -136,7 +136,8 @@ border-bottom: 1px solid #999;
     width: 200px;
     top: 410px;
     position: absolute;
-    left: 930px;
+    /*left: 930px;*/
+    margin-left: 700px;
 }
 
 .alltext p:nth-child(3) a{
