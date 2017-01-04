@@ -214,6 +214,18 @@ border-bottom: 1px solid #999;
  font-family: 'Roboto', sans-serif;
 }
 
+.prinofftext{
+  display:none;
+}
+
+.prinofftext p{
+    width: 860px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    position: absolute;
+    padding-left: 26px;
+}
 
 #svgContainer{
   margin-top: 10px;
