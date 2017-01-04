@@ -3,6 +3,11 @@
 /******************************/
 /*D3.js:
 
+Copyright (c) 2010-2016, David Thor
+All rights reserved.
+
+This code has been modified and customized from original code copyrighted below.
+
 Copyright (c) 2010-2016, Michael Bostock
 All rights reserved.
 
@@ -57,7 +62,7 @@ function bubbleChart() {
 
   // Locations to move bubbles towards, depending
   // on which view mode is selected.
-  var center = { x: width / 2, y: height / 4 };
+  var center = { x: width / 2, y: height / 4};
 
   /*var yearCenters = {
     2010: { x: width / 4, y: height / 4 },
@@ -70,8 +75,8 @@ function bubbleChart() {
 };*/
 
   var formDiscCenters = {
-    Formula: { x: width / 4, y: height / 3 },
-    Discretionary: { x: width / 2 + 120, y: height / 3 }
+    Formula: { x: width / 4 - 10, y: height / 2 },
+    Discretionary: { x: width / 2 + 160, y: height / 2 }
   };
 
   var prinOffCenters = {
@@ -107,8 +112,8 @@ function bubbleChart() {
   }; */
 
   var formDiscsTitleX = {
-    Formula: 200,
-    Discretionary: 626,
+    Formula: 180,
+    Discretionary: 670,
     //2010: width - 160
   };
 
@@ -174,6 +179,15 @@ function bubbleChart() {
   // @v4 Force starts up automatically,
   //  which we don't want as there aren't any nodes yet.
   simulation.stop();
+
+  var simulationForChanges = d3.forceSimulation()
+    .velocityDecay(0.2)
+    .force('x', d3.forceX().strength(forceStrength).x(center.x))
+    .force('y', d3.forceY().strength(forceStrength).y(center.y))
+    //.force('charge', d3.forceManyBody().strength(charge))
+    .on('tick', ticked);
+
+  simulationForChanges.stop();
 
   // Nice looking colors - no reason to buck the trend
   // @v4 scales now have a flattened naming scheme
@@ -251,7 +265,8 @@ function bubbleChart() {
     svg = d3.select(selector)
       .append('svg')
       .attr('width', width)
-      .attr('height', height);
+      .attr('height', height)
+      .attr('id', 'svgContainer'); 
 
     // Bind nodes data to what will become DOM elements to represent them.
     bubbles = svg.selectAll('.bubble')
@@ -283,6 +298,7 @@ function bubbleChart() {
     // Set the simulation's nodes to our newly created nodes array.
     // @v4 Once we set the nodes, the simulation will start running automatically!
     simulation.nodes(nodes);
+    simulationForChanges.nodes(nodes);
 
     // Set initial layout to single group.
     groupBubbles();
@@ -309,7 +325,6 @@ function bubbleChart() {
     //var stringXYear = d.colorprop.toString();
     return yearCenters[d.colorprop].x;
   } */
-
  /* function nodeYearPosY(d) {
     //var stringYYear = d.colorprop.toString();
   return yearCenters[d.colorprop].y;
@@ -333,7 +348,7 @@ function nodeFormDiscPos(d) {
    */
 
   function groupBubbles() {
-    //hideYearTitles();
+    hideAxis();
     hideTypeTitles();
     hideTypePrinOff();
 
@@ -365,7 +380,7 @@ function nodeFormDiscPos(d) {
   } */
 
   function splitBubblesFormDisc(){
-      //hideYearTitles(); 
+      hideAxis();
       hideTypePrinOff();
       showFormDiscTitles();
       // @v4 Reset the 'x' force to draw the bubbles to their year centers
@@ -377,6 +392,7 @@ function nodeFormDiscPos(d) {
   }
 
 function splitBubblesPrinOff(){
+      hideAxis();
       hideTypeTitles();
       //hideYearTitles();
       showPrinOffTitles();
@@ -386,6 +402,21 @@ function splitBubblesPrinOff(){
       // @v4 We can reset the alpha value and restart the simulation  
       simulation.alpha(1).restart();
 }
+
+
+function splitBubblesChanges(){
+      hideTypeTitles();
+      //hideYearTitles();
+      hideTypePrinOff();
+      showAxis();
+
+      // @v4 Reset the 'x' force to draw the bubbles to their year centers
+      simulationForChanges.force('x', d3.forceX().strength(forceStrength).x(nodePrinOffPosX));
+      simulationForChanges.force('y', d3.forceY().strength(forceStrength).y(nodePrinOffPosY));
+      // @v4 We can reset the alpha value and restart the simulation  
+      simulationForChanges.alpha(1).restart();
+}
+
   /*
    * Hides Year title displays.
    */
@@ -400,6 +431,7 @@ function splitBubblesPrinOff(){
   function hideTypePrinOff() {
     svg.selectAll('.prinoff').remove();
   }
+
 
   /*
    * Shows Year title displays.
@@ -428,7 +460,7 @@ function splitBubblesPrinOff(){
     discs.enter().append('text')
       .attr('class', 'formdisc')
       .attr('x', function (d) { return formDiscsTitleX[d]; })
-      .attr('y', 40)
+      .attr('y', 250)
       .attr('text-anchor', 'middle')
       .text(function (d) { return d; });
   }
@@ -477,6 +509,31 @@ function splitBubblesPrinOff(){
     tooltip.hideTooltip();
   }
 
+
+  function showAxis(){
+       //Create the Scale we will use for the Axis
+      var axisScale = d3.scaleLinear()
+                                  .domain([0, 10])
+                                  .range([10, 930]);
+      //Create the Axis
+      var xAxis = d3.axisBottom(axisScale)
+        //.attr('class', 'custAxis')
+        //.attr("transform", "translate(0," + height + ")");
+   
+    
+
+      //Create an SVG group Element for the Axis elements and call the xAxis function
+      var xAxisGroup = svg.append("g")
+                                      .attr('class', 'custAxis')
+                                      //.attr("transform", "translate(0," + height + ")")
+                                      .call(xAxis);
+}
+
+function hideAxis(){
+      svg.select('.custAxis').remove();
+}
+
+
   /*
    * Externally accessible function (this is attached to the
    * returned chart function). Allows the visualization to toggle
@@ -489,7 +546,9 @@ function splitBubblesPrinOff(){
       splitBubblesFormDisc();
     } else if(displayName === 'prinoff') {
       splitBubblesPrinOff();
-    } 
+    } else if(displayName === 'changes') {
+      splitBubblesChanges();
+    }
     else {
       groupBubbles();
     }
