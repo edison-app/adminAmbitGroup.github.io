@@ -140,6 +140,17 @@ function bubbleChart() {
     OSERS: 650
 };
 
+var prinOffPopUp = {
+    IES: "",
+    OCTAE: "",
+    ODS: "",
+    OELA: "",
+    OESE: "",
+    OII: "",
+    OPE: "",
+    OSERS: ""
+  };
+
   // @v4 strength to apply to the position forces
   var forceStrength = 0.03;
 
@@ -476,7 +487,9 @@ function splitBubblesChanges(){
       .attr('x', function (d) { return prinOffTitleX[d]; })
       .attr('y', function (d) { return prinOffTitleY[d]; })
       .attr('text-anchor', 'middle')
-      .text(function (d) { return d; });
+      .text(function (d) { return d; })
+      .append('svg:title')
+      .text(function(d){return d; });
   }
   /*
    * Function called on mouseover to display the
@@ -532,7 +545,6 @@ function splitBubblesChanges(){
 function hideAxis(){
       svg.select('.custAxis').remove();
 }
-
 
   /*
    * Externally accessible function (this is attached to the
