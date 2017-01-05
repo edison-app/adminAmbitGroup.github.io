@@ -1,3 +1,10 @@
+############
+Copyright (c) 2010-2016, David Thor
+All rights reserved.
+############
+This bubble chart is a customization and modification of both Michael Bostock and Jim Vallandingham tutorials. Please see Details below.
+############
+
 # Animated Bubble Chart
 
 Creating Animated Bubble Charts using [D3 version 4](https://d3js.org/)!
