@@ -34,6 +34,10 @@ function textHandler(){
 
 function showAllText(){   
         $j(".alltext").fadeIn("slow");
+        $j("#legendcontainer").css({
+                "top":"580",
+                "margin-left":"0px"
+        }).fadeIn("4000"); 
 }
 
 function hideAllText(){  
@@ -42,6 +46,11 @@ function hideAllText(){
 
 function showFormDiscText(){   
         $j(".formdisctext").fadeIn("slow");
+
+        $j("#legendcontainer").css({
+                "top":"545",
+                "margin-left":"335px"
+        }).fadeIn("4000");
 }
 
 function hideFormDiscText(){   
@@ -55,3 +64,4 @@ function showPrinOffText(){
 function hidePrinOffText(){   
         $j(".prinofftext").fadeOut("3000");
 }
+
