@@ -80,14 +80,14 @@ function bubbleChart() {
   };
 
   var prinOffCenters = {
-    IES: { x: width / 4, y: height / 6},
-    OCTAE: { x: width / 2, y: height / 6 },
-    ODS: { x: 2 * width / 3 + 100, y: height / 6 },
-    OELA: { x: width / 4 + 40, y: height / 3},
-    OESE: { x: width / 2 - 10, y: height / 3 + 78},
-    OII: { x: 2 * width / 3 + 90, y: height / 3 + 30},
-    OPE: { x: width / 4, y: height / 2 + 160},
-    OSERS: { x: width / 2, y: height / 2 + 160 }
+    IES: { x: 200, y: 290},
+    OCTAE: { x: 455, y: 330 },
+    ODS: { x: 700, y: 290 },
+    OELA: { x: 200, y: 410},
+    OESE: { x: 455, y: 517},
+    OII: { x: 700, y: 470},
+    OPE: { x: 200, y: 720},
+    OSERS: { x: 455, y: 700}
   };
   
   // X locations of the year titles.
@@ -118,24 +118,24 @@ function bubbleChart() {
   };
 
   var prinOffTitleX = {
-    IES: 200,
-    OCTAE: width / 2,
-    ODS: width - 200,
-    OELA: 200,
-    OESE: width / 2,
-    OII: width - 200,
-    OPE: 200,
-    OSERS: width / 2
+    IES: 150,
+    OCTAE: 445,
+    ODS: 740,
+    OELA: 150,
+    OESE: 445,
+    OII: 740,
+    OPE: 150,
+    OSERS: 445
   };
  // Y locations of the year titles
 
   var prinOffTitleY = {
-    IES: 40,
-    OCTAE: 40,
-    ODS: 40,
-    OELA: 280,
-    OESE: 280,
-    OII: 280,
+    IES: 190,
+    OCTAE: 190,
+    ODS: 190,
+    OELA: 340,
+    OESE: 340,
+    OII: 340,
     OPE: 650,
     OSERS: 650
 };
