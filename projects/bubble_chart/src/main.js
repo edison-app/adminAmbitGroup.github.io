@@ -14,18 +14,21 @@ $j(document).ready(function(){
 
 function textHandler(){
     $j("#all").click(function(){
-        showAllText();
         hideFormDiscText();
+        hidePrinOffText();
+        showAllText();
     });
 
     $j("#formdisc").click(function(){
         hideAllText();
+        hidePrinOffText();
         showFormDiscText();
     });
 
     $j("#prinoff").click(function(){
         hideAllText();
         hideFormDiscText();
+        showPrinOffText();
     });
 }
 
@@ -42,5 +45,13 @@ function showFormDiscText(){
 }
 
 function hideFormDiscText(){   
-        $j(".formdisctext").fadeOut("slow");
+        $j(".formdisctext").fadeOut("3000");
+}
+
+function showPrinOffText(){   
+        $j(".prinofftext").fadeIn("slow");
+}
+
+function hidePrinOffText(){   
+        $j(".prinofftext").fadeOut("3000");
 }
