@@ -36,7 +36,7 @@ function showAllText(){
         $j(".alltext").fadeIn("slow");
         $j("#legendcontainer").css({
                 "top":"580px",
-                "margin-left":"0px"
+                "margin-left":"20px"
         }); 
 }
 
