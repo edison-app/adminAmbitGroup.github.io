@@ -80,14 +80,14 @@ function bubbleChart() {
   };
 
   var prinOffCenters = {
-    IES: { x: 200, y: 290},
-    OCTAE: { x: 455, y: 330 },
-    ODS: { x: 700, y: 290 },
-    OELA: { x: 200, y: 410},
-    OESE: { x: 455, y: 517},
-    OII: { x: 700, y: 470},
-    OPE: { x: 200, y: 720},
-    OSERS: { x: 455, y: 700}
+    IES: { x: 495, y: 455},
+    OCTAE: { x: 495, y: 240 },
+    ODS: { x: 679, y: 210 },
+    OELA: { x: 679, y: 470},
+    OESE: { x: 165, y: 260},
+    OII: { x: 310, y: 260},
+    OPE: { x: 330, y: 447},
+    OSERS: { x: 170, y: 430}
   };
   
   // X locations of the year titles.
@@ -118,37 +118,37 @@ function bubbleChart() {
   };
 
   var prinOffTitleX = {
-    IES: 150,
-    OCTAE: 445,
+    IES: 565,
+    OCTAE: 565,
     ODS: 740,
-    OELA: 150,
-    OESE: 445,
-    OII: 740,
-    OPE: 150,
-    OSERS: 445
+    OELA: 740,
+    OESE: 150,
+    OII: 375,
+    OPE: 375,
+    OSERS: 150
   };
  // Y locations of the year titles
 
   var prinOffTitleY = {
-    IES: 190,
-    OCTAE: 190,
-    ODS: 190,
-    OELA: 340,
-    OESE: 340,
-    OII: 340,
-    OPE: 650,
-    OSERS: 650
+    IES: 370,
+    OCTAE: 90,
+    ODS: 90,
+    OELA: 370,
+    OESE: 90,
+    OII: 90,
+    OPE: 370,
+    OSERS: 370
 };
 
 var prinOffPopUp = {
-    IES: "",
-    OCTAE: "",
-    ODS: "",
-    OELA: "",
-    OESE: "",
-    OII: "",
-    OPE: "",
-    OSERS: ""
+    IES: "Institute of Education Sciences",
+    OCTAE: "Office of Career, Technical, and Adult Education",
+    ODS: "Office of the Deputy Secretary",
+    OELA: "Office of English Language Acquisition",
+    OESE: "Office of Elementary and Secondary Education",
+    OII: "Office of Innovation and Improvement",
+    OPE: "Office of Postsecondary Education",
+    OSERS: "Office of Special Education and Rehabilitative Services"
   };
 
   // @v4 strength to apply to the position forces
@@ -489,7 +489,7 @@ function splitBubblesChanges(){
       .attr('text-anchor', 'middle')
       .text(function (d) { return d; })
       .append('svg:title')
-      .text(function(d){return d; });
+      .text(function(d){return prinOffPopUp[d]; });
   }
   /*
    * Function called on mouseover to display the
