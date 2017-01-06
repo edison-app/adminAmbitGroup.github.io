@@ -552,6 +552,7 @@ function hideAxis(){
 /********Legend**********/
 
 function drawAllLegendCircle(){
+svg.selectAll('.legendcircle').remove();  
 //1 Billion
 var largeCircle = svg.append("circle")
                           .attr('class', 'legendcircle')
