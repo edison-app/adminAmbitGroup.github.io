@@ -62,7 +62,7 @@ border-bottom: 1px solid #999;
 #toolbarcenter{
   margin-left: auto;
   margin-right: auto;
-  width: 650px;
+  width: 380px;
   height: 60px;
   padding: 10px 18px;
 }
@@ -120,9 +120,9 @@ border-bottom: 1px solid #999;
     width: 860px;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
+    text-align: left;
     position: absolute;
-    padding-left: 26px;
+    padding-left: 20px;
 }
 
 .alltext p:nth-child(2) {
@@ -158,10 +158,10 @@ border-bottom: 1px solid #999;
 }
 
 .formdisctext p:nth-child(2) {
-    width: 270px;
-    top: 275px;
-    /*left:540px;*/
-    margin-left: 300px;
+    width: 220px;
+    top: 280px;
+    /* left: 540px; */
+    margin-left: 330px;
     position: absolute;
     text-align: center;
 }
@@ -221,10 +221,10 @@ border-bottom: 1px solid #999;
 
 .prinofftext p{
     width: 860px;
-    top: 220px;
+    top: 165px;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
+    text-align: left;
     position: absolute;
     padding-left: 26px;
 }
@@ -235,6 +235,7 @@ border-bottom: 1px solid #999;
     top: 580px;
     width: 200px;
     overflow: hidden;
+    margin-left:20px;
 }
 
 #legendcontainer ul{
@@ -301,15 +302,12 @@ legendformdisc {
   height:20px;
   position:relative;
   left: 16%;
-}
-
-#legendlabels li {
   font-size: 11px;
   width:20%;
   padding: 2px 0 0 0; 
 }
 #svgContainer{
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .footer {
