@@ -258,7 +258,7 @@ legendformdisc {
 }
 
 #legendtext{
- margin: 5px 0px 5px 0px;
+ margin: 15px 0px 5px 0px;
 }
 
 #legendswatches {
@@ -306,6 +306,51 @@ legendformdisc {
   width:20%;
   padding: 2px 0 0 0; 
 }
+
+#legendcircletext{
+  position: relative;
+  /*height: 140px;*/
+  width: 200px;
+}
+
+#legendcircletext span{
+  font-size:9px;
+  color: #999;
+  margin-left: 100px;
+}
+
+#legendlinelg{
+ border-bottom: 1px solid #999;
+ position: absolute;
+ width: 36px;
+ margin-left: 62px;
+ margin-top: -5px;
+}
+
+#legendlinemd{
+ border-bottom: 1px solid #999;
+ position: absolute;
+ width: 40px;
+ margin-left: 60px;
+ margin-top: -5px;
+}
+
+#legendlinesm{
+ border-bottom: 1px solid #999;
+ position: absolute;
+ width: 50px;
+ margin-left: 50px;
+ margin-top: -5px;
+}
+
+
+.legendcircle {
+    stroke-width: 1;
+    stroke: #999;
+    stroke-dasharray: 2 2;
+    fill: none;
+}
+
 #svgContainer{
   margin-top: 20px;
 }
