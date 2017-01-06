@@ -362,6 +362,7 @@ function nodeFormDiscPos(d) {
     hideAxis();
     hideTypeTitles();
     hideTypePrinOff();
+    drawAllLegendCircle();
 
     // @v4 Reset the 'x' force to draw the bubbles to the center.
     simulation.force('x', d3.forceX().strength(forceStrength).x(center.x));
@@ -394,6 +395,7 @@ function nodeFormDiscPos(d) {
       hideAxis();
       hideTypePrinOff();
       showFormDiscTitles();
+      drawTypeLegendCircle();
       // @v4 Reset the 'x' force to draw the bubbles to their year centers
     simulation.force('x', d3.forceX().strength(forceStrength).x(nodeFormDiscPos));
     simulation.force('y', d3.forceY().strength(forceStrength).y(260));
@@ -407,6 +409,7 @@ function splitBubblesPrinOff(){
       hideTypeTitles();
       //hideYearTitles();
       showPrinOffTitles();
+      drawOffLegendCircle();
       // @v4 Reset the 'x' force to draw the bubbles to their year centers
       simulation.force('x', d3.forceX().strength(forceStrength).x(nodePrinOffPosX));
       simulation.force('y', d3.forceY().strength(forceStrength).y(nodePrinOffPosY));
@@ -545,6 +548,86 @@ function splitBubblesChanges(){
 function hideAxis(){
       svg.select('.custAxis').remove();
 }
+
+/********Legend**********/
+
+function drawAllLegendCircle(){
+//1 Billion
+var largeCircle = svg.append("circle")
+                          .attr('class', 'legendcircle')
+                          .attr('id', 'legendcirclelg')
+                          .attr("cx", 65)
+                          .attr("cy", 465)
+                          .attr("r", 25);
+// 500 Million
+var medCircle = svg.append("circle")
+                          .attr('class', 'legendcircle')
+                          .attr('id', 'legendcirclemd')
+                          .attr("cx", 65)
+                          .attr("cy", 474)
+                          .attr("r", 17); 
+// 50 Million                             
+var smallCircle = svg.append("circle")
+                          .attr('class', 'legendcircle')
+                          .attr('id', 'legendcirclesm')
+                          .attr("cx", 65)
+                          .attr("cy", 484)
+                          .attr("r", 7);                            
+}
+
+function drawTypeLegendCircle(){
+//1 Billion
+svg.selectAll('.legendcircle').remove();
+
+var largeCircle = svg.append("circle")
+                          .attr('class', 'legendcircle')
+                          .attr('id', 'legendcirclelg')
+                          .attr("cx", 397)
+                          .attr("cy", 465)
+                          .attr("r", 25);
+// 500 Million
+var medCircle = svg.append("circle")
+                          .attr('class', 'legendcircle')
+                          .attr('id', 'legendcirclemd')
+                          .attr("cx", 397)
+                          .attr("cy", 474)
+                          .attr("r", 17); 
+// 50 Million                             
+var smallCircle = svg.append("circle")
+                          .attr('class', 'legendcircle')
+                          .attr('id', 'legendcirclesm')
+                          .attr("cx", 397)
+                          .attr("cy", 484)
+                          .attr("r", 7);                            
+}
+
+function drawOffLegendCircle(){
+//1 Billion
+svg.selectAll('.legendcircle').remove();
+
+var largeCircle = svg.append("circle")
+                          .attr('class', 'legendcircle')
+                          .attr('id', 'legendcirclelg')
+                          .attr("cx", 689)
+                          .attr("cy", 680)
+                          .attr("r", 25);
+// 500 Million
+var medCircle = svg.append("circle")
+                          .attr('class', 'legendcircle')
+                          .attr('id', 'legendcirclemd')
+                          .attr("cx", 689)
+                          .attr("cy", 680)
+                          .attr("r", 17); 
+// 50 Million                             
+var smallCircle = svg.append("circle")
+                          .attr('class', 'legendcircle')
+                          .attr('id', 'legendcirclesm')
+                          .attr("cx", 689)
+                          .attr("cy", 680)
+                          .attr("r", 7);                            
+}
+
+
 
   /*
    * Externally accessible function (this is attached to the
