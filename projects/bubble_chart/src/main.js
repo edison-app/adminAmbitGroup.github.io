@@ -60,8 +60,8 @@ function hideFormDiscText(){
 function showPrinOffText(){   
         $j(".prinofftext").fadeIn("slow");
         $j("#legendcontainer").css({
-                "top":"460px",
-                "margin-left":"650px"
+                "top":"796px",
+                "margin-left":"647px"
         });
 }
 
