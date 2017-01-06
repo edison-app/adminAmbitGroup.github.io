@@ -35,9 +35,9 @@ function textHandler(){
 function showAllText(){   
         $j(".alltext").fadeIn("slow");
         $j("#legendcontainer").css({
-                "top":"580",
+                "top":"580px",
                 "margin-left":"0px"
-        }).fadeIn("4000"); 
+        }); 
 }
 
 function hideAllText(){  
@@ -48,9 +48,9 @@ function showFormDiscText(){
         $j(".formdisctext").fadeIn("slow");
 
         $j("#legendcontainer").css({
-                "top":"545",
-                "margin-left":"335px"
-        }).fadeIn("4000");
+                "top":"580px",
+                "margin-left":"351px"
+        });
 }
 
 function hideFormDiscText(){   
@@ -59,6 +59,10 @@ function hideFormDiscText(){
 
 function showPrinOffText(){   
         $j(".prinofftext").fadeIn("slow");
+        $j("#legendcontainer").css({
+                "top":"460px",
+                "margin-left":"650px"
+        });
 }
 
 function hidePrinOffText(){   
