@@ -237,6 +237,7 @@ var prinOffPopUp = {
       return {
         radius: radiusScale(+d.amount),
         value: +d.amount,
+        count: d.count,
         name: d.name,
         color: d.color,
         year: d.year,
@@ -505,8 +506,11 @@ function splitBubblesChanges(){
     var content = '<span class="name">Title: </span><span class="value">' +
                   d.name +
                   '</span><br/>' +
-                  '<span class="name">Amount: </span><span class="value">$' +
+                  '<span class="name">Remaining Funds: </span><span class="value">$' +
                   addCommas(d.value) +
+                  '</span><br/>' +
+                  '<span class="name">Number of Grants: </span><span class="value">' +
+                  d.count + 
                   '</span><br/>' +
                   '<span class="name">Year: </span><span class="value">' +
                   d.year + 
