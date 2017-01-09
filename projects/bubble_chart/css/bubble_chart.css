@@ -272,20 +272,20 @@ legendformdisc {
   background-image:none;
 }
 
-.under10{
-  background-color: #3E442B;
+.bottomQuint{
+  background-color: #C2D6D0;
 }
-.under50{
-  background-color: #361D2E;
+.lowerQuint{
+  background-color: #A7BFB8;
 }
-.under100{
-  background-color: #0E4749;
+.midQuint{
+  background-color: #8DA7A0;
 }
-.under250{
-  background-color: #242331;
+.upperQuint{
+  background-color: #729088;
 }
-.over250{
-  background-color: #CD5334;
+.topQuint{
+  background-color: #587970;
 }
 
 #legendticks{
