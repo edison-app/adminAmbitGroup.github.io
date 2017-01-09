@@ -1,7 +1,8 @@
 [  
    {  
       "amount":581953332,
-      "color":"under100",
+      "balance":507291034,
+      "color":"topQuint",
       "count":"59",
       "name":"Adult Education - State Administered",
       "office":"OCTAE",
@@ -10,7 +11,8 @@
    },
    {  
       "amount":6531296,
-      "color":"under10",
+      "balance":5914621,
+      "color":"topQuint",
       "count":"4",
       "name":"Desegregation Assistance Centers",
       "office":"OESE",
@@ -19,7 +21,8 @@
    },
    {  
       "amount":14695008592,
-      "color":"under100",
+      "balance":12865277496,
+      "color":"topQuint",
       "count":"52",
       "name":"Title I Part A Baisic Grants to LEAs",
       "office":"OESE",
@@ -28,7 +31,8 @@
    },
    {  
       "amount":364751000,
-      "color":"under50",
+      "balance":301658115,
+      "color":"topQuint",
       "count":"47",
       "name":"MIGRANT EDUCATION",
       "office":"OESE",
@@ -37,7 +41,8 @@
    },
    {  
       "amount":46423650,
-      "color":"under100",
+      "balance":43736483,
+      "color":"topQuint",
       "count":"52",
       "name":"Neglected and Delinquent",
       "office":"OESE",
@@ -46,7 +51,8 @@
    },
    {  
       "amount":68229321,
-      "color":"under100",
+      "balance":26549537,
+      "color":"lowerQuint",
       "count":"100",
       "name":"National Resource Centers",
       "office":"OPE",
@@ -55,7 +61,8 @@
    },
    {  
       "amount":91788238,
-      "color":"under250",
+      "balance":22141522,
+      "color":"lowerQuint",
       "count":"108",
       "name":"Foreign Language and Area Studies Fellowships",
       "office":"OPE",
@@ -64,7 +71,8 @@
    },
    {  
       "amount":9104610,
-      "color":"under100",
+      "balance":5038184,
+      "color":"midQuint",
       "count":"63",
       "name":"Undergraduate International Studies and Foreign Language",
       "office":"OPE",
@@ -72,17 +80,19 @@
       "year":"2.5"
    },
    {  
-      "amount":1516191,
-      "color":"under50",
-      "count":"18",
+      "amount":237709,
+      "balance":148759,
+      "color":"upperQuint",
+      "count":"3",
       "name":"Fulbright-Hays Group Projects Abroad",
       "office":"OPE",
       "type":"Discretionary",
-      "year":"1.5"
+      "year":"2.1"
    },
    {  
       "amount":2792439,
-      "color":"under50",
+      "balance":2790996,
+      "color":"topQuint",
       "count":"26",
       "name":"Fulbright-Hays Group Projects Abroad Short Term",
       "office":"OPE",
@@ -91,7 +101,8 @@
    },
    {  
       "amount":2130697,
-      "color":"under10",
+      "balance":225626,
+      "color":"bottomQuint",
       "count":"3",
       "name":"Fulbright Hays Group Projects Aboard",
       "office":"OPE",
@@ -100,7 +111,8 @@
    },
    {  
       "amount":8959468,
-      "color":"under250",
+      "balance":4402014,
+      "color":"midQuint",
       "count":"112",
       "name":"Fulbright-Hays Doctoral Dissertation Research Abroad",
       "office":"OPE",
@@ -109,7 +121,8 @@
    },
    {  
       "amount":11846802420,
-      "color":"under100",
+      "balance":10568342706,
+      "color":"topQuint",
       "count":"60",
       "name":"State Grants - B",
       "office":"OSERS",
@@ -118,7 +131,8 @@
    },
    {  
       "amount":201633686,
-      "color":"under250",
+      "balance":85194804,
+      "color":"midQuint",
       "count":"178",
       "name":"Strengthening Institutions Program (SIP)",
       "office":"OPE",
@@ -127,7 +141,8 @@
    },
    {  
       "amount":144930863,
-      "color":"under50",
+      "balance":8050481,
+      "color":"bottomQuint",
       "count":"30",
       "name":"HBCU - Institutional Aid",
       "office":"OPE",
@@ -136,7 +151,8 @@
    },
    {  
       "amount":1478044865,
-      "color":"under250",
+      "balance":458820109,
+      "color":"lowerQuint",
       "count":"221",
       "name":"Historically Black Colleges and Universities Program",
       "office":"OPE",
@@ -145,7 +161,8 @@
    },
    {  
       "amount":322750643,
-      "color":"under250",
+      "balance":115434296,
+      "color":"lowerQuint",
       "count":"142",
       "name":"Hispanic-Serving Institutions Program (Stem)",
       "office":"OPE",
@@ -154,7 +171,8 @@
    },
    {  
       "amount":53601098,
-      "color":"under50",
+      "balance":34210933,
+      "color":"upperQuint",
       "count":"33",
       "name":"American Indian Tribally Controlled Colleges and Univers",
       "office":"OPE",
@@ -163,7 +181,8 @@
    },
    {  
       "amount":48569319,
-      "color":"under50",
+      "balance":16352951,
+      "color":"lowerQuint",
       "count":"11",
       "name":"Strengthening Institutions Program (SIP)",
       "office":"OPE",
@@ -172,7 +191,8 @@
    },
    {  
       "amount":500000,
-      "color":"under10",
+      "balance":0,
+      "color":"bottomQuint",
       "count":"1",
       "name":"ENDOWMENT CHALLENGE GRANT",
       "office":"OPE",
@@ -181,7 +201,8 @@
    },
    {  
       "amount":6177776,
-      "color":"under50",
+      "balance":4524949,
+      "color":"upperQuint",
       "count":"11",
       "name":"Asian American and Native American Pacific Islander-Serv",
       "office":"OPE",
@@ -190,7 +211,8 @@
    },
    {  
       "amount":29288456,
-      "color":"under50",
+      "balance":11725510,
+      "color":"midQuint",
       "count":"19",
       "name":"Promoting Postbaccalaureate Opportunities for Hispanic A",
       "office":"OPE",
@@ -199,7 +221,8 @@
    },
    {  
       "amount":3720677,
-      "color":"under10",
+      "balance":177323,
+      "color":"bottomQuint",
       "count":"1",
       "name":"Alaska Native and Native Hawaiian",
       "office":"OPE",
@@ -208,7 +231,8 @@
    },
    {  
       "amount":3896850,
-      "color":"under10",
+      "balance":2683333,
+      "color":"upperQuint",
       "count":"3",
       "name":"Alaska Native and Native Hawaiian Serving Institutions",
       "office":"OPE",
@@ -217,7 +241,8 @@
    },
    {  
       "amount":30909001,
-      "color":"under50",
+      "balance":12155157,
+      "color":"lowerQuint",
       "count":"28",
       "name":"Predominantly Black Institutions Program - Formula Grant",
       "office":"OPE",
@@ -226,7 +251,8 @@
    },
    {  
       "amount":10553695,
-      "color":"under10",
+      "balance":6307547,
+      "color":"midQuint",
       "count":"4",
       "name":"Alaska Native and Native Hawaiian Serving Institutions (",
       "office":"OPE",
@@ -235,7 +261,8 @@
    },
    {  
       "amount":295881046,
-      "color":"under250",
+      "balance":138039343,
+      "color":"midQuint",
       "count":"202",
       "name":"Developing Hispanic-Serving Institutions Program",
       "office":"OPE",
@@ -244,7 +271,8 @@
    },
    {  
       "amount":9598031,
-      "color":"under10",
+      "balance":1506510,
+      "color":"bottomQuint",
       "count":"3",
       "name":"Strengthening Institutions - Hispanic Serving Institutio",
       "office":"OPE",
@@ -253,7 +281,8 @@
    },
    {  
       "amount":60639187,
-      "color":"under50",
+      "balance":33137138,
+      "color":"midQuint",
       "count":"37",
       "name":"American Indian Tribally Controlled Colleges and Univers",
       "office":"OPE",
@@ -262,7 +291,8 @@
    },
    {  
       "amount":3051876,
-      "color":"under10",
+      "balance":236407,
+      "color":"bottomQuint",
       "count":"1",
       "name":"Tribally Controlled Colleges and Universities",
       "office":"OPE",
@@ -271,7 +301,8 @@
    },
    {  
       "amount":38285318,
-      "color":"under50",
+      "balance":25765742,
+      "color":"upperQuint",
       "count":"11",
       "name":"Native Hawaiian Serving Institutions (Part F)",
       "office":"OPE",
@@ -280,7 +311,8 @@
    },
    {  
       "amount":20926936,
-      "color":"under50",
+      "balance":14626589,
+      "color":"upperQuint",
       "count":"12",
       "name":"Native Hawaiian Serving Institutions",
       "office":"OPE",
@@ -289,7 +321,8 @@
    },
    {  
       "amount":5339045,
-      "color":"under10",
+      "balance":2908657,
+      "color":"midQuint",
       "count":"7",
       "name":"Tribal-Non Tribal Colleges",
       "office":"OPE",
@@ -298,7 +331,8 @@
    },
    {  
       "amount":18593504,
-      "color":"under10",
+      "balance":13547733,
+      "color":"upperQuint",
       "count":"6",
       "name":"Impact Aid Program, Discretionary Construction Program",
       "office":"OESE",
@@ -307,7 +341,8 @@
    },
    {  
       "amount":611483713,
-      "color":"over250",
+      "balance":287778178,
+      "color":"midQuint",
       "count":"1072",
       "name":"Student Support Services Program",
       "office":"OPE",
@@ -315,9 +350,10 @@
       "year":"5.0"
    },
    {  
-      "amount":209599032,
-      "color":"over250",
-      "count":"483",
+      "amount":206604545,
+      "balance":124688683,
+      "color":"upperQuint",
+      "count":"481",
       "name":"Talent Search Program",
       "office":"OPE",
       "type":"Discretionary",
@@ -325,7 +361,8 @@
    },
    {  
       "amount":1287582234,
-      "color":"over250",
+      "balance":213436929,
+      "color":"bottomQuint",
       "count":"816",
       "name":"Upward Bound",
       "office":"OPE",
@@ -334,7 +371,8 @@
    },
    {  
       "amount":1522216,
-      "color":"under10",
+      "balance":0,
+      "color":"bottomQuint",
       "count":"1",
       "name":"Upward Bound Program",
       "office":"OPE",
@@ -343,7 +381,8 @@
    },
    {  
       "amount":208457984,
-      "color":"under250",
+      "balance":42168959,
+      "color":"lowerQuint",
       "count":"162",
       "name":"Upward Bound Math & Science",
       "office":"OPE",
@@ -352,7 +391,8 @@
    },
    {  
       "amount":64218542,
-      "color":"under50",
+      "balance":12594676,
+      "color":"bottomQuint",
       "count":"49",
       "name":"Upward Bound Veterans Program",
       "office":"OPE",
@@ -361,7 +401,8 @@
    },
    {  
       "amount":1138417945,
-      "color":"under100",
+      "balance":963781882,
+      "color":"topQuint",
       "count":"57",
       "name":"Vocational Education - Basic Grants to States",
       "office":"OCTAE",
@@ -370,7 +411,8 @@
    },
    {  
       "amount":1456273,
-      "color":"under10",
+      "balance":1308901,
+      "color":"topQuint",
       "count":"4",
       "name":"Juvenile Justice Reentry",
       "office":"OCTAE",
@@ -379,7 +421,8 @@
    },
    {  
       "amount":1999350,
-      "color":"under10",
+      "balance":1999350,
+      "color":"topQuint",
       "count":"1",
       "name":"Pay For Success Initiative",
       "office":"OCTAE",
@@ -388,7 +431,8 @@
    },
    {  
       "amount":5836,
-      "color":"under10",
+      "balance":5836,
+      "color":"topQuint",
       "count":"1",
       "name":"Formula Grants to LEAs",
       "office":"OESE",
@@ -397,7 +441,8 @@
    },
    {  
       "amount":98168005,
-      "color":"over250",
+      "balance":79181024,
+      "color":"topQuint",
       "count":"1244",
       "name":"Indian Education Formula Grants to LEAs",
       "office":"OESE",
@@ -406,7 +451,8 @@
    },
    {  
       "amount":103070432,
-      "color":"under250",
+      "balance":46603136,
+      "color":"midQuint",
       "count":"166",
       "name":"Educational Opportunity Centers Program",
       "office":"OPE",
@@ -415,7 +461,8 @@
    },
    {  
       "amount":54377541,
-      "color":"under50",
+      "balance":15631825,
+      "color":"lowerQuint",
       "count":"30",
       "name":"Native American Career and Technical Education Program",
       "office":"OCTAE",
@@ -424,7 +471,8 @@
    },
    {  
       "amount":2736577,
-      "color":"under50",
+      "balance":2545737,
+      "color":"topQuint",
       "count":"13",
       "name":"Training Program for Federal TRIO Program",
       "office":"OPE",
@@ -433,7 +481,8 @@
    },
    {  
       "amount":2474094,
-      "color":"under10",
+      "balance":1835674,
+      "color":"upperQuint",
       "count":"1",
       "name":"National Center for Information and Technical Support fo",
       "office":"OPE",
@@ -442,7 +491,8 @@
    },
    {  
       "amount":74636477,
-      "color":"under50",
+      "balance":43599202,
+      "color":"midQuint",
       "count":"24",
       "name":"First in the World",
       "office":"OPE",
@@ -451,7 +501,8 @@
    },
    {  
       "amount":42930565,
-      "color":"under50",
+      "balance":36474524,
+      "color":"topQuint",
       "count":"16",
       "name":"First in the World - Development",
       "office":"OPE",
@@ -460,7 +511,8 @@
    },
    {  
       "amount":4961846,
-      "color":"under50",
+      "balance":3875439,
+      "color":"upperQuint",
       "count":"13",
       "name":"Centers of Excellence for Veteran Student Success (CEVSS",
       "office":"OPE",
@@ -469,7 +521,8 @@
    },
    {  
       "amount":429260,
-      "color":"under10",
+      "balance":81138,
+      "color":"bottomQuint",
       "count":"1",
       "name":"E. U. - US Atlantis Program",
       "office":"OPE",
@@ -478,7 +531,8 @@
    },
    {  
       "amount":1662005,
-      "color":"under10",
+      "balance":1024052,
+      "color":"upperQuint",
       "count":"4",
       "name":"Training for Realtime Writers (TRTW)",
       "office":"OPE",
@@ -487,7 +541,8 @@
    },
    {  
       "amount":495000,
-      "color":"under10",
+      "balance":251809,
+      "color":"midQuint",
       "count":"1",
       "name":"Center for Best Practices to Support Single Parent Stude",
       "office":"OPE",
@@ -496,7 +551,8 @@
    },
    {  
       "amount":1483820,
-      "color":"under10",
+      "balance":793315,
+      "color":"midQuint",
       "count":"1",
       "name":"Centers for the Study of Distance Education and Technolo",
       "office":"OPE",
@@ -505,7 +561,8 @@
    },
    {  
       "amount":18169115,
-      "color":"under10",
+      "balance":15699037,
+      "color":"topQuint",
       "count":"2",
       "name":"First in the World - Validation",
       "office":"OPE",
@@ -514,7 +571,8 @@
    },
    {  
       "amount":28714222,
-      "color":"under100",
+      "balance":13303448,
+      "color":"midQuint",
       "count":"56",
       "name":"Minority Science and Engineering Improvement Program (MS",
       "office":"OPE",
@@ -522,9 +580,10 @@
       "year":"3.3"
    },
    {  
-      "amount":1792103967,
-      "color":"under100",
-      "count":"80",
+      "amount":1855094534,
+      "balance":1595097129,
+      "color":"topQuint",
+      "count":"81",
       "name":"State Vocational Rehabilitation Services (VR)",
       "office":"OSERS",
       "type":"Formula",
@@ -532,7 +591,8 @@
    },
    {  
       "amount":895443,
-      "color":"under10",
+      "balance":171025,
+      "color":"bottomQuint",
       "count":"1",
       "name":"Migrant & Seasonal Farmworkers",
       "office":"OSERS",
@@ -541,7 +601,8 @@
    },
    {  
       "amount":37958767,
-      "color":"under100",
+      "balance":16812088,
+      "color":"midQuint",
       "count":"74",
       "name":"Rehabilitation Long-Term Training - Rehabilitation Couns",
       "office":"OSERS",
@@ -550,7 +611,8 @@
    },
    {  
       "amount":747770,
-      "color":"under10",
+      "balance":459484,
+      "color":"upperQuint",
       "count":"2",
       "name":"Rehabilitation Long-Term Training - Vocational/Evaluatio",
       "office":"OSERS",
@@ -559,7 +621,8 @@
    },
    {  
       "amount":5318526,
-      "color":"under50",
+      "balance":1983428,
+      "color":"lowerQuint",
       "count":"12",
       "name":"Rehabilitation Long-Term Training/Rehabilitation of the ",
       "office":"OSERS",
@@ -568,7 +631,8 @@
    },
    {  
       "amount":3850343,
-      "color":"under10",
+      "balance":1173983,
+      "color":"lowerQuint",
       "count":"9",
       "name":"Rehabilitation Long-Term Training - Rehabilitation of In",
       "office":"OSERS",
@@ -577,7 +641,8 @@
    },
    {  
       "amount":1496740,
-      "color":"under10",
+      "balance":569139,
+      "color":"lowerQuint",
       "count":"4",
       "name":"Rehabilitation Long-Term Training - Rehabilitation of th",
       "office":"OSERS",
@@ -586,7 +651,8 @@
    },
    {  
       "amount":2735081,
-      "color":"under10",
+      "balance":1245847,
+      "color":"midQuint",
       "count":"7",
       "name":"Rehabilitation Long-Term Training - Comprehensive System",
       "office":"OSERS",
@@ -595,7 +661,8 @@
    },
    {  
       "amount":44275256,
-      "color":"under50",
+      "balance":12490074,
+      "color":"lowerQuint",
       "count":"34",
       "name":"(HEP)",
       "office":"OESE",
@@ -604,7 +671,8 @@
    },
    {  
       "amount":6929707,
-      "color":"under50",
+      "balance":5541771,
+      "color":"upperQuint",
       "count":"16",
       "name":"High School Equivalency Program",
       "office":"OESE",
@@ -613,7 +681,8 @@
    },
    {  
       "amount":2999981,
-      "color":"under50",
+      "balance":2799452,
+      "color":"topQuint",
       "count":"34",
       "name":"Migrant Education Program Consortium Incentive Grants",
       "office":"OESE",
@@ -622,7 +691,8 @@
    },
    {  
       "amount":45900687,
-      "color":"under50",
+      "balance":10154673,
+      "color":"lowerQuint",
       "count":"35",
       "name":"CAMP",
       "office":"OESE",
@@ -631,7 +701,8 @@
    },
    {  
       "amount":7264073,
-      "color":"under50",
+      "balance":5958961,
+      "color":"topQuint",
       "count":"18",
       "name":"College Assistance Migrant Program",
       "office":"OESE",
@@ -640,7 +711,8 @@
    },
    {  
       "amount":800000,
-      "color":"under10",
+      "balance":800000,
+      "color":"topQuint",
       "count":"1",
       "name":"Interpreter Training Program",
       "office":"OSERS",
@@ -649,7 +721,8 @@
    },
    {  
       "amount":1599964,
-      "color":"under10",
+      "balance":1599964,
+      "color":"topQuint",
       "count":"4",
       "name":"Interpreter Training Program",
       "office":"OSERS",
@@ -658,7 +731,8 @@
    },
    {  
       "amount":7443098,
-      "color":"under100",
+      "balance":6767062,
+      "color":"topQuint",
       "count":"57",
       "name":"Client Assistance Program (CAP)",
       "office":"OSERS",
@@ -667,7 +741,8 @@
    },
    {  
       "amount":358296961,
-      "color":"under50",
+      "balance":148377741,
+      "color":"midQuint",
       "count":"36",
       "name":"Magnet Schools Assistance",
       "office":"OII",
@@ -676,7 +751,8 @@
    },
    {  
       "amount":368238000,
-      "color":"under100",
+      "balance":330028453,
+      "color":"topQuint",
       "count":"52",
       "name":"State Grants -B",
       "office":"OSERS",
@@ -685,7 +761,8 @@
    },
    {  
       "amount":18603191,
-      "color":"under100",
+      "balance":16296854,
+      "color":"topQuint",
       "count":"56",
       "name":"Independent Living Services for Older Individuals who ar",
       "office":"OSERS",
@@ -694,7 +771,8 @@
    },
    {  
       "amount":1198212,
-      "color":"under10",
+      "balance":575000,
+      "color":"midQuint",
       "count":"1",
       "name":"Independent Living Services for Older Individuals who ar",
       "office":"OSERS",
@@ -703,7 +781,8 @@
    },
    {  
       "amount":458556000,
-      "color":"under100",
+      "balance":393255182,
+      "color":"topQuint",
       "count":"57",
       "name":"Infants and Toddlers with Disabilities",
       "office":"OSERS",
@@ -712,7 +791,8 @@
    },
    {  
       "amount":5094793,
-      "color":"under10",
+      "balance":5094793,
+      "color":"topQuint",
       "count":"3",
       "name":"Promoting Student Resilience Program",
       "office":"OESE",
@@ -721,7 +801,8 @@
    },
    {  
       "amount":22291294,
-      "color":"under50",
+      "balance":11587046,
+      "color":"midQuint",
       "count":"12",
       "name":"School Climate Transformation Grants to SEAs",
       "office":"OESE",
@@ -730,7 +811,8 @@
    },
    {  
       "amount":107852900,
-      "color":"under100",
+      "balance":48946648,
+      "color":"midQuint",
       "count":"69",
       "name":"School Climate Transformation Grants to LEAs",
       "office":"OESE",
@@ -739,7 +821,8 @@
    },
    {  
       "amount":44148961,
-      "color":"under50",
+      "balance":21261476,
+      "color":"midQuint",
       "count":"22",
       "name":"Project Prevent",
       "office":"OESE",
@@ -748,7 +831,8 @@
    },
    {  
       "amount":9793777,
-      "color":"under50",
+      "balance":3806817,
+      "color":"lowerQuint",
       "count":"20",
       "name":"Grants to SEAs for Emergency Management",
       "office":"OESE",
@@ -757,7 +841,8 @@
    },
    {  
       "amount":7863103,
-      "color":"under50",
+      "balance":3750279,
+      "color":"midQuint",
       "count":"14",
       "name":"School Emergency Response to Violence (Project SERV)",
       "office":"OESE",
@@ -766,7 +851,8 @@
    },
    {  
       "amount":15692139,
-      "color":"under100",
+      "balance":15079968,
+      "color":"topQuint",
       "count":"79",
       "name":"State Supported Employment Services (SE)",
       "office":"OSERS",
@@ -775,7 +861,8 @@
    },
    {  
       "amount":1680131,
-      "color":"under10",
+      "balance":35105,
+      "color":"bottomQuint",
       "count":"1",
       "name":"LINCS Regional Professional Development Centers",
       "office":"OCTAE",
@@ -784,7 +871,8 @@
    },
    {  
       "amount":5491613,
-      "color":"under10",
+      "balance":3607991,
+      "color":"upperQuint",
       "count":"9",
       "name":"Improved Renetry Education",
       "office":"OCTAE",
@@ -793,7 +881,8 @@
    },
    {  
       "amount":68144961,
-      "color":"under100",
+      "balance":61997800,
+      "color":"topQuint",
       "count":"52",
       "name":"Education for Homeless Children and Youth",
       "office":"OESE",
@@ -802,7 +891,8 @@
    },
    {  
       "amount":83549178,
-      "color":"under250",
+      "balance":43404906,
+      "color":"midQuint",
       "count":"174",
       "name":"Graduate Assistance in Areas of National Need (GAANN)",
       "office":"OPE",
@@ -811,7 +901,8 @@
    },
    {  
       "amount":23256599,
-      "color":"under50",
+      "balance":12141598,
+      "color":"midQuint",
       "count":"21",
       "name":"Javits Gifted and Talented Students Education Act",
       "office":"OESE",
@@ -820,7 +911,8 @@
    },
    {  
       "amount":122390330,
-      "color":"under250",
+      "balance":54498251,
+      "color":"midQuint",
       "count":"127",
       "name":"Elementary and Secondary School Counseling",
       "office":"OESE",
@@ -829,7 +921,8 @@
    },
    {  
       "amount":123517621,
-      "color":"under100",
+      "balance":45944100,
+      "color":"lowerQuint",
       "count":"95",
       "name":"Carol M. White Physical Education Program",
       "office":"OESE",
@@ -838,7 +931,8 @@
    },
    {  
       "amount":62220669,
-      "color":"under50",
+      "balance":32035492,
+      "color":"midQuint",
       "count":"50",
       "name":"Innovative Approaches to Literacy",
       "office":"OESE",
@@ -847,7 +941,8 @@
    },
    {  
       "amount":4950726,
-      "color":"under10",
+      "balance":3388152,
+      "color":"upperQuint",
       "count":"4",
       "name":"Skills for Success",
       "office":"OII",
@@ -856,7 +951,8 @@
    },
    {  
       "amount":24425721,
-      "color":"under50",
+      "balance":11131375,
+      "color":"midQuint",
       "count":"21",
       "name":"Full Service Community Schools Program",
       "office":"OII",
@@ -865,7 +961,8 @@
    },
    {  
       "amount":230679453,
-      "color":"under50",
+      "balance":83498816,
+      "color":"lowerQuint",
       "count":"14",
       "name":"Promise Neighborhoods Implementation Grants",
       "office":"OII",
@@ -874,7 +971,8 @@
    },
    {  
       "amount":2951147,
-      "color":"under10",
+      "balance":181593,
+      "color":"bottomQuint",
       "count":"1",
       "name":"Educational Facilities Clearinghouse",
       "office":"OESE",
@@ -883,7 +981,8 @@
    },
    {  
       "amount":172562323,
-      "color":"under250",
+      "balance":38324196,
+      "color":"lowerQuint",
       "count":"151",
       "name":"Ronald E. McNair Postbaccalaureate Achievement",
       "office":"OPE",
@@ -892,7 +991,8 @@
    },
    {  
       "amount":13714200,
-      "color":"under50",
+      "balance":5723342,
+      "color":"midQuint",
       "count":"17",
       "name":"Centers for International Business Education",
       "office":"OPE",
@@ -901,7 +1001,8 @@
    },
    {  
       "amount":8292704,
-      "color":"under50",
+      "balance":2808949,
+      "color":"lowerQuint",
       "count":"16",
       "name":"Language Resource Centers",
       "office":"OPE",
@@ -910,7 +1011,8 @@
    },
    {  
       "amount":985247,
-      "color":"under10",
+      "balance":323616,
+      "color":"lowerQuint",
       "count":"3",
       "name":"Demonstration Program/Braille Training",
       "office":"OSERS",
@@ -919,7 +1021,8 @@
    },
    {  
       "amount":2744413,
-      "color":"under10",
+      "balance":1011149,
+      "color":"lowerQuint",
       "count":"7",
       "name":"Demonstration and Training Program/Parent Information an",
       "office":"OSERS",
@@ -928,7 +1031,8 @@
    },
    {  
       "amount":750000,
-      "color":"under10",
+      "balance":285000,
+      "color":"lowerQuint",
       "count":"1",
       "name":"Technical Assistance",
       "office":"OSERS",
@@ -937,7 +1041,8 @@
    },
    {  
       "amount":16725541,
-      "color":"under10",
+      "balance":7389504,
+      "color":"midQuint",
       "count":"1",
       "name":"SSI/SSDI Demonstrations",
       "office":"OSERS",
@@ -946,7 +1051,8 @@
    },
    {  
       "amount":6954623,
-      "color":"under10",
+      "balance":4890352,
+      "color":"upperQuint",
       "count":"4",
       "name":"Demonstration and Training -- Career Pathways for Indivi",
       "office":"OSERS",
@@ -955,7 +1061,8 @@
    },
    {  
       "amount":10047148,
-      "color":"under100",
+      "balance":8572233,
+      "color":"topQuint",
       "count":"57",
       "name":"Protection and Advocacy of Individual Rights (PAIR)",
       "office":"OSERS",
@@ -964,7 +1071,8 @@
    },
    {  
       "amount":78520435,
-      "color":"under10",
+      "balance":6074860,
+      "color":"bottomQuint",
       "count":"2",
       "name":"Career and Technical Institutions",
       "office":"OCTAE",
@@ -973,7 +1081,8 @@
    },
    {  
       "amount":435000,
-      "color":"under10",
+      "balance":166250,
+      "color":"lowerQuint",
       "count":"1",
       "name":"Rehabilitation Short-Term Training - Client Assistance P",
       "office":"OSERS",
@@ -982,7 +1091,8 @@
    },
    {  
       "amount":63317941,
-      "color":"under50",
+      "balance":22050915,
+      "color":"lowerQuint",
       "count":"46",
       "name":"American Indian Vocational Rehabilitation Services",
       "office":"OSERS",
@@ -991,7 +1101,8 @@
    },
    {  
       "amount":25266993,
-      "color":"under50",
+      "balance":12517733,
+      "color":"midQuint",
       "count":"29",
       "name":"American Indian Vocational Rehabilitation Services",
       "office":"OSERS",
@@ -1000,7 +1111,8 @@
    },
    {  
       "amount":10556874,
-      "color":"under50",
+      "balance":9597062,
+      "color":"topQuint",
       "count":"13",
       "name":"American Indian Vocational Rehabilitation Services",
       "office":"OSERS",
@@ -1009,7 +1121,8 @@
    },
    {  
       "amount":1475880,
-      "color":"under10",
+      "balance":910621,
+      "color":"upperQuint",
       "count":"1",
       "name":"American Indian Vocational Rehabilitation Services Train",
       "office":"OSERS",
@@ -1018,7 +1131,8 @@
    },
    {  
       "amount":22138702,
-      "color":"under10",
+      "balance":5179546,
+      "color":"lowerQuint",
       "count":"6",
       "name":"Territories Freely Associated with State Educational Gra",
       "office":"OESE",
@@ -1027,7 +1141,8 @@
    },
    {  
       "amount":11051780,
-      "color":"under10",
+      "balance":2686986,
+      "color":"lowerQuint",
       "count":"7",
       "name":"Native Hawaiian Career and Technical Education",
       "office":"OCTAE",
@@ -1036,7 +1151,8 @@
    },
    {  
       "amount":1800000,
-      "color":"under10",
+      "balance":1576431,
+      "color":"topQuint",
       "count":"1",
       "name":"Technical Assistance Center for Vocational Rehabilitatio",
       "office":"OSERS",
@@ -1045,7 +1161,8 @@
    },
    {  
       "amount":9600000,
-      "color":"under10",
+      "balance":5107606,
+      "color":"midQuint",
       "count":"1",
       "name":"TACE",
       "office":"OSERS",
@@ -1054,7 +1171,8 @@
    },
    {  
       "amount":4250000,
-      "color":"under10",
+      "balance":3399108,
+      "color":"upperQuint",
       "count":"1",
       "name":"RRCEP -- TA Center on Targeted Communities",
       "office":"OSERS",
@@ -1063,7 +1181,8 @@
    },
    {  
       "amount":9393968,
-      "color":"under10",
+      "balance":6778887,
+      "color":"upperQuint",
       "count":"1",
       "name":"RRCEP--TA Center on WIOA/Program Performance",
       "office":"OSERS",
@@ -1072,7 +1191,8 @@
    },
    {  
       "amount":2999929,
-      "color":"under10",
+      "balance":2580210,
+      "color":"topQuint",
       "count":"1",
       "name":"RRCEP--TA Center on Targeted Youth",
       "office":"OSERS",
@@ -1081,7 +1201,8 @@
    },
    {  
       "amount":756734,
-      "color":"under10",
+      "balance":668425,
+      "color":"topQuint",
       "count":"10",
       "name":"American Overseas Research Centers",
       "office":"OPE",
@@ -1090,7 +1211,8 @@
    },
    {  
       "amount":1053043150,
-      "color":"under50",
+      "balance":502031235,
+      "color":"midQuint",
       "count":"31",
       "name":"Public Charter Schools",
       "office":"OII",
@@ -1099,7 +1221,8 @@
    },
    {  
       "amount":12235125,
-      "color":"under50",
+      "balance":3393162,
+      "color":"lowerQuint",
       "count":"29",
       "name":"Public Charter Schools",
       "office":"OII",
@@ -1108,7 +1231,8 @@
    },
    {  
       "amount":808837,
-      "color":"under10",
+      "balance":571620,
+      "color":"upperQuint",
       "count":"3",
       "name":"Public Charter Schools",
       "office":"OII",
@@ -1117,7 +1241,8 @@
    },
    {  
       "amount":77716812,
-      "color":"under10",
+      "balance":43208080,
+      "color":"midQuint",
       "count":"2",
       "name":"Per Pupil Facilities Program",
       "office":"OII",
@@ -1126,7 +1251,8 @@
    },
    {  
       "amount":256964239,
-      "color":"under50",
+      "balance":155476682,
+      "color":"upperQuint",
       "count":"46",
       "name":"Charter Schools Management Organizations",
       "office":"OII",
@@ -1135,7 +1261,8 @@
    },
    {  
       "amount":8623409,
-      "color":"under10",
+      "balance":2791189,
+      "color":"lowerQuint",
       "count":"6",
       "name":"Charter Schools National Activities Competition",
       "office":"OII",
@@ -1144,7 +1271,8 @@
    },
    {  
       "amount":251732792,
-      "color":"under50",
+      "balance":45576161,
+      "color":"bottomQuint",
       "count":"22",
       "name":"Comprehensive Centers",
       "office":"OESE",
@@ -1153,7 +1281,8 @@
    },
    {  
       "amount":1449831,
-      "color":"under10",
+      "balance":1449831,
+      "color":"topQuint",
       "count":"1",
       "name":"Comprehensive Centers Program--National Comprehensive Ce",
       "office":"OESE",
@@ -1162,7 +1291,8 @@
    },
    {  
       "amount":1143339540,
-      "color":"under100",
+      "balance":1000515747,
+      "color":"topQuint",
       "count":"52",
       "name":"21st Century Community Learning Centers Program",
       "office":"OESE",
@@ -1171,7 +1301,8 @@
    },
    {  
       "amount":51255873,
-      "color":"under10",
+      "balance":44059841,
+      "color":"topQuint",
       "count":"2",
       "name":"Ready-To-Learn Television",
       "office":"OII",
@@ -1180,7 +1311,8 @@
    },
    {  
       "amount":56924552,
-      "color":"under100",
+      "balance":29919713,
+      "color":"midQuint",
       "count":"73",
       "name":"Demonstration Grants for Indian Children",
       "office":"OESE",
@@ -1189,7 +1321,8 @@
    },
    {  
       "amount":6713402,
-      "color":"under50",
+      "balance":6436332,
+      "color":"topQuint",
       "count":"20",
       "name":"Indian Education Professional Development",
       "office":"OESE",
@@ -1198,7 +1331,8 @@
    },
    {  
       "amount":13860857,
-      "color":"under50",
+      "balance":2548487,
+      "color":"bottomQuint",
       "count":"14",
       "name":"Professional Development",
       "office":"OESE",
@@ -1207,7 +1341,8 @@
    },
    {  
       "amount":270647126,
-      "color":"under250",
+      "balance":117696325,
+      "color":"midQuint",
       "count":"227",
       "name":"Education Research Program",
       "office":"IES",
@@ -1216,7 +1351,8 @@
    },
    {  
       "amount":88827011,
-      "color":"under50",
+      "balance":7212443,
+      "color":"bottomQuint",
       "count":"37",
       "name":"National Center for Education Research",
       "office":"IES",
@@ -1225,7 +1361,8 @@
    },
    {  
       "amount":20209950,
-      "color":"under50",
+      "balance":8597705,
+      "color":"midQuint",
       "count":"18",
       "name":"Education Research Training",
       "office":"IES",
@@ -1234,7 +1371,8 @@
    },
    {  
       "amount":4916923,
-      "color":"under10",
+      "balance":171087,
+      "color":"bottomQuint",
       "count":"1",
       "name":"Post-doctoral Research Fellowships",
       "office":"IES",
@@ -1243,7 +1381,8 @@
    },
    {  
       "amount":7824944,
-      "color":"under50",
+      "balance":4910883,
+      "color":"upperQuint",
       "count":"12",
       "name":"Research Training Programs in the Education Sciences",
       "office":"IES",
@@ -1252,7 +1391,8 @@
    },
    {  
       "amount":74087195,
-      "color":"under50",
+      "balance":17014439,
+      "color":"lowerQuint",
       "count":"11",
       "name":"Education Research and Development Centers",
       "office":"IES",
@@ -1261,7 +1401,8 @@
    },
    {  
       "amount":11289991,
-      "color":"under50",
+      "balance":4924746,
+      "color":"midQuint",
       "count":"23",
       "name":"Research on Statistical and Research Methodology in Educ",
       "office":"IES",
@@ -1270,7 +1411,8 @@
    },
    {  
       "amount":21699807,
-      "color":"under10",
+      "balance":6360218,
+      "color":"lowerQuint",
       "count":"8",
       "name":"Evaluation of State and Local Education Programs and Pol",
       "office":"IES",
@@ -1279,7 +1421,8 @@
    },
    {  
       "amount":94176609,
-      "color":"under10",
+      "balance":2609546,
+      "color":"bottomQuint",
       "count":"5",
       "name":"Reading for Understanding Research Initiative",
       "office":"IES",
@@ -1288,7 +1431,8 @@
    },
    {  
       "amount":14526905,
-      "color":"under50",
+      "balance":7573965,
+      "color":"midQuint",
       "count":"20",
       "name":"Partnerships and Collaborations Focused on Programs of P",
       "office":"IES",
@@ -1297,7 +1441,8 @@
    },
    {  
       "amount":14333421,
-      "color":"under50",
+      "balance":5186995,
+      "color":"lowerQuint",
       "count":"14",
       "name":"Researcher-Practitioner Partnerships in Education Resear",
       "office":"IES",
@@ -1306,7 +1451,8 @@
    },
    {  
       "amount":360813,
-      "color":"under10",
+      "balance":325073,
+      "color":"topQuint",
       "count":"3",
       "name":"Low-Cost, Short-Duration Evaluation of Education Interve",
       "office":"IES",
@@ -1314,9 +1460,10 @@
       "year":"2.0"
    },
    {  
-      "amount":7509185,
-      "color":"under10",
-      "count":"9",
+      "amount":8692834,
+      "balance":6149651,
+      "color":"upperQuint",
+      "count":"11",
       "name":"Research Networks Focused on Critical Problems of Educat",
       "office":"IES",
       "type":"Discretionary",
@@ -1324,7 +1471,8 @@
    },
    {  
       "amount":1930656,
-      "color":"under10",
+      "balance":1040656,
+      "color":"midQuint",
       "count":"7",
       "name":"Unsolicited Awards",
       "office":"IES",
@@ -1333,7 +1481,8 @@
    },
    {  
       "amount":1427377,
-      "color":"under10",
+      "balance":1081289,
+      "color":"upperQuint",
       "count":"1",
       "name":"New Rehabilitation Training Programs",
       "office":"OSERS",
@@ -1342,7 +1491,8 @@
    },
    {  
       "amount":206696213,
-      "color":"under50",
+      "balance":70910767,
+      "color":"lowerQuint",
       "count":"48",
       "name":"State Personnel Development Grants",
       "office":"OSERS",
@@ -1351,7 +1501,8 @@
    },
    {  
       "amount":52714466,
-      "color":"under50",
+      "balance":4962215,
+      "color":"bottomQuint",
       "count":"20",
       "name":"Special Education Research",
       "office":"IES",
@@ -1360,7 +1511,8 @@
    },
    {  
       "amount":86893035,
-      "color":"under100",
+      "balance":42950280,
+      "color":"midQuint",
       "count":"83",
       "name":"Special Education Research Program",
       "office":"IES",
@@ -1369,7 +1521,8 @@
    },
    {  
       "amount":2821301,
-      "color":"under50",
+      "balance":1165671,
+      "color":"midQuint",
       "count":"12",
       "name":"Special Education Research Training",
       "office":"IES",
@@ -1378,7 +1531,8 @@
    },
    {  
       "amount":31671586,
-      "color":"under10",
+      "balance":8307996,
+      "color":"lowerQuint",
       "count":"3",
       "name":"National Center for Special Research (NCSER)",
       "office":"IES",
@@ -1387,7 +1541,8 @@
    },
    {  
       "amount":8000000,
-      "color":"under10",
+      "balance":3719670,
+      "color":"midQuint",
       "count":"1",
       "name":"Accelerating the Academic Achievement of Students with D",
       "office":"IES",
@@ -1396,7 +1551,8 @@
    },
    {  
       "amount":117255,
-      "color":"under10",
+      "balance":111552,
+      "color":"topQuint",
       "count":"1",
       "name":"Low-Cost, Short-Duration Evaluation of Special Education",
       "office":"IES",
@@ -1405,7 +1561,8 @@
    },
    {  
       "amount":25000000,
-      "color":"under10",
+      "balance":8321799,
+      "color":"lowerQuint",
       "count":"1",
       "name":"Collaboration for Effective Educator Development, Accoun",
       "office":"OSERS",
@@ -1414,7 +1571,8 @@
    },
    {  
       "amount":6200000,
-      "color":"under10",
+      "balance":2935131,
+      "color":"midQuint",
       "count":"1",
       "name":"National Center for Early Childhood Personnel",
       "office":"OSERS",
@@ -1423,7 +1581,8 @@
    },
    {  
       "amount":82816785,
-      "color":"under250",
+      "balance":29613086,
+      "color":"lowerQuint",
       "count":"102",
       "name":"Preparation of Leadership Personnel",
       "office":"OSERS",
@@ -1432,7 +1591,8 @@
    },
    {  
       "amount":7200000,
-      "color":"under10",
+      "balance":1767865,
+      "color":"lowerQuint",
       "count":"1",
       "name":"IDEA Evidence-Based Practice Coursework and Training Mod",
       "office":"OSERS",
@@ -1441,7 +1601,8 @@
    },
    {  
       "amount":10214641,
-      "color":"under10",
+      "balance":7136855,
+      "color":"upperQuint",
       "count":"2",
       "name":"Personnel Development Program Consortia",
       "office":"OSERS",
@@ -1450,7 +1611,8 @@
    },
    {  
       "amount":199496671,
-      "color":"over250",
+      "balance":65816555,
+      "color":"lowerQuint",
       "count":"252",
       "name":"Combined Priority for Personnel Development",
       "office":"OSERS",
@@ -1459,7 +1621,8 @@
    },
    {  
       "amount":2056505,
-      "color":"under10",
+      "balance":292653,
+      "color":"bottomQuint",
       "count":"3",
       "name":"Paraprofessional Preservice Program Improvement Grants",
       "office":"OSERS",
@@ -1468,7 +1631,8 @@
    },
    {  
       "amount":18236601,
-      "color":"under50",
+      "balance":2040036,
+      "color":"bottomQuint",
       "count":"13",
       "name":"Special Education Pre-Service Improvement Grants",
       "office":"OSERS",
@@ -1477,7 +1641,8 @@
    },
    {  
       "amount":20000000,
-      "color":"under10",
+      "balance":1883863,
+      "color":"bottomQuint",
       "count":"1",
       "name":"Postsecondary Education Program",
       "office":"OSERS",
@@ -1486,7 +1651,8 @@
    },
    {  
       "amount":3999422,
-      "color":"under10",
+      "balance":3680173,
+      "color":"topQuint",
       "count":"1",
       "name":"Postsecondary Education Program - Deaf",
       "office":"OSERS",
@@ -1495,7 +1661,8 @@
    },
    {  
       "amount":8099997,
-      "color":"under10",
+      "balance":4914432,
+      "color":"upperQuint",
       "count":"1",
       "name":"Technical Assistance Center on Postsecondary Education",
       "office":"OSERS",
@@ -1504,7 +1671,8 @@
    },
    {  
       "amount":6999941,
-      "color":"under10",
+      "balance":2372275,
+      "color":"lowerQuint",
       "count":"2",
       "name":"TA Center on Assessment",
       "office":"OSERS",
@@ -1513,7 +1681,8 @@
    },
    {  
       "amount":5498805,
-      "color":"under10",
+      "balance":2136971,
+      "color":"lowerQuint",
       "count":"1",
       "name":"Technical Assistance and Dissemination to Improve Servic",
       "office":"OSERS",
@@ -1522,7 +1691,8 @@
    },
    {  
       "amount":6885619,
-      "color":"under50",
+      "balance":3335061,
+      "color":"midQuint",
       "count":"12",
       "name":"Model Demonstration Projects",
       "office":"OSERS",
@@ -1531,7 +1701,8 @@
    },
    {  
       "amount":1570849,
-      "color":"under10",
+      "balance":49249,
+      "color":"bottomQuint",
       "count":"1",
       "name":"Model Demonstration-Preschool Multi Tiered",
       "office":"OSERS",
@@ -1540,7 +1711,8 @@
    },
    {  
       "amount":22599846,
-      "color":"under10",
+      "balance":7480837,
+      "color":"lowerQuint",
       "count":"1",
       "name":"TA CENTER ON EARLY CHILDHOOD",
       "office":"OSERS",
@@ -1549,7 +1721,8 @@
    },
    {  
       "amount":11999876,
-      "color":"under10",
+      "balance":2199716,
+      "color":"bottomQuint",
       "count":"2",
       "name":"Intensive Intervention Support Center",
       "office":"OSERS",
@@ -1558,7 +1731,8 @@
    },
    {  
       "amount":26315244,
-      "color":"under10",
+      "balance":10147688,
+      "color":"lowerQuint",
       "count":"1",
       "name":"Center for Systemic Improvement",
       "office":"OSERS",
@@ -1567,7 +1741,8 @@
    },
    {  
       "amount":17565436,
-      "color":"under10",
+      "balance":9645588,
+      "color":"midQuint",
       "count":"1",
       "name":"Center for Positive Behavioral Interventions and Support",
       "office":"OSERS",
@@ -1576,7 +1751,8 @@
    },
    {  
       "amount":45919178,
-      "color":"under50",
+      "balance":13134723,
+      "color":"lowerQuint",
       "count":"49",
       "name":"Technical Assistance to State Deaf Blind Projects",
       "office":"OSERS",
@@ -1585,7 +1761,8 @@
    },
    {  
       "amount":2600000,
-      "color":"under10",
+      "balance":874365,
+      "color":"lowerQuint",
       "count":"1",
       "name":"Technical Assistance and Dissemination to Improve Servic",
       "office":"OSERS",
@@ -1594,7 +1771,8 @@
    },
    {  
       "amount":24500000,
-      "color":"under10",
+      "balance":5287722,
+      "color":"lowerQuint",
       "count":"1",
       "name":"Technical Assistance Center for Inclusive School Reform",
       "office":"OSERS",
@@ -1603,7 +1781,8 @@
    },
    {  
       "amount":1899971,
-      "color":"under10",
+      "balance":962352,
+      "color":"midQuint",
       "count":"1",
       "name":"Center for Research and Development of New & Emerging Di",
       "office":"OSERS",
@@ -1612,7 +1791,8 @@
    },
    {  
       "amount":3998266,
-      "color":"under10",
+      "balance":1713029,
+      "color":"midQuint",
       "count":"5",
       "name":"Technology and Media Services for Individuals with Disab",
       "office":"OSERS",
@@ -1621,7 +1801,8 @@
    },
    {  
       "amount":2500000,
-      "color":"under10",
+      "balance":185087,
+      "color":"bottomQuint",
       "count":"1",
       "name":"Television Access",
       "office":"OSERS",
@@ -1630,7 +1811,8 @@
    },
    {  
       "amount":34500000,
-      "color":"under10",
+      "balance":6298709,
+      "color":"bottomQuint",
       "count":"1",
       "name":"Educational Materials in Accessible Formats for Students",
       "office":"OSERS",
@@ -1639,7 +1821,8 @@
    },
    {  
       "amount":650000,
-      "color":"under10",
+      "balance":533116,
+      "color":"topQuint",
       "count":"1",
       "name":"American Printing House for the Blind",
       "office":"OSERS",
@@ -1648,7 +1831,8 @@
    },
    {  
       "amount":5741023,
-      "color":"under10",
+      "balance":2187693,
+      "color":"lowerQuint",
       "count":"1",
       "name":"Center on Technology and Disability",
       "office":"OSERS",
@@ -1657,7 +1841,8 @@
    },
    {  
       "amount":4794206,
-      "color":"under10",
+      "balance":2169354,
+      "color":"midQuint",
       "count":"3",
       "name":"MODELS PROMOTING YOUNG CHILDREN'S USE OF ASSISTIVE TECHN",
       "office":"OSERS",
@@ -1666,7 +1851,8 @@
    },
    {  
       "amount":9490074,
-      "color":"under10",
+      "balance":1709682,
+      "color":"bottomQuint",
       "count":"2",
       "name":"Captioned Ed Media; Selection Captioning, and Distributi",
       "office":"OSERS",
@@ -1675,7 +1861,8 @@
    },
    {  
       "amount":34208922,
-      "color":"under50",
+      "balance":12244759,
+      "color":"lowerQuint",
       "count":"20",
       "name":"Stepping Up Technology Implementation",
       "office":"OSERS",
@@ -1684,7 +1871,8 @@
    },
    {  
       "amount":7484978,
-      "color":"under10",
+      "balance":441840,
+      "color":"bottomQuint",
       "count":"1",
       "name":"Closed Captioned TV",
       "office":"OSERS",
@@ -1693,7 +1881,8 @@
    },
    {  
       "amount":3599713,
-      "color":"under10",
+      "balance":1108754,
+      "color":"lowerQuint",
       "count":"1",
       "name":"Center on Accessible Educational Materials",
       "office":"OSERS",
@@ -1702,7 +1891,8 @@
    },
    {  
       "amount":3499999,
-      "color":"under50",
+      "balance":1837963,
+      "color":"midQuint",
       "count":"25",
       "name":"Community Parent Resource Centers",
       "office":"OSERS",
@@ -1711,7 +1901,8 @@
    },
    {  
       "amount":49146626,
-      "color":"under100",
+      "balance":18324062,
+      "color":"lowerQuint",
       "count":"64",
       "name":"Parent Training and Information Center",
       "office":"OSERS",
@@ -1720,7 +1911,8 @@
    },
    {  
       "amount":11266608,
-      "color":"under10",
+      "balance":3751702,
+      "color":"lowerQuint",
       "count":"9",
       "name":"Parent Training & Information Technical Assistance Cente",
       "office":"OSERS",
@@ -1729,7 +1921,8 @@
    },
    {  
       "amount":28483000,
-      "color":"under50",
+      "balance":10767522,
+      "color":"lowerQuint",
       "count":"42",
       "name":"Advanced Placement Test Fees",
       "office":"OESE",
@@ -1738,7 +1931,8 @@
    },
    {  
       "amount":4396388,
-      "color":"under10",
+      "balance":10343,
+      "color":"bottomQuint",
       "count":"3",
       "name":"Test Fees",
       "office":"OESE",
@@ -1747,7 +1941,8 @@
    },
    {  
       "amount":799235650,
-      "color":"under100",
+      "balance":205994218,
+      "color":"lowerQuint",
       "count":"92",
       "name":"Gaining Early Awareness and Readiness for Undergraduate ",
       "office":"OPE",
@@ -1756,7 +1951,8 @@
    },
    {  
       "amount":26890787,
-      "color":"under10",
+      "balance":2544968,
+      "color":"bottomQuint",
       "count":"3",
       "name":"GEAR-UP",
       "office":"OPE",
@@ -1765,7 +1961,8 @@
    },
    {  
       "amount":715828974,
-      "color":"under50",
+      "balance":193329199,
+      "color":"lowerQuint",
       "count":"42",
       "name":"Gaining Early Awareness and Readiness for Undergraduate ",
       "office":"OPE",
@@ -1774,7 +1971,8 @@
    },
    {  
       "amount":54680988,
-      "color":"under100",
+      "balance":16147845,
+      "color":"lowerQuint",
       "count":"86",
       "name":"Child Care Access Means Parents in School Program",
       "office":"OPE",
@@ -1783,7 +1981,8 @@
    },
    {  
       "amount":66770345,
-      "color":"under10",
+      "balance":5410117,
+      "color":"bottomQuint",
       "count":"7",
       "name":"FY 2009 Teacher Quality Partnerships Grants",
       "office":"OII",
@@ -1792,7 +1991,8 @@
    },
    {  
       "amount":5148695,
-      "color":"under10",
+      "balance":5148695,
+      "color":"topQuint",
       "count":"4",
       "name":"Teacher Quality Partnership Grants",
       "office":"OII",
@@ -1801,7 +2001,8 @@
    },
    {  
       "amount":110067426,
-      "color":"under50",
+      "balance":62754425,
+      "color":"midQuint",
       "count":"24",
       "name":"Teacher Quality Partnerships Grants",
       "office":"OII",
@@ -1810,7 +2011,8 @@
    },
    {  
       "amount":30300238,
-      "color":"under50",
+      "balance":4336063,
+      "color":"bottomQuint",
       "count":"14",
       "name":"Transition to Teaching Program (Local)",
       "office":"OII",
@@ -1819,7 +2021,8 @@
    },
    {  
       "amount":15273273,
-      "color":"under10",
+      "balance":2711337,
+      "color":"bottomQuint",
       "count":"6",
       "name":"Transition to Teaching Program -- Statewide",
       "office":"OII",
@@ -1828,7 +2031,8 @@
    },
    {  
       "amount":10861093,
-      "color":"under10",
+      "balance":731154,
+      "color":"bottomQuint",
       "count":"1",
       "name":"Transition to Teaching Program -- National",
       "office":"OII",
@@ -1837,7 +2041,8 @@
    },
    {  
       "amount":15900612,
-      "color":"under50",
+      "balance":7576104,
+      "color":"midQuint",
       "count":"17",
       "name":"Professional Development for Arts Educators",
       "office":"OII",
@@ -1846,7 +2051,8 @@
    },
    {  
       "amount":38499582,
-      "color":"under50",
+      "balance":16405386,
+      "color":"midQuint",
       "count":"26",
       "name":"Development and Dissemination Grant Program",
       "office":"OII",
@@ -1855,7 +2061,8 @@
    },
    {  
       "amount":13275069,
-      "color":"under10",
+      "balance":6700000,
+      "color":"midQuint",
       "count":"1",
       "name":"Arts in Education National Program",
       "office":"OII",
@@ -1864,7 +2071,8 @@
    },
    {  
       "amount":32962499,
-      "color":"under10",
+      "balance":0,
+      "color":"bottomQuint",
       "count":"5",
       "name":"Charter Schools Facilities Financing Demonstration Progr",
       "office":"OII",
@@ -1873,7 +2081,8 @@
    },
    {  
       "amount":264738013,
-      "color":"under50",
+      "balance":24000000,
+      "color":"bottomQuint",
       "count":"35",
       "name":"Credit Enhancement for Charter School Facilities Program",
       "office":"OII",
@@ -1882,7 +2091,8 @@
    },
    {  
       "amount":75550871,
-      "color":"under100",
+      "balance":36139465,
+      "color":"midQuint",
       "count":"53",
       "name":"Alaska Native Education",
       "office":"OESE",
@@ -1891,7 +2101,8 @@
    },
    {  
       "amount":87904212,
-      "color":"over250",
+      "balance":75054159,
+      "color":"topQuint",
       "count":"4250",
       "name":"Small, Rural School Achievement Program",
       "office":"OESE",
@@ -1900,7 +2111,8 @@
    },
    {  
       "amount":87040800,
-      "color":"under50",
+      "balance":79524894,
+      "color":"topQuint",
       "count":"43",
       "name":"Rural and Low-Income Schools",
       "office":"OESE",
@@ -1909,7 +2121,8 @@
    },
    {  
       "amount":74366672,
-      "color":"under50",
+      "balance":28516377,
+      "color":"lowerQuint",
       "count":"30",
       "name":"Education of Native Hawaiians",
       "office":"OESE",
@@ -1918,7 +2131,8 @@
    },
    {  
       "amount":1000000,
-      "color":"under10",
+      "balance":714034,
+      "color":"upperQuint",
       "count":"2",
       "name":"Native Hawaiian Island Council",
       "office":"OESE",
@@ -1927,7 +2141,8 @@
    },
    {  
       "amount":64556795,
-      "color":"under50",
+      "balance":18324862,
+      "color":"lowerQuint",
       "count":"20",
       "name":"School Leadership Program",
       "office":"OII",
@@ -1936,7 +2151,8 @@
    },
    {  
       "amount":680782000,
-      "color":"under100",
+      "balance":615376976,
+      "color":"topQuint",
       "count":"52",
       "name":"English Language Acquisition: State Formula Grant Progra",
       "office":"OESE",
@@ -1945,7 +2161,8 @@
    },
    {  
       "amount":17341720,
-      "color":"under50",
+      "balance":5700146,
+      "color":"lowerQuint",
       "count":"25",
       "name":"Native American Program",
       "office":"OELA",
@@ -1954,7 +2171,8 @@
    },
    {  
       "amount":836458,
-      "color":"under10",
+      "balance":836458,
+      "color":"topQuint",
       "count":"3",
       "name":"ASIAN AND ASIAN PACIFIC ISLANDER DATA DISAGGREGATION INI",
       "office":"OELA",
@@ -1963,7 +2181,8 @@
    },
    {  
       "amount":198138536,
-      "color":"under250",
+      "balance":48262535,
+      "color":"lowerQuint",
       "count":"148",
       "name":"English Language Acquisition: National Professional Deve",
       "office":"OELA",
@@ -1972,7 +2191,8 @@
    },
    {  
       "amount":148914347,
-      "color":"under100",
+      "balance":142661730,
+      "color":"topQuint",
       "count":"52",
       "name":"Mathematics and Science Partnerships",
       "office":"OESE",
@@ -1981,7 +2201,8 @@
    },
    {  
       "amount":2154128177,
-      "color":"under100",
+      "balance":1955213749,
+      "color":"topQuint",
       "count":"52",
       "name":"Improving Teacher Quality Grants - State Educational Age",
       "office":"OESE",
@@ -1990,7 +2211,8 @@
    },
    {  
       "amount":58238718,
-      "color":"under100",
+      "balance":57072106,
+      "color":"topQuint",
       "count":"52",
       "name":"Improving Teacher Quality Grants - State Agency for High",
       "office":"OESE",
@@ -1999,7 +2221,8 @@
    },
    {  
       "amount":177690898,
-      "color":"under50",
+      "balance":86298388,
+      "color":"midQuint",
       "count":"21",
       "name":"Teacher and Leader Preparation and Professional Developm",
       "office":"OII",
@@ -2008,7 +2231,8 @@
    },
    {  
       "amount":49818424,
-      "color":"under50",
+      "balance":29151704,
+      "color":"midQuint",
       "count":"11",
       "name":"Grants for Enhanced Assessment Instruments",
       "office":"OESE",
@@ -2017,7 +2241,8 @@
    },
    {  
       "amount":365360966,
-      "color":"under100",
+      "balance":320553582,
+      "color":"topQuint",
       "count":"52",
       "name":"State Assessments Formula Grants",
       "office":"OESE",
@@ -2026,7 +2251,8 @@
    },
    {  
       "amount":26408190,
-      "color":"under10",
+      "balance":7051695,
+      "color":"lowerQuint",
       "count":"1",
       "name":"DC Opportunity Scholarship Program",
       "office":"OII",
@@ -2035,7 +2261,8 @@
    },
    {  
       "amount":30007606,
-      "color":"under10",
+      "balance":0,
+      "color":"bottomQuint",
       "count":"2",
       "name":"DC School Choice",
       "office":"OII",
@@ -2044,7 +2271,8 @@
    },
    {  
       "amount":49953880,
-      "color":"under10",
+      "balance":24075253,
+      "color":"midQuint",
       "count":"3",
       "name":"DC School Choice",
       "office":"OII",
@@ -2053,7 +2281,8 @@
    },
    {  
       "amount":713129570,
-      "color":"under10",
+      "balance":96462665,
+      "color":"bottomQuint",
       "count":"7",
       "name":"Striving Readers Comprehensive Literacy Grant Program",
       "office":"OESE",
@@ -2062,7 +2291,8 @@
    },
    {  
       "amount":106898012,
-      "color":"under50",
+      "balance":53560102,
+      "color":"midQuint",
       "count":"29",
       "name":"Statewide Data Systems",
       "office":"IES",
@@ -2071,7 +2301,8 @@
    },
    {  
       "amount":9600000,
-      "color":"under10",
+      "balance":3981177,
+      "color":"midQuint",
       "count":"1",
       "name":"Special Education - Technical Assistance on State Data C",
       "office":"OSERS",
@@ -2080,7 +2311,8 @@
    },
    {  
       "amount":7500000,
-      "color":"under10",
+      "balance":3928274,
+      "color":"midQuint",
       "count":"1",
       "name":"TECHNICAL ASSISTANCE ON STATE DATA COLLECTION - IDEA Dat",
       "office":"OSERS",
@@ -2089,7 +2321,8 @@
    },
    {  
       "amount":28999981,
-      "color":"under10",
+      "balance":9402949,
+      "color":"lowerQuint",
       "count":"1",
       "name":"TA On Data Collection",
       "office":"OSERS",
@@ -2098,7 +2331,8 @@
    },
    {  
       "amount":33976875,
-      "color":"under10",
+      "balance":11083475,
+      "color":"lowerQuint",
       "count":"1",
       "name":"National Technical Assistance Center on Early Childhood ",
       "office":"OSERS",
@@ -2107,7 +2341,8 @@
    },
    {  
       "amount":835610546,
-      "color":"under50",
+      "balance":352323643,
+      "color":"midQuint",
       "count":"40",
       "name":"Teacher Incentive Fund",
       "office":"OII",
@@ -2116,7 +2351,8 @@
    },
    {  
       "amount":124859464,
-      "color":"under10",
+      "balance":48161452,
+      "color":"lowerQuint",
       "count":"6",
       "name":"Teacher Incentive Fund with focus on STEM",
       "office":"OII",
@@ -2125,7 +2361,8 @@
    },
    {  
       "amount":421189411,
-      "color":"under50",
+      "balance":421086120,
+      "color":"topQuint",
       "count":"50",
       "name":"School Improvement Grants",
       "office":"OESE",
@@ -2134,7 +2371,8 @@
    },
    {  
       "amount":36808950,
-      "color":"under50",
+      "balance":21470965,
+      "color":"midQuint",
       "count":"20",
       "name":"Turnaround School Leaders Program",
       "office":"OESE",
@@ -2143,7 +2381,8 @@
    },
    {  
       "amount":10083000,
-      "color":"under10",
+      "balance":7243106,
+      "color":"upperQuint",
       "count":"1",
       "name":"Special Olympics/Direct Appropriation",
       "office":"OSERS",
@@ -2152,7 +2391,8 @@
    },
    {  
       "amount":29947622,
-      "color":"under50",
+      "balance":19163828,
+      "color":"upperQuint",
       "count":"26",
       "name":"Predominantly Black Institutions",
       "office":"OPE",
@@ -2161,7 +2401,8 @@
    },
    {  
       "amount":19942049,
-      "color":"under50",
+      "balance":6366292,
+      "color":"lowerQuint",
       "count":"21",
       "name":"Asian American and Native American Pacific Islander-Serv",
       "office":"OPE",
@@ -2170,7 +2411,8 @@
    },
    {  
       "amount":14615668,
-      "color":"under50",
+      "balance":5663537,
+      "color":"lowerQuint",
       "count":"18",
       "name":"Native American-Serving Nontribal Institutions Program",
       "office":"OPE",
@@ -2179,7 +2421,8 @@
    },
    {  
       "amount":2938500,
-      "color":"under10",
+      "balance":764698,
+      "color":"lowerQuint",
       "count":"1",
       "name":"Predominantly Black Institutions (Graduate)",
       "office":"OPE",
@@ -2188,7 +2431,8 @@
    },
    {  
       "amount":35262000,
-      "color":"under50",
+      "balance":1411154,
+      "color":"bottomQuint",
       "count":"12",
       "name":"Historically Black Colleges and Universities (Graduate)",
       "office":"OPE",
@@ -2197,7 +2441,8 @@
    },
    {  
       "amount":120845614,
-      "color":"under10",
+      "balance":1789974,
+      "color":"bottomQuint",
       "count":"5",
       "name":"Investing in Innovation Validation Grants",
       "office":"OII",
@@ -2206,7 +2451,8 @@
    },
    {  
       "amount":72869857,
-      "color":"under10",
+      "balance":72196988,
+      "color":"topQuint",
       "count":"4",
       "name":"Consolidated Grant to the Outlying Areas",
       "office":"OESE",
@@ -2215,7 +2461,8 @@
    },
    {  
       "amount":32495165,
-      "color":"under10",
+      "balance":1859062,
+      "color":"bottomQuint",
       "count":"4",
       "name":"Recovery Act",
       "office":"OII",
@@ -2224,7 +2471,8 @@
    },
    {  
       "amount":19491469,
-      "color":"under50",
+      "balance":12649774,
+      "color":"upperQuint",
       "count":"25",
       "name":"Transition and Postsecondary Programs for Students with ",
       "office":"OPE",
@@ -2233,7 +2481,8 @@
    },
    {  
       "amount":4000000,
-      "color":"under10",
+      "balance":2646602,
+      "color":"upperQuint",
       "count":"1",
       "name":"Transition Programs for Students with Intellectual Disab",
       "office":"OPE",
@@ -2242,7 +2491,8 @@
    },
    {  
       "amount":104490407,
-      "color":"under10",
+      "balance":79393527,
+      "color":"upperQuint",
       "count":"5",
       "name":"Investing in Innovation - Scale Up",
       "office":"OII",
@@ -2251,7 +2501,8 @@
    },
    {  
       "amount":39981544,
-      "color":"under10",
+      "balance":39981544,
+      "color":"topQuint",
       "count":"2",
       "name":"Investing in Innovation - Scale-up",
       "office":"OII",
@@ -2260,7 +2511,8 @@
    },
    {  
       "amount":376391625,
-      "color":"under50",
+      "balance":177394329,
+      "color":"midQuint",
       "count":"30",
       "name":"Investing in Innovation - Validation",
       "office":"OII",
@@ -2269,7 +2521,8 @@
    },
    {  
       "amount":169898435,
-      "color":"under100",
+      "balance":79695533,
+      "color":"midQuint",
       "count":"59",
       "name":"Investing in Innovation - Development Grants",
       "office":"OII",
@@ -2278,7 +2531,8 @@
    },
    {  
       "amount":29549427,
-      "color":"under10",
+      "balance":29549427,
+      "color":"topQuint",
       "count":"10",
       "name":"Investing in Innovation- Development",
       "office":"OII",
@@ -2287,7 +2541,8 @@
    },
    {  
       "amount":345593594,
-      "color":"under10",
+      "balance":198250483,
+      "color":"midQuint",
       "count":"8",
       "name":"Race to the Top - Early Learning Challenge",
       "office":"OESE",
@@ -2296,7 +2551,8 @@
    },
    {  
       "amount":1902337,
-      "color":"under10",
+      "balance":646115,
+      "color":"lowerQuint",
       "count":"4",
       "name":"Minorities and Retirement Security Program",
       "office":"OPE",
@@ -2305,7 +2561,8 @@
    },
    {  
       "amount":3789849,
-      "color":"under10",
+      "balance":2092220,
+      "color":"midQuint",
       "count":"5",
       "name":"State-Tribal Education Partnership (STEP) Program",
       "office":"OESE",
@@ -2314,7 +2571,8 @@
    },
    {  
       "amount":387866578,
-      "color":"under50",
+      "balance":81870729,
+      "color":"lowerQuint",
       "count":"16",
       "name":"Race to the Top - District",
       "office":"OII",
@@ -2323,7 +2581,8 @@
    },
    {  
       "amount":229205204,
-      "color":"under10",
+      "balance":143108774,
+      "color":"upperQuint",
       "count":"6",
       "name":"Promoting the Readiness of Minors in Supplemental Securi",
       "office":"OSERS",
@@ -2332,7 +2591,8 @@
    },
    {  
       "amount":2499993,
-      "color":"under10",
+      "balance":1479621,
+      "color":"midQuint",
       "count":"1",
       "name":"Promoting the Readiness of Minors in Supplemental Securi",
       "office":"OSERS",
@@ -2341,7 +2601,8 @@
    },
    {  
       "amount":188513211,
-      "color":"under10",
+      "balance":109561454,
+      "color":"midQuint",
       "count":"5",
       "name":"Preschool Development Grants - Development",
       "office":"OESE",
@@ -2350,7 +2611,8 @@
    },
    {  
       "amount":540152652,
-      "color":"under50",
+      "balance":367135024,
+      "color":"upperQuint",
       "count":"13",
       "name":"Preschool Development Grants - Expansion",
       "office":"OESE",
@@ -2359,7 +2621,8 @@
    },
    {  
       "amount":7416487,
-      "color":"under10",
+      "balance":5819540,
+      "color":"upperQuint",
       "count":"9",
       "name":"Performance Parntership Pilots",
       "office":"OCTAE",
@@ -2368,7 +2631,8 @@
    },
    {  
       "amount":350000,
-      "color":"under10",
+      "balance":350000,
+      "color":"topQuint",
       "count":"1",
       "name":"Performance Partnership Pilots",
       "office":"OCTAE",
@@ -2377,7 +2641,8 @@
    },
    {  
       "amount":18117592,
-      "color":"under10",
+      "balance":18024573,
+      "color":"topQuint",
       "count":"1",
       "name":"Disability Innovation Fund (DIF)",
       "office":"OSERS",
@@ -2386,7 +2651,8 @@
    },
    {  
       "amount":39045221,
-      "color":"under10",
+      "balance":39042330,
+      "color":"topQuint",
       "count":"5",
       "name":"Disability Innovation Fund (DIF) - Transition Model Syst",
       "office":"OSERS",
@@ -2395,7 +2661,8 @@
    },
    {  
       "amount":1751759,
-      "color":"under10",
+      "balance":1751759,
+      "color":"topQuint",
       "count":"1",
       "name":"Academies for American History and Civics",
       "office":"OII",
@@ -2404,7 +2671,8 @@
    },
    {  
       "amount":5929964,
-      "color":"under10",
+      "balance":3157352,
+      "color":"midQuint",
       "count":"1",
       "name":"Helen Keller National Center",
       "office":"OSERS",
@@ -2413,7 +2681,8 @@
    },
    {  
       "amount":64952258,
-      "color":"under10",
+      "balance":13053068,
+      "color":"lowerQuint",
       "count":"3",
       "name":"American Printing House for the Blind",
       "office":"OSERS",
@@ -2422,7 +2691,8 @@
    },
    {  
       "amount":176438873,
-      "color":"under10",
+      "balance":20891551,
+      "color":"bottomQuint",
       "count":"3",
       "name":"National Technical Institute for the Deaf",
       "office":"OSERS",
@@ -2431,7 +2701,8 @@
    },
    {  
       "amount":190852825,
-      "color":"under10",
+      "balance":43975529,
+      "color":"lowerQuint",
       "count":"2",
       "name":"Gallaudet University",
       "office":"OSERS",
@@ -2440,7 +2711,8 @@
    },
    {  
       "amount":36549446,
-      "color":"under10",
+      "balance":0,
+      "color":"bottomQuint",
       "count":"1",
       "name":"Howard University (Academic)",
       "office":"OPE",
@@ -2449,7 +2721,8 @@
    },
    {  
       "amount":5134957,
-      "color":"under10",
+      "balance":0,
+      "color":"bottomQuint",
       "count":"1",
       "name":"Howard University (Hospital)",
       "office":"OPE",
@@ -2458,7 +2731,8 @@
    },
    {  
       "amount":3405000,
-      "color":"under10",
+      "balance":0,
+      "color":"bottomQuint",
       "count":"1",
       "name":"Howard University (Endowment)",
       "office":"OPE",
