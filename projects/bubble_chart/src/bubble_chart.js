@@ -75,8 +75,8 @@ function bubbleChart() {
 };*/
 
   var formDiscCenters = {
-    Formula: { x: width / 4 - 10, y: height / 2 },
-    Discretionary: { x: width / 2 + 160, y: height / 2 }
+    Formula: { x: width / 4 - 50, y: height / 2 },
+    Discretionary: { x: width / 2 + 160, y: height / 2 -30 }
   };
 
   var prinOffCenters = {
@@ -203,8 +203,8 @@ var prinOffPopUp = {
   // Nice looking colors - no reason to buck the trend
   // @v4 scales now have a flattened naming scheme
   var fillColor = d3.scaleOrdinal()
-    .domain(['under10','under50','under100','under250','over250'])
-    .range(['#3E442B', '#361D2E', '#0E4749','#242331','#CD5334']);
+    .domain(['bottomQuint','lowerQuint','midQuint','upperQuint','topQuint'])
+    .range(['#C2D6D0', '#A7BFB8', '#8DA7A0','#729088','#587970']);
 
 
   /*
@@ -222,7 +222,7 @@ var prinOffPopUp = {
   function createNodes(rawData) {
     // Use the max  in the data as the max in the scale's domain
     // note we have to ensure the total_amount is a number.
-    var maxAmount = d3.max(rawData, function (d) { return +d.amount; });
+    var maxAmount = d3.max(rawData, function (d) { return +d.balance; });
     // Sizes bubbles based on area.
     // @v4: new flattened scale names.
     var radiusScale = d3.scalePow()
@@ -235,8 +235,9 @@ var prinOffPopUp = {
     // working with data.
     var myNodes = rawData.map(function (d) {
       return {
-        radius: radiusScale(+d.amount),
+        radius: radiusScale(+d.balance),
         value: +d.amount,
+        balance: +d.balance,
         count: d.count,
         name: d.name,
         color: d.color,
@@ -250,7 +251,7 @@ var prinOffPopUp = {
 
     // sort them to prevent occlusion of smaller nodes.
     //circle  algorithm
-    myNodes.sort(function (a, b) { return b.value - a.value; });
+    myNodes.sort(function (a, b) { return b.balance - a.balance; });
 
     return myNodes;
   }
@@ -423,7 +424,7 @@ function splitBubblesChanges(){
       hideTypeTitles();
       //hideYearTitles();
       hideTypePrinOff();
-      showAxis();
+      //showAxis();
 
       // @v4 Reset the 'x' force to draw the bubbles to their year centers
       simulationForChanges.force('x', d3.forceX().strength(forceStrength).x(nodePrinOffPosX));
@@ -507,7 +508,7 @@ function splitBubblesChanges(){
                   d.name +
                   '</span><br/>' +
                   '<span class="name">Remaining Funds: </span><span class="value">$' +
-                  addCommas(d.value) +
+                  addCommas(d.balance) +
                   '</span><br/>' +
                   '<span class="name">Number of Grants: </span><span class="value">' +
                   d.count + 
