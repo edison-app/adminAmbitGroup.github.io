@@ -38,6 +38,7 @@ function showAllText(){
                 "top":"580px",
                 "margin-left":"20px"
         }); 
+        $j("#legendcircletext").css({"display":"inline"});
 }
 
 function hideAllText(){  
@@ -49,8 +50,9 @@ function showFormDiscText(){
 
         $j("#legendcontainer").css({
                 "top":"580px",
-                "margin-left":"351px"
+                "margin-left":"330px"
         });
+        $j("#legendcircletext").css({"display":"inline"});
 }
 
 function hideFormDiscText(){   
@@ -60,12 +62,14 @@ function hideFormDiscText(){
 function showPrinOffText(){   
         $j(".prinofftext").fadeIn("slow");
         $j("#legendcontainer").css({
-                "top":"796px",
-                "margin-left":"647px"
+                "top":"520px",
+                "margin-left":"670px"
         });
+        $j("#legendcircletext").css({"display":"none"});
 }
 
 function hidePrinOffText(){   
         $j(".prinofftext").fadeOut("3000");
 }
+
 
