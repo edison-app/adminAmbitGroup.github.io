@@ -62,7 +62,7 @@ border-bottom: 1px solid #999;
 #toolbarcenter{
   margin-left: auto;
   margin-right: auto;
-  width: 380px;
+  width: 275px;
   height: 60px;
   padding: 10px 18px;
 }
@@ -161,7 +161,7 @@ border-bottom: 1px solid #999;
     width: 220px;
     top: 280px;
     /* left: 540px; */
-    margin-left: 330px;
+    margin-left: 315px;
     position: absolute;
     text-align: center;
 }
@@ -233,7 +233,7 @@ border-bottom: 1px solid #999;
     position: absolute;
     padding:0;
     top: 580px;
-    width: 200px;
+    width: 225px;
     overflow: hidden;
     margin-left:20px;
 }
@@ -262,7 +262,7 @@ legendformdisc {
 }
 
 #legendswatches {
-    width: 100%;
+    width: 200px;
     height:10px;
 }
 
@@ -291,20 +291,27 @@ legendformdisc {
 #legendticks{
   height: 8px; 
   margin: 0em 0 !important;
+  width:200px;
 }
 
 #legendticks li{
   width: 20%;
   border-right:solid #CCC 1px;
 }
+#legendticks li:nth-child(1){
+  border-left:solid #CCC 1px;
+}
 
 #legendlabels li {
-  height:20px;
-  position:relative;
-  left: 16%;
-  font-size: 11px;
-  width:20%;
-  padding: 2px 0 0 0; 
+  height: 20px;
+    position: relative;
+    font-size: 10px;
+    width: 16.6%;
+    padding: 2px 0 0 0;
+}
+
+#legendlabels li:last-child {
+    float:right;
 }
 
 #legendcircletext{
@@ -313,32 +320,60 @@ legendformdisc {
   width: 200px;
 }
 
+#legendcircletext p:nth-child(1){
+margin:0 0 42px;
+}
+
+
 #legendcircletext span{
   font-size:9px;
   color: #999;
-  margin-left: 100px;
+ /* margin-left: 100px; */
+}
+#legendlabxlg{
+  margin-left: 140px;
+}
+
+#legendlablg{
+  margin-left: 128px;
+}
+
+#legendlabmd{
+  margin-left: 105px;
+}
+
+#legendlabsm{
+  margin-left: 98px;
+}
+
+#legendlinexlg{
+ border-bottom: 1px solid #999;
+    position: absolute;
+    width: 35px;
+    margin-left: 100px;
+    margin-top: -5px;
 }
 
 #legendlinelg{
- border-bottom: 1px solid #999;
- position: absolute;
- width: 36px;
- margin-left: 62px;
- margin-top: -5px;
+    border-bottom: 1px solid #999;
+    position: absolute;
+    width: 60px;
+    margin-left: 63px;
+    margin-top: -5px;
 }
 
 #legendlinemd{
  border-bottom: 1px solid #999;
  position: absolute;
- width: 40px;
- margin-left: 60px;
+ width: 42px;
+ margin-left: 59px;
  margin-top: -5px;
 }
 
 #legendlinesm{
  border-bottom: 1px solid #999;
  position: absolute;
- width: 50px;
+ width: 45px;
  margin-left: 50px;
  margin-top: -5px;
 }
