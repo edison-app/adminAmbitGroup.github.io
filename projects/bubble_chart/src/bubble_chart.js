@@ -82,8 +82,8 @@ function bubbleChart() {
   var prinOffCenters = {
     IES: { x: 495, y: 455},
     OCTAE: { x: 495, y: 240 },
-    ODS: { x: 679, y: 210 },
-    OELA: { x: 679, y: 470},
+    /*ODS: { x: 679, y: 210 },*/
+    OELA: { x: 679, y: 225},
     OESE: { x: 165, y: 260},
     OII: { x: 310, y: 260},
     OPE: { x: 330, y: 447},
@@ -120,7 +120,7 @@ function bubbleChart() {
   var prinOffTitleX = {
     IES: 565,
     OCTAE: 565,
-    ODS: 740,
+    /*ODS: 740,*/
     OELA: 740,
     OESE: 150,
     OII: 375,
@@ -132,8 +132,8 @@ function bubbleChart() {
   var prinOffTitleY = {
     IES: 370,
     OCTAE: 90,
-    ODS: 90,
-    OELA: 370,
+    /*ODS: 90,*/
+    OELA: 90,
     OESE: 90,
     OII: 90,
     OPE: 370,
@@ -143,7 +143,7 @@ function bubbleChart() {
 var prinOffPopUp = {
     IES: "Institute of Education Sciences",
     OCTAE: "Office of Career, Technical, and Adult Education",
-    ODS: "Office of the Deputy Secretary",
+    /*ODS: "Office of the Deputy Secretary",*/
     OELA: "Office of English Language Acquisition",
     OESE: "Office of Elementary and Secondary Education",
     OII: "Office of Innovation and Improvement",
@@ -222,7 +222,7 @@ var prinOffPopUp = {
   function createNodes(rawData) {
     // Use the max  in the data as the max in the scale's domain
     // note we have to ensure the total_amount is a number.
-    var maxAmount = d3.max(rawData, function (d) { return +d.balance; });
+    var maxAmount = d3.max(rawData, function (d) { return +d.amount; });
     // Sizes bubbles based on area.
     // @v4: new flattened scale names.
     var radiusScale = d3.scalePow()
@@ -235,7 +235,7 @@ var prinOffPopUp = {
     // working with data.
     var myNodes = rawData.map(function (d) {
       return {
-        radius: radiusScale(+d.balance),
+        radius: radiusScale(+d.amount),
         value: +d.amount,
         balance: +d.balance,
         count: d.count,
@@ -251,7 +251,7 @@ var prinOffPopUp = {
 
     // sort them to prevent occlusion of smaller nodes.
     //circle  algorithm
-    myNodes.sort(function (a, b) { return b.balance - a.balance; });
+    myNodes.sort(function (a, b) { return b.value - a.value; });
 
     return myNodes;
   }
@@ -361,7 +361,7 @@ function nodeFormDiscPos(d) {
    */
 
   function groupBubbles() {
-    hideAxis();
+  
     hideTypeTitles();
     hideTypePrinOff();
     drawAllLegendCircle();
@@ -393,8 +393,8 @@ function nodeFormDiscPos(d) {
     simulation.alpha(1).restart();
   } */
 
-  function splitBubblesFormDisc(){
-      hideAxis();
+    function splitBubblesFormDisc(){
+ 
       hideTypePrinOff();
       showFormDiscTitles();
       drawTypeLegendCircle();
@@ -407,11 +407,10 @@ function nodeFormDiscPos(d) {
   }
 
 function splitBubblesPrinOff(){
-      hideAxis();
+     
       hideTypeTitles();
-      //hideYearTitles();
       showPrinOffTitles();
-      drawOffLegendCircle();
+      hideOffLegendCircle();
       // @v4 Reset the 'x' force to draw the bubbles to their year centers
       simulation.force('x', d3.forceX().strength(forceStrength).x(nodePrinOffPosX));
       simulation.force('y', d3.forceY().strength(forceStrength).y(nodePrinOffPosY));
@@ -419,19 +418,6 @@ function splitBubblesPrinOff(){
       simulation.alpha(1).restart();
 }
 
-
-function splitBubblesChanges(){
-      hideTypeTitles();
-      //hideYearTitles();
-      hideTypePrinOff();
-      //showAxis();
-
-      // @v4 Reset the 'x' force to draw the bubbles to their year centers
-      simulationForChanges.force('x', d3.forceX().strength(forceStrength).x(nodePrinOffPosX));
-      simulationForChanges.force('y', d3.forceY().strength(forceStrength).y(nodePrinOffPosY));
-      // @v4 We can reset the alpha value and restart the simulation  
-      simulationForChanges.alpha(1).restart();
-}
 
   /*
    * Hides Year title displays.
@@ -507,15 +493,15 @@ function splitBubblesChanges(){
     var content = '<span class="name">Title: </span><span class="value">' +
                   d.name +
                   '</span><br/>' +
+                  '<span class="name">Total Amount: </span><span class="value">$' +
+                  addCommas(d.value) +
+                  '</span><br/>' +
                   '<span class="name">Remaining Funds: </span><span class="value">$' +
                   addCommas(d.balance) +
                   '</span><br/>' +
                   '<span class="name">Number of Grants: </span><span class="value">' +
                   d.count + 
-                  '</span><br/>' +
-                  '<span class="name">Year: </span><span class="value">' +
-                  d.year + 
-                  '</span>';
+                  '</span><br/>';
 
     tooltip.showTooltip(content, d3.event);
   }
@@ -531,87 +517,80 @@ function splitBubblesChanges(){
   }
 
 
-  function showAxis(){
-       //Create the Scale we will use for the Axis
-      var axisScale = d3.scaleLinear()
-                                  .domain([0, 10])
-                                  .range([10, 930]);
-      //Create the Axis
-      var xAxis = d3.axisBottom(axisScale)
-        //.attr('class', 'custAxis')
-        //.attr("transform", "translate(0," + height + ")");
-   
-    
-
-      //Create an SVG group Element for the Axis elements and call the xAxis function
-      var xAxisGroup = svg.append("g")
-                                      .attr('class', 'custAxis')
-                                      //.attr("transform", "translate(0," + height + ")")
-                                      .call(xAxis);
-}
-
-function hideAxis(){
-      svg.select('.custAxis').remove();
-}
 
 /********Legend**********/
 
 function drawAllLegendCircle(){
 svg.selectAll('.legendcircle').remove();  
+//10 Billion
+var xLargeCircle = svg.append("circle")
+                          .attr('class', 'legendcircle')
+                          .attr('id', 'legendcirclexlg')
+                          .attr("cx", 65)
+                          .attr("cy",485)
+                          .attr("r", 55);
+
 //1 Billion
 var largeCircle = svg.append("circle")
                           .attr('class', 'legendcircle')
                           .attr('id', 'legendcirclelg')
                           .attr("cx", 65)
-                          .attr("cy", 465)
+                          .attr("cy", 515)
                           .attr("r", 25);
 // 500 Million
 var medCircle = svg.append("circle")
                           .attr('class', 'legendcircle')
                           .attr('id', 'legendcirclemd')
                           .attr("cx", 65)
-                          .attr("cy", 474)
+                          .attr("cy", 524)
                           .attr("r", 17); 
 // 50 Million                             
 var smallCircle = svg.append("circle")
                           .attr('class', 'legendcircle')
                           .attr('id', 'legendcirclesm')
                           .attr("cx", 65)
-                          .attr("cy", 484)
+                          .attr("cy", 534)
                           .attr("r", 7);                            
 }
 
 function drawTypeLegendCircle(){
-//1 Billion
 svg.selectAll('.legendcircle').remove();
 
+//10 Billion
+var xLargeCircle = svg.append("circle")
+                          .attr('class', 'legendcircle')
+                          .attr('id', 'legendcirclexlg')
+                          .attr("cx", 375)
+                          .attr("cy", 485)
+                          .attr("r", 55);
+//1 Billion
 var largeCircle = svg.append("circle")
                           .attr('class', 'legendcircle')
                           .attr('id', 'legendcirclelg')
-                          .attr("cx", 397)
-                          .attr("cy", 465)
+                          .attr("cx", 375)
+                          .attr("cy", 515)
                           .attr("r", 25);
 // 500 Million
 var medCircle = svg.append("circle")
                           .attr('class', 'legendcircle')
                           .attr('id', 'legendcirclemd')
-                          .attr("cx", 397)
-                          .attr("cy", 474)
+                          .attr("cx", 375)
+                          .attr("cy", 524)
                           .attr("r", 17); 
 // 50 Million                             
 var smallCircle = svg.append("circle")
                           .attr('class', 'legendcircle')
                           .attr('id', 'legendcirclesm')
-                          .attr("cx", 397)
-                          .attr("cy", 484)
+                          .attr("cx", 375)
+                          .attr("cy", 534)
                           .attr("r", 7);                            
 }
 
-function drawOffLegendCircle(){
+function hideOffLegendCircle(){
 //1 Billion
-svg.selectAll('.legendcircle').remove();
+svg.selectAll('.legendcircle').remove();}
 
-var largeCircle = svg.append("circle")
+/*{var largeCircle = svg.append("circle")
                           .attr('class', 'legendcircle')
                           .attr('id', 'legendcirclelg')
                           .attr("cx", 689)
@@ -647,10 +626,7 @@ var smallCircle = svg.append("circle")
       splitBubblesFormDisc();
     } else if(displayName === 'prinoff') {
       splitBubblesPrinOff();
-    } else if(displayName === 'changes') {
-      splitBubblesChanges();
-    }
-    else {
+    } else {
       groupBubbles();
     }
   };
