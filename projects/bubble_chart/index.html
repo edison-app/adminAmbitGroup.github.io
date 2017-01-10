@@ -3,7 +3,7 @@
 <head>
   <!--<meta charset="utf-8">-->
   <meta charset="UTF8">
-  <title>DOed Bubble Map</title>
+  <title>DOED Bubble Map</title>
   <meta name="description" content="Using D3v4 to create a Bubble chart. Based on NYT visualization">
   <meta name="author" content="David Thor">
 
@@ -20,9 +20,7 @@
       <div id="toolbarcenter">
       <a href="#" id="all" class="button active">All</a>
       <a href="#" id="formdisc" class="button">Types</a>
-    <!--<a href="#" id="year" class="button">Grants By Year</a> -->
       <a href="#" id="prinoff" class="button">Offices</a>
-     <a href="#" id="changes" class="button">Totals</a>
       </div>
     </div>
     <div class="textcontainer">
@@ -30,18 +28,13 @@
           <p>The Department of Education’s (ED) mission is to promote student achievement and preparation for global competitiveness by fostering educational excellence and ensuring equal access. ED awards approximately $60 million in grants annually to aid education programs at the state and local level. These grants are awarded typically to State Education Agencies (SEA) and Local Education Agencies (LEA – i.e. school district). These grants differ from Pell Grants and Student Loans which help individuals. Using the buttons above, you can see how these sub-programs exist in ED.</p> 
           <p>Every bubble on the right represents a sub-program composed of open grants. There are over 500 sub-programs which each support a different cause. The size of the bubble reflects the funds available. The color of the bubble relates to the number of grants in the sub-program. Hovering over a bubble will provide detailed information.</p>
           <p>To learn more about ED’s grants please visit: <a href="http://www.grants.gov/web/grants/learn-grants/grant-making-agencies/department-of-education.html">http://www.grants.gov</a></p>
-        <!-- <p>To learn more about programs in the Catalog of Federal Domestic Assistance please visit: https://www.cfda.gov/ </p> -->
       
       </div>  
       <div class="formdisctext">
           <p>Grants come in two major categories, Formula and Discretionary. Formula grants are congressionally approved funds for specific programs. Any qualified SEA or LEA can request their funding portion which is calculated via a formula using demographic numbers. Discretionary grants are awarded based on merit and eligibility. There is a competitive review process and a final funding decision made by ED based on the grantee’s application and relevant information.</p> 
           <p>As of 1 January 2017, there was <b>7.1 billion</b> in discretionary commitments and <b>32 billion</b> in formula. In 2017 grantees will draw down their allocations and new grants will be awarded, changing the funds available and the bubble sizes. The bubbles are updated daily to reflect these changes.</p>
-         <!-- <p>Each sub-program can be viewed as a portfolio of similar grants. These grants are awarded for different time periods, anywhere from 1 year to 10+. Grants are funded annually so any grants that is awarded for over one year receives their funding broken up annually. Each bubble represents the average grant lifespan in years for the sub-program.</p>
-          <p>Most discretionary grants exist for 5 years and most formula grants are available in one year increments. You might have noticed this when viewing the Discretionary and Formula split.</p> 
-          <h4 id="lifespantext">Lifespan</h4> -->
       </div>  
       <div class="prinofftext">
-       <!-- <h2 id="officestext">Offices</h2> -->
          <p>Programs, and their sub-programs, are administered by different Principal Offices at ED. Each Principal Office focuses on supporting national education efforts for different cohorts of citizens. Here you can see sub-programs under their respective Principal Offices.</p>
       </div>
     </div>
@@ -49,13 +42,16 @@
         <div id="legendcircletext">
           <p>The size of the bubble reflects the funds available.</p>
           
-        <div><span>$1 billion</span>
+        <div><span id="legendlabxlg">$5 billion</span>
+            <div id="legendlinexlg"></div>
+        </div> 
+        <div><span id="legendlablg">$1 billion</span>
             <div id="legendlinelg"></div>
         </div>   
-        <div><span>$500 million</span>
+        <div><span id="legendlabmd">$500 million</span>
         <div id="legendlinemd"></div>
         </div>   
-        <div><span>$50 million</span>
+        <div><span id="legendlabsm">$50 million</span>
           <div id="legendlinesm"></div>
         </div>   
 
@@ -74,12 +70,15 @@
             <li></li>
             <li></li>
             <li></li>
+            <li></li>
         </ul>
         <ul id="legendlabels">
-            <li>20%+</li>
-            <li>40%+</li>
-            <li>60%+</li>
-            <li>80%+</li>
+            <li>0%</li>
+            <li>20%</li>
+            <li>40%</li>
+            <li>60%</li>
+            <li>80%</li>
+            <li>100%</li>
         </ul>  
     </div>  
 
