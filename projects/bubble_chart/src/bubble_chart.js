@@ -493,10 +493,10 @@ function splitBubblesPrinOff(){
     var content = '<span class="name">Title: </span><span class="value">' +
                   d.name +
                   '</span><br/>' +
-                  '<span class="name">Funds Awarded: </span><span class="value">$' +
+                  '<span class="name">Amounts Awarded: </span><span class="value">$' +
                   addCommas(d.value) +
                   '</span><br/>' +
-                  '<span class="name">Amounts Available: </span><span class="value">$' +
+                  '<span class="name">Funds Available: </span><span class="value">$' +
                   addCommas(d.balance) +
                   '</span><br/>' +
                   '<span class="name">Number of Grants: </span><span class="value">' +
