@@ -373,26 +373,6 @@ function nodeFormDiscPos(d) {
     simulation.alpha(1).restart();
   }
 
-
-  /*
-   * Sets visualization in "split by year mode".
-   * The year labels are shown and the force layout
-   * tick function is set to move nodes to the
-   * yearCenter of their data's year.
-   */
-  /*function splitBubblesYear() {
-    hideTypeTitles();
-    hideTypePrinOff();
-    showYearTitles();
-
-    // @v4 Reset the 'x' force to draw the bubbles to their year centers
-    simulation.force('x', d3.forceX().strength(forceStrength).x(nodeYearPosX));
-    simulation.force('y', d3.forceY().strength(forceStrength).y(nodeYearPosY));
-
-    // @v4 We can reset the alpha value and restart the simulation
-    simulation.alpha(1).restart();
-  } */
-
     function splitBubblesFormDisc(){
  
       hideTypePrinOff();
@@ -410,7 +390,7 @@ function splitBubblesPrinOff(){
      
       hideTypeTitles();
       showPrinOffTitles();
-      hideOffLegendCircle();
+      drawOffLegendCircle();
       // @v4 Reset the 'x' force to draw the bubbles to their year centers
       simulation.force('x', d3.forceX().strength(forceStrength).x(nodePrinOffPosX));
       simulation.force('y', d3.forceY().strength(forceStrength).y(nodePrinOffPosY));
@@ -418,13 +398,6 @@ function splitBubblesPrinOff(){
       simulation.alpha(1).restart();
 }
 
-
-  /*
-   * Hides Year title displays.
-   */
-  /*function hideYearTitles() {
-    svg.selectAll('.year').remove();
-  }*/
 
   function hideTypeTitles() {
     svg.selectAll('.formdisc').remove();
@@ -434,24 +407,6 @@ function splitBubblesPrinOff(){
     svg.selectAll('.prinoff').remove();
   }
 
-
-  /*
-   * Shows Year title displays.
-   */
-  /*function showYearTitles() {
-    // Another way to do this would be to create
-    // the year texts once and then just hide them.
-    var yearsData = d3.keys(yearsTitleX);
-    var years = svg.selectAll('.year')
-      .data(yearsData);
-
-    years.enter().append('text')
-      .attr('class', 'year')
-      .attr('x', function (d) { return yearsTitleX[d]; })
-      .attr('y', function (d) { return yearsTitleY[d]; })
-      .attr('text-anchor', 'middle')
-      .text(function (d) { return d; });
-  }*/
     function showFormDiscTitles() {
     // Another way to do this would be to create
     // the year texts once and then just hide them.
@@ -586,29 +541,38 @@ var smallCircle = svg.append("circle")
                           .attr("r", 7);                            
 }
 
-function hideOffLegendCircle(){
+function drawOffLegendCircle(){
 //1 Billion
-svg.selectAll('.legendcircle').remove();}
+svg.selectAll('.legendcircle').remove();
 
-/*{var largeCircle = svg.append("circle")
+
+//10 Billion
+var xLargeCircle = svg.append("circle")
+                          .attr('class', 'legendcircle')
+                          .attr('id', 'legendcirclexlg')
+                          .attr("cx", 715)
+                          .attr("cy", 425)
+                          .attr("r", 55);
+
+var largeCircle = svg.append("circle")
                           .attr('class', 'legendcircle')
                           .attr('id', 'legendcirclelg')
-                          .attr("cx", 689)
-                          .attr("cy", 680)
+                          .attr("cx", 715)
+                          .attr("cy", 455)
                           .attr("r", 25);
 // 500 Million
 var medCircle = svg.append("circle")
                           .attr('class', 'legendcircle')
                           .attr('id', 'legendcirclemd')
-                          .attr("cx", 689)
-                          .attr("cy", 680)
+                          .attr("cx", 715)
+                          .attr("cy", 464)
                           .attr("r", 17); 
 // 50 Million                             
 var smallCircle = svg.append("circle")
                           .attr('class', 'legendcircle')
                           .attr('id', 'legendcirclesm')
-                          .attr("cx", 689)
-                          .attr("cy", 680)
+                          .attr("cx",715)
+                          .attr("cy", 474) 
                           .attr("r", 7);                            
 }
 
@@ -619,7 +583,7 @@ var smallCircle = svg.append("circle")
    * returned chart function). Allows the visualization to toggle
    * between "single group" and "split by year" modes.
    *
-   * displayName is expected to be a string and either 'year' or 'all'.
+   * displayName is expected to be a string and either 'formdisc','prinoff' or 'all'.
    */
   chart.toggleDisplay = function (displayName) {
     if(displayName === 'formdisc') {
@@ -630,9 +594,6 @@ var smallCircle = svg.append("circle")
       groupBubbles();
     }
   };
-/*(displayName === 'year') {
-      splitBubblesYear();
-    } else if*/
 
   // return the chart function from closure.
   return chart;
