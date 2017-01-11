@@ -65,7 +65,7 @@ function showPrinOffText(){
                 "top":"520px",
                 "margin-left":"670px"
         });
-        $j("#legendcircletext").css({"display":"none"});
+      //  $j("#legendcircletext").css({"display":"none"});
 }
 
 function hidePrinOffText(){   
