@@ -35,7 +35,7 @@ function textHandler(){
 function showAllText(){
         $j(".alltext").fadeIn("slow");
         $j("#legendcontainer").css({
-                "top":"580px",
+                "top":"596px",
                 "margin-left":"20px"
         });
         $j("#legendcircletext").css({"display":"inline"});
@@ -49,7 +49,7 @@ function showFormDiscText(){
         $j(".formdisctext").fadeIn("slow");
 
         $j("#legendcontainer").css({
-                "top":"596px",
+                "top":"580px",
                 "margin-left":"330px"
         });
         $j("#legendcircletext").css({"display":"inline"});
