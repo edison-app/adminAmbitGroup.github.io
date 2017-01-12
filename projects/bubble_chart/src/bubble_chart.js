@@ -80,16 +80,16 @@ function bubbleChart() {
   };
 
   var prinOffCenters = {
-    IES: { x: 495, y: 455},
-    OCTAE: { x: 495, y: 240 },
+    IES: { x: 495, y: 495},
+    OCTAE: { x: 495, y: 280 },
     /*ODS: { x: 679, y: 210 },*/
-    OELA: { x: 679, y: 225},
-    OESE: { x: 165, y: 260},
-    OII: { x: 310, y: 260},
-    OPE: { x: 330, y: 447},
-    OSERS: { x: 170, y: 430}
+    OELA: { x: 679, y: 265},
+    OESE: { x: 165, y: 300},
+    OII: { x: 310, y: 300},
+    OPE: { x: 330, y: 487},
+    OSERS: { x: 170, y: 470}
   };
-  
+
   // X locations of the year titles.
  /* var yearsTitleX = {
     2010: 200,
@@ -130,14 +130,14 @@ function bubbleChart() {
  // Y locations of the year titles
 
   var prinOffTitleY = {
-    IES: 370,
-    OCTAE: 90,
+    IES: 410,
+    OCTAE: 130,
     /*ODS: 90,*/
-    OELA: 90,
-    OESE: 90,
-    OII: 90,
-    OPE: 370,
-    OSERS: 370
+    OELA: 130,
+    OESE: 130,
+    OII: 130,
+    OPE: 410,
+    OSERS: 410
 };
 
 var prinOffPopUp = {
@@ -279,7 +279,7 @@ var prinOffPopUp = {
       .append('svg')
       .attr('width', width)
       .attr('height', height)
-      .attr('id', 'svgContainer'); 
+      .attr('id', 'svgContainer');
 
     // Bind nodes data to what will become DOM elements to represent them.
     bubbles = svg.selectAll('.bubble')
@@ -349,10 +349,10 @@ function nodeFormDiscPos(d) {
 
  function nodePrinOffPosX(d) {
     return prinOffCenters[d.grantOff].x;
-  } 
+  }
   function nodePrinOffPosY(d) {
     return prinOffCenters[d.grantOff].y;
-  }  
+  }
   /*
    * Sets visualization in "single group mode".
    * The year labels are hidden and the force layout
@@ -361,7 +361,7 @@ function nodeFormDiscPos(d) {
    */
 
   function groupBubbles() {
-  
+
     hideTypeTitles();
     hideTypePrinOff();
     drawAllLegendCircle();
@@ -374,7 +374,7 @@ function nodeFormDiscPos(d) {
   }
 
     function splitBubblesFormDisc(){
- 
+
       hideTypePrinOff();
       showFormDiscTitles();
       drawTypeLegendCircle();
@@ -382,19 +382,19 @@ function nodeFormDiscPos(d) {
     simulation.force('x', d3.forceX().strength(forceStrength).x(nodeFormDiscPos));
     simulation.force('y', d3.forceY().strength(forceStrength).y(260));
 
-    // @v4 We can reset the alpha value and restart the simulation  
+    // @v4 We can reset the alpha value and restart the simulation
     simulation.alpha(1).restart();
   }
 
 function splitBubblesPrinOff(){
-     
+
       hideTypeTitles();
       showPrinOffTitles();
       drawOffLegendCircle();
       // @v4 Reset the 'x' force to draw the bubbles to their year centers
       simulation.force('x', d3.forceX().strength(forceStrength).x(nodePrinOffPosX));
       simulation.force('y', d3.forceY().strength(forceStrength).y(nodePrinOffPosY));
-      // @v4 We can reset the alpha value and restart the simulation  
+      // @v4 We can reset the alpha value and restart the simulation
       simulation.alpha(1).restart();
 }
 
@@ -448,15 +448,18 @@ function splitBubblesPrinOff(){
     var content = '<span class="name">Title: </span><span class="value">' +
                   d.name +
                   '</span><br/>' +
-                  '<span class="name">Amounts Awarded: </span><span class="value">$' +
+                  '<span class="name">Amount Awarded: </span><span class="value">$' +
                   addCommas(d.value) +
                   '</span><br/>' +
                   '<span class="name">Funds Available: </span><span class="value">$' +
                   addCommas(d.balance) +
                   '</span><br/>' +
                   '<span class="name">Number of Grants: </span><span class="value">' +
-                  d.count + 
-                  '</span><br/>';
+                  d.count +
+                  '</span><br/>' +
+                  '<span class="name">Avg Life: </span><span class="value">' +
+                  d.year +
+                  ' yrs</span><br/>';
 
     tooltip.showTooltip(content, d3.event);
   }
@@ -476,7 +479,7 @@ function splitBubblesPrinOff(){
 /********Legend**********/
 
 function drawAllLegendCircle(){
-svg.selectAll('.legendcircle').remove();  
+svg.selectAll('.legendcircle').remove();
 //10 Billion
 var xLargeCircle = svg.append("circle")
                           .attr('class', 'legendcircle')
@@ -498,14 +501,14 @@ var medCircle = svg.append("circle")
                           .attr('id', 'legendcirclemd')
                           .attr("cx", 65)
                           .attr("cy", 524)
-                          .attr("r", 17); 
-// 50 Million                             
+                          .attr("r", 17);
+// 50 Million
 var smallCircle = svg.append("circle")
                           .attr('class', 'legendcircle')
                           .attr('id', 'legendcirclesm')
                           .attr("cx", 65)
                           .attr("cy", 534)
-                          .attr("r", 7);                            
+                          .attr("r", 7);
 }
 
 function drawTypeLegendCircle(){
@@ -531,14 +534,14 @@ var medCircle = svg.append("circle")
                           .attr('id', 'legendcirclemd')
                           .attr("cx", 375)
                           .attr("cy", 524)
-                          .attr("r", 17); 
-// 50 Million                             
+                          .attr("r", 17);
+// 50 Million
 var smallCircle = svg.append("circle")
                           .attr('class', 'legendcircle')
                           .attr('id', 'legendcirclesm')
                           .attr("cx", 375)
                           .attr("cy", 534)
-                          .attr("r", 7);                            
+                          .attr("r", 7);
 }
 
 function drawOffLegendCircle(){
@@ -550,30 +553,30 @@ svg.selectAll('.legendcircle').remove();
 var xLargeCircle = svg.append("circle")
                           .attr('class', 'legendcircle')
                           .attr('id', 'legendcirclexlg')
-                          .attr("cx", 715)
-                          .attr("cy", 425)
+                          .attr("cx", 716)
+                          .attr("cy", 484)
                           .attr("r", 55);
 
 var largeCircle = svg.append("circle")
                           .attr('class', 'legendcircle')
                           .attr('id', 'legendcirclelg')
-                          .attr("cx", 715)
-                          .attr("cy", 455)
+                          .attr("cx", 716)
+                          .attr("cy", 514)
                           .attr("r", 25);
 // 500 Million
 var medCircle = svg.append("circle")
                           .attr('class', 'legendcircle')
                           .attr('id', 'legendcirclemd')
-                          .attr("cx", 715)
-                          .attr("cy", 464)
-                          .attr("r", 17); 
-// 50 Million                             
+                          .attr("cx", 716)
+                          .attr("cy", 523)
+                          .attr("r", 17);
+// 50 Million
 var smallCircle = svg.append("circle")
                           .attr('class', 'legendcircle')
                           .attr('id', 'legendcirclesm')
-                          .attr("cx",715)
-                          .attr("cy", 474) 
-                          .attr("r", 7);                            
+                          .attr("cx",716)
+                          .attr("cy", 533)
+                          .attr("r", 7);
 }
 
 
