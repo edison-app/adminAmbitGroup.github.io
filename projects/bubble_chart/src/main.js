@@ -49,7 +49,7 @@ function showFormDiscText(){
         $j(".formdisctext").fadeIn("slow");
 
         $j("#legendcontainer").css({
-                "top":"580px",
+                "top":"596px",
                 "margin-left":"330px"
         });
         $j("#legendcircletext").css({"display":"inline"});
