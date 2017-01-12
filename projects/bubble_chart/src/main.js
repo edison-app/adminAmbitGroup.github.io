@@ -3,7 +3,7 @@
 /******************************/
 /*This file holds scripts outside of tooltip.js and bubble_chart.js. This includes
 - Text Fade Out/In
-*/ 
+*/
 
 var $j = jQuery.noConflict();
 $j(document).ready(function(){
@@ -32,20 +32,20 @@ function textHandler(){
     });
 }
 
-function showAllText(){   
+function showAllText(){
         $j(".alltext").fadeIn("slow");
         $j("#legendcontainer").css({
                 "top":"580px",
                 "margin-left":"20px"
-        }); 
+        });
         $j("#legendcircletext").css({"display":"inline"});
 }
 
-function hideAllText(){  
+function hideAllText(){
         $j(".alltext").fadeOut("3000");
 }
 
-function showFormDiscText(){   
+function showFormDiscText(){
         $j(".formdisctext").fadeIn("slow");
 
         $j("#legendcontainer").css({
@@ -55,21 +55,19 @@ function showFormDiscText(){
         $j("#legendcircletext").css({"display":"inline"});
 }
 
-function hideFormDiscText(){   
+function hideFormDiscText(){
         $j(".formdisctext").fadeOut("3000");
 }
 
-function showPrinOffText(){   
+function showPrinOffText(){
         $j(".prinofftext").fadeIn("slow");
         $j("#legendcontainer").css({
-                "top":"520px",
+                "top":"578px",
                 "margin-left":"670px"
         });
       //  $j("#legendcircletext").css({"display":"none"});
 }
 
-function hidePrinOffText(){   
+function hidePrinOffText(){
         $j(".prinofftext").fadeOut("3000");
 }
-
-
