@@ -485,7 +485,7 @@ var xLargeCircle = svg.append("circle")
                           .attr('class', 'legendcircle')
                           .attr('id', 'legendcirclexlg')
                           .attr("cx", 65)
-                          .attr("cy",485)
+                          .attr("cy",502)
                           .attr("r", 55);
 
 //1 Billion
@@ -493,21 +493,21 @@ var largeCircle = svg.append("circle")
                           .attr('class', 'legendcircle')
                           .attr('id', 'legendcirclelg')
                           .attr("cx", 65)
-                          .attr("cy", 515)
+                          .attr("cy", 532)
                           .attr("r", 25);
 // 500 Million
 var medCircle = svg.append("circle")
                           .attr('class', 'legendcircle')
                           .attr('id', 'legendcirclemd')
                           .attr("cx", 65)
-                          .attr("cy", 524)
+                          .attr("cy", 541)
                           .attr("r", 17);
 // 50 Million
 var smallCircle = svg.append("circle")
                           .attr('class', 'legendcircle')
                           .attr('id', 'legendcirclesm')
                           .attr("cx", 65)
-                          .attr("cy", 534)
+                          .attr("cy", 551)
                           .attr("r", 7);
 }
 
