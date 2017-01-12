@@ -3,6 +3,11 @@
 /******************************/
 /*D3.js:
 
+Copyright (c) 2010-2016, David Thor
+All rights reserved.
+
+This code has been modified and customized from original code copyrighted below.
+
 Copyright (c) 2010-2016, Michael Bostock
 All rights reserved.
 
@@ -57,7 +62,7 @@ function bubbleChart() {
 
   // Locations to move bubbles towards, depending
   // on which view mode is selected.
-  var center = { x: width / 2, y: height / 4 };
+  var center = { x: width / 2, y: height / 4};
 
   /*var yearCenters = {
     2010: { x: width / 4, y: height / 4 },
@@ -70,21 +75,21 @@ function bubbleChart() {
 };*/
 
   var formDiscCenters = {
-    Formula: { x: width / 3, y: height / 3 },
-    Discretionary: { x: 2 * width / 3, y: height / 3 }
+    Formula: { x: width / 4 - 50, y: height / 2 },
+    Discretionary: { x: width / 2 + 160, y: height / 2 -30 }
   };
 
   var prinOffCenters = {
-    IES: { x: width / 4, y: height / 4 },
-    OCTAE: { x: width / 2, y: height / 6 },
-    ODS: { x: 2 * width / 3 + 100, y: height / 6 },
-    OELA: { x: width / 4 - 25, y: height / 2 + 100 },
-    OESE: { x: width / 2 - 20, y: height / 2 + 100 },
-    OII: { x: 2 * width / 3 + 100, y: height / 2 + 165},
-    OPE: { x: width / 4, y: height / 2 + 300},
-    OSERS: { x: width / 2, y: height / 2 + 300 }
+    IES: { x: 495, y: 495},
+    OCTAE: { x: 495, y: 280 },
+    /*ODS: { x: 679, y: 210 },*/
+    OELA: { x: 679, y: 265},
+    OESE: { x: 165, y: 300},
+    OII: { x: 310, y: 300},
+    OPE: { x: 330, y: 487},
+    OSERS: { x: 170, y: 470}
   };
-  
+
   // X locations of the year titles.
  /* var yearsTitleX = {
     2010: 200,
@@ -107,33 +112,44 @@ function bubbleChart() {
   }; */
 
   var formDiscsTitleX = {
-    Formula: 170,
-    Discretionary: 626,
+    Formula: 180,
+    Discretionary: 670,
     //2010: width - 160
   };
 
   var prinOffTitleX = {
-    IES: 200,
-    OCTAE: width / 2,
-    ODS: width - 200,
-    OELA: 200,
-    OESE: width / 2,
-    OII: width - 200,
-    OPE: 200,
-    OSERS: width / 2
+    IES: 565,
+    OCTAE: 565,
+    /*ODS: 740,*/
+    OELA: 740,
+    OESE: 150,
+    OII: 375,
+    OPE: 375,
+    OSERS: 150
   };
  // Y locations of the year titles
 
   var prinOffTitleY = {
-    IES: 40,
-    OCTAE: 40,
-    ODS: 40,
-    OELA: 480,
-    OESE: 480,
-    OII: 480,
-    OPE: 800,
-    OSERS: 800
+    IES: 410,
+    OCTAE: 130,
+    /*ODS: 90,*/
+    OELA: 130,
+    OESE: 130,
+    OII: 130,
+    OPE: 410,
+    OSERS: 410
 };
+
+var prinOffPopUp = {
+    IES: "Institute of Education Sciences",
+    OCTAE: "Office of Career, Technical, and Adult Education",
+    /*ODS: "Office of the Deputy Secretary",*/
+    OELA: "Office of English Language Acquisition",
+    OESE: "Office of Elementary and Secondary Education",
+    OII: "Office of Innovation and Improvement",
+    OPE: "Office of Postsecondary Education",
+    OSERS: "Office of Special Education and Rehabilitative Services"
+  };
 
   // @v4 strength to apply to the position forces
   var forceStrength = 0.03;
@@ -175,11 +191,20 @@ function bubbleChart() {
   //  which we don't want as there aren't any nodes yet.
   simulation.stop();
 
+  var simulationForChanges = d3.forceSimulation()
+    .velocityDecay(0.2)
+    .force('x', d3.forceX().strength(forceStrength).x(center.x))
+    .force('y', d3.forceY().strength(forceStrength).y(center.y))
+    //.force('charge', d3.forceManyBody().strength(charge))
+    .on('tick', ticked);
+
+  simulationForChanges.stop();
+
   // Nice looking colors - no reason to buck the trend
   // @v4 scales now have a flattened naming scheme
   var fillColor = d3.scaleOrdinal()
-    .domain(["under10","under50","under100","under250","over250"])
-    .range(['#ff0000', '#0033cc', '#7aa25c','orange','brown']);
+    .domain(['bottomQuint','lowerQuint','midQuint','upperQuint','topQuint'])
+    .range(['#C2D6D0', '#A7BFB8', '#8DA7A0','#729088','#587970']);
 
 
   /*
@@ -212,7 +237,8 @@ function bubbleChart() {
       return {
         radius: radiusScale(+d.amount),
         value: +d.amount,
-        //grantDate: d.start_date,
+        balance: +d.balance,
+        count: d.count,
         name: d.name,
         color: d.color,
         year: d.year,
@@ -252,7 +278,8 @@ function bubbleChart() {
     svg = d3.select(selector)
       .append('svg')
       .attr('width', width)
-      .attr('height', height);
+      .attr('height', height)
+      .attr('id', 'svgContainer');
 
     // Bind nodes data to what will become DOM elements to represent them.
     bubbles = svg.selectAll('.bubble')
@@ -284,6 +311,7 @@ function bubbleChart() {
     // Set the simulation's nodes to our newly created nodes array.
     // @v4 Once we set the nodes, the simulation will start running automatically!
     simulation.nodes(nodes);
+    simulationForChanges.nodes(nodes);
 
     // Set initial layout to single group.
     groupBubbles();
@@ -310,7 +338,6 @@ function bubbleChart() {
     //var stringXYear = d.colorprop.toString();
     return yearCenters[d.colorprop].x;
   } */
-
  /* function nodeYearPosY(d) {
     //var stringYYear = d.colorprop.toString();
   return yearCenters[d.colorprop].y;
@@ -322,10 +349,10 @@ function nodeFormDiscPos(d) {
 
  function nodePrinOffPosX(d) {
     return prinOffCenters[d.grantOff].x;
-  } 
+  }
   function nodePrinOffPosY(d) {
     return prinOffCenters[d.grantOff].y;
-  }  
+  }
   /*
    * Sets visualization in "single group mode".
    * The year labels are hidden and the force layout
@@ -334,9 +361,10 @@ function nodeFormDiscPos(d) {
    */
 
   function groupBubbles() {
-    //hideYearTitles();
+
     hideTypeTitles();
     hideTypePrinOff();
+    drawAllLegendCircle();
 
     // @v4 Reset the 'x' force to draw the bubbles to the center.
     simulation.force('x', d3.forceX().strength(forceStrength).x(center.x));
@@ -345,54 +373,31 @@ function nodeFormDiscPos(d) {
     simulation.alpha(1).restart();
   }
 
+    function splitBubblesFormDisc(){
 
-  /*
-   * Sets visualization in "split by year mode".
-   * The year labels are shown and the force layout
-   * tick function is set to move nodes to the
-   * yearCenter of their data's year.
-   */
-  /*function splitBubblesYear() {
-    hideTypeTitles();
-    hideTypePrinOff();
-    showYearTitles();
-
-    // @v4 Reset the 'x' force to draw the bubbles to their year centers
-    simulation.force('x', d3.forceX().strength(forceStrength).x(nodeYearPosX));
-    simulation.force('y', d3.forceY().strength(forceStrength).y(nodeYearPosY));
-
-    // @v4 We can reset the alpha value and restart the simulation
-    simulation.alpha(1).restart();
-  } */
-
-  function splitBubblesFormDisc(){
-      //hideYearTitles(); 
       hideTypePrinOff();
       showFormDiscTitles();
+      drawTypeLegendCircle();
       // @v4 Reset the 'x' force to draw the bubbles to their year centers
     simulation.force('x', d3.forceX().strength(forceStrength).x(nodeFormDiscPos));
-    simulation.force('y', d3.forceY().strength(forceStrength).y(300));
+    simulation.force('y', d3.forceY().strength(forceStrength).y(260));
 
-    // @v4 We can reset the alpha value and restart the simulation  
+    // @v4 We can reset the alpha value and restart the simulation
     simulation.alpha(1).restart();
   }
 
 function splitBubblesPrinOff(){
+
       hideTypeTitles();
-      //hideYearTitles();
       showPrinOffTitles();
+      drawOffLegendCircle();
       // @v4 Reset the 'x' force to draw the bubbles to their year centers
       simulation.force('x', d3.forceX().strength(forceStrength).x(nodePrinOffPosX));
       simulation.force('y', d3.forceY().strength(forceStrength).y(nodePrinOffPosY));
-      // @v4 We can reset the alpha value and restart the simulation  
+      // @v4 We can reset the alpha value and restart the simulation
       simulation.alpha(1).restart();
 }
-  /*
-   * Hides Year title displays.
-   */
-  /*function hideYearTitles() {
-    svg.selectAll('.year').remove();
-  }*/
+
 
   function hideTypeTitles() {
     svg.selectAll('.formdisc').remove();
@@ -402,23 +407,6 @@ function splitBubblesPrinOff(){
     svg.selectAll('.prinoff').remove();
   }
 
-  /*
-   * Shows Year title displays.
-   */
-  /*function showYearTitles() {
-    // Another way to do this would be to create
-    // the year texts once and then just hide them.
-    var yearsData = d3.keys(yearsTitleX);
-    var years = svg.selectAll('.year')
-      .data(yearsData);
-
-    years.enter().append('text')
-      .attr('class', 'year')
-      .attr('x', function (d) { return yearsTitleX[d]; })
-      .attr('y', function (d) { return yearsTitleY[d]; })
-      .attr('text-anchor', 'middle')
-      .text(function (d) { return d; });
-  }*/
     function showFormDiscTitles() {
     // Another way to do this would be to create
     // the year texts once and then just hide them.
@@ -429,7 +417,7 @@ function splitBubblesPrinOff(){
     discs.enter().append('text')
       .attr('class', 'formdisc')
       .attr('x', function (d) { return formDiscsTitleX[d]; })
-      .attr('y', 40)
+      .attr('y', 250)
       .attr('text-anchor', 'middle')
       .text(function (d) { return d; });
   }
@@ -445,7 +433,9 @@ function splitBubblesPrinOff(){
       .attr('x', function (d) { return prinOffTitleX[d]; })
       .attr('y', function (d) { return prinOffTitleY[d]; })
       .attr('text-anchor', 'middle')
-      .text(function (d) { return d; });
+      .text(function (d) { return d; })
+      .append('svg:title')
+      .text(function(d){return prinOffPopUp[d]; });
   }
   /*
    * Function called on mouseover to display the
@@ -458,15 +448,15 @@ function splitBubblesPrinOff(){
     var content = '<span class="name">Title: </span><span class="value">' +
                   d.name +
                   '</span><br/>' +
-                  '<span class="name">Amount: </span><span class="value">$' +
+                  '<span class="name">Amounts Awarded: </span><span class="value">$' +
                   addCommas(d.value) +
                   '</span><br/>' +
-                  '<span class="name">Year: </span><span class="value">' +
-                  d.year + 
+                  '<span class="name">Funds Available: </span><span class="value">$' +
+                  addCommas(d.balance) +
                   '</span><br/>' +
-                  '<span class="name">Date: </span><span class="value">' +
-                  d.grantDate + 
-                  '</span>';
+                  '<span class="name">Number of Grants: </span><span class="value">' +
+                  d.count +
+                  '</span><br/>';
 
     tooltip.showTooltip(content, d3.event);
   }
@@ -481,26 +471,129 @@ function splitBubblesPrinOff(){
     tooltip.hideTooltip();
   }
 
+
+
+/********Legend**********/
+
+function drawAllLegendCircle(){
+svg.selectAll('.legendcircle').remove();
+//10 Billion
+var xLargeCircle = svg.append("circle")
+                          .attr('class', 'legendcircle')
+                          .attr('id', 'legendcirclexlg')
+                          .attr("cx", 65)
+                          .attr("cy",485)
+                          .attr("r", 55);
+
+//1 Billion
+var largeCircle = svg.append("circle")
+                          .attr('class', 'legendcircle')
+                          .attr('id', 'legendcirclelg')
+                          .attr("cx", 65)
+                          .attr("cy", 515)
+                          .attr("r", 25);
+// 500 Million
+var medCircle = svg.append("circle")
+                          .attr('class', 'legendcircle')
+                          .attr('id', 'legendcirclemd')
+                          .attr("cx", 65)
+                          .attr("cy", 524)
+                          .attr("r", 17);
+// 50 Million
+var smallCircle = svg.append("circle")
+                          .attr('class', 'legendcircle')
+                          .attr('id', 'legendcirclesm')
+                          .attr("cx", 65)
+                          .attr("cy", 534)
+                          .attr("r", 7);
+}
+
+function drawTypeLegendCircle(){
+svg.selectAll('.legendcircle').remove();
+
+//10 Billion
+var xLargeCircle = svg.append("circle")
+                          .attr('class', 'legendcircle')
+                          .attr('id', 'legendcirclexlg')
+                          .attr("cx", 375)
+                          .attr("cy", 485)
+                          .attr("r", 55);
+//1 Billion
+var largeCircle = svg.append("circle")
+                          .attr('class', 'legendcircle')
+                          .attr('id', 'legendcirclelg')
+                          .attr("cx", 375)
+                          .attr("cy", 515)
+                          .attr("r", 25);
+// 500 Million
+var medCircle = svg.append("circle")
+                          .attr('class', 'legendcircle')
+                          .attr('id', 'legendcirclemd')
+                          .attr("cx", 375)
+                          .attr("cy", 524)
+                          .attr("r", 17);
+// 50 Million
+var smallCircle = svg.append("circle")
+                          .attr('class', 'legendcircle')
+                          .attr('id', 'legendcirclesm')
+                          .attr("cx", 375)
+                          .attr("cy", 534)
+                          .attr("r", 7);
+}
+
+function drawOffLegendCircle(){
+//1 Billion
+svg.selectAll('.legendcircle').remove();
+
+
+//10 Billion
+var xLargeCircle = svg.append("circle")
+                          .attr('class', 'legendcircle')
+                          .attr('id', 'legendcirclexlg')
+                          .attr("cx", 716)
+                          .attr("cy", 484)
+                          .attr("r", 55);
+
+var largeCircle = svg.append("circle")
+                          .attr('class', 'legendcircle')
+                          .attr('id', 'legendcirclelg')
+                          .attr("cx", 716)
+                          .attr("cy", 514)
+                          .attr("r", 25);
+// 500 Million
+var medCircle = svg.append("circle")
+                          .attr('class', 'legendcircle')
+                          .attr('id', 'legendcirclemd')
+                          .attr("cx", 716)
+                          .attr("cy", 523)
+                          .attr("r", 17);
+// 50 Million
+var smallCircle = svg.append("circle")
+                          .attr('class', 'legendcircle')
+                          .attr('id', 'legendcirclesm')
+                          .attr("cx",716)
+                          .attr("cy", 533)
+                          .attr("r", 7);
+}
+
+
+
   /*
    * Externally accessible function (this is attached to the
    * returned chart function). Allows the visualization to toggle
    * between "single group" and "split by year" modes.
    *
-   * displayName is expected to be a string and either 'year' or 'all'.
+   * displayName is expected to be a string and either 'formdisc','prinoff' or 'all'.
    */
   chart.toggleDisplay = function (displayName) {
     if(displayName === 'formdisc') {
       splitBubblesFormDisc();
     } else if(displayName === 'prinoff') {
       splitBubblesPrinOff();
-    } 
-    else {
+    } else {
       groupBubbles();
     }
   };
-/*(displayName === 'year') {
-      splitBubblesYear();
-    } else if*/
 
   // return the chart function from closure.
   return chart;
