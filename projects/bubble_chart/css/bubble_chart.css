@@ -127,7 +127,7 @@ border-bottom: 1px solid #999;
 
 .alltext p:nth-child(2) {
     width: 250px;
-    top: 295px;
+    top: 270px;
     position: absolute;
     padding-left: 20px;
 }
@@ -229,6 +229,10 @@ border-bottom: 1px solid #999;
     padding-left: 26px;
 }
 
+.prinofftext p a{
+    color: #0645AD !important;
+}
+
 #legendcontainer {
     position: absolute;
     padding:0;
@@ -289,7 +293,7 @@ legendformdisc {
 }
 
 #legendticks{
-  height: 8px; 
+  height: 8px;
   margin: 0em 0 !important;
   width:200px;
 }
@@ -393,6 +397,3 @@ margin:0 0 42px;
 .footer {
   text-align: center;
 }
-
-
-
