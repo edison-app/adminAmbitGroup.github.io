@@ -151,6 +151,17 @@ var prinOffPopUp = {
     OSERS: "Office of Special Education and Rehabilitative Services"
   };
 
+  var totalAmtLabel = {
+    IES: 922639844,
+    OCTAE: 1882714887,
+    /*ODS: "Office of the Deputy Secretary",*/
+    OELA: 216316715,
+    OESE: 23573950971,
+    OII: 5295170453,
+    OPE: 7669955849,
+    OSERS: 18893523661
+  };
+
   // @v4 strength to apply to the position forces
   var forceStrength = 0.03;
 
@@ -435,9 +446,9 @@ function splitBubblesPrinOff(){
       .attr('text-anchor', 'middle')
       .text(function(d){return d; })
       .append('svg:title')
-      .text(function(d){return prinOffPopUp[d] + '\n'; })
+      .text(function(d){return 'Office: ' + prinOffPopUp[d] + '\n'; })
       .append('svg:title')
-      .text(function(d){return prinOffPopUp[d]; });
+      .text(function(d){return 'Total Amount: $' + addCommas(totalAmtLabel[d])});
   }
   
   /*
