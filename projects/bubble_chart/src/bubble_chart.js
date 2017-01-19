@@ -425,7 +425,7 @@ function splitBubblesPrinOff(){
   function showPrinOffTitles() {
     // Another way to do this would be to create
     // the year texts once and then just hide them.
-    var discsData = d3.keys(prinOffTitleX);
+    var discsData = d3.keys(prinOffPopUp)
     var discs = svg.selectAll('.prinoff')
       .data(discsData);
     discs.enter().append('text')
@@ -433,35 +433,11 @@ function splitBubblesPrinOff(){
       .attr('x', function (d) { return prinOffTitleX[d]; })
       .attr('y', function (d) { return prinOffTitleY[d]; })
       .attr('text-anchor', 'middle')
-      .text(function (d) { return d; })
-      .on('mouseover', showTotalDetail)
-      .on('mouseout', hideTotalDetail);
-      //.append('svg:title')
-      //.text(function(d){return prinOffPopUp[d]; });
-  }
-  
-    function showTotalDetail(d) {
-    // change outline to indicate hover state.
-    //d3.select(this).attr('stroke', 'black');
-
-    var content = '<span class="name">Office: </span><span class="value">' +
-            d.name +
-            '</span><br/>' +
-            '<span class="name">Total: </span><span class="value">$' +
-            addCommas(d.value) +
-            '</span><br/>';
-
-    tooltip.showTooltip(content, d3.event);
-  }
-
-  /*
-   * Hides tooltip
-   */
-  function hideTotalDetail(d) {
-    // reset outline
-    //d3.select(this)
-      //.attr('stroke', d3.rgb(fillColor(d.color)).darker());
-    tooltip.hideTooltip();
+      .text(function(d){return d; })
+      .append('svg:title')
+      .text(function(d){return prinOffPopUp[d] + '\n'; })
+      .append('svg:title')
+      .text(function(d){return prinOffPopUp[d]; });
   }
   
   /*
