@@ -442,10 +442,7 @@ function splitBubblesPrinOff(data2){
       .attr('text-anchor', 'middle')
       .text(function (d) { return d; })
       .append('svg:title')
-      .text(function(d){return 'Office: ' + prinOffPopUp[d] + '\n'; })
-      .append('svg:title')
-      .text(function(d){return '\n Total Amount: $' + addCommas(totalAmtLabel[d])}); 
-//console.log(totalAmtLabel)
+       .text(function (d) { return 'Office: ' + prinOffPopUp[d] + '\n' + 'Total Amount: $' + addCommas(totalAmtLabel[d]); });
   }
   
     function showTotalDetail(d) {
