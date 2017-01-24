@@ -1,5 +1,5 @@
 [  
-   {  
+  [ {  
       "amount":581953332,
       "balance":507291034,
       "color":"topQuint",
@@ -2738,5 +2738,36 @@
       "office":"OPE",
       "type":"Formula",
       "year":"1.0"
+  }],
+
+  [
+   {
+      "name":"IES",
+      "total":922639844
+   },
+   {
+      "name":"OCTAE",
+      "total":1882714887
+   },
+   {
+      "name":"OELA",
+      "total":216316715
+   },
+   {
+      "name":"OESE",
+      "total":23573950971
+   },
+   {
+      "name":"OII",
+      "total":5295170453
+   },
+   {
+      "name":"OPE",
+      "total":7669955849
+   },
+   {
+      "name":"OSERS",
+      "total":18893523661
    }
+]
 ]
