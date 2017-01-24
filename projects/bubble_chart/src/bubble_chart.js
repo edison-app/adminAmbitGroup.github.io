@@ -64,16 +64,6 @@ function bubbleChart() {
   // on which view mode is selected.
   var center = { x: width / 2, y: height / 4};
 
-  /*var yearCenters = {
-    2010: { x: width / 4, y: height / 4 },
-    2011: { x: width / 2, y: height / 6 },
-    2012: { x: 2 * width / 3 + 100, y: height / 6 },
-    2013: { x: width / 4 - 25, y: height / 2 + 100 },
-    2014: { x: width / 2 - 20, y: height / 2 + 100 },
-    2015: { x: 2 * width / 3 + 100, y: height / 2 + 165},
-    2016: { x: width / 4, y: height / 2 + 300},
-};*/
-
   var formDiscCenters = {
     Formula: { x: width / 4 - 50, y: height / 2 },
     Discretionary: { x: width / 2 + 160, y: height / 2 -30 }
@@ -89,27 +79,6 @@ function bubbleChart() {
     OPE: { x: 330, y: 487},
     OSERS: { x: 170, y: 470}
   };
-
-  // X locations of the year titles.
- /* var yearsTitleX = {
-    2010: 200,
-    2011: width / 2,
-    2012: width - 200,
-    2013: 200,
-    2014: width / 2,
-    2015: width - 200,
-    2016: 200,
-  };
-
-  var yearsTitleY = {
-    2010: 40,
-    2011: 40,
-    2012: 40,
-    2013: 480,
-    2014: 480,
-    2015: 480,
-    2016: 800,
-  }; */
 
   var formDiscsTitleX = {
     Formula: 180,
@@ -151,17 +120,6 @@ var prinOffPopUp = {
     OSERS: "Office of Special Education and Rehabilitative Services"
   };
 
-  var totalAmtLabel = {
-    IES: 922639844,
-    OCTAE: 1882714887,
-    /*ODS: "Office of the Deputy Secretary",*/
-    OELA: 216316715,
-    OESE: 23573950971,
-    OII: 5295170453,
-    OPE: 7669955849,
-    OSERS: 18893523661
-  };
-
   // @v4 strength to apply to the position forces
   var forceStrength = 0.03;
 
@@ -169,6 +127,7 @@ var prinOffPopUp = {
   var svg = null;
   var bubbles = null;
   var nodes = [];
+  var nodes2 =  [];
 
   // Charge function that is called for each node.
   // As part of the ManyBody force.
@@ -259,13 +218,23 @@ var prinOffPopUp = {
         y: Math.random() * 800
       };
     });
-
     // sort them to prevent occlusion of smaller nodes.
     //circle  algorithm
     myNodes.sort(function (a, b) { return b.value - a.value; });
 
     return myNodes;
   }
+
+  function createTotalNodes(rawData) {
+    var myNodesTotal = rawData.map(function (d) {
+      return {
+        office: d.name,
+        total: +d.total,
+      };
+    });
+    return myNodesTotal;
+  }
+
 
   /*
    * Main entry point to the bubble chart. This function is returned
@@ -282,8 +251,9 @@ var prinOffPopUp = {
    */
   var chart = function chart(selector, rawData) {
     // convert raw data into nodes data
-    nodes = createNodes(rawData);
-
+    nodes = createNodes(rawData[0]); 
+    nodes2 = createTotalNodes(rawData[1]); 
+     // console.log(nodes2)*********
     // Create a SVG element inside the provided selector
     // with desired size.
     svg = d3.select(selector)
@@ -325,7 +295,13 @@ var prinOffPopUp = {
     simulationForChanges.nodes(nodes);
 
     // Set initial layout to single group.
+    
+    showPrinOffTitles(nodes2);
+    //hideTypePrinOff();
+    splitBubblesPrinOff(nodes2)
     groupBubbles();
+    
+
   };
 
   /*
@@ -397,16 +373,17 @@ function nodeFormDiscPos(d) {
     simulation.alpha(1).restart();
   }
 
-function splitBubblesPrinOff(){
-
+function splitBubblesPrinOff(data2){
       hideTypeTitles();
-      showPrinOffTitles();
-      drawOffLegendCircle();
+      drawOffLegendCircle();    
       // @v4 Reset the 'x' force to draw the bubbles to their year centers
       simulation.force('x', d3.forceX().strength(forceStrength).x(nodePrinOffPosX));
       simulation.force('y', d3.forceY().strength(forceStrength).y(nodePrinOffPosY));
       // @v4 We can reset the alpha value and restart the simulation
       simulation.alpha(1).restart();
+
+      showPrinOffTitles(data2);
+      
 }
 
 
@@ -433,22 +410,66 @@ function splitBubblesPrinOff(){
       .text(function (d) { return d; });
   }
 
-  function showPrinOffTitles() {
+  function showPrinOffTitles(rawData) {
     // Another way to do this would be to create
     // the year texts once and then just hide them.
-    var discsData = d3.keys(prinOffPopUp)
+
+    var totalAmtLabel =  {
+      IES: rawData[0].total,
+      OCTAE: rawData[1].total,
+      OELA: rawData[2].total,
+      OESE: rawData[3].total,
+      OII: rawData[4].total,
+      OPE: rawData[5].total,
+      OSERS: rawData[6].total,
+    };
+     //console.log(rawData[6].total)
+
+     /* for (var i = 0; i < rawData.length; i++) {
+        var totalObj = {};
+        totalObj.office = rawData[i].office;
+        totalObj.total = rawData[i].total;
+        console.log(totalObj); */
+
+    var discsData = d3.keys(prinOffPopUp);
     var discs = svg.selectAll('.prinoff')
-      .data(discsData);
+    .data(discsData);
+      
     discs.enter().append('text')
       .attr('class', 'prinoff')
       .attr('x', function (d) { return prinOffTitleX[d]; })
       .attr('y', function (d) { return prinOffTitleY[d]; })
       .attr('text-anchor', 'middle')
-      .text(function(d){return d; })
+      .text(function (d) { return d; })
       .append('svg:title')
       .text(function(d){return 'Office: ' + prinOffPopUp[d] + '\n'; })
       .append('svg:title')
-      .text(function(d){return 'Total Amount: $' + addCommas(totalAmtLabel[d])});
+      .text(function(d){return '\n Total Amount: $' + addCommas(totalAmtLabel[d])}); 
+//console.log(totalAmtLabel)
+  }
+  
+    function showTotalDetail(d) {
+    // change outline to indicate hover state.
+    //d3.select(this)
+
+    var content = '<span class="name">Office: </span><span class="value">' +
+            d.name +
+            '</span><br/>' +
+            '<span class="name">Total: </span><span class="value">$' +
+            addCommas(d.value) +
+            '</span><br/>';
+
+    tooltip.showTooltip(content, d3.event);
+  }
+
+  /*
+   * Hides tooltip
+   */
+  function hideTotalDetail(d) {
+    // reset outline
+    //d3.select(this)
+      //.attr('stroke', d3.rgb(fillColor(d.color)).darker());
+    tooltip.hideTooltip();
   }
   
   /*
@@ -606,7 +627,7 @@ var smallCircle = svg.append("circle")
     if(displayName === 'formdisc') {
       splitBubblesFormDisc();
     } else if(displayName === 'prinoff') {
-      splitBubblesPrinOff();
+      splitBubblesPrinOff(nodes2);
     } else {
       groupBubbles();
     }
@@ -652,6 +673,7 @@ function setupButtons() {
 
       // Get the id of the button
       var buttonId = button.attr('id');
+      var dataArr = [];
 
       // Toggle the bubble chart based on
       // the currently clicked button.
