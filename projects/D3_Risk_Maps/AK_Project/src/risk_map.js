@@ -1,6 +1,6 @@
 function showDataMap() {
 
-function createMap1() {
+  function createMap1() {
     var map =
       new Datamap(
         {
@@ -88,7 +88,7 @@ function createMap1() {
             9: '#24474A',
             10: '#0d3235'
           },
-        
+
           width: 810,
 
           dataUrl: 'data/Avg_Obligated_Amt_4.csv',
@@ -124,20 +124,20 @@ function createMap1() {
   }
 
 
- // var displayedMap = function displayedMap() {
- // }
+  // var displayedMap = function displayedMap() {
+  // }
 
-  var displayedMap = function displayedMap(){} ;
+  var displayedMap = function displayedMap() { };
 
-  displayedMap.loadInitialMap = function(){
+  displayedMap.loadInitialMap = function () {
     createMap1();
-  } 
+  }
 
   displayedMap.toggleDisplay = function (displayName) {
-    if (displayName === 'formdisc') {
+    if (displayName === 'datamap2') {
       handlerMap2();
-    } else if (displayName === 'prinoff') {
-      handlerMap3(); 
+    } else if (displayName === 'datamap3') {
+      handlerMap3();
     } else {
       handlerMap1();
     }
@@ -176,49 +176,45 @@ function setupButtons() {
     });
 }
 
-function initialChart(){
-
-}
-
 function loadInitialMap() {
-var map3 =
-      new Datamap(
-        {
-          element: document.getElementById('map-container'),
-          responsive: true,
-          scope: "usa",
-          fills: {
+  var map3 =
+    new Datamap(
+      {
+        element: document.getElementById('map-container'),
+        responsive: true,
+        scope: "usa",
+        fills: {
 
-            1: '#e3f6f8',
-            2: '#cbe0e2',
-            3: '#b3cacc',
-            4: '#9bb4b7',
-            5: '#839ea1',
-            6: '#6c898b',
-            7: '#547376',
-            8: '#3c5d60',
-            9: '#24474A',
-            10: '#0d3235'
+          1: '#e3f6f8',
+          2: '#cbe0e2',
+          3: '#b3cacc',
+          4: '#9bb4b7',
+          5: '#839ea1',
+          6: '#6c898b',
+          7: '#547376',
+          8: '#3c5d60',
+          9: '#24474A',
+          10: '#0d3235'
+        },
+
+        width: 810,
+
+        dataUrl: 'data/Avg_Obligated_Amt_4.csv',
+        dataType: 'csv',
+        data: {},
+
+        geographyConfig: {
+          highlightBorderColor: '#bada55',
+          popupTemplate: function (geography, data) {
+            return '<div class="hoverinfo">' + geography.properties.name + '<br>' + '$' + data.oblAmt + ' '
           },
-        
-          width: 810,
+          highlightBorderWidth: 3
+        },
 
-          dataUrl: 'data/Avg_Obligated_Amt_4.csv',
-          dataType: 'csv',
-          data: {},
-
-          geographyConfig: {
-            highlightBorderColor: '#bada55',
-            popupTemplate: function (geography, data) {
-              return '<div class="hoverinfo">' + geography.properties.name + '<br>' + '$' + data.oblAmt + ' '
-            },
-            highlightBorderWidth: 3
-          },
-
-        });
-    //map3.labels(); No labels
-    window.addEventListener('resize3', function () { map3.resize3(); });
-  }
+      });
+  //map3.labels(); No labels
+  window.addEventListener('resize3', function () { map3.resize3(); });
+}
 
 loadInitialMap();
 setupButtons();
