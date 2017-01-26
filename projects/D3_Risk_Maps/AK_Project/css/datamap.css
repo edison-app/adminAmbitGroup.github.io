@@ -25,7 +25,7 @@ border-bottom: 1px solid #999;
 }
 
 #map-container{
-  margin-left: 80px;
+  margin-left: 150px;
 }
 
 .button {
@@ -112,7 +112,7 @@ border-bottom: 1px solid #999;
     position: absolute;
     padding:0;
     top: 630px;
-    width: 225px;
+    width: 550px;
     overflow: hidden;
     margin-left:20px;
 }
@@ -141,7 +141,7 @@ legendformdisc {
 }
 
 #legendswatches {
-    width: 200px;
+    width: 180px;
     height:10px;
 }
 
@@ -191,78 +191,6 @@ legendformdisc {
 
 #legendlabels li:last-child {
     float:right;
-}
-
-#legendcircletext{
-  position: relative;
-  /*height: 140px;*/
-  width: 200px;
-}
-
-#legendcircletext p:nth-child(1){
-margin:0 0 42px;
-}
-
-
-#legendcircletext span{
-  font-size:9px;
-  color: #999;
- /* margin-left: 100px; */
-}
-#legendlabxlg{
-  margin-left: 140px;
-}
-
-#legendlablg{
-  margin-left: 128px;
-}
-
-#legendlabmd{
-  margin-left: 105px;
-}
-
-#legendlabsm{
-  margin-left: 98px;
-}
-
-#legendlinexlg{
- border-bottom: 1px solid #999;
-    position: absolute;
-    width: 35px;
-    margin-left: 100px;
-    margin-top: -5px;
-}
-
-#legendlinelg{
-    border-bottom: 1px solid #999;
-    position: absolute;
-    width: 60px;
-    margin-left: 63px;
-    margin-top: -5px;
-}
-
-#legendlinemd{
- border-bottom: 1px solid #999;
- position: absolute;
- width: 42px;
- margin-left: 59px;
- margin-top: -5px;
-}
-
-#legendlinesm{
- border-bottom: 1px solid #999;
- position: absolute;
- width: 45px;
- margin-left: 50px;
- margin-top: -5px;
-}
-
-
-.legendcircle {
-    stroke-width: 1;
-    stroke: #999;
-    stroke-dasharray: 2 2;
-    fill: none;
 }
 
 #svgContainer{
