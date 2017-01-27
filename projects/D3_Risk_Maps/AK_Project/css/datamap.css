@@ -131,58 +131,128 @@ border-bottom: 1px solid #999;
 }
 
 
-#legendtext{
+.legendtext{
  margin: 15px 0px 5px 10px;
 }
 
-#legendswatches {
+#legendswatches3 {
     width: 450px;
     height:10px;
     margin-left:10px;
 }
 
-#legendswatches li{
+#legendswatches3 li{
   width:10%;
   border-right: solid white 1px;
   background-image:none;
 }
 
-.bottomQuint{
-  background-color: #C2D6D0;
-}
-.lowerQuint{
-  background-color: #A7BFB8;
-}
-.midQuint{
-  background-color: #8DA7A0;
-}
-.upperQuint{
-  background-color: #729088;
-}
-.topQuint{
-  background-color: #587970;
+#legendswatches1 {
+    width: 450px;
+    height:10px;
+    margin-left:10px;
 }
 
-#legendticks{
+#legendswatches1 li{
+  width:15%;
+  border-right: solid white 1px;
+  background-image:none;
+}
+
+#legendswatches2 {
+    width: 450px;
+    height:10px;
+    margin-left:10px;
+}
+
+#legendswatches2 li{
+  width:10%;
+  border-right: solid white 1px;
+  background-image:none;
+}
+
+#legendmap1{
+ display: none;
+}
+
+#legendmap2{
+display: none;
+}
+
+.legsec1{
+  background-color: #e3f6f8;
+}
+.legsec2{
+  background-color: #cbe0e2;
+}
+.legsec3{
+  background-color: #b3cacc;
+}
+.legsec4{
+  background-color: #9bb4b7;
+}
+.legsec5{
+  background-color: #839ea1;
+}
+.legsec6{
+  background-color: #6c898b;
+}
+.legsec7{
+  background-color: #3c5d60;
+}
+.legsec8{
+  background-color: #24474A;
+}
+.legsec9{
+  background-color: #0d3235;
+}
+
+.legsec10{
+  background-color: green;
+}
+.legsec11{
+  background-color: yellow;
+}
+.legsec12{
+  background-color: red;
+}
+
+.legsec13{
+  background-color: #38B3BC;
+}
+.legsec14{
+  background-color: #2D9097;
+}
+.legsec15{
+  background-color: #226E73;;
+}
+.legsec16{
+  background-color: #174B4F;
+}
+.legsec17{
+  background-color: #0D292B;
+}
+
+.legendticks{
   height: 8px;
   margin: 0em 0 !important;
   width:450px;
 }
 
-#legendticks li{
+.legendticks li{
   width: 10%;
   border-right:solid #CCC 1px;
 }
-#legendticks li:nth-child(1){
+.legendticks li:nth-child(1){
   border-left:solid #CCC 1px;
   margin-left:10px;
 }
 
-#legendlabels{
+.legendlabels{
   width:450px;
 }
 
-#legendlabels li {
+.legendlabels li {
   height: 20px;
     position: relative;
     font-size: 10px;
@@ -190,9 +260,28 @@ border-bottom: 1px solid #999;
     padding: 2px 0 0 0;
 }
 
-#legendlabels li:last-child {
-    /*float:right;*/
-    
+.legendlabels li:last-child {
+    float:right;
+}
+
+#legendmap2 .legendlabels li:last-child {
+    float:left;
+}
+
+#legendmap1 .legendticks li {
+    width:15%;
+}    
+
+#legendmap2 .legendlabels  {
+  margin-left: 10px;
+}
+
+#legendmap1 .legendlabels li:last-child {
+    float:left;
+}
+
+#legendmap1 .legendlabels li:first-child{
+    margin-left:10px;
 }
 
 #svgContainer{
