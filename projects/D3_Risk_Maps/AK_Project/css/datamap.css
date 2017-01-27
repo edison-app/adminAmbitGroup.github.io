@@ -108,7 +108,7 @@ border-bottom: 1px solid #999;
   display:none;
 }
 
-#legendcontainer {
+.legendcontainer {
     position: absolute;
     padding:0;
     top: 630px;
@@ -117,11 +117,11 @@ border-bottom: 1px solid #999;
     margin-left:20px;
 }
 
-#legendcontainer ul{
+.legendcontainer ul{
     padding:0 0 0 0;
 }
 
-#legendcontainer li{
+.legendcontainer li{
     background-image:none;
     padding:0;
     margin:0;
@@ -130,23 +130,19 @@ border-bottom: 1px solid #999;
     height:100%;
 }
 
-legendformdisc {
-    position: absolute;
-    margin-left: 345px;
-    top: 580px;
-}
 
 #legendtext{
- margin: 15px 0px 5px 0px;
+ margin: 15px 0px 5px 10px;
 }
 
 #legendswatches {
-    width: 180px;
+    width: 450px;
     height:10px;
+    margin-left:10px;
 }
 
 #legendswatches li{
-  width:20%;
+  width:10%;
   border-right: solid white 1px;
   background-image:none;
 }
@@ -170,27 +166,33 @@ legendformdisc {
 #legendticks{
   height: 8px;
   margin: 0em 0 !important;
-  width:200px;
+  width:450px;
 }
 
 #legendticks li{
-  width: 20%;
+  width: 10%;
   border-right:solid #CCC 1px;
 }
 #legendticks li:nth-child(1){
   border-left:solid #CCC 1px;
+  margin-left:10px;
+}
+
+#legendlabels{
+  width:450px;
 }
 
 #legendlabels li {
   height: 20px;
     position: relative;
     font-size: 10px;
-    width: 16.6%;
+    width: 9.95%;
     padding: 2px 0 0 0;
 }
 
 #legendlabels li:last-child {
-    float:right;
+    /*float:right;*/
+    
 }
 
 #svgContainer{
