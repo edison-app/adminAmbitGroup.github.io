@@ -256,9 +256,8 @@ display: none;
   height: 20px;
   position: relative;
   font-size: 10px;
-  width: 15%;
+  width: 9.95%;
   padding: 2px 0 0 0;
-  text-align:center;
 }
 
 .legendlabels li:last-child {
@@ -284,6 +283,12 @@ display: none;
 #legendmap1 .legendlabels li:first-child{
     margin-left:10px;
 }
+
+#legendmap1 ul li {  
+  width:15%;
+  text-align: center;
+}
+
 
 #svgContainer{
   margin-top: 20px;
