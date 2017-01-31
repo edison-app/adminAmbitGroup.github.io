@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+
+<head>
+  <!--<meta charset="utf-8">-->
+  <meta charset="UTF8">
+  <title>DOED Data Map</title>
+  <meta name="description" content="Using D3v4 to create a Bubble chart. Based on NYT visualization">
+  <meta name="author" content="David Thor">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/datamap.css">
+</head>
+
+
+<body>
+  <div class="container">
+    <h1 class="topheader">Risk Management Maps</h1>
+    <div id="toolbar">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum est massa, mollis quis ex ut, vehicula molestie
+        metus. In sit amet ligula dignissim enim suscipit eleifend interdum vitae orci. In pharetra, orci et mollis facilisis,
+        lorem felis maximus sem, sed ultricies sem dolor vel lorem. In metus arcu, porta vitae dolor ac, porta condimentum
+        lectus. Nulla volutpat elit sit amet purus rhoncus egestas. Aliquam venenatis dolor eu tortor tincidunt, vitae dapibus
+        lorem tempus. Maecenas leo nisl, lacinia eu est id, congue iaculis ex.</p>
+      <div id="toolbarcenter">
+        <a href="#" id="oese" class="button active">OESE</a>
+        <a href="#" id="oii" class="button">OII</a>
+        <a href="#" id="octae" class="button">OCTAE</a>
+        <a href="#" id="oela" class="button">OELA</a>
+        <a href="#" id="osers" class="button">OSERS</a>
+        <a href="#" id="ope" class="button">OPE</a>
+        <a href="#" id="ies" class="button">IES</a>
+       <!-- <a href="#" id="ode" class="button">Map 3</a> -->
+      </div>
+    </div>
+    <div id="map-container"></div>
+    <div class="legendcontainer">
+      <!-- Map Legend 3-->
+      <div id="legendmap3">
+        <div class="legendtext">Average Grant Obligation by State (in millions)</div>
+        <ul id="legendswatches3">
+          <li class="legsec1"></li>
+          <li class="legsec2"></li>
+          <li class="legsec3"></li>
+          <li class="legsec4"></li>
+          <li class="legsec5"></li>
+          <li class="legsec6"></li>
+          <li class="legsec7"></li>
+          <li class="legsec8"></li>
+          <li class="legsec9"></li>
+        </ul>
+        <ul class="legendticks">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        <ul class="legendlabels">
+          <li>0</li>
+          <li>&lt;25</li>
+          <li>&lt;50</li>
+          <li>&lt;100</li>
+          <li>&lt;250</li>
+          <li>&lt;500</li>
+          <li>&lt;750</li>
+          <li>&lt;1000</li>
+          <li>&lt;2000</li>
+          <li>&ge;3000</li>
+        </ul>
+      </div>
+      <!-- Map legend 1 -->
+      <div id="legendmap1">
+        <div class="legendtext">Average Grant Risk Level by State</div>
+        <ul id="legendswatches1">
+          <li class="legsec10"></li>
+          <li class="legsec11"></li>
+          <li class="legsec12"></li>
+        </ul>
+        <ul class="legendticks">
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        <ul class="legendlabelsmap1">
+          <li>Low</li>
+          <li>Elevated</li>
+          <li>Significant</li>
+        </ul>
+      </div>
+      <!-- Map legend 2 -->
+      <div id="legendmap2">
+        <div class="legendtext">Current Grant Obligations by State (in millions)</div>
+        <ul id="legendswatches2">
+          <li class="legsec13"></li>
+          <li class="legsec14"></li>
+          <li class="legsec15"></li>
+          <li class="legsec16"></li>
+          <li class="legsec17"></li>
+        </ul>
+        <ul class="legendticks">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        <ul class="legendlabels">
+          <li>$0.1</li>
+          <li>$10</li>
+          <li>$25</li>
+          <li>$50</li>
+          <li>$100+</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <!--<script src="//d3js.org/d3.v4.min.js"></script>-->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
+  <script src="src/vendor/datamaps.usa.min.js"></script>
+  <!--<script src="src/tooltip.js"></script>-->
+  <script src="src/main.js"></script>
+  <script src="src/risk_map.js"></script>
+</body>
+
+</html>

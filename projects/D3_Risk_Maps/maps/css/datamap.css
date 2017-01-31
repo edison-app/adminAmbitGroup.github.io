@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One');
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One|Marcellus+SC');
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Julius+Sans+One|Marcellus+SC');
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+a, a:visited, a:active {
+  color: #444;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  /*border: 1px solid #999; */
+  padding: 15px;
+}
+
+.topheader{
+font-family: 'Marcellus SC', serif;
+text-align: center;
+padding-bottom: 20px;
+border-bottom: 1px solid #999;
+
+}
+
+#map-container{
+  margin-left: 150px;
+}
+
+.button {
+  min-width: 130px;
+  padding: 4px 5px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 13px;
+  border: 1px solid #e0e0e0;
+  text-decoration: none;
+}
+
+.button.active {
+  background: #999;
+  color: #fff !important;
+}
+
+
+#vis {
+  width: 940px;
+  height: 600px;
+  clear: both;
+  margin-bottom: 10px;
+}
+
+#toolbar a{
+    padding: 10px 18px;
+    border: solid 1px #CCC;
+    margin: 1px 0;
+    font-family: 'Julius Sans One', sans-serif;
+    color:#444;
+    float:left;
+}
+
+#toolbar p{
+    width: 838px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#toolbarcenter{
+  width: 190px;
+  height: 200px;
+  padding: 10px 18px;
+  position:absolute;
+  top: 230px;
+}
+
+.tooltip {
+	position: absolute;
+	top: 100px;
+	left: 100px;
+  -moz-border-radius:5px;
+	border-radius: 5px;
+  border: 2px solid #000;
+  background: #fff;
+	opacity: .9;
+  color: black;
+	padding: 10px;
+	width: 300px;
+	font-size: 12px;
+	z-index: 10;
+}
+
+.tooltip .title {
+	font-size: 13px;
+}
+
+.tooltip .name {
+  font-weight:bold;
+}
+
+.tooltip p{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.formdisctext{
+  display:none;
+}
+
+.legendcontainer {
+    position: absolute;
+    padding:0;
+    top: 630px;
+    width: 550px;
+    overflow: hidden;
+    margin-left:20px;
+}
+
+.legendcontainer ul{
+    padding:0 0 0 0;
+}
+
+.legendcontainer li{
+    background-image:none;
+    padding:0;
+    margin:0;
+    float:left;
+    display:block;
+    height:100%;
+}
+
+
+.legendtext{
+ margin: 15px 0px 5px 10px;
+}
+
+#legendswatches3 {
+    width: 450px;
+    height:10px;
+    margin-left:10px;
+}
+
+#legendswatches3 li{
+  width:10%;
+  border-right: solid white 1px;
+  background-image:none;
+}
+
+#legendswatches1 {
+    width: 450px;
+    height:10px;
+    margin-left:10px;
+}
+
+#legendswatches1 li{
+  width:15%;
+  border-right: solid white 1px;
+  background-image:none;
+}
+
+#legendswatches2 {
+    width: 450px;
+    height:10px;
+    margin-left:10px;
+}
+
+#legendswatches2 li{
+  width:10%;
+  border-right: solid white 1px;
+  background-image:none;
+}
+
+#legendmap1{
+ display: none;
+}
+
+#legendmap2{
+display: none;
+}
+
+.legsec1{
+  background-color: #e3f6f8;
+}
+.legsec2{
+  background-color: #cbe0e2;
+}
+.legsec3{
+  background-color: #b3cacc;
+}
+.legsec4{
+  background-color: #9bb4b7;
+}
+.legsec5{
+  background-color: #839ea1;
+}
+.legsec6{
+  background-color: #6c898b;
+}
+.legsec7{
+  background-color: #3c5d60;
+}
+.legsec8{
+  background-color: #24474A;
+}
+.legsec9{
+  background-color: #0d3235;
+}
+
+.legsec10{
+  background-color: green;
+}
+.legsec11{
+  background-color: yellow;
+}
+.legsec12{
+  background-color: red;
+}
+
+.legsec13{
+  background-color: #38B3BC;
+}
+.legsec14{
+  background-color: #2D9097;
+}
+.legsec15{
+  background-color: #226E73;;
+}
+.legsec16{
+  background-color: #174B4F;
+}
+.legsec17{
+  background-color: #0D292B;
+}
+
+.legendticks{
+  height: 8px;
+  margin: 0em 0 !important;
+  width:450px;
+}
+
+.legendticks li{
+  width: 10%;
+  border-right:solid #CCC 1px;
+}
+.legendticks li:nth-child(1){
+  border-left:solid #CCC 1px;
+  margin-left:10px;
+}
+
+.legendlabels{
+  width:450px;
+}
+
+.legendlabels li {
+  height: 20px;
+  position: relative;
+  font-size: 10px;
+  width: 9.95%;
+  padding: 2px 0 0 0;
+}
+
+.legendlabels li:last-child {
+    float:right;
+}
+
+#legendmap2 .legendlabels li:last-child {
+    float:left;
+}
+
+#legendmap1 .legendticks li {
+    width:15%;
+}    
+
+#legendmap2 .legendlabels  {
+  margin-left: 10px;
+}
+
+#legendmap1 .legendlabels li:last-child {
+    float:left;
+}
+
+#legendmap1 .legendlabels li:first-child{
+    margin-left:10px;
+}
+
+#legendmap1 ul li {  
+  width:15%;
+  text-align: center;
+}
+
+
+#svgContainer{
+  margin-top: 20px;
+}
+
+.footer {
+  text-align: center;
+}
