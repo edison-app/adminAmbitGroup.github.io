@@ -1,0 +1,41 @@
+/* Main */
+
+.main-wrapper{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.lights-wrapper{
+    position: absolute;
+    text-align:center;
+    width: 500px;
+    height: 150px;
+    top: 40%;
+    left: 43%;
+}
+
+.text-area{
+    width:180px;
+}
+
+.text-area img{
+    float:left;
+}
+
+.text-area h3 {
+    max-width: 80%;
+    vertical-align: middle;
+    padding-top: 43px;
+}
+
+.txt-rotate{
+    color:#fff;
+}
+
+.svg-circle-container{
+    height:600px;
+    width:600px;
+    display: block;
+    margin:auto;
+}

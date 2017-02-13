@@ -1,0 +1,70 @@
+
+@import url('https://fonts.googleapis.com/css?family=Space+Mono');
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Quicksand');
+
+/* ==========================================================================
+   Custom styles
+   ========================================================================== */
+
+/*General styles*/
+
+p{font-family: 'Quicksand', sans-serif;
+font-size: 14pt;
+}
+
+h2{font-family: 'Quicksand', sans-serif;
+font-weight: bold;
+}
+
+.custom-jumbotron{
+    /*background-color: #22AB50 !important;*/
+   background-image: url(../img/mush-bkg.png) !important;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+.quotes{
+    font-family: 'Space Mono', monospace;
+}
+
+#top-section h3 {
+    text-align:center;
+   
+}
+
+#top-section h1 {
+    text-align:center;
+     border-bottom: 1px solid #333;
+     font-family: 'Gloria Hallelujah', cursive;
+}
+
+#top-section p{
+font-family: "Merriweather", "Georgia", "Cambria", "Times New Roman", "Times", serif;
+    font-size: 2rem;
+    line-height: 1.7;
+}
+
+.text-emphasis{
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 1rem;
+}
+
+hr{
+ margin-top:5px;
+ margin-bottom:5px;
+ height:1px;
+ width:100%;
+ border-top:1px solid gray;
+}
+
+
+.fa-override{
+    font-size: 50px !important;
+}
+
+
+.oneup-fa-style{
+border: 1px solid #fff257;
+}
+
