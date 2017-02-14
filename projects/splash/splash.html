@@ -15,12 +15,15 @@
 
 <body ng-app="app">
     <div class="main-wrapper container">
+        <div ng-controller="bubbleCtrl">
+            <bubble-chart chart-data="bubbleData"></bubble-chart>
+        </div>
         <div class="top-sec">
             <div class="lights-wrapper">
                 <div class="text-area">
-                    <img src="img/ed-logo.png" alt="ed text">
+                    <!--<img src="img/ed-logo.png" alt="ed text">-->
                     <h3 ng-controller="wordScrollController" class="quotes">
-                        <span class="txt-rotate" data-period="5000" data-rotate='["ISON"]'></span>
+                        <span class="txt-rotate" data-period="1750" data-rotate='["VISUALIZE","&nbsp;&nbsp;DATA","&nbsp;&nbsp;WITH","EDISON"]'></span>
                     </h3>
                 </div>
             </div>
@@ -32,6 +35,8 @@
     <script src="app/app.js"></script>
     <script src="app/app.features.mod.js"></script>
     <script src="app/controllers/wordScrollController.js"></script>
+    <script src="app/controllers/d3controllers.js"></script>
+    <script src="app/directives/d3directives.js"></script>
     <script src="js/main-splash.js"></script>
 </body>
 
