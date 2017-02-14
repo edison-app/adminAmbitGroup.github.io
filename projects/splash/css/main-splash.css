@@ -12,9 +12,8 @@
 .lights-wrapper{
     position: absolute;
     text-align:center;
-    width: 50px;
-    height: 150px;
-    top: 28%;
+    /*height: 150px;*/
+    top: 32%;
     left: 45%;
 }
 
@@ -22,14 +21,12 @@
     font-family: 'Julius Sans One', sans-serif;
     font-size: 30px;
     vertical-align: middle;
-    padding-top: 43px;
+    padding-top: 60px;
     color:#fff;
-    letter-spacing: 1px;
+    letter-spacing: 1.15px;
+    text-align: center;
 }
 
-.txt-rotate{
-   /* color:#fff;*/
-}
 
 .svg-circle-container{
     height:600px;
