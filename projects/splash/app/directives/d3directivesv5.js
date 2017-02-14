@@ -45,25 +45,21 @@ features.directive('bubbleChart', function () {
       feMerge.append("feMergeNode")
         .attr("in", "SourceGraphic");
 
-      var loadSvg = svg.attr("class", "svg-circle-container")
+      svg.attr("class", "svg-circle-container")
         .selectAll("svg-circle-container")
         .data(scope.data).enter()
         .append("circle")
-        .transition()
-        .duration(2500)
-        .delay(2500)
         .attr("cx", function (d) { return d.x_axis; })
         .attr("cy", function (d) { return d.y_axis; })
         .attr("r", function (d) { return d.radius; })
         .style("fill", function (d) { return d.color; })
-
-      loadSvg.on("mouseover", function (d, i) {
-        d3.select(this).transition()
-          .ease("elastic")
-          .duration("500")
-          .attr("r", 75)
-          .style("filter", "url(#glow)");
-      })
+        .on("mouseover", function (d, i) {
+          d3.select(this).transition()
+            .ease("elastic")
+            .duration("500")
+            .attr("r", 75)
+            .style("filter", "url(#glow)");
+        })
         .on("mouseout", function (d, i) {
           d3.select(this).transition()
             .ease("quad")
