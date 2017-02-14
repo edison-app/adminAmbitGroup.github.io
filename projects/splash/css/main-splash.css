@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Arvo');
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One');
+
 /* Main */
 
 .main-wrapper{
@@ -9,28 +12,23 @@
 .lights-wrapper{
     position: absolute;
     text-align:center;
-    width: 500px;
+    width: 50px;
     height: 150px;
-    top: 40%;
-    left: 43%;
-}
-
-.text-area{
-    width:180px;
-}
-
-.text-area img{
-    float:left;
+    top: 28%;
+    left: 45%;
 }
 
 .text-area h3 {
-    max-width: 80%;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 30px;
     vertical-align: middle;
     padding-top: 43px;
+    color:#fff;
+    letter-spacing: 1px;
 }
 
 .txt-rotate{
-    color:#fff;
+   /* color:#fff;*/
 }
 
 .svg-circle-container{
