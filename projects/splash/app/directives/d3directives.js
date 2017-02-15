@@ -23,7 +23,7 @@ features.directive('bubbleChart', function () {
       //but we won't need that this time
 
 
-
+      var idDef = ["globe", "bubble", "globe", "bubble", "globe", "bubble"];
       var chart = d3.select(element[0]);
       //to our original directive markup bars-chart
       //we add a div with out chart stling and bind each
@@ -45,7 +45,26 @@ features.directive('bubbleChart', function () {
       feMerge.append("feMergeNode")
         .attr("in", "SourceGraphic");
 
-      svg.attr("class", "svg-circle-container")
+      var bkgImages = function (arr) {
+        var imgDefs = function (item, index) {
+          defs.append("svg:pattern")
+            .attr("id", item)
+            .attr("width", "100%")
+            .attr("height", "100%")
+            .attr("viewBox", "0 0 150 150")
+            .append("svg:image")
+            .attr("xlink:href", "img/" + item + ".png")
+            .attr("width", 150)
+            .attr("height", 150)
+            .attr("x", "0%")
+            .attr("y", "0%");
+        }
+        arr.forEach(imgDefs)
+      }
+
+      bkgImages(idDef);
+
+      var circleObj = svg.attr("class", "svg-circle-container")
         .selectAll("svg-circle-container")
         .data(scope.data).enter()
         .append("circle")
@@ -53,14 +72,15 @@ features.directive('bubbleChart', function () {
         .attr("cy", function (d) { return d.y_axis; })
         .attr("r", function (d) { return d.radius; })
         .style("fill", function (d) { return d.color; })
-        .attr('opacity', 0)
-        .on("mouseover", function (d, i) {
-          d3.select(this).transition()
-            .ease("elastic")
-            .duration("500")
-            .attr("r", 75)
-            .style("filter", "url(#glow)");
-        })
+        .attr('opacity', 0);
+
+      circleObj.on("mouseover", function (d, i) {
+        d3.select(this).transition()
+          .ease("elastic")
+          .duration("500")
+          .attr("r", 75)
+          .style("filter", "url(#glow)");
+      })
         .on("mouseout", function (d, i) {
           d3.select(this).transition()
             .ease("quad")
@@ -72,9 +92,10 @@ features.directive('bubbleChart', function () {
         .transition()
         .delay(function (d, i) { return i * 600; })
         .duration(3000)
+        .style("fill",function (d) { return "url(#" + d.image + ")"; })
         .attr("opacity", 1);
+
     }
   };
-
   return bubbleGroupObj;
 });
