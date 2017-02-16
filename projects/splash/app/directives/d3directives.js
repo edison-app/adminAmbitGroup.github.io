@@ -22,8 +22,6 @@ features.directive('bubbleChart', function () {
       //selection[0][0] is the DOM node
       //but we won't need that this time
 
-
-      var idDef = ["globe", "pie", "map", "tree", "globe", "pie"];
       var chart = d3.select(element[0]);
       //to our original directive markup bars-chart
       //we add a div with out chart stling and bind each
@@ -43,24 +41,23 @@ features.directive('bubbleChart', function () {
       feMerge.append("feMergeNode")
         .attr("in", "coloredBlur");
       feMerge.append("feMergeNode")
-        .attr("in", "SourceGraphic");
+        .attr("in", "SourceGraphic")
 
-      var bkgImages = function (arr) {
-        var imgDefs = function (item, index) {
-          defs.append("svg:pattern")
-            .attr("id", item)
+          defs.attr("class", "def-circle-container")
+          .selectAll("def-circle-container")
+            .data(scope.data).enter()
+            .append("svg:pattern")
+            .attr("id", function (d) { return d.image; })
             .attr("width", "100%")
             .attr("height", "100%")
             .attr("viewBox", "0 0 150 150")
             .append("svg:image")
-            .attr("xlink:href", "img/" + item + ".png")
+            .attr("xlink:href", function (d) { return"img/" + d.image + ".png"; })
             .attr("width", 150)
             .attr("height", 150)
             .attr("x", "0%")
             .attr("y", "0%");
-        }
-        arr.forEach(imgDefs)
-      }
+
 
       var circleCreate = function () {
         var circleObj = svg.attr("class", "svg-circle-container")
@@ -100,10 +97,7 @@ features.directive('bubbleChart', function () {
           })
       }
 
-      /************Main*************/
-      /***Loads circle images***/
-      bkgImages(idDef);
-      /****Loads Circles first then Mouseover***/
+      /***********circle handler*************/
       circleCreate();
       /*****************************/
 
