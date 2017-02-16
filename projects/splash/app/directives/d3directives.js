@@ -23,7 +23,7 @@ features.directive('bubbleChart', function () {
       //but we won't need that this time
 
 
-      var idDef = ["globe", "bubble", "globe", "bubble", "globe", "bubble"];
+      var idDef = ["globe", "pie", "map", "tree", "globe", "pie"];
       var chart = d3.select(element[0]);
       //to our original directive markup bars-chart
       //we add a div with out chart stling and bind each
@@ -62,38 +62,51 @@ features.directive('bubbleChart', function () {
         arr.forEach(imgDefs)
       }
 
-      bkgImages(idDef);
+      var circleCreate = function () {
+        var circleObj = svg.attr("class", "svg-circle-container")
+          .selectAll("svg-circle-container");
 
-      var circleObj = svg.attr("class", "svg-circle-container")
-        .selectAll("svg-circle-container")
-        .data(scope.data).enter()
-        .append("circle")
-        .attr("cx", function (d) { return d.x_axis; })
-        .attr("cy", function (d) { return d.y_axis; })
-        .attr("r", function (d) { return d.radius; })
-        .style("fill", function (d) { return d.color; })
-        .attr('opacity', 0);
+        circleObj.data(scope.data).enter()
+          .append("circle")
+          .attr("cx", function (d) { return d.x_axis; })
+          .attr("cy", function (d) { return d.y_axis; })
+          .attr("r", function (d) { return d.radius; })
+          .style("fill", function (d) { return d.color; })
+          .attr('opacity', 0)
+          .transition()
+          .delay(function (d, i) { return i * 600; })
+          .duration(3000)
+          .style("fill", function (d) { return "url(#" + d.image + ")"; })
+          .attr("opacity", 1)
+          .each("end", circleMouseOver );
+      }
 
-      circleObj.on("mouseover", function (d, i) {
-        d3.select(this).transition()
-          .ease("elastic")
-          .duration("500")
-          .attr("r", 75)
-          .style("filter", "url(#glow)");
-      })
-        .on("mouseout", function (d, i) {
+      var circleMouseOver = function () {
+        var circleGlobal = svg.selectAll("circle");
+        circleGlobal.on("mouseover", function (d, i) {
           d3.select(this).transition()
-            .ease("quad")
-            .delay("100")
-            .duration("200")
-            .attr("r", 60)
-            .style("filter", "none");
+            .ease("elastic")
+            .duration("500")
+            .attr("r", 75)
+            .style("filter", "url(#glow)"); 
         })
-        .transition()
-        .delay(function (d, i) { return i * 600; })
-        .duration(3000)
-        .style("fill",function (d) { return "url(#" + d.image + ")"; })
-        .attr("opacity", 1);
+          .on("mouseout", function (d, i) {
+            d3.select(this).transition()
+              .ease("quad")
+              .delay("100")
+              .duration("200")
+              .attr("r", 60)
+              .style("filter", "none");
+          })
+      }
+
+      /************Main*************/
+      /***Loads circle images***/
+      bkgImages(idDef);
+      /****Loads Circles first then Mouseover***/
+      circleCreate();
+      /*****************************/
+
 
     }
   };
