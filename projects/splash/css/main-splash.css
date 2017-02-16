@@ -1,93 +1,101 @@
 @import url('https://fonts.googleapis.com/css?family=Arvo');
 @import url('https://fonts.googleapis.com/css?family=Julius+Sans+One');
-
 /* Main */
 
 @keyframes fadein {
     from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-moz-keyframes fadein { /* Firefox */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-webkit-keyframes fadein { /* Safari and Chrome */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-o-keyframes fadein { /* Opera */
-    from {
-        opacity:0;
+        opacity: 0;
     }
     to {
         opacity: 1;
     }
 }
-
-#background{
-    position:fixed;
-    padding:0;
-    margin:0;
-    top:0;
-    left:0;
+@-moz-keyframes fadein {
+    /* Firefox */
+    
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fadein {
+    /* Safari and Chrome */
+    
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-o-keyframes fadein {
+    /* Opera */
+    
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+#background {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     background-image: url("../img/shop.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     animation-delay: 20s;
     -webkit-animation-delay: 20s;
     animation: fadein 20s;
-    -moz-animation: fadein 20s; /* Firefox */
-    -webkit-animation: fadein 20s; /* Safari and Chrome */
-    -o-animation: fadein 20s; /* Opera */
+    -moz-animation: fadein 20s;
+    /* Firefox */
+    
+    -webkit-animation: fadein 20s;
+    /* Safari and Chrome */
+    
+    -o-animation: fadein 20s;
+    /* Opera */
 }
-
-.main-wrapper{
-  position: absolute;
-  margin: auto;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 600px;
-  height: 600px;
+.main-wrapper {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 600px;
+    height: 600px;
 }
-
-.text-area{
-  position: absolute;
-  margin: auto;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 300px;
-  height: 100px;
+.text-area {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 300px;
+    height: 100px;
 }
-
 .text-area h3 {
     font-family: 'Julius Sans One', sans-serif;
     font-size: 30px;
     vertical-align: middle;
-    color:#fff;
+    color: #fff;
     letter-spacing: 1.15px;
-    padding-left:105px;
+    padding-left: 105px;
 }
-
-
-.svg-circle-container{
-    height:600px;
-    width:600px;
+.svg-circle-container {
+    height: 600px;
+    width: 600px;
     display: block;
-    margin:auto;
+    margin: auto;
 }
