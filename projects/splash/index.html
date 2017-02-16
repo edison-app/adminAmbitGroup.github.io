@@ -14,20 +14,16 @@
 </head>
 
 <body ng-app="app">
-   <div id="background"></div>
+    <div id="background"></div>
     <div class="main-wrapper container">
         <div ng-controller="bubbleCtrl">
             <bubble-chart chart-data="bubbleData"></bubble-chart>
         </div>
-        <div class="top-sec">
-            <div class="lights-wrapper">
-                <div class="text-area">
-                    <!--<img src="img/ed-logo.png" alt="ed text">-->
-                    <h3 ng-controller="wordScrollController" class="quotes">
-                        <span class="txt-rotate" data-period="1750" data-rotate='["VISUALIZE","&nbsp;&nbsp;DATA","EDISON"]'></span>
-                    </h3>
-                </div>
-            </div>
+        <div class="text-area">
+            <!--<img src="img/ed-logo.png" alt="ed text">-->
+            <h3 ng-controller="wordScrollController" class="quotes">
+                <span class="txt-rotate" data-period="1750" data-rotate='["VISUALIZE","&nbsp;&nbsp;DATA","EDISON"]'></span>
+            </h3>
         </div>
     </div>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
