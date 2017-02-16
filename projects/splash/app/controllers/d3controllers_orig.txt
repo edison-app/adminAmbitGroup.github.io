@@ -1,3 +1,0 @@
-features.controller('bubbleCtrl', ['$scope', function($scope) {
-   $scope.bubbleData = [10,20,30,40,60];
-}]);
