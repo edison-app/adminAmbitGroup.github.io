@@ -43,20 +43,20 @@ features.directive('bubbleChart', function () {
       feMerge.append("feMergeNode")
         .attr("in", "SourceGraphic")
 
-          defs.attr("class", "def-circle-container")
-          .selectAll("def-circle-container")
-            .data(scope.data).enter()
-            .append("svg:pattern")
-            .attr("id", function (d) { return d.image; })
-            .attr("width", "100%")
-            .attr("height", "100%")
-            .attr("viewBox", "0 0 150 150")
-            .append("svg:image")
-            .attr("xlink:href", function (d) { return"img/" + d.image + ".png"; })
-            .attr("width", 150)
-            .attr("height", 150)
-            .attr("x", "0%")
-            .attr("y", "0%");
+      defs.attr("class", "def-circle-container")
+        .selectAll("def-circle-container")
+        .data(scope.data).enter()
+        .append("svg:pattern")
+        .attr("id", function (d) { return d.image; })
+        .attr("width", "100%")
+        .attr("height", "100%")
+        .attr("viewBox", "0 0 150 150")
+        .append("svg:image")
+        .attr("xlink:href", function (d) { return "img/" + d.image + ".png"; })
+        .attr("width", 150)
+        .attr("height", 150)
+        .attr("x", "0%")
+        .attr("y", "0%");
 
 
       var circleCreate = function () {
@@ -64,6 +64,8 @@ features.directive('bubbleChart', function () {
           .selectAll("svg-circle-container");
 
         circleObj.data(scope.data).enter()
+          .append("a")
+          .attr("xlink:href", function (d) { return d.url;})
           .append("circle")
           .attr("cx", function (d) { return d.x_axis; })
           .attr("cy", function (d) { return d.y_axis; })
@@ -75,7 +77,7 @@ features.directive('bubbleChart', function () {
           .duration(3000)
           .style("fill", function (d) { return "url(#" + d.image + ")"; })
           .attr("opacity", 1)
-          .each("end", circleMouseOver );
+          .each("end", circleMouseOver);
       }
 
       var circleMouseOver = function () {
@@ -85,7 +87,7 @@ features.directive('bubbleChart', function () {
             .ease("elastic")
             .duration("500")
             .attr("r", 75)
-            .style("filter", "url(#glow)"); 
+            .style("filter", "url(#glow)");
         })
           .on("mouseout", function (d, i) {
             d3.select(this).transition()
