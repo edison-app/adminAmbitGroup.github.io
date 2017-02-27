@@ -82,16 +82,20 @@
     left: 0;
     right: 0;
     bottom: 0;
-    width: 300px;
+    width: 500px;
+    text-align: center;
     height: 100px;
 }
 .text-area h3 {
     font-family: 'Julius Sans One', sans-serif;
     font-size: 30px;
-    vertical-align: middle;
     color: #fff;
     letter-spacing: 1.15px;
-    padding-left: 105px;
+    /*padding-left: 105px;*/
+}
+
+.wrap{
+    margin-left:48px;
 }
 .svg-circle-container {
     height: 600px;
