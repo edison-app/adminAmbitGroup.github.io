@@ -48,7 +48,7 @@ features.controller("wordScrollController", ['$scope', '$window', function ($sco
         if (!this.isDeleting && this.txt === fullTxt) {
             delta = this.period;
             this.isDeleting = true;
-        } if (this.isDeleting && fullTxt === "EDISON") {
+        } if (this.isDeleting && fullTxt === "APPLICATIONS") {
             return //End Loop
         }
         else if (this.isDeleting && this.txt === '') {
