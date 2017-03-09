@@ -113,9 +113,7 @@ a, a:visited, a:active {
     padding-left:100px;
     height:100%;
     width:100%;
-    background-image: url("../img/skyscraper_window.jpg");
-    background-size: cover;
-    background-position: center;
+    background-color:#000;
     opacity:0.5;
     position:fixed;
     top:0px;
